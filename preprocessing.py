@@ -1,6 +1,9 @@
 import os
 from os.path import join
 
+from sklearn.feature_extraction.text import TfidfVectorizer
+from nltk.corpus import stopwords
+
 class FileManager:
     """This class manages all file operations of the application"""
 
@@ -44,7 +47,7 @@ class FileManager:
         """Returns filename and extension for a file path"""
         return os.path.splitext(file_path)
 
-    def load_texts(self, files='all'):
+    def create_tfidf(self, files='all'):
         """
         Loads text from the specified files.
         :param files: which files to get text from
@@ -60,8 +63,10 @@ class FileManager:
             print("Unable to read specified files")
             return
 
-        for file in to_load:
-            with open(file, 'r') as f:
-                self.texts.append(f.read())
+        stop = list(stopwords.words('english'))
+        vectorizer = TfidfVectorizer(input='filename', stop_words=stop)
+        X = vectorizer.fit_transform(to_load)
+
+
 
 
