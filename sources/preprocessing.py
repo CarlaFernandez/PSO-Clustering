@@ -49,9 +49,9 @@ class FileManager:
 
     def create_tfidf(self, files='all'):
         """
-        Loads text from the specified files.
+        Creates the TF-IDF matrix from the specified files.
         :param files: which files to get text from
-        :return:
+        :return: TF-IDF matrix
         """
         if files == 'all':
             to_load = self.files
@@ -63,9 +63,14 @@ class FileManager:
             print("Unable to read specified files")
             return
 
+        # using stopwords from nltk
         stop = list(stopwords.words('english'))
+
+        print("Creating TF-IDF matrix...")
         vectorizer = TfidfVectorizer(input='filename', stop_words=stop)
         X = vectorizer.fit_transform(to_load)
+        return X
+
 
 
 
