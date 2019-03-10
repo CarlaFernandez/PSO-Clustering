@@ -61,9 +61,12 @@ class FileManager:
             to_load = self.spam
         elif files == 'legit':
             to_load = 'legit'
+        # TODO remove this entry
+        elif files == 'testing':
+            to_load = self.files[:50]
         else:
-            print("Unable to read specified files")
-            return
+            print("Unable to read '{0}' files, defaulting to all files".format(files))
+            to_load = self.files
 
         # using stopwords from nltk
         stop = list(stopwords.words('english'))
