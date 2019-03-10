@@ -3,7 +3,7 @@ from os.path import join
 
 from sklearn.feature_extraction.text import TfidfVectorizer
 from nltk.corpus import stopwords
-
+from sklearn.decomposition import TruncatedSVD
 class FileManager:
     """This class manages all file operations of the application"""
 
@@ -47,10 +47,12 @@ class FileManager:
         """Returns filename and extension for a file path"""
         return os.path.splitext(file_path)
 
-    def create_tfidf(self, files='all'):
+    def create_tfidf(self, files='all', svd=False):
         """
         Creates the TF-IDF matrix from the specified files.
         :param files: which files to get text from
+        :param svd: whether to perform dimensionality reduction by Singular Value Decomposition
+
         :return: TF-IDF matrix
         """
         if files == 'all':
@@ -69,6 +71,9 @@ class FileManager:
         print("Creating TF-IDF matrix...")
         vectorizer = TfidfVectorizer(input='filename', stop_words=stop)
         X = vectorizer.fit_transform(to_load)
+        if svd:
+            print("Performing SVD...")
+            X = TruncatedSVD().fit_transform(X)
         return X
 
 
