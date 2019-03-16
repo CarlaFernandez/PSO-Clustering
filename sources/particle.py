@@ -6,42 +6,40 @@ import sklearn.metrics
 import operator
 
 class Particle:
-    MIN_POS = 0
-    MAX_POS = 100
-    MIN_VEL = 1
-    MAX_VEL = 3
+    MIN_VEL = -1.0
+    MAX_VEL = 1.0
+    MIN_POS = 0.1
+    MAX_POS = 1.0
 
-    def __init__(self, doc_vectors, num_clusters, pos_bounds):
+    def __init__(self, doc_vectors, num_clusters):
         self.centroid_vecs = []
         # dictionary of index of centroid vector and the documents it has assigned
         self.assigned = defaultdict(list)
         self.doc_vecs = doc_vectors
-        self.MIN_POS = pos_bounds[0]
-        self.MAX_POS = pos_bounds[1]
 
         for k in range(num_clusters):
             # choose a random vector among all available document vectors as cluster centroid
             vector_selected = random.randint(0, doc_vectors.shape[0] - 1)
-            chosen_vec = doc_vectors[vector_selected]
+            chosen_vec = doc_vectors[vector_selected].toarray()[0]
 
             self.centroid_vecs.append(chosen_vec)
 
 
         self.velocity = []
-        self.position = []
         self.fitness = np.inf
-        self.own_best_pos = self.position.copy()
         self.own_best_fitness = self.fitness
 
-        for i in range(doc_vectors.shape[0]):
-            self.velocity.append(random.uniform(-1, 1))
-            self.position.append(random.uniform(0, doc_vectors.shape[0]))
+        for i in range(doc_vectors.shape[1]):
+            self.velocity.append(random.uniform(0, 1))
 
+        self.own_best_pos = self.centroid_vecs.copy()
 
     def assign_closest_centroids(self, distance_metric):
         # for each document vector, check the closest centroid and assign it
+        self.assigned = defaultdict(list)
+
         for i in range(self.doc_vecs.shape[0]):
-            doc_vector = self.doc_vecs[i]
+            doc_vector = self.doc_vecs[i].toarray()[0]
             smallest_distance = np.inf
             current_closest = []
 
@@ -52,59 +50,61 @@ class Particle:
                     current_closest = j
                     smallest_distance = distance
 
-            # once we have the closest centroid, assign the document to it if it is not the centroid
             self.assigned[current_closest].append(doc_vector)
 
 
     def measure_distance(self, centroid, vector, metric):
         if metric == 'euclidean':
-            return sklearn.metrics.pairwise.pairwise_distances(centroid, vector, metric="euclidean")[0][0]
+            # return sklearn.metrics.pairwise.pairwise_distances(centroid, vector, metric="euclidean")[0][0]
+            return np.linalg.norm(centroid - vector)
+
         elif metric == 'cosine':
+
             return sklearn.metrics.pairwise.pairwise_distances(centroid, vector, metric="cosine")[0][0]
         else:
             return sklearn.metrics.pairwise.pairwise_distances(centroid, vector, metric="euclidean")[0][0]
 
 
     def move(self, inertia, cognitive, social, global_best_pos):
-        for i in range(self.doc_vecs.shape[0]):
-            self.__update_velocity(cognitive, global_best_pos, i, inertia, social)
+        for i in range(len(self.centroid_vecs)):
+            self.__update_velocity(i, cognitive, global_best_pos, inertia, social)
 
             self.__update_position(i)
-
-        return self.position
 
 
     def __update_position(self, i):
         # the particle changes position according to its velocity and wraps around
-        self.position[i] = self.position[i] + self.velocity[i]
+        for pos in range(len(self.centroid_vecs[0])):
+            self.centroid_vecs[i][pos] = self.centroid_vecs[i][pos] + self.velocity[pos]
 
-        if (self.position[i] > self.MAX_POS):
-            self.position[i] = self.position[i] % self.MAX_POS
+            if (self.centroid_vecs[i][pos] > self.MAX_POS):
+                self.centroid_vecs[i][pos] = self.centroid_vecs[i][pos] % self.MIN_POS
 
-        if (self.position[i] < self.MIN_POS):
-            self.position[i] = self.position[i] % self.MIN_POS
+            if (self.centroid_vecs[i][pos]< self.MIN_POS):
+                self.centroid_vecs[i][pos] = self.centroid_vecs[i][pos] % self.MAX_POS
 
 
-    def __update_velocity(self, cognitive, global_best_pos, i, inertia, social):
+    def __update_velocity(self, i, cognitive, global_best_pos, inertia, social):
         # the particle updates current velocity values
-        self.velocity[i] = inertia * self.velocity[i] + \
-                           cognitive * random.uniform(0, 1) * abs(self.own_best_pos[i] - self.position[i]) + \
-                           social * random.uniform(0, 1) * abs(global_best_pos[i] - self.position[i])
+        for pos in range(len(self.velocity)):
+            self.velocity[pos] = inertia * self.velocity[pos] + \
+                               cognitive * random.uniform(0, 1) * abs(self.own_best_pos[i][pos] - self.centroid_vecs[i][pos]) + \
+                               social * random.uniform(0, 1) * abs(global_best_pos[i][pos] - self.centroid_vecs[i][pos])
 
-        if (self.velocity[i] > self.MAX_VEL):
-            self.velocity[i] = self.velocity[i] % self.MAX_VEL
-
+            if (self.velocity[pos] > self.MAX_VEL):
+                self.velocity[pos] = self.velocity[pos] % self.MIN_VEL
 
 
     def calculate_fitness(self, metric):
         addc = 0
-        for key in range(len(self.assigned.keys())):
+        for key in self.assigned.keys():
             centroid_cum  = 0
 
             # for each vector assigned to the centroid
-            for value in range(len(self.assigned[key])):
-                vector = self.assigned[key][0]
-                centroid_cum += self.measure_distance(vector, self.centroid_vecs[key], metric)
+            for vector in range(len(self.assigned[key])):
+                doc_vector = self.assigned[key][vector]
+                distance = self.measure_distance(doc_vector, self.centroid_vecs[key], metric)
+                centroid_cum += distance
 
             # if there were any vectors, do the average, else 0
             if len(self.assigned[key]) != 0:
@@ -116,6 +116,6 @@ class Particle:
 
         if self.fitness < self.own_best_fitness:
             self.own_best_fitness = self.fitness
-            self.own_best_pos = self.position.copy()
+            self.own_best_pos = self.centroid_vecs
 
         return self.fitness
