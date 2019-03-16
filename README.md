@@ -1,4 +1,18 @@
 # PSO-Clustering
+
+## Core: Done
+
+* Clean data: 
+    * Tokenization
+    * Stopword removal by Scikit-Learn's English stopword list
+    * Stemming by Porter Stemmer
+    
+* Document representation by Scikit-Learn's TFIDFVectorizer
+
+* Implement objective function by Average Distance of Documents to the Cluster centroid (ADDC)
+
+* Basic implementation of Particle Swarm Optimization
+
 ## Core: To-Do
 #### Important
 * Check how to represent a particle's position

@@ -1,9 +1,12 @@
 import os
 from os.path import join
 
+import nltk
 from sklearn.feature_extraction.text import TfidfVectorizer
 from nltk.corpus import stopwords
 from sklearn.decomposition import TruncatedSVD
+from nltk.stem.porter import PorterStemmer
+
 class FileManager:
     """This class manages all file operations of the application"""
 
@@ -15,6 +18,8 @@ class FileManager:
         """
         self.files = self.get_all_from_root(dir_path, '.txt')
         self.texts = []
+
+        self.stemmer = PorterStemmer()
 
         # discard "Summary.txt" files
         self.files = [file for file in self.files if "summary" not in file.lower()]
@@ -47,6 +52,11 @@ class FileManager:
         """Returns filename and extension for a file path"""
         return os.path.splitext(file_path)
 
+    def tokenize(self, text):
+        tokens = nltk.word_tokenize(text)
+        stems = [self.stemmer.stem(token) for token in tokens]
+        return stems
+
     def create_tfidf(self, files='all', svd=False):
         """
         Creates the TF-IDF matrix from the specified files.
@@ -72,7 +82,11 @@ class FileManager:
         stop = list(stopwords.words('english'))
 
         print("Creating TF-IDF matrix...")
-        vectorizer = TfidfVectorizer(input='filename', stop_words=stop)
+        text = ""
+        for file in to_load:
+            with open(file, 'r') as f:
+                text += f.read()
+        vectorizer = TfidfVectorizer(text, tokenizer=self.tokenize)
         X = vectorizer.fit_transform(to_load)
         if svd:
             print("Performing SVD...")
