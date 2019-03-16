@@ -2,7 +2,7 @@ import random
 from collections import defaultdict
 import numpy as np
 import sklearn.metrics
-
+import operator
 
 class Particle:
     MIN_POS = 0
@@ -22,8 +22,12 @@ class Particle:
 
             self.centroid_vecs.append(chosen_vec)
 
-        self.position = random.randint(self.MIN_POS, self.MAX_POS)
+
         self.velocity = random.randint(self.MIN_VEL, self.MAX_VEL)
+        self.position = random.randint(self.MIN_POS, self.MAX_POS)
+        self.fitness = np.inf
+        self.own_best_pos = self.position
+        self.own_best_fitness = self.fitness
 
     def assign_closest_centroids(self, distance_metric):
         # for each document vector, check the closest centroid and assign it
@@ -49,11 +53,12 @@ class Particle:
         else:
             return sklearn.metrics.pairwise.pairwise_distances(centroid, vector, metric="euclidean")[0][0]
 
-    def move(self, inertia, cognitive, social, best_position):
+    def move(self, inertia, cognitive, social, global_best_pos):
         # the particle updates current velocity values
         self.velocity = inertia * self.velocity + \
-            cognitive * random.randint(0, 1) * abs(best_position - self.position)
-            #  + social * random.randint() * (best_position-self.position)
+            cognitive * random.randint(0, 1) * abs(self.own_best_pos - self.position) \
+            + social * random.randint(0, 1) * abs(global_best_pos - self.position)
+
         if (self.velocity > self.MAX_VEL):
             self.velocity = self.velocity % self.MAX_VEL
 
@@ -81,4 +86,10 @@ class Particle:
             else:
                 addc += 0
 
-        return addc / len(self.assigned.keys())
+        self.fitness = addc / len(self.assigned.keys())
+
+        if self.fitness < self.own_best_fitness:
+            self.own_best_fitness = self.fitness
+            self.own_best_pos = self.position
+
+        return self.fitness

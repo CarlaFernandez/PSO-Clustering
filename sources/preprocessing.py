@@ -16,7 +16,7 @@ class FileManager:
         Args:
             dir_path: directory in which files are stored
         """
-        self.files = self.get_all_from_root(dir_path, '.txt')
+        self.files = self.__get_all_from_root(dir_path, '.txt')
         self.texts = []
 
         self.stemmer = PorterStemmer()
@@ -30,7 +30,7 @@ class FileManager:
 
         print("Loaded {0} spam files, {1} legitimate files".format(len(self.spam), len(self.legit)))
 
-    def get_all_from_root(self, folder_path, extension=""):
+    def __get_all_from_root(self, folder_path, extension=""):
         """Gets files from dirs and subdirs starting from a root path.
 
         Args:
@@ -43,16 +43,16 @@ class FileManager:
         for r, d, f in os.walk(folder_path):
             for file in f:
                 joined = join(r, file)
-                filename, ext = self.get_name_extension(joined)
+                filename, ext = self.__get_name_extension(joined)
                 if ext != "" and ext.lower() == extension:
                     files.append(joined)
         return files
 
-    def get_name_extension(self, file_path):
+    def __get_name_extension(self, file_path):
         """Returns filename and extension for a file path"""
         return os.path.splitext(file_path)
 
-    def tokenize(self, text):
+    def __tokenize(self, text):
         tokens = nltk.word_tokenize(text)
         stems = [self.stemmer.stem(token) for token in tokens]
         return stems
@@ -86,7 +86,7 @@ class FileManager:
         for file in to_load:
             with open(file, 'r') as f:
                 text += f.read()
-        vectorizer = TfidfVectorizer(text, tokenizer=self.tokenize)
+        vectorizer = TfidfVectorizer(text, tokenizer=self.__tokenize)
         X = vectorizer.fit_transform(to_load)
         if svd:
             print("Performing SVD...")
