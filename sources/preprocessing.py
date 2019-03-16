@@ -73,7 +73,7 @@ class FileManager:
             to_load = 'legit'
         # TODO remove this entry
         elif files == 'testing':
-            to_load = self.files[:50]
+            to_load = self.files[:100]
         else:
             print("Unable to read '{0}' files, defaulting to all files".format(files))
             to_load = self.files
@@ -82,11 +82,8 @@ class FileManager:
         stop = list(stopwords.words('english'))
 
         print("Creating TF-IDF matrix...")
-        text = ""
-        for file in to_load:
-            with open(file, 'r') as f:
-                text += f.read()
-        vectorizer = TfidfVectorizer(text, tokenizer=self.__tokenize)
+
+        vectorizer = TfidfVectorizer(input='filename', tokenizer=self.__tokenize)
         X = vectorizer.fit_transform(to_load)
         if svd:
             print("Performing SVD...")
