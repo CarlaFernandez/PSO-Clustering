@@ -1,15 +1,13 @@
 import random
 from collections import defaultdict
 import numpy as np
-import scipy
 import sklearn.metrics
-import operator
 
 class Particle:
-    MIN_VEL = -1.0
-    MAX_VEL = 1.0
+    MIN_VEL = -1
+    MAX_VEL = 1
     MIN_POS = 0.1
-    MAX_POS = 1.0
+    MAX_POS = 1
 
     def __init__(self, doc_vectors, num_clusters):
         self.centroid_vecs = []
@@ -21,7 +19,6 @@ class Particle:
             # choose a random vector among all available document vectors as cluster centroid
             vector_selected = random.randint(0, doc_vectors.shape[0] - 1)
             chosen_vec = doc_vectors[vector_selected].toarray()[0]
-
             self.centroid_vecs.append(chosen_vec)
 
 
@@ -30,7 +27,7 @@ class Particle:
         self.own_best_fitness = self.fitness
 
         for i in range(doc_vectors.shape[1]):
-            self.velocity.append(random.uniform(0, 1))
+            self.velocity.append(random.uniform(self.MIN_VEL, self.MAX_VEL))
 
         self.own_best_pos = self.centroid_vecs.copy()
 
@@ -56,8 +53,9 @@ class Particle:
     def measure_distance(self, centroid, vector, metric):
         if metric == 'euclidean':
             # return sklearn.metrics.pairwise.pairwise_distances(centroid, vector, metric="euclidean")[0][0]
-            return np.linalg.norm(centroid - vector)
+            # return np.linalg.norm(abs(centroid - vector))
 
+            return np.linalg.norm(abs(centroid - vector))
         elif metric == 'cosine':
 
             return sklearn.metrics.pairwise.pairwise_distances(centroid, vector, metric="cosine")[0][0]
@@ -75,24 +73,24 @@ class Particle:
     def __update_position(self, i):
         # the particle changes position according to its velocity and wraps around
         for pos in range(len(self.centroid_vecs[0])):
-            self.centroid_vecs[i][pos] = self.centroid_vecs[i][pos] + self.velocity[pos]
+            self.centroid_vecs[i][pos] = self.centroid_vecs[i][pos] * self.velocity[pos]
 
             if (self.centroid_vecs[i][pos] > self.MAX_POS):
-                self.centroid_vecs[i][pos] = self.centroid_vecs[i][pos] % self.MIN_POS
+                self.centroid_vecs[i][pos] = self.centroid_vecs[i][pos] % self.MAX_POS
 
             if (self.centroid_vecs[i][pos]< self.MIN_POS):
-                self.centroid_vecs[i][pos] = self.centroid_vecs[i][pos] % self.MAX_POS
+                self.centroid_vecs[i][pos] = self.centroid_vecs[i][pos] % self.MIN_POS
 
 
     def __update_velocity(self, i, cognitive, global_best_pos, inertia, social):
         # the particle updates current velocity values
         for pos in range(len(self.velocity)):
             self.velocity[pos] = inertia * self.velocity[pos] + \
-                               cognitive * random.uniform(0, 1) * abs(self.own_best_pos[i][pos] - self.centroid_vecs[i][pos]) + \
-                               social * random.uniform(0, 1) * abs(global_best_pos[i][pos] - self.centroid_vecs[i][pos])
+                               cognitive * random.uniform(0, 1) * (self.own_best_pos[i][pos] - self.centroid_vecs[i][pos]) + \
+                               social * random.uniform(0, 1) * (global_best_pos[i][pos] - self.centroid_vecs[i][pos])
 
-            if (self.velocity[pos] > self.MAX_VEL):
-                self.velocity[pos] = self.velocity[pos] % self.MIN_VEL
+            if (abs(self.velocity[pos]) > self.MAX_VEL):
+                self.velocity[pos] = self.velocity[pos] % self.MAX_VEL
 
 
     def calculate_fitness(self, metric):

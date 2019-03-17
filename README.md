@@ -11,13 +11,12 @@
 
 * Implement objective function by Average Distance of Documents to the Cluster centroid (ADDC)
 
-## Core: To-Do
-#### Important
-* Fix particle movement: they are moving towards higher fitness values
+* Implement PSO algorithm: particles move towards better fitness values 
 
-#### Not-so-important
+## Core: To-Do
+
+* Graphical representation of particle's positions in space
 * Different stopping conditions
-* Support for local search
 * Optimize to provide support for more files (SVD?)
 
 ## Extensions

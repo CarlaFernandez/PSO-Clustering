@@ -17,7 +17,6 @@ class PSO:
 
         print("Performing clustering...")
 
-        bounds = [0, 1]
         self.__initialize_particles(num_clusters, num_particles)
 
         # TODO remove this, used as placeholder for stop condition
@@ -45,7 +44,7 @@ class PSO:
                 particle.move(inertia, cognitive, social, global_best_pos)
                 print("Particle: {0}, current fitness: {1}".format(i, particle_fitness))
 
-            # print("Iteration: {0}, best solution: {1}".format(num_iter, global_best_fitness))
+            print("------------- Iteration: {0}, best solution: {1} -------------".format(num_iter, global_best_fitness))
 
             num_iter += 1
 
@@ -61,6 +60,6 @@ class PSO:
 
     def __stop_condition_met(self, num_iter):
         # TODO more stopping conditions
-        return num_iter == 5
+        return num_iter == 10
 
 

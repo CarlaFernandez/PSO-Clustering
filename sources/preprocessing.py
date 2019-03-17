@@ -6,6 +6,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from nltk.corpus import stopwords
 from sklearn.decomposition import TruncatedSVD
 from nltk.stem.porter import PorterStemmer
+import numpy as np
 
 class FileManager:
     """This class manages all file operations of the application"""
@@ -73,7 +74,7 @@ class FileManager:
             to_load = 'legit'
         # TODO remove this entry
         elif files == 'testing':
-            to_load = self.files[:100]
+            to_load = self.files[:1000]
         else:
             print("Unable to read '{0}' files, defaulting to all files".format(files))
             to_load = self.files
@@ -88,8 +89,8 @@ class FileManager:
         if svd:
             print("Performing SVD...")
             X = TruncatedSVD().fit_transform(X)
-        return X
 
+        return X
 
 
 
