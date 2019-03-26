@@ -1,7 +1,6 @@
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
-import scipy
 from sklearn.decomposition import PCA
 
 class DocumentPCA:
@@ -12,7 +11,6 @@ class DocumentPCA:
         self.ax = self.fig.add_subplot(1, 1, 1)
         self.ax.set_xlabel('Principal Component 1', fontsize=15)
         self.ax.set_ylabel('Principal Component 2', fontsize=15)
-        self.ax.set_title('2 component PCA', fontsize=20)
 
     def visualize_2D_pca(self, particle):
 
