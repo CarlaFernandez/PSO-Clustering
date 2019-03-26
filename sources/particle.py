@@ -58,8 +58,7 @@ class Particle:
 
             return np.linalg.norm(abs(centroid - vector))
         elif metric == 'cosine':
-            # TODO ver como implementar el coseno
-            return np.linalg.norm(abs(centroid - vector))
+            return np.dot(centroid, vector)/(len(centroid)*len(vector))
         else:
             return np.linalg.norm(abs(centroid - vector))
 
