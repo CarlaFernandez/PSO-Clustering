@@ -1,5 +1,8 @@
-from particle import Particle
 import numpy as np
+
+from documentpca import DocumentPCA
+from particle import Particle
+from time import sleep
 
 class PSO:
     def __init__(self, data):
@@ -23,6 +26,9 @@ class PSO:
         num_iter = 0
         global_best_fitness = np.inf
         global_best_pos = self.particles[0].centroid_vecs
+        global_best_particle = self.particles[0]
+
+        pca = DocumentPCA()
 
         # for every iteration until the stop condition is met
         while not self.__stop_condition_met(num_iter):
@@ -38,6 +44,7 @@ class PSO:
                 if particle_fitness < global_best_fitness:
                     global_best_fitness = particle_fitness
                     global_best_pos = particle.centroid_vecs
+                    global_best_particle = particle
 
                 # each particle moves according the its velocity and inertia (acceleration???)
                 # and updates those values accordingly
@@ -47,6 +54,14 @@ class PSO:
             print("------------- Iteration: {0}, best solution: {1} -------------".format(num_iter, global_best_fitness))
 
             num_iter += 1
+
+
+            pca.visualize_2D_pca(global_best_particle)
+            sleep(0.5)
+
+
+        pca.keep_open()
+
 
     def __initialize_particles(self, num_clusters, num_particles):
         # each particle randomly chooses k different document vectors

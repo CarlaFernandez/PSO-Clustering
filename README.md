@@ -13,9 +13,11 @@
 
 * Implement PSO algorithm: particles move towards better fitness values 
 
+* Graphical representation of document vectors and centroid vector in space using PCA
+
 ## Core: To-Do
 
-* Graphical representation of particle's positions in space
+* See why fitness values don't improve from the first iteration
 * Different stopping conditions
 * Optimize to provide support for more files (SVD?)
 
