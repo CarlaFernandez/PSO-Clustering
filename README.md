@@ -20,6 +20,7 @@
 * See why fitness values don't improve from the first iteration
 * Different stopping conditions
 * Optimize to provide support for more files (SVD?)
+* See how to implement cosine correlation metric
 
 ## Extensions
 * Performance comparison with different parameters

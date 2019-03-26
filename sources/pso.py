@@ -60,7 +60,11 @@ class PSO:
             sleep(0.5)
 
 
+        print("Best solution found, {0} clusters with centroids:".format(num_clusters))
+        for k in range(num_clusters):
+            print(global_best_pos[k])
         pca.keep_open()
+
 
 
     def __initialize_particles(self, num_clusters, num_particles):
@@ -75,6 +79,6 @@ class PSO:
 
     def __stop_condition_met(self, num_iter):
         # TODO more stopping conditions
-        return num_iter == 10
+        return num_iter == 5
 
 

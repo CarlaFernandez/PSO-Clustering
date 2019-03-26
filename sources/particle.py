@@ -4,10 +4,10 @@ import numpy as np
 import sklearn.metrics
 
 class Particle:
-    MIN_VEL = -1
-    MAX_VEL = 1
+    MIN_VEL = -10
+    MAX_VEL = 10
     MIN_POS = 0.1
-    MAX_POS = 1
+    MAX_POS = 50
 
     def __init__(self, doc_vectors, num_clusters):
         self.centroid_vecs = []
@@ -27,7 +27,7 @@ class Particle:
         self.own_best_fitness = self.fitness
 
         for i in range(doc_vectors.shape[1]):
-            self.velocity.append(random.uniform(self.MIN_VEL, self.MAX_VEL))
+            self.velocity.append(0)
 
         self.own_best_pos = self.centroid_vecs.copy()
 
@@ -57,10 +57,10 @@ class Particle:
 
             return np.linalg.norm(abs(centroid - vector))
         elif metric == 'cosine':
-
-            return sklearn.metrics.pairwise.pairwise_distances(centroid, vector, metric="cosine")[0][0]
+            # TODO ver como implementar el coseno
+            return np.linalg.norm(abs(centroid - vector))
         else:
-            return sklearn.metrics.pairwise.pairwise_distances(centroid, vector, metric="euclidean")[0][0]
+            return np.linalg.norm(abs(centroid - vector))
 
 
     def move(self, inertia, cognitive, social, global_best_pos):
@@ -73,7 +73,7 @@ class Particle:
     def __update_position(self, i):
         # the particle changes position according to its velocity and wraps around
         for pos in range(len(self.centroid_vecs[0])):
-            self.centroid_vecs[i][pos] = self.centroid_vecs[i][pos] * self.velocity[pos]
+            self.centroid_vecs[i][pos] = self.centroid_vecs[i][pos] + self.velocity[pos]
 
             if (self.centroid_vecs[i][pos] > self.MAX_POS):
                 self.centroid_vecs[i][pos] = self.centroid_vecs[i][pos] % self.MAX_POS
@@ -85,12 +85,15 @@ class Particle:
     def __update_velocity(self, i, cognitive, global_best_pos, inertia, social):
         # the particle updates current velocity values
         for pos in range(len(self.velocity)):
-            self.velocity[pos] = inertia * self.velocity[pos] + \
-                               cognitive * random.uniform(0, 1) * (self.own_best_pos[i][pos] - self.centroid_vecs[i][pos]) + \
-                               social * random.uniform(0, 1) * (global_best_pos[i][pos] - self.centroid_vecs[i][pos])
+            self.velocity[pos] =  inertia * self.velocity[pos] + \
+            cognitive * random.uniform(0, 1) * (self.own_best_pos[i][pos] - self.centroid_vecs[i][pos]) + \
+            social * random.uniform(0, 1) * (global_best_pos[i][pos] - self.centroid_vecs[i][pos])
 
-            if (abs(self.velocity[pos]) > self.MAX_VEL):
+            if (self.velocity[pos] > self.MAX_VEL):
                 self.velocity[pos] = self.velocity[pos] % self.MAX_VEL
+
+            if (self.velocity[pos] < self.MAX_VEL):
+                self.velocity[pos] = self.velocity[pos] % self.MIN_VEL
 
 
     def calculate_fitness(self, metric):

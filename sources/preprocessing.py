@@ -58,7 +58,7 @@ class FileManager:
         stems = [self.stemmer.stem(token) for token in tokens]
         return stems
 
-    def create_tfidf(self, files='all', svd=False):
+    def create_tfidf(self, files='all'):
         """
         Creates the TF-IDF matrix from the specified files.
         :param files: which files to get text from
@@ -86,9 +86,6 @@ class FileManager:
 
         vectorizer = TfidfVectorizer(input='filename', tokenizer=self.__tokenize)
         X = vectorizer.fit_transform(to_load)
-        if svd:
-            print("Performing SVD...")
-            X = TruncatedSVD().fit_transform(X)
 
         return X
 
