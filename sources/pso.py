@@ -23,7 +23,7 @@ class PSO:
         self.__initialize_particles(num_clusters, num_particles)
 
         # TODO remove this, used as placeholder for stop condition
-        num_iter = 0
+        self.num_iter = 0
         global_best_fitness = np.inf
         global_best_pos = self.particles[0].centroid_vecs
         global_best_particle = self.particles[0]
@@ -31,7 +31,7 @@ class PSO:
         pca = DocumentPCA()
 
         # for every iteration until the stop condition is met
-        while not self.__stop_condition_met(num_iter):
+        while not self.__stop_condition_met():
 
             for i in range(num_particles):
                 particle = self.particles[i]
@@ -41,6 +41,7 @@ class PSO:
 
                 # each particle calculates and stores its new fitness value
                 particle_fitness = particle.calculate_fitness(distance_metric)
+
                 if particle_fitness < global_best_fitness:
                     global_best_fitness = particle_fitness
                     global_best_pos = particle.centroid_vecs
@@ -51,9 +52,10 @@ class PSO:
                 particle.move(inertia, cognitive, social, global_best_pos)
                 print("Particle: {0}, current fitness: {1}".format(i, particle_fitness))
 
-            print("------------- Iteration: {0}, best solution: {1} -------------".format(num_iter, global_best_fitness))
 
-            num_iter += 1
+            print("------------- Iteration: {0}, best solution: {1} -------------".format(self.num_iter, global_best_fitness))
+
+            self.num_iter += 1
 
 
             pca.visualize_2D_pca(global_best_particle)
@@ -77,8 +79,7 @@ class PSO:
     def __createParticle(self, doc_vectors, num_clusters):
         return Particle(doc_vectors, num_clusters)
 
-    def __stop_condition_met(self, num_iter):
-        # TODO more stopping conditions
-        return num_iter == 5
+    def __stop_condition_met(self):
+        return self.num_iter == 5
 
 
