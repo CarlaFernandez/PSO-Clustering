@@ -22,7 +22,6 @@ class PSO:
 
         self.__initialize_particles(num_clusters, num_particles)
 
-        # TODO remove this, used as placeholder for stop condition
         self.num_iter = 0
         global_best_fitness = np.inf
         global_best_pos = self.particles[0].centroid_vecs
@@ -51,6 +50,8 @@ class PSO:
                 # and updates those values accordingly
                 particle.move(inertia, cognitive, social, global_best_pos)
                 print("Particle: {0}, current fitness: {1}".format(i, particle_fitness))
+                # for k in range(num_clusters):
+                #     print(particle.own_best_pos[k])
 
 
             print("------------- Iteration: {0}, best solution: {1} -------------".format(self.num_iter, global_best_fitness))
@@ -80,6 +81,6 @@ class PSO:
         return Particle(doc_vectors, num_clusters)
 
     def __stop_condition_met(self):
-        return self.num_iter == 5
+        return self.num_iter == 20
 
 

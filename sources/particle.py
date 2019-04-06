@@ -5,10 +5,10 @@ import numpy as np
 
 
 class Particle:
-    MIN_VEL = -10
-    MAX_VEL = 10
+    MIN_VEL = 0.1
+    MAX_VEL = 1
     MIN_POS = 0.1
-    MAX_POS = 50
+    MAX_POS = 1
 
     def __init__(self, doc_vectors, num_clusters):
         self.centroid_vecs = []
@@ -23,14 +23,16 @@ class Particle:
             self.centroid_vecs.append(chosen_vec)
 
 
-        self.velocity = []
+        self.velocity = np.zeros(shape=(num_clusters, doc_vectors.shape[1]))
         self.fitness = np.inf
         self.own_best_fitness = self.fitness
 
-        for i in range(doc_vectors.shape[1]):
-            self.velocity.append(0)
-
-        self.own_best_pos = self.centroid_vecs.copy()
+        # initialize velocities to 0
+        for i in range(len(self.velocity)):
+            for j in range(len(self.velocity[0])):
+                # self.velocity[i][j] = random.uniform(self.MIN_VEL, self.MAX_VEL)
+                self.velocity[i][j] = 0
+        self.own_best_pos = self.centroid_vecs
 
     def assign_closest_centroids(self, distance_metric):
         # for each document vector, check the closest centroid and assign it
@@ -73,7 +75,8 @@ class Particle:
     def __update_position(self, i):
         # the particle changes position according to its velocity and wraps around
         for pos in range(len(self.centroid_vecs[0])):
-            self.centroid_vecs[i][pos] = self.centroid_vecs[i][pos] + self.velocity[pos]
+            updated_pos = self.centroid_vecs[i][pos] + self.velocity[i][pos]
+            self.centroid_vecs[i][pos] = updated_pos
 
             if (self.centroid_vecs[i][pos] > self.MAX_POS):
                 self.centroid_vecs[i][pos] = self.centroid_vecs[i][pos] % self.MAX_POS
@@ -84,16 +87,18 @@ class Particle:
 
     def __update_velocity(self, i, cognitive, global_best_pos, inertia, social):
         # the particle updates current velocity values
-        for pos in range(len(self.velocity)):
-            self.velocity[pos] =  inertia * self.velocity[pos] + \
-            cognitive * random.uniform(0, 1) * (self.own_best_pos[i][pos] - self.centroid_vecs[i][pos]) + \
-            social * random.uniform(0, 1) * (global_best_pos[i][pos] - self.centroid_vecs[i][pos])
+        for pos in range(len(self.velocity[0])):
+            cognitive = cognitive * random.uniform(0, 1) * (self.own_best_pos[i][pos] - self.centroid_vecs[i][pos])
+            social = social * random.uniform(0, 1) * (global_best_pos[i][pos] - self.centroid_vecs[i][pos])
+            updated_vel = inertia * self.velocity[i][pos] + social + cognitive
 
-            if (self.velocity[pos] > self.MAX_VEL):
-                self.velocity[pos] = self.velocity[pos] % self.MAX_VEL
+            self.velocity[i][pos] = updated_vel
 
-            if (self.velocity[pos] < self.MAX_VEL):
-                self.velocity[pos] = self.velocity[pos] % self.MIN_VEL
+            if (self.velocity[i][pos] > self.MAX_VEL):
+                self.velocity[i][pos] = self.velocity[i][pos] % self.MAX_VEL
+
+            if (self.velocity[i][pos] < self.MIN_VEL):
+                self.velocity[i][pos]= self.velocity[i][pos] % self.MIN_VEL
 
 
     def calculate_fitness(self, metric):
