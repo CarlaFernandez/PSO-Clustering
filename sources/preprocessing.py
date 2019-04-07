@@ -79,9 +79,9 @@ class FileManager:
         elif files == 'testing':
             random.shuffle(self.files)
             print("Loading files...")
-            for i in range(len(self.files[:500])):
+            for i in range(len(self.files[:50])):
                 print(i, self.files[i])
-            to_load = self.files[:500]
+            to_load = self.files[:50]
         else:
             print("Unable to read '{0}' files, defaulting to all files".format(files))
             to_load = self.files

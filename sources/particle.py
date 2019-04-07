@@ -5,10 +5,10 @@ import numpy as np
 
 
 class Particle:
-    MIN_VEL = 0.1
+    MIN_VEL = -1
     MAX_VEL = 1
-    MIN_POS = 0.1
-    MAX_POS = 1
+    MIN_POS = 0.001
+    MAX_POS = 0.999
 
     def __init__(self, doc_vectors, num_clusters):
         self.centroid_vecs = []
@@ -71,26 +71,20 @@ class Particle:
             self.centroid_vecs[i][pos] = updated_pos
 
             if (self.centroid_vecs[i][pos] > self.MAX_POS):
-                self.centroid_vecs[i][pos] = self.centroid_vecs[i][pos] % self.MAX_POS
+                self.centroid_vecs[i][pos] = self.MAX_POS
 
             if (self.centroid_vecs[i][pos]< self.MIN_POS):
-                self.centroid_vecs[i][pos] = self.centroid_vecs[i][pos] % self.MIN_POS
+                self.centroid_vecs[i][pos] = self.MIN_POS
 
 
     def __update_velocity(self, i, cognitive, global_best_pos, inertia, social):
         # the particle updates current velocity values
         for pos in range(len(self.velocity[0])):
-            cognitive = cognitive * random.uniform(0, 1) * (self.own_best_pos[i][pos] - self.centroid_vecs[i][pos])
-            social = social * random.uniform(0, 1) * (global_best_pos[i][pos] - self.centroid_vecs[i][pos])
-            updated_vel = inertia * self.velocity[i][pos] + social + cognitive
+            this_cognitive = cognitive * random.uniform(0, 1) * (self.own_best_pos[i][pos] - self.centroid_vecs[i][pos])
+            this_social = social * random.uniform(0, 1) * (global_best_pos[i][pos] - self.centroid_vecs[i][pos])
+            updated_vel = inertia * self.velocity[i][pos] + this_social + this_cognitive
 
             self.velocity[i][pos] = updated_vel
-
-            if (self.velocity[i][pos] > self.MAX_VEL):
-                self.velocity[i][pos] = self.velocity[i][pos] % self.MAX_VEL
-
-            if (self.velocity[i][pos] < self.MIN_VEL):
-                self.velocity[i][pos]= self.velocity[i][pos] % self.MIN_VEL
 
 
     def calculate_fitness(self, metric):

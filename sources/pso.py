@@ -15,7 +15,7 @@ class PSO:
         self.particles = []
         self.file_manager = file_manager
 
-    def clustering(self, num_particles=10, num_clusters=5, distance_metric='euclidean', inertia=1, cognitive=2, social=2):
+    def clustering(self, iterations=30, num_particles=10, num_clusters=5, distance_metric='euclidean', inertia=1, cognitive=2, social=2):
         if distance_metric != 'euclidean' and distance_metric != 'cosine':
             print("Unknown distance metric '{0}', defaulting to Euclidean".format(distance_metric))
 
@@ -31,7 +31,7 @@ class PSO:
         # pca = DocumentPCA()
 
         # for every iteration until the stop condition is met
-        while not self.__stop_condition_met():
+        while not self.__stop_condition_met(iterations):
 
             for i in range(num_particles):
                 particle = self.particles[i]
@@ -68,6 +68,7 @@ class PSO:
         for k in range(num_clusters):
             print(global_best_pos[k])
         print("Document assignment: \n{0}".format(global_best_particle.assigned))
+        self.print_spam_stats(global_best_particle)
         # self.print_bbc_stats(global_best_particle)
         # pca.keep_open()
 
@@ -107,7 +108,23 @@ class PSO:
     def __createParticle(self, doc_vectors, num_clusters):
         return Particle(doc_vectors, num_clusters)
 
-    def __stop_condition_met(self):
-        return self.num_iter == 100
+    def __stop_condition_met(self, iterations):
+        return self.num_iter == iterations
+
+    def print_spam_stats(self, global_best_particle):
+        for key in global_best_particle.assigned:
+            print("Cluster {0}".format(key))
+            legit_counter = 0
+            spam_counter = 0
+            for doc_idx in global_best_particle.assigned[key]:
+                doc_name = self.file_manager.files[doc_idx]
+                print(doc_name)
+                if "legit" in doc_name:
+                    legit_counter += 1
+                elif "spam" in doc_name:
+                    spam_counter += 1
+            print("---------------------------------------------------------------")
+            print("Legitimate: {0}, spam: {1}".format(legit_counter, spam_counter))
+            print("---------------------------------------------------------------")
 
 
