@@ -5,7 +5,7 @@ from particle import Particle
 from time import sleep
 
 class PSO:
-    def __init__(self, data):
+    def __init__(self, data, file_manager):
         """
         Initialize Particle Swarm Optimization using the provided data
         :param data: TF-IDF matrix of document vectors
@@ -13,6 +13,7 @@ class PSO:
         print("Initializing PSO...")
         self.data = data
         self.particles = []
+        self.file_manager = file_manager
 
     def clustering(self, num_particles=10, num_clusters=5, distance_metric='euclidean', inertia=1, cognitive=2, social=2):
         if distance_metric != 'euclidean' and distance_metric != 'cosine':
@@ -27,7 +28,7 @@ class PSO:
         global_best_pos = self.particles[0].centroid_vecs
         global_best_particle = self.particles[0]
 
-        pca = DocumentPCA()
+        # pca = DocumentPCA()
 
         # for every iteration until the stop condition is met
         while not self.__stop_condition_met():
@@ -59,16 +60,42 @@ class PSO:
             self.num_iter += 1
 
 
-            pca.visualize_2D_pca(global_best_particle)
-            sleep(0.5)
+            # pca.visualize_2D_pca(global_best_particle)
+            # sleep(0.5)
 
 
         print("Best solution found, {0} clusters with centroids:".format(num_clusters))
         for k in range(num_clusters):
             print(global_best_pos[k])
-        pca.keep_open()
+        print("Document assignment: \n{0}".format(global_best_particle.assigned))
+        # self.print_bbc_stats(global_best_particle)
+        # pca.keep_open()
 
-
+    def print_bbc_stats(self, global_best_particle):
+        for key in global_best_particle.assigned:
+            print("Cluster {0}".format(key))
+            business_counter = 0
+            entertainment_counter = 0
+            politics_counter = 0
+            sport_counter = 0
+            tech_counter = 0
+            for doc_idx in global_best_particle.assigned[key]:
+                doc_name = self.file_manager.files[doc_idx]
+                print(doc_name)
+                if "business" in doc_name:
+                    business_counter += 1
+                elif "entertainment" in doc_name:
+                    entertainment_counter += 1
+                elif "politics" in doc_name:
+                    politics_counter += 1
+                elif "sport" in doc_name:
+                    sport_counter += 1
+                elif "tech" in doc_name:
+                    tech_counter += 1
+            print("---------------------------------------------------------------")
+            print("Business: {0}, entertainment: {1}, politics: {2}, sport: {3}, tech: {4}"
+                  .format(business_counter, entertainment_counter, politics_counter, sport_counter, tech_counter))
+            print("---------------------------------------------------------------")
 
     def __initialize_particles(self, num_clusters, num_particles):
         # each particle randomly chooses k different document vectors
@@ -81,6 +108,6 @@ class PSO:
         return Particle(doc_vectors, num_clusters)
 
     def __stop_condition_met(self):
-        return self.num_iter == 20
+        return self.num_iter == 100
 
 

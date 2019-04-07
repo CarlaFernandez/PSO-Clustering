@@ -1,10 +1,13 @@
+import csv
 import os
 from os.path import join
 
 import nltk
+import numpy
 from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
-from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.feature_extraction.text import TfidfVectorizer, TfidfTransformer
+import random
 
 
 class FileManager:
@@ -74,7 +77,11 @@ class FileManager:
             to_load = 'legit'
         # TODO remove this entry
         elif files == 'testing':
-            to_load = self.files[:1000]
+            random.shuffle(self.files)
+            print("Loading files...")
+            for i in range(len(self.files[:500])):
+                print(i, self.files[i])
+            to_load = self.files[:500]
         else:
             print("Unable to read '{0}' files, defaulting to all files".format(files))
             to_load = self.files
@@ -82,11 +89,11 @@ class FileManager:
         # using stopwords from nltk
         global stop
         stop = list(stopwords.words('english'))
-
         print("Creating TF-IDF matrix...")
 
-        vectorizer = TfidfVectorizer(input='filename', tokenizer=self.__tokenize)
+        vectorizer = TfidfVectorizer(input='filename', tokenizer=self.__tokenize, min_df=0)
         X = vectorizer.fit_transform(to_load)
+        print(vectorizer.vocabulary_)
 
         return X
 

@@ -26,12 +26,9 @@ class Particle:
         self.velocity = np.zeros(shape=(num_clusters, doc_vectors.shape[1]))
         self.fitness = np.inf
         self.own_best_fitness = self.fitness
-
-        # initialize velocities to 0
-        for i in range(len(self.velocity)):
-            for j in range(len(self.velocity[0])):
-                # self.velocity[i][j] = random.uniform(self.MIN_VEL, self.MAX_VEL)
-                self.velocity[i][j] = 0
+        # for i in range(len(self.velocity)):
+        #     for j in range(len(self.velocity[0])):
+        #         self.velocity[i][j] = 0
         self.own_best_pos = self.centroid_vecs
 
     def assign_closest_centroids(self, distance_metric):
@@ -50,17 +47,12 @@ class Particle:
                     current_closest = j
                     smallest_distance = distance
 
-            self.assigned[current_closest].append(doc_vector)
+            self.assigned[current_closest].append(i)
 
 
     def measure_distance(self, centroid, vector, metric):
         if metric == 'euclidean':
-            # return sklearn.metrics.pairwise.pairwise_distances(centroid, vector, metric="euclidean")[0][0]
-            # return np.linalg.norm(abs(centroid - vector))
-
             return np.linalg.norm(abs(centroid - vector))
-        elif metric == 'cosine':
-            return np.dot(centroid, vector)/(len(centroid)*len(vector))
         else:
             return np.linalg.norm(abs(centroid - vector))
 
@@ -108,7 +100,7 @@ class Particle:
 
             # for each vector assigned to the centroid
             for vector in range(len(self.assigned[key])):
-                doc_vector = self.assigned[key][vector]
+                doc_vector = self.doc_vecs[self.assigned[key][vector]]
                 distance = self.measure_distance(doc_vector, self.centroid_vecs[key], metric)
                 centroid_cum += distance
 

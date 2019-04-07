@@ -9,5 +9,5 @@ args = parser.parse_args()
 
 file_manager = FileManager(args.d)
 tfidf = file_manager.create_tfidf(files='testing')
-pso = PSO(tfidf)
-pso.clustering(num_particles=5, num_clusters=2, inertia=1.2, cognitive=2.5, social=1.5, distance_metric='euclidean')
+pso = PSO(tfidf, file_manager)
+pso.clustering(num_particles=10, num_clusters=2, inertia=1.2, cognitive=1.5, social=2.5, distance_metric='euclidean')
