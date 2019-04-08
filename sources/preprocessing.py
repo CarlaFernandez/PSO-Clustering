@@ -79,9 +79,9 @@ class FileManager:
         elif files == 'testing':
             random.shuffle(self.files)
             print("Loading files...")
-            for i in range(len(self.files[:50])):
+            for i in range(len(self.files[:100])):
                 print(i, self.files[i])
-            to_load = self.files[:50]
+            to_load = self.files[:100]
         else:
             print("Unable to read '{0}' files, defaulting to all files".format(files))
             to_load = self.files
@@ -91,7 +91,7 @@ class FileManager:
         stop = list(stopwords.words('english'))
         print("Creating TF-IDF matrix...")
 
-        vectorizer = TfidfVectorizer(input='filename', tokenizer=self.__tokenize, min_df=0)
+        vectorizer = TfidfVectorizer(input='filename', tokenizer=self.__tokenize, min_df=2)
         X = vectorizer.fit_transform(to_load)
         print(vectorizer.vocabulary_)
 

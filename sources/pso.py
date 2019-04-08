@@ -15,9 +15,9 @@ class PSO:
         self.particles = []
         self.file_manager = file_manager
 
-    def clustering(self, iterations=30, num_particles=10, num_clusters=5, distance_metric='euclidean', inertia=1, cognitive=2, social=2):
+    def clustering(self, iterations=30, num_particles=10, num_clusters=5, distance_metric='cosine', inertia=1, cognitive=2, social=2):
         if distance_metric != 'euclidean' and distance_metric != 'cosine':
-            print("Unknown distance metric '{0}', defaulting to Euclidean".format(distance_metric))
+            print("Unknown distance metric '{0}', defaulting to Cosine similarity".format(distance_metric))
 
         print("Performing clustering...")
 

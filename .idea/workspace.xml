@@ -2,6 +2,46 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5cfdd820-3a10-4085-ab7e-b5d80cb5c7bb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/enron-less/legit/0001.1999-12-10.farmer.ham.utf8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/enron-less/legit/0001.1999-12-10.kaminski.ham.utf8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/enron-less/legit/0001.2000-01-17.beck.ham.utf8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/enron-less/legit/0001.2001-02-07.kitchen.ham.utf8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/enron-less/legit/0001.2001-04-02.williams.ham.utf8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/enron-less/legit/0002.1999-12-13.farmer.ham.utf8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/enron-less/legit/0002.2001-02-07.kitchen.ham.utf8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/enron-less/legit/0003.1999-12-10.kaminski.ham.utf8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/enron-less/legit/0003.1999-12-14.farmer.ham.utf8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/enron-less/legit/0003.2000-01-17.beck.ham.utf8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/enron-less/legit/0003.2001-02-08.kitchen.ham.utf8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/enron-less/legit/0004.1999-12-10.kaminski.ham.utf8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/enron-less/legit/0004.1999-12-14.farmer.ham.utf8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/enron-less/legit/0004.2001-04-02.williams.ham.utf8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/enron-less/legit/0005.1999-12-12.kaminski.ham.utf8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/enron-less/legit/0005.1999-12-14.farmer.ham.utf8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/enron-less/legit/0005.2000-06-06.lokay.ham.utf8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/enron-less/legit/0005.2001-02-08.kitchen.ham.utf8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/enron-less/legit/0006.1999-12-13.kaminski.ham.utf8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/enron-less/legit/0006.2001-02-08.kitchen.ham.utf8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/enron-less/spam/0002.2001-05-25.SA_and_HP.spam.utf8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/enron-less/spam/0002.2003-12-18.GP.spam.utf8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/enron-less/spam/0002.2004-08-01.BG.spam.utf8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/enron-less/spam/0003.2003-12-18.GP.spam.utf8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/enron-less/spam/0003.2004-08-01.BG.spam.utf8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/enron-less/spam/0004.2001-06-12.SA_and_HP.spam.utf8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/enron-less/spam/0004.2004-08-01.BG.spam.utf8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/enron-less/spam/0005.2001-06-23.SA_and_HP.spam.utf8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/enron-less/spam/0005.2003-12-18.GP.spam.utf8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/enron-less/spam/0006.2001-06-25.SA_and_HP.spam.utf8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/enron-less/spam/0006.2003-12-18.GP.spam.utf8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/enron-less/spam/0006.2004-08-01.BG.spam.utf8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/enron-less/spam/0007.2003-12-18.GP.spam.utf8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/enron-less/spam/0007.2004-08-01.BG.spam.utf8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/enron-less/spam/0008.2001-06-12.SA_and_HP.spam.utf8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/enron-less/spam/0008.2001-06-25.SA_and_HP.spam.utf8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/enron-less/spam/0008.2003-12-18.GP.spam.utf8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/enron-less/spam/0008.2004-08-01.BG.spam.utf8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/enron-less/spam/0009.2001-06-26.SA_and_HP.spam.utf8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/enron-less/spam/0009.2003-12-18.GP.spam.utf8.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sources/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/sources/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sources/particle.py" beforeDir="false" afterPath="$PROJECT_DIR$/sources/particle.py" afterDir="false" />
@@ -20,7 +60,7 @@
         <entry file="file://$PROJECT_DIR$/sources/main.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="216">
-              <caret line="12" column="76" lean-forward="true" selection-start-line="12" selection-start-column="76" selection-end-line="12" selection-end-column="76" />
+              <caret line="12" column="103" selection-start-line="12" selection-start-column="103" selection-end-line="12" selection-end-column="103" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -28,11 +68,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sources/preprocessing.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1006">
-              <caret line="93" column="90" selection-start-line="93" selection-start-column="90" selection-end-line="93" selection-end-column="90" />
+            <state relative-caret-position="191">
+              <caret line="85" column="53" selection-start-line="85" selection-start-column="47" selection-end-line="85" selection-end-column="53" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -40,11 +80,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sources/pso.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="389">
-              <caret line="51" selection-start-line="51" selection-end-line="51" />
+            <state relative-caret-position="191">
+              <caret line="39" selection-start-line="39" selection-end-line="39" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -55,8 +95,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sources/particle.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+            <state relative-caret-position="738">
+              <caret line="41" selection-start-line="41" selection-end-line="41" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -82,6 +122,8 @@
       <find>own_best_pos</find>
       <find>self.position</find>
       <find>self.centroid_vecs</find>
+      <find>default</find>
+      <find>defaul</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -113,18 +155,17 @@
         <option value="$PROJECT_DIR$/generated_documents/My intuition is that this football player will win the match.txt" />
         <option value="$PROJECT_DIR$/generated_documents/Fernando Alonso was a football player many years ago.txt" />
         <option value="$PROJECT_DIR$/generated_documents/Newsmedia think that this football player will win many matches.txt" />
-        <option value="$PROJECT_DIR$/sources/pso.py" />
         <option value="$PROJECT_DIR$/sources/preprocessing.py" />
         <option value="$PROJECT_DIR$/sources/particle.py" />
+        <option value="$PROJECT_DIR$/sources/pso.py" />
         <option value="$PROJECT_DIR$/sources/main.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="2421" />
-    <option name="y" value="217" />
-    <option name="width" value="1386" />
-    <option name="height" value="832" />
+    <option name="x" value="2277" />
+    <option name="width" value="1376" />
+    <option name="height" value="843" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -138,6 +179,21 @@
             <path>
               <item name="PSO-Clustering" type="b2602c69:ProjectViewProjectNode" />
               <item name="PSO-Clustering" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PSO-Clustering" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PSO-Clustering" type="462c0819:PsiDirectoryNode" />
+              <item name="enron" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PSO-Clustering" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PSO-Clustering" type="462c0819:PsiDirectoryNode" />
+              <item name="enron-less" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PSO-Clustering" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PSO-Clustering" type="462c0819:PsiDirectoryNode" />
+              <item name="generated_documents" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PSO-Clustering" type="b2602c69:ProjectViewProjectNode" />
@@ -157,18 +213,20 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/NIPS" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/enron-less/spam" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/NIPS" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/test" />
       <recent name="$PROJECT_DIR$/generated_documents" />
       <recent name="$PROJECT_DIR$/bbc" />
       <recent name="$PROJECT_DIR$/sources" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/enron-less/spam" />
+      <recent name="$PROJECT_DIR$/enron-less/legit" />
+      <recent name="$PROJECT_DIR$/NIPS" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -250,20 +308,21 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1914" y="0" width="2572" height="1446" extended-state="6" />
+    <frame x="1920" y="0" width="2560" height="1440" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4984326" visible="true" weight="0.18041848" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4984326" visible="true" weight="0.21002764" />
       <window_info id="Structure" order="1" sideWeight="0.5015674" side_tool="true" weight="0.16572808" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32887492" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49960473" weight="0.4143302" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.29205608" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49901304" visible="true" weight="0.4805296" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49940783" weight="0.44781932" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3296617" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49960473" weight="0.21105918" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50039524" side_tool="true" weight="0.22659324" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49861825" weight="0.15264797" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.500987" side_tool="true" weight="0.4143302" />
       <window_info anchor="bottom" id="Python Console" order="9" weight="0.28037384" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32866043" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -291,15 +350,6 @@
     </layout-to-restore>
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/sources/pso.py</url>
-          <line>33</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
         <watch expression="global_best_pos[i][pos] - self.centroid_vecs[i][pos]" language="Python" />
@@ -560,42 +610,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sources/main.py">
+    <entry file="file://$PROJECT_DIR$/enron-less/spam/0002.2001-05-25.SA_and_HP.spam.utf8.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/enron-less/legit/0001.1999-12-10.farmer.ham.utf8.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/pso.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="76" lean-forward="true" selection-start-line="12" selection-start-column="76" selection-end-line="12" selection-end-column="76" />
+        <state relative-caret-position="191">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
           <folding>
-            <element signature="e#0#15#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sources/particle.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+        <state relative-caret-position="738">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sources/preprocessing.py">
+    <entry file="file://$PROJECT_DIR$/sources/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1006">
-          <caret line="93" column="90" selection-start-line="93" selection-start-column="90" selection-end-line="93" selection-end-column="90" />
+        <state relative-caret-position="216">
+          <caret line="12" column="103" selection-start-line="12" selection-start-column="103" selection-end-line="12" selection-end-column="103" />
           <folding>
-            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sources/pso.py">
+    <entry file="file://$PROJECT_DIR$/sources/preprocessing.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="51" selection-start-line="51" selection-end-line="51" />
+        <state relative-caret-position="191">
+          <caret line="85" column="53" selection-start-line="85" selection-start-column="47" selection-end-line="85" selection-end-column="53" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>
