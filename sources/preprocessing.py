@@ -27,11 +27,6 @@ class FileManager:
         # discard "Summary.txt" files
         self.files = [file for file in self.files if "summary" not in file.lower()]
 
-        # divide into spam and legit
-        self.spam = [file for file in self.files if "spam" in file.lower()]
-        self.legit = [file for file in self.files if "ham" in file.lower()]
-
-        print("Loaded {0} spam files, {1} legitimate files".format(len(self.spam), len(self.legit)))
 
     def __get_all_from_root(self, folder_path, extension=""):
         """Gets files from dirs and subdirs starting from a root path.
@@ -71,17 +66,12 @@ class FileManager:
         """
         if files == 'all':
             to_load = self.files
-        elif files == 'spam':
-            to_load = self.spam
-        elif files == 'legit':
-            to_load = 'legit'
-        # TODO remove this entry
         elif files == 'testing':
             random.shuffle(self.files)
             print("Loading files...")
-            for i in range(len(self.files[:100])):
+            for i in range(len(self.files[:1000])):
                 print(i, self.files[i])
-            to_load = self.files[:100]
+            to_load = self.files[:1000]
         else:
             print("Unable to read '{0}' files, defaulting to all files".format(files))
             to_load = self.files

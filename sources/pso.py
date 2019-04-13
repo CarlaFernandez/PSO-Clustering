@@ -1,3 +1,5 @@
+import csv
+
 import numpy as np
 
 from documentpca import DocumentPCA
@@ -50,12 +52,10 @@ class PSO:
                 # each particle moves according the its velocity and inertia (acceleration???)
                 # and updates those values accordingly
                 particle.move(inertia, cognitive, social, global_best_pos)
-                print("Particle: {0}, current fitness: {1}".format(i, particle_fitness))
-                # for k in range(num_clusters):
-                #     print(particle.own_best_pos[k])
+                # print("Particle: {0}, current fitness: {1}".format(i, particle_fitness))
 
 
-            print("------------- Iteration: {0}, best solution: {1} -------------".format(self.num_iter, global_best_fitness))
+            print("Iteration: {0}, best solution: {1}".format(self.num_iter, global_best_fitness))
 
             self.num_iter += 1
 
@@ -63,16 +63,12 @@ class PSO:
             # pca.visualize_2D_pca(global_best_particle)
             # sleep(0.5)
 
-
-        print("Best solution found, {0} clusters with centroids:".format(num_clusters))
-        for k in range(num_clusters):
-            print(global_best_pos[k])
-        print("Document assignment: \n{0}".format(global_best_particle.assigned))
-        self.print_spam_stats(global_best_particle)
+        return self.get_spam_stats(global_best_particle, iterations, num_particles, num_clusters, inertia, cognitive, social)
         # self.print_bbc_stats(global_best_particle)
         # pca.keep_open()
 
-    def print_bbc_stats(self, global_best_particle):
+
+    def get_bbc_stats(self, global_best_particle):
         for key in global_best_particle.assigned:
             print("Cluster {0}".format(key))
             business_counter = 0
@@ -82,7 +78,6 @@ class PSO:
             tech_counter = 0
             for doc_idx in global_best_particle.assigned[key]:
                 doc_name = self.file_manager.files[doc_idx]
-                print(doc_name)
                 if "business" in doc_name:
                     business_counter += 1
                 elif "entertainment" in doc_name:
@@ -111,14 +106,15 @@ class PSO:
     def __stop_condition_met(self, iterations):
         return self.num_iter == iterations
 
-    def print_spam_stats(self, global_best_particle):
+    def get_spam_stats(self, global_best_particle, iterations, particles, clusters, inertia, cognitive, social):
+        output_str = ""
         for key in global_best_particle.assigned:
             print("Cluster {0}".format(key))
+            output_str += "Cluster {0}\n".format(key)
             legit_counter = 0
             spam_counter = 0
             for doc_idx in global_best_particle.assigned[key]:
                 doc_name = self.file_manager.files[doc_idx]
-                print(doc_name)
                 if "legit" in doc_name:
                     legit_counter += 1
                 elif "spam" in doc_name:
@@ -126,5 +122,10 @@ class PSO:
             print("---------------------------------------------------------------")
             print("Legitimate: {0}, spam: {1}".format(legit_counter, spam_counter))
             print("---------------------------------------------------------------")
+            output_str+="Legitimate: {0}, spam: {1}".format(legit_counter, spam_counter)
+
+        return output_str, global_best_particle.fitness
+
+
 
 

@@ -1,0 +1,1405 @@
+/usr/bin/python3.6 /home/carla/Documentos/Multiagentes/implementation/PSO-Clustering/sources/main.py -d enron-less
+Creating TF-IDF matrix...
+{'subject': 7193, ':': 612, 'gentlemen': 3725, '-': 12, 'hello': 3996, ',': 11, '?': 617, 'good': 3796, 'news': 5435, '!': 0, 'know': 4629, 'c': 1696, '.': 13, 'li': 4774, 'new': 5432, 'far': 3404, 'better': 1408, 'v': 7771, 'g': 3675, 'ra': 6261, 'drink': 2933, 'parti': 5770, 'ia': 4177, 'l': 4647, 'one': 5607, 'p': 5709, 'ill': 4210, 'tee': 7362, 'entir': 3166, 'weekend': 7967, 'go': 3786, '(': 7, 'e': 2987, 'x': 8089, ')': 8, 'partner': 5776, 'never': 5430, 'askanc': 1094, "'": 5, 'put': 6216, 'stop': 7141, 'http': 4140, '/': 14, 'doc': 2863, 'help': 3998, 'info': 4310, 'chair': 1870, 'php': 5910, 'holiday': 4070, 'special': 7028, 'phentermin': 5896, 'tramadol': 7561, '60': 407, '+': 10, 'great': 3844, 'product': 6130, 'men': 5121, 'health': 3972, 'woman': 8044, 'overnight': 5690, 'fedex': 3434, 'ship': 6853, 'get': 3741, 'med': 5095, 'promptli': 6149, 'add': 717, '5': 362, 'r': 6260, 'df': 2722, 'com': 2133, 'fp': 3593, 'editori': 3030, 'bootstrap': 1528, 'fanat': 3401, 'hawkin': 3961, 'hgh': 4028, 'energi': 3139, 'level': 4761, 'gone': 3794, 'introduc': 4403, 'doctor': 2864, 'formul': 3574, 'human': 4149, 'growth': 3871, 'hormon': 4102, 'also': 878, 'call': 1722, 'refer': 6359, 'medic': 5098, 'scienc': 6707, 'master': 5038, 'plenti': 5973, 'young': 8124, 'near': 5402, 'age': 792, 'twenti': 7639, 'bodi': 1506, 'begin': 1350, 'produc': 6129, 'less': 4752, 'time': 7478, 'forti': 3579, 'nearli': 5404, 'everyon': 3287, 'normal': 5493, 'least': 4726, '90': 537, '95': 560, '%': 3, 'advantag': 760, 'increas': 4277, 'muscl': 5346, 'strength': 7156, 'loss': 4881, 'fat': 3414, 'bone': 1514, 'lower': 4896, 'blood': 1483, 'pressur': 6084, 'heal': 3971, 'reduc': 6356, 'cellulit': 1840, 'improv': 4250, 'vision': 7873, 'wrinkl': 8074, 'disappear': 2792, 'skin': 6928, 'textur': 7413, 'sleep': 6934, 'emot': 3112, 'stabil': 7079, 'memori': 5120, 'mental': 5128, 'alert': 839, 'sexual': 6821, 'potenc': 6030, 'resist': 6463, 'common': 2155, 'strengthen': 7157, 'heart': 3977, 'control': 2301, 'cholesterol': 1947, 'mood': 5284, 'swing': 7289, 'hair': 3914, 'color': 2124, 'restor': 6476, 'read': 6312, 'websit': 7962, 'unsubscrib': 7721, 'hi': 4030, 'name': 5378, 'deanna': 2566, 'ask': 1093, 'swain': 7279, 'talk': 7325, 'benefit': 1372, 'use': 7757, 'marri': 5017, '12': 69, 'year': 8113, 'late': 4687, 'like': 4798, 'marriag': 5018, 'becom': 1334, 'distant': 2839, 'intim': 4396, '6': 406, 'month': 5281, 'well': 7977, 'ago': 800, 'came': 1732, 'across': 701, 'email': 3098, 'sell': 6763, 'guarante': 3881, 'problem': 6120, 'hesist': 4022, 'first': 3490, 'decid': 2588, 'ahead': 807, 'tri': 7594, 'anyway': 997, 'surpris': 7261, 'work': 8054, 'exactli': 3295, 'said': 6635, 'miracl': 5221, 'save': 6674, 'definatl': 2613, 'spark': 7023, 'back': 1221, 'relationship': 6393, 'mani': 4985, 'peopl': 5847, 'find': 3476, 'happi': 3935, 'defin': 2612, 'check': 1910, 'tell': 7373, 'think': 7436, 'www': 8085, 'bargainscheapd': 1284, 'en': 3121, '4': 312, 'abl': 642, 'thank': 7417, 'lina': 4806, 'mcginni': 5076, 'nazi': 5392, 'doorstep': 2890, 'gannett': 3696, 'addl': 720, 'occas': 5557, 'bounti': 1551, 'gemlik': 3716, 'parcel': 5759, 'scale': 6683, 'wean': 7954, 'fairfax': 3389, 'componentri': 2186, 'eisenhow': 3065, 'timberland': 7477, 'galatia': 3684, 'ulcer': 7655, 'backscatt': 1224, 'primitiv': 6103, 'adposit': 751, 'davidson': 2550, 'perplex': 5866, 'nag': 5372, 'briar': 1600, 'tutelag': 7631, 'elector': 3073, 'vocabularian': 7893, 'alli': 862, 'drawbridg': 2920, 'funer': 3662, 'cogit': 2092, 'rome': 6570, 'jackpot': 4463, 'anaheim': 923, 'punctual': 6206, 'dysplasia': 2985, 'elisha': 3085, 'complementar': 2176, 'allegro': 855, 'transmogrifi': 7572, 'blatant': 1472, 'candela': 1747, 'confidenti': 2223, 'rothschild': 6587, 'coventri': 2375, 'buten': 1681, 'die': 2748, 'gusset': 3899, 'powderi': 6036, 'defer': 2609, 'aloud': 872, 'buret': 1665, 'johansen': 4511, 'musical': 5351, 'chast': 1902, 'bimetal': 1440, 'tactician': 7315, 'footag': 3548, 'conclud': 2205, 'fallow': 3393, 'junctor': 4546, 'rangeland': 6281, 'temperatur': 7378, 'guernsey': 3886, 'canari': 1743, 'altruist': 884, 'guerdon': 3885, 'swizzl': 7293, 'european': 3267, 'sludg': 6941, 'quahog': 6227, 'appris': 1026, 'hitherto': 4055, 'horton': 4108, 'colon': 2122, 'demonstr': 2646, '=': 615, 'iso': 4442, '8859': 528, '7': 451, 'q': 6219, 'b': 1214, '3': 245, 'f': 3373, '_': 623, 'fwd': 3670, '|': 8162, '@': 618, 'gra': 3813, '2': 170, 'val': 7776, 'ef': 3041, '28': 235, 'u': 7649, '29': 240, 'premium': 6067, 'sourc': 7011, 'vgr': 7831, 'vlm': 7888, 'xnx': 8101, 'popular': 6005, 'yet': 8118, 'hard': 3937, 'high': 4035, 'relax': 6394, 'pain': 5726, 'relief': 6402, 'diet': 2753, 'pill': 5927, 'prescript': 6075, 'aid': 810, 'almost': 868, 'best': 1397, 'onlin': 5613, 'fda': 3425, 'usa': 7750, 'approv': 1029, 'drug': 2944, 'form': 3567, 'fill': 3468, 'respect': 6470, 'privaci': 6113, 'click': 2031, 'place': 5953, 'onlinew': 5614, 'worldwid': 8061, 'mr': 5317, 'joe': 4510, 'manag': 4975, 'guaranti': 3882, 'trust': 7615, 'bank': 1265, 'gtb': 3876, '23': 205, 'org': 5645, 'street': 7155, 'box': 1558, 'victoria': 7848, 'island': 4441, 'lago': 4658, 'nigeria': 5462, 'pleas': 5969, 'send': 6774, 'repli': 6433, 'altern': 880, 'dear': 2567, 'sir': 6915, 'madam': 4940, 'feel': 3438, 'quit': 6256, 'safe': 6633, 'deal': 2563, 'busi': 1675, 'proposit': 6161, 'remark': 6408, 'profil': 6136, 'internet': 4387, 'though': 7444, 'medium': 5104, 'greatli': 3847, 'abus': 659, 'choos': 1949, 'reach': 6311, 'still': 7132, 'remain': 6405, 'fastest': 3412, 'secur': 6747, 'commun': 2156, 'howev': 4126, 'correspond': 2346, 'privat': 6114, 'treat': 7585, 'hitch': 4054, 'free': 3614, 'may': 5063, 'contact': 2279, 'base': 1297, 'attach': 1137, 'legal': 4738, 'depart': 2662, 'recent': 6331, 'meet': 5105, 'recommend': 6343, 'account': 675, 'branch': 1574, 'declar': 2592, 'dormant': 2894, 'fund': 3659, 'sent': 6783, 'treasuri': 7584, 'accord': 673, 'financi': 3475, 'law': 4703, 'foreign': 3555, 'unfortun': 7692, 'fatal': 3415, 'plane': 5957, 'crash': 2401, 'octob': 5565, 'rd': 6307, '1999': 169, 'egyptian': 3052, 'airlin': 818, '1990': 161, '``': 625, 'board': 1497, 'confirm': 2225, 'cnn': 2065, 'us': 7749, '02': 29, '990': 609, 'list': 4820, 'index': 4288, 'html': 4138, 'holder': 4067, 'own': 5699, 'dollar': 2876, 'sum': 7225, '$': 2, '38': 303, 'thirti': 7439, 'eight': 3058, 'million': 5198, 'six': 6925, 'hundr': 4153, 'thousand': 7446, 'unit': 7699, 'state': 7100, 'deposit': 2668, 'number': 5530, 'fact': 3382, 'happen': 3934, 'sinc': 6907, 'death': 2568, 'next': 5441, 'kin': 4604, 'brother': 1624, 'ever': 3280, 'relat': 6392, 'show': 6874, 'claim': 2001, 'interest': 4376, 'want': 7934, 'come': 2137, 'deceas': 2584, 'give': 3764, 'attorney': 1148, 'write': 8075, 'found': 3585, 'lay': 4708, 'author': 1170, 'assist': 1110, 'provid': 6178, 'vital': 7879, 'document': 2867, 'money': 5269, 'advis': 766, 'handl': 3927, 'includ': 4267, 'telephon': 7370, 'fax': 3422, 'home': 4074, 'address': 721, 'mail': 4953, 'inform': 4313, 'soon': 6999, 'indic': 4291, 'willing': 8017, 'transact': 7564, 'posit': 6021, 'intern': 4382, 'whole': 8001, 'procedur': 6122, 'last': 4686, 'day': 2552, 'retriev': 6494, 'success': 7207, 'without': 8039, 'trace': 7550, 'even': 3277, 'futur': 3668, 'need': 5408, 'follow': 3537, '1': 51, 'full': 3654, 'phone': 5907, 'shall': 6827, 'share': 6832, '40': 313, 'truli': 7614, 'host': 4110, 'anim': 955, 'web': 7956, 'portal': 6013, 'make': 4966, 'friend': 3634, 'mortgag': 5298, 'worst': 8065, 'credit': 2412, 'zwzm': 8159, 'detail': 2704, 'refin': 6363, 'quick': 6249, 'immedi': 4224, 'compani': 2162, 'compet': 2170, 'offer': 5572, 'absolut': 654, 'rate': 6291, 'avail': 1182, 'matter': 5053, 'worri': 8063, 'past': 5786, 'anyon': 994, 'let': 4758, 'expertis': 3336, 'site': 6920, 'eras': 3202, '210': 190, '51': 374, '251': 219, '244': 213, 'al': 825, 'un': 7662, 'htm': 4137, 'live': 4830, 'bv': 1690, 'remov': 6416, 'membership': 5118, 'charset': 1896, '&': 4, 'commentari': 2145, 'juli': 4543, '2001': 174, 'low': 4894, 'cost': 2350, 'way': 7948, 'traffic': 7558, 'capit': 1762, 'power': 6038, 'potenti': 6031, 'bring': 1611, 'everi': 3284, 'net': 5419, 'preneur': 6068, 'issu': 4448, 'contain': 2280, 'trade': 7554, 'link': 4814, 'simplic': 6902, 'member': 5117, 'showcas': 6875, 'win': 8019, 'ad': 712, '>': 616, 'today': 7504, 'announc': 964, 'servic': 6805, 'within': 8038, '100': 53, '00': 16, 'alreadi': 876, 'sign': 6886, '300': 247, 'isp': 4446, 'contract': 2293, 'see': 6751, 'town': 7545, 'program': 6139, 'bannersgomlm': 1271, 'profitbann': 6138, 'cashpromot': 1802, 'mysiteinc': 5366, 'timshometownstori': 7480, 'freelinksnetwork': 3616, 'myshoppingplac': 5365, 'bannerco': 1270, 'op': 5618, 'putpeel': 6217, 'sellinternetaccess': 6766, 'seventhpow': 6816, 'week': 7965, 'question': 6246, 'world': 8060, 'bs': 1636, 'gimg': 3756, 'valuabl': 7787, 'secret': 6739, 'say': 6679, 'els': 3091, 'believ': 1360, '*': 9, 'true': 7612, 'opinion': 5621, 'simpl': 6900, 'clear': 2023, 'repeatedli': 6430, 'proven': 6177, 'strategi': 7151, 'succeed': 7206, 'whether': 7994, 'someon': 6989, 'advic': 765, 'consult': 2274, 'simpli': 6901, 'blush': 1492, 'persist': 5868, 'person': 5869, 'cours': 2369, 'alway': 889, 'littl': 4827, 'disclaim': 2798, 'lesson': 4756, 'deep': 2605, 'seed': 6752, 'idea': 4193, 'kind': 4605, 'somehow': 6988, 'unknown': 7704, 'unattain': 7666, 'clearli': 2025, 'dig': 2763, 'rich': 6512, 'thing': 7435, 'often': 5585, 'strategist': 7152, 'seem': 6755, 'incred': 4279, 'huge': 4146, 'block': 1481, 'stand': 7089, 'barrag': 1291, 'long': 4870, 'complic': 2182, 'rout': 6591, 'actual': 708, 'ventur': 7812, 'equivel': 3200, 'foot': 3547, 'brick': 1601, 'wall': 7925, 'difficult': 2760, 'associ': 1111, 'rick': 6515, 'beneteau': 1373, 'ebook': 3010, 'brand': 1575, 'break': 1585, 'roibot': 6559, 'bybb': 1691, 'cgi': 1864, 'im': 4217, '7517': 479, 'bybtb': 1692, 'reason': 6324, 'mention': 5129, 'dynam': 2981, 'ye': 8111, 'school': 6700, "''": 6, 'self': 6762, 'market': 5011, 'obvious': 5556, 'core': 2329, 'excel': 3303, 'agre': 802, 'point': 5983, 'everyth': 3288, 'piec': 5922, 'custom': 2492, 'experi': 3333, 'hand': 3923, 'might': 5185, 'path': 5794, 'listen': 4821, 'real': 6316, 'ok': 5592, 'exist': 3321, 'noth': 5507, 'fear': 3427, 'desir': 2692, 'realiz': 6319, 'tear': 7354, 'mean': 5089, 'complet': 2177, 'instantan': 4346, 'disintegr': 2818, 'longer': 4871, 'mind': 5205, 'anyhow': 992, 'inher': 4323, 'honesti': 4087, 'integr': 4363, 'qualiti': 6231, 'hone': 4085, 'ultim': 7657, 'goal': 3787, 'probabl': 6119, 'key': 4587, 'uncov': 7677, 'lifetim': 4793, 'unless': 7705, 'bryan': 1633, 'veteran': 7828, 'publish': 6196, 'mega': 5107, 'chronicl': 1962, '11': 63, '500': 364, 'subscrib': 7197, 'articl': 1077, 'appear': 1018, 'wealth': 7952, 'hungri': 4155, 'journey': 4529, 'director': 2786, 'guerrilla': 3887, 'group': 3867, 'fantast': 3402, 'joint': 4516, 'hall': 3917, 'develop': 2714, 'prestigi': 6085, 'icop': 4191, 'tm': 7497, 'cop': 2317, '1016': 58, '877': 525, '230': 206, '3267': 267, 'directli': 2785, 'examin': 3299, 'care': 1774, 'encourag': 3129, 'build': 1652, 'look': 4874, 'involv': 4421, 'insan': 4334, 'amount': 914, 'purchas': 6208, '10': 52, '000': 17, 'visitor': 7876, 'receiv': 6330, 'cent': 1843, 'space': 7018, 'limit': 4803, 'order': 5642, 'freepicklotto': 3618, 'businessopp': 1677, 'aol': 1000, 'smoke': 6950, 'discov': 2805, 'techniqu': 7358, 'breath': 1590, 'life': 4791, 'act': 703, 'jturco': 4537, 'hotmail': 4114, 'celebr': 1834, 'sale': 6640, '99': 608, 'casino': 1803, 'sportsbet': 7054, 'lingeri': 4813, 'store': 7143, 'gift': 3752, 'adult': 757, 'toy': 7546, '#': 1, 'bmlm': 1495, 'price': 6094, 'cyberopp': 2499, 'affili': 782, 'top': 7529, 'opportun': 5624, 'resourc': 6468, 'advertis': 764, 'visit': 7874, 'uk': 7654, 'adrianbold': 755, 'releas': 6395, 'guru': 3898, 'corey': 2333, 'rudl': 6613, 'version': 7826, 'insid': 4338, 'must': 5352, 'hesit': 4023, 'admind': 739, 'startbgmlmezin': 7098, '260': 228, 'page': 5720, 'catalog': 1805, '3000': 248, 'item': 4453, 'women': 8045, 'children': 1930, 'alon': 869, 'access': 667, 'rest': 6474, 'georgel': 3733, '932': 551, 'yahoo': 8107, 'merchandis': 5131, 'appeal': 1017, 'target': 7336, 'audienc': 1159, 'fraction': 3595, 'larg': 4678, 'newslett': 5437, 'charg': 1890, 'exhibit': 3320, '8': 491, 'cpm': 2388, 'compar': 2164, 'industri': 4295, 'averag': 1187, '15': 106, 'serv': 6802, 'basi': 1300, 'ezin': 3372, 'keep': 4576, 'draw': 2919, 'sponsorship': 7050, 'valu': 7786, '700': 453, 'respond': 6471, 'weekli': 7968, 'survey': 7265, 'chanc': 1881, 'four': 3588, 'separ': 6786, 'entri': 3172, '07': 44, '06': 42, '01': 24, 'right': 6523, 'wrong': 8077, 'answer': 973, 'enter': 3161, '~': 8164, 'spend': 7036, 'summer': 7228, 'mailto': 4957, 'aeopublish': 773, 'two': 7643, 'three': 7449, 'easi': 3000, 'possibl': 6023, 'match': 5042, 'messag': 5148, 'comment': 2144, 'direct': 2783, 'post': 6024, 'along': 870, 'respons': 6472, 'automat': 1174, 'per': 5848, 'multipl': 5341, 'individu': 4293, 'discard': 2796, 'result': 6481, 'lead': 4716, '20': 171, 'initi': 4325, 'design': 2691, 'specif': 7030, 'via': 7833, 'shop': 6863, 'cart': 1793, 'take': 7319, 'payment': 5813, 'expect': 3327, 'would': 8069, 'tradit': 7557, 'media': 5097, 'referr': 6362, 'profession': 6134, 'impress': 4247, 'line': 4810, 'grown': 3869, 'outsid': 5680, 'certainli': 1854, 'mine': 5206, '25': 216, 'dead': 2561, 'hors': 4106, 'leg': 4737, 'folk': 3536, 'ancillari': 934, 'exceed': 3301, 'satisfi': 6672, 'jeff': 4489, 'rebecca': 6325, 'mark': 5010, 'grand': 3828, 'champion': 1880, 'prioriti': 6111, 'zesto': 8144, 'challeng': 1875, 'task': 7340, 'rank': 6282, 'major': 4963, 'search': 6730, 'engin': 3142, 'directori': 2787, 'keyword': 4589, 'type': 7647, 'therefor': 7428, 'ensur': 3159, 'gener': 3721, 'citru': 1993, 'peel': 5828, 'throughout': 7452, 'submiss': 7194, 'fortun': 3580, 'non': 5487, 'domain': 2878, 'short': 6865, 'rememb': 6410, 'trademark': 7555, 'favor': 3417, 'limitless': 4804, 'arlen': 1059, 'turner': 7627, 'chang': 1883, 'old': 5596, 'submit': 7195, 'instruct': 4353, 'suggest': 7217, 'editor': 3029, 'invit': 4417, 'total': 7536, 'bomb': 1509, 'togeth': 7509, 'prosper': 6166, 'sponsor': 7049, 'copyright': 2323, 'yourmembership': 8126, 'voic': 7894, 'jm': 4502, 'netnoteinc': 5421, 'request': 6448, 'subscript': 7198, 'center': 1845, 'edit': 3028, 'ccprod': 1824, 'rove': 6595, 'jsp': 4535, 'oo': 5617, 'id': 4192, 'bd': 1318, 'n': 5369, '7877': 489, 'giv': 3763, '57': 396, 'commentaryto': 2146, 'view': 7852, 'polici': 5986, 'propos': 6160, 'cooper': 2315, 'meant': 5090, 'taint': 7318, 'webmast': 7960, 'correct': 2342, 'hope': 4097, 'sure': 7254, 'instead': 4348, 'st': 7076, 'russia': 6624, 'could': 2356, 'mutual': 5356, 'seek': 6753, 'cut': 2494, 'economi': 3020, 'slow': 6940, 'touch': 7539, 'consider': 2258, 'client': 2032, 'pay': 5810, 'graphic': 3836, 'flash': 3504, 'content': 2283, 'etc': 3253, 'accept': 665, 'devot': 2718, 'featur': 3429, '18': 126, 'hour': 4116, 'sampl': 6652, 'faq': 3403, 'reliabl': 6398, 'saw': 6678, 'pick': 5918, 'specialist': 7029, 'tight': 7473, 'project': 6143, 'deadlin': 2562, 'properli': 6155, 'thought': 7445, 'messeng': 5149, 'local': 4847, 'europ': 3266, 'australia': 1167, 'much': 5327, 'ps': 6185, 'case': 1799, 'bit': 1454, 'return': 6495, 'estim': 3243, 'kennst': 4581, 'mich': 5169, 'noch': 5479, 'nehrb': 5411, 'hallo': 3918, 'wir': 8026, 'haben': 3905, 'schon': 6699, 'ziemlich': 8147, 'lang': 4671, 'nicht': 5453, 'mehr': 5111, 'gesehen': 3740, 'ich': 4187, 'ja': 4461, 'nur': 5534, 'noh': 5481, 'zeit': 8142, 'für': 3674, 'mein': 5113, 'freundin': 3628, 'hatt': 3955, 'damit': 2517, 'ist': 4449, 'jetzt': 4498, 'schluß': 6695, 'alex': 841, 'hat': 3952, 'sitzen': 6924, 'lassen': 4685, 'du': 2953, 'erhälst': 3209, 'dies': 2751, 'weil': 7972, 'dir': 2781, 'mal': 4968, 'zeigen': 8141, 'wie': 8009, 'klein': 4620, 'wirklich': 8030, 'drauf': 2918, 'hab': 3904, 'vor': 7901, 'lauter': 4699, 'wut': 8083, 'ein': 3062, 'eigen': 3056, 'homepag': 4079, 'gebastelt': 3712, 'da': 2508, 'kannst': 4561, 'sehen': 6759, 'alexandra': 843, 'hobbi': 4061, 'privatseit': 6115, 'findest': 3477, 'lg': 4771, 'peter': 5878, '[': 619, 'adv': 758, ']': 621, 'imag': 4218, 'catalogu': 1806, 'aux': 1180, 'de': 2560, 'english': 3145, 'franai': 3600, 'deutsch': 2712, 'artpric': 1082, 'hold': 4066, 'archiv': 1044, '270': 232, 'auction': 1156, 'present': 6077, 'context': 2286, 'public': 6194, 'artist': 1080, 'pictur': 5921, 'artwork': 1083, 'relev': 6396, 'upcom': 7728, 'research': 6454, 'report': 6434, 'seri': 6797, 'format': 3571, 'cover': 2376, 'enlarg': 3150, 'addit': 719, 'theme': 7422, 'eur': 3263, 'usd': 7756, 'exampl': 3300, 'lot': 4883, 'option': 5634, 'upon': 7733, 'display': 2827, 'logo': 4859, 'field': 3459, 'given': 3765, 'current': 2480, 'regard': 6373, 'intellectu': 4365, 'properti': 6156, 'broadcast': 1615, 'distribut': 2842, 'art': 1072, 'data': 2541, 'part': 5767, 'annual': 966, '16': 114, '58': 399, 'unlimit': 7707, 'season': 6732, 'complimentari': 2184, '2003': 176, 'euro': 3265, '129': 81, 'collector': 2115, 'valid': 7780, 'januari': 4479, '2004': 177, 'start': 7097, 'watch': 7944, 'tour': 7541, 'global': 3777, 'trend': 7592, '2002': 175, 'sincer': 6908, 'thierri': 7432, 'ehrmann': 3053, 'founder': 3587, 'leader': 4717, 'welt': 7979, 'kunstmarkt': 4644, '1987': 159, 'thierryehrmann': 7433, 'constitu': 2268, 'plu': 5976, 'no': 5476, 'jour': 4527, 'et': 3252, 'se': 6725, 'vou': 7908, 'fair': 3388, 'profit': 6137, 'ce': 1827, 'uniqu': 7698, 'au': 1152, 'si': 6879, 'une': 7690, 'uvr': 7769, 'est': 3236, 'dan': 2519, 'le': 4715, 'la': 4648, 'que': 6240, 'particip': 5772, 'mme': 5242, 'pass': 5780, 'ou': 5667, 'sur': 7251, 'autr': 1179, 'par': 5749, 'pour': 6034, 'pouvez': 6035, 'command': 2142, 'compt': 2191, 'abonn': 645, 'rsultat': 6606, 'cliquez': 2042, 'loi': 4863, 'ne': 5399, 'diffus': 2762, 'aucun': 1157, 'oeuvr': 5570, 'usag': 7752, 'priv': 6112, 'effectu': 3044, 'cadr': 1706, 'pa': 5710, 'tier': 7472, 'avec': 1185, 'vo': 7891, 'attent': 1144, 'annuel': 967, 'moi': 5256, 'acc': 662, 'illimit': 4211, 'cadeau': 1705, 'spcial': 7025, 'fin': 3472, 'ann': 959, 'gratuit': 3840, 'valeur': 7779, 'offrir': 5577, 'collectionneur': 2114, 'valabl': 7777, 'fte': 3647, 'seulement': 6814, 'jusqu': 4555, 'janvier': 4480, 'offr': 5576, 'partir': 5775, 'quel': 6241, 'mondial': 5266, 'march': 4999, 'mutat': 5355, 'surveil': 7264, 'favori': 3418, 'inscript': 4336, 'express': 3355, 'cordial': 2327, 'paliourg': 5731, 'iit': 4208, 'demokrito': 2645, 'gr': 3812, 'allow': 866, '72': 464, 'h': 3902, 'co': 2066, 'oper': 5620, 'sinscrir': 6914, 'votr': 7907, 'ci': 1968, 'dessou': 2699, 'lien': 4789, 'dessu': 2700, 'fonctionn': 3539, 'aller': 858, 'pondez': 5997, 'svp': 7276, 'san': 6654, 'modifi': 5252, 'contenu': 2284, 'sinscript': 6913, 'sera': 6794, 'effect': 3043, 'merci': 5133, 'coop': 2314, 'ration': 6294, 'conformit': 2228, '78': 487, '17': 121, 'cnil': 2064, 'demand': 2639, 'figur': 3465, 'notr': 5512, 'fichier': 3457, 'routag': 6592, 'pr': 6041, 'bp': 1561, '69': 446, '69270': 448, 'romain': 6564, 'mont': 5278, 'rc': 6304, '411': 325, '309': 255, '198': 156, '27': 231, '71': 460, '87': 523, 'nb': 5393, '42': 332, '75': 476, 'j': 4460, 'k': 4559, 'pl': 5951, '26': 227, 'jo': 4503, '054': 41, '21': 189, 'es': 3218, '31': 256, '81': 503, '50': 363, 'dk': 2860, '35': 288, '67': 438, 'sw': 7278, '32': 261, '47': 352, '37': 296, '61': 415, '470': 353, 'rl': 6533, '08': 46, '73': 468, '258': 225, '44': 338, 'bl': 1460, '83': 511, 'ow': 5697, 'tv': 7633, '55': 384, '80': 492, '33': 268, '24': 211, '2086': 187, '82': 507, 'yo': 8119, '705': 455, 'ld': 4714, 'ol': 5594, 'join': 4515, 'focu': 3530, 'earn': 2994, 'recruit': 6348, 'countri': 2364, 'extra': 3363, 'coupl': 2365, 'purpos': 6211, 'learn': 4723, 'assur': 1115, 'buy': 1685, 'anyth': 995, 'held': 3994, 'strictest': 7164, 'confid': 2221, 'whatev': 7989, 'discuss': 2815, 'registr': 6378, 'questionnair': 6247, 'regist': 6377, 'alacarteresearch': 826, 'john': 4512, 'mooney': 5285, 'ilug': 4216, 'social': 6966, 'exposur': 3353, 'pool': 6000, 'bulk': 1656, '200': 172, '400': 314, 'cd': 1825, 'w': 7916, 'tool': 7526, 'that': 7418, '209': 188, 'delet': 2625, 'irish': 4434, 'linux': 4815, 'user': 7758, 'event': 3278, 'ie': 4200, 'mailman': 4956, 'listinfo': 4822, 'maintain': 4960, 'listmast': 4823, 'love': 4892, 'scan': 6686, 'pc': 5818, 'infect': 4302, 'adwar': 770, 'spywar': 7068, 'download': 2906, 'wors': 8064, 'myspyeras': 5367, 'biz': 1458, '111213': 67, 'furthermor': 3667, 'denud': 2660, 'collegi': 2117, 'knight': 4624, 'yesterday': 8117, '56': 390, 'otcbb': 5663, 'urgent': 7743, 'stock': 7138, 'press': 6083, 'asp': 1096, 'applic': 1022, 'softwar': 6972, 'otherwis': 5665, 'locat': 4848, 'enterpris': 3162, 'comput': 2193, 'import': 4241, 'smaller': 6943, 'budget': 1647, 'technolog': 7359, 'larger': 4679, 'outsourc': 5681, 'earli': 2990, 'remot': 6415, 'premis': 6066, 'area': 1047, 'network': 5424, 'mobil': 5244, 'connect': 2240, 'file': 3466, 'server': 6804, 'expens': 3332, 'instal': 4344, 'forecast': 3554, 'small': 6942, 'yearli': 8114, 'licens': 4784, 'corpor': 2340, 'essenti': 3235, 'hous': 4118, 'move': 5312, 'strip': 7169, 'thin': 7434, 'workstat': 8059, 'central': 1848, 'formerli': 3573, 'period': 5857, 'prior': 6110, 'advent': 761, 'microsoft': 5176, 'termin': 7396, 'attract': 1149, 'differ': 2758, 'rang': 6280, 'broad': 1613, 'deliv': 2629, 'aspect': 1098, 'usual': 7763, 'ip': 4426, 'infrastructur': 4319, 'ongo': 5610, 'extend': 3359, 'note': 5506, 'main': 4958, 'distinguish': 2841, 'term': 7395, 'scope': 6709, 'size': 6926, 'pure': 6209, 'play': 5965, 'describ': 2683, 'fall': 3392, 'categori': 1811, 'principl': 6106, 'primarili': 6099, 'monitor': 5273, 'perform': 5855, 'run': 6620, 'sometim': 6991, 'gather': 3704, 'although': 881, 'expand': 3325, 'storag': 7142, 'test': 7406, 'agreement': 804, 'process': 6125, 'activ': 705, 'track': 7553, 'accordingli': 674, 'tend': 7385, 'employe': 3118, 'either': 3067, 'taken': 7321, 'focus': 3531, 'engag': 3141, ';': 613, 'attempt': 1141, 'model': 5247, 'mid': 5177, 'broader': 1616, 'greater': 3845, 'beyond': 1412, 'patch': 5791, 'upgrad': 7731, 'provis': 6180, 'requir': 6449, 'pride': 6095, 'wide': 8006, 'differenti': 2759, 'assum': 1113, 'function': 3658, 'goe': 3789, 'notif': 5509, 'reflect': 6365, 'fold': 3534, 'mortar': 5297, 'cabl': 1701, 'wireless': 8028, 'franc': 3602, 'telecom': 7366, 'known': 4631, 'struggl': 7178, 'concept': 2199, 'undertak': 7685, 'segment': 6757, 'depend': 2664, 'will': 8013, 'shape': 6830, 'ident': 4195, 'hardwar': 3940, 'packag': 5716, 'suit': 7220, 'system': 7307, 'boutiqu': 1554, 'ed': 3023, 'ibm': 4181, 'multin': 5339, 'increasingli': 4278, 'team': 7352, 'execut': 3315, 'revenu': 6498, 'chairman': 1871, 'presid': 6080, 'chief': 1927, 'offic': 5573, 'inc': 4258, 'driven': 2937, 'restructur': 6479, 'invest': 4411, 'effort': 3048, 'entrepreneuri': 3171, 'micro': 5173, 'strateg': 7150, 'york': 8121, '91': 542, 'vice': 7843, 'gm': 3783, 'interact': 4372, 'diploma': 2779, 'electron': 3075, 'certif': 1856, 'achiev': 686, 'univers': 7700, 'primari': 6098, 'overse': 5692, 'plan': 5956, 'deliveri': 2631, 'maximum': 5061, 'sharehold': 6833, 'carrol': 1791, 'benton': 1380, 'administr': 741, 'incept': 4262, 'cpa': 2387, 'firm': 3489, 'ms': 5319, 'career': 1775, 'span': 7020, 'sector': 6744, 'higher': 4036, 'educ': 3034, 'institut': 4351, 'deploy': 2667, 'support': 7247, 'practic': 6042, 'analysi': 926, 'taught': 7342, 'undergradu': 7680, 'sever': 6817, 'sound': 7010, 'colleg': 2116, 'joani': 4505, 'allianc': 863, 'multi': 5337, 'implement': 4238, 'advanc': 759, 'extens': 3360, 'autom': 1173, 'strong': 7172, 'background': 1223, 'previou': 6091, 'pacif': 5714, 'incorpor': 4275, 'seattl': 6734, 'telephoni': 7371, 'divis': 2858, 'notic': 5508, 'magic': 4948, 'select': 6761, 'advisor': 767, 'broker': 1620, 'dealer': 2564, 'statement': 7101, 'constru': 2272, 'solicit': 6979, 'liabil': 4775, 'aris': 1056, 'investor': 4414, 'relianc': 6399, 'consid': 2257, 'highli': 4038, 'specul': 7033, 'afford': 783, 'paid': 5725, 'fifteen': 3461, 'circul': 1985, 'subsequ': 7199, 'open': 5619, 'forward': 3582, 'risk': 6528, 'uncertainti': 7673, 'caus': 1816, 'materi': 5045, 'set': 6809, 'forth': 3578, 'concern': 2201, 'sec': 6735, 'quarterli': 6238, 'recur': 6350, 'blank': 1471, 'unsub': 7720, 'north': 5497, 'feder': 3433, 'highway': 4041, 'boca': 1505, 'florida': 3522, 'husband': 4165, 'wont': 8048, 'couturi': 2373, 'gu': 3878, 'superflu': 7238, 'capsul': 1764, 'adagio': 714, 'monocotyledon': 5274, 'cleav': 2026, 'blackbird': 1462, 'dopant': 2891, 'ruin': 6617, 'adrienn': 756, 'dendrit': 2649, 'whoa': 7999, 'bestow': 1399, 'damag': 2515, 'profess': 6133, 'mannequin': 4987, 'rhombi': 6506, 'brave': 1578, 'snoop': 6960, 'substitut': 7204, 'perfect': 5854, 'filmi': 3470, 'cannon': 1752, 'semit': 6772, 'arteriol': 1074, 'amend': 900, 'merchant': 5132, 'vicodin': 7845, 'xanax': 8091, 'valium': 7782, 'imit': 4223, 'hidd': 4032, 'char': 1888, 'ge': 3710, 'fast': 3410, 'vic': 7841, 'odin': 5567, 'ium': 4454, 'xan': 8090, 'ax': 1206, 'diaz': 2739, 'epam': 3183, 'alpra': 875, 'zolam': 8155, 'fior': 3484, 'icet': 4186, 'amb': 894, 'ien': 4201, 'stil': 7131, 'nox': 5519, 'ult': 7656, 'ram': 6272, 'zo': 8154, 'loft': 4854, 'clon': 2046, 'azepam': 1210, 'ivan': 4457, 'tr': 7548, 'amadol': 890, 'xeni': 8092, 'cal': 1711, 'cele': 1833, 'brex': 1598, 'vi': 7832, 'oxx': 5704, 'pro': 6118, 'zac': 8135, 'bu': 1639, 'ore': 5644, 'reciev': 6336, 'error': 3216, 'nowbetterthi': 5517, 'byee': 1694, 'degre': 2617, 'verif': 7820, '212': 191, '208': 186, '4551': 347, 'class': 2013, 'book': 1521, 'interview': 4395, 'bachelor': 1219, 'mba': 5067, 'phd': 5894, 'admir': 742, 'turn': 7626, 'enjoy': 3149, 'viagra': 7837, 'cheap': 1907, 'huh': 4148, 'amaz': 893, 'erect': 3206, 'second': 6737, 'overdr': 5687, 'vroooom': 7912, 'solut': 6984, 'wwwbargin': 8086, 'oxygen': 5705, 'dislik': 2821, 'obtain': 5553, '214': 193, '0713': 45, 'yr': 8129, 'z': 8134, 'tw': 7634, 'amni': 910, 'amnm': 911, 'coverag': 2377, 'thursday': 7461, 'volum': 7899, 'clk': 2043, 'brought': 1625, 'ten': 7383, 'certain': 1853, 'proud': 6175, 'close': 2047, 'tomorrow': 7518, '52': 378, 'luck': 4909, 'fli': 3515, 'natur': 5390, 'avirtualshopp': 1193, 'permiss': 5862, 'opt': 5628, 'robhatah': 6546, 'istor': 4450, 'humanoid': 4150, 'bipe': 1448, 'dsp': 2951, 'sensor': 6780, 'oscilloscop': 5658, 'delight': 2628, 'robot': 6550, 'platform': 5962, 'digit': 2765, 'cubecart': 2462, 'superb': 7237, 'wish': 8033, 'endeavor': 3131, 'biggest': 1430, 'bob': 1502, 'virtual': 7869, 'constant': 2266, 'feedback': 3437, 'award': 1201, 'manu': 4989, 'robust': 6551, 'aluminium': 886, 'alloy': 867, 'shelf': 6842, 'compon': 2185, 'enabl': 3123, 'flexibl': 3513, 'fira': 3485, '04': 35, 'hit': 4053, 'china': 1931, 'winner': 8024, 'hurosot': 4159, 'nu': 5525, 'singapor': 6910, 'game': 3693, 'height': 3993, 'cm': 2059, 'weight': 7970, 'kg': 4590, 'dof': 2872, 'processor': 6126, 'motorola': 5307, 'cmo': 2061, 'camera': 1733, 'pan': 5737, 'tilt': 7475, 'compass': 2166, 'ir': 4432, 'forc': 3553, 'capabl': 1759, 'visual': 7877, 'walk': 7924, 'toward': 7543, 'obstacl': 5552, 'avoid': 1194, 'dimens': 2771, 'competit': 2171, 'rule': 6618, 'kick': 4594, 'ball': 1249, 'seat': 6733, 'climb': 2038, 'stair': 7086, 'testimoni': 7407, 'expert': 3335, 'tlr': 7496, 'ideal': 4194, 'jump': 4545, 'fulli': 3655, 'modular': 5254, 'rbhatah': 6302, 'comprehens': 2188, 'technic': 7356, 'student': 7181, 'portabl': 6012, 'stingray': 7134, 'stylish': 7190, 'combin': 2135, 'logger': 4856, 'spectrum': 7032, 'analys': 925, 'volt': 7898, 'meter': 5157, 'frequenc': 3623, 'signal': 6887, 'singl': 6911, 'instrument': 4354, 'usb': 7755, 'extern': 3362, 'suppli': 7245, 'simultan': 6906, 'channel': 1884, 'nativ': 5389, 'lm': 4840, 'repetit': 6431, 'sophist': 7002, 'trigger': 7601, 'delay': 2622, 'puls': 6204, 'width': 8008, 'waveform': 7947, 'output': 5678, 'input': 4332, 'stereo': 7123, 'bebop': 1330, 'hobbyist': 4062, 'chassi': 1901, 'batteri': 1306, 'charger': 1891, 'embed': 3102, '86': 519, 'heavi': 3982, 'duti': 2971, 'isopod': 4444, 'suitabl': 7221, 'dedic': 2602, 'servo': 6806, 'motor': 5306, 'dc': 2558, 'bdcm': 1319, 'stepper': 7122, 'solenoid': 6978, 'bipolar': 1449, 'convert': 2307, 'invert': 4410, 'collect': 2113, 'unmatch': 7709, 'servopod': 6807, 'microcontrol': 5174, '807': 501, 'mpu': 5316, 'paralel': 5754, 'machin': 4935, 'languag': 4672, 'isomax': 4443, 'serial': 6798, 'rs': 6604, '232': 207, 'driver': 2938, 'jtag': 4536, 'interfac': 4377, 'kxl': 4646, 'eeprom': 3040, 'transform': 7568, 'motion': 5303, 'automot': 1175, 'soccer': 6965, 'round': 6590, 'wheel': 7991, 'compris': 2190, 'overhead': 5689, 'robosocc': 6549, 'arena': 1048, 'autonom': 1176, 'disciplinari': 2797, 'ai': 809, 'flexiforc': 3514, '201': 179, 'ultra': 7658, 'print': 6107, 'circuit': 1984, 'construct': 2273, 'layer': 4709, 'substrat': 7205, 'polyest': 5993, 'polyimid': 5994, 'film': 3469, 'conduct': 2213, 'silver': 6896, 'appli': 1021, 'sensit': 6779, 'ink': 4329, 'adhes': 730, 'lamin': 4664, 'sens': 6777, 'circl': 1983, 'connector': 2241, 'end': 3130, 'male': 4970, 'squar': 7070, 'pin': 5929, 'easili': 3002, 'outer': 5674, 'inact': 4253, '©': 8166, 'drive': 2935, '117583': 68, 'tel': 7365, '65': 434, '6872': 443, '5092': 372, '6874': 444, '4089': 323, 'reserv': 6458, 'carri': 1790, 'coliform': 2109, 'foolhardi': 3546, 'corrupt': 2348, 'gogh': 3790, 'bryce': 1634, 'moieti': 5257, 'arriv': 1069, 'cogniz': 2095, 'betatron': 1403, 'algorithm': 845, 'deflat': 2615, 'jon': 4518, 'bobcat': 1504, 'farm': 3406, 'betray': 1406, 'arbitrag': 1038, 'analog': 924, 'amput': 917, 'began': 1349, 'chivalr': 1939, 'descriptor': 2685, 'congest': 2232, 'artemi': 1073, 'count': 2358, 'peni': 5836, 'inch': 4263, 'prove': 6176, 'trial': 7595, 'bottl': 1543, 'warranti': 7940, 'lose': 4880, 'os': 5657, 'unlist': 7708, 'pharmaci': 5891, 'paracodin': 5751, 'poster': 6027, 'lament': 4663, 'vivaci': 7881, 'vigil': 7854, 'maori': 4992, 'vitrifi': 7880, 'labour': 4653, 'vicar': 7842, 'praseodymium': 6046, 'wondrou': 8047, 'babysit': 1217, 'band': 1259, 'marcel': 4998, 'matthew': 5054, 'kiddi': 4597, 'vlagra': 7887, 'soma': 6986, 'ambien': 896, 'cial': 1970, 'nfo': 5444, 'canadlan': 1742, 'oniin': 5611, 'referenc': 6360, 'assembl': 1104, 'lcd': 4713, 'spam': 7019, 'clarif': 2007, 'ref': 6358, 'regularli': 6383, 'workabl': 8055, 'massag': 5033, 'soar': 6962, 'younger': 8125, 'ancient': 933, 'chines': 1933, 'devic': 2715, 'anywher': 998, 'fun': 3657, 'exercis': 3317, 'job': 4508, 'arm': 1060, 'wrestl': 8073, 'prize': 6117, 'nl': 5473, '1007': 56, 'db': 2556, 'amsterdam': 918, 'netherland': 5420, 'desk': 2693, 'promot': 6147, 'final': 3473, 'th': 7416, 'novemb': 5516, 'corp': 2339, '19': 132, 'decemb': 2585, 'ticket': 7466, 'ao': 999, '09': 49, 'drew': 2929, 'lucki': 4910, '13': 82, '34': 277, '85': 517, 'consequ': 2255, 'lump': 4916, 'cash': 1800, 'among': 912, 'ballot': 1254, 'drawn': 2921, '30': 246, 'zealand': 8140, 'america': 902, 'asia': 1090, 'congratul': 2235, 'financ': 3474, 'insur': 4358, 'due': 2958, 'mix': 5234, 'strictli': 7165, 'remit': 6413, 'protocol': 6171, 'doubl': 2899, 'unscrupul': 7716, 'stake': 7087, 'billion': 1438, 'lotto': 4886, 'thoma': 7440, '207': 185, '681': 442, 'remitt': 6414, 'choic': 1943, 'later': 4688, 'date': 2544, 'unclaim': 7675, 'unnecessari': 7711, 'quot': 6258, 'staff': 7084, 'breach': 1583, 'disqualif': 2831, 'deserv': 2690, 'welcom': 7975, 'studi': 7182, 'incom': 4271, 'seen': 6756, 'captur': 1766, 'excit': 3310, 'intend': 4367, 'agent': 795, 'databas': 2542, 'header': 3967, 'tion': 7484, 'dr': 2910, 'ug': 7651, 'porn': 6008, 'nakedmail': 5377, 'latest': 4689, '59': 403, '170': 122, 'star': 7095, 'pornstarsplu': 6010, 'pt': 6190, 'pmb': 5979, '8834': 527, 'vote': 7904, 'pornstar': 6009, 'xxx': 8104, 'video': 7849, 'plex': 5975, 'xxxvideoplex': 8105, 'stream': 7153, 'toon': 7527, 'megaplex': 5108, 'toonmegaplex': 7528, 'massiv': 5036, 'facial': 3379, 'sexi': 6820, 'hardcor': 3938, 'action': 704, 'older': 5597, 'ladi': 4657, 'realli': 6320, 'fuck': 3649, 'lezbonet': 4769, 'lezbo': 4768, 'pussi': 6215, 'lickin': 4786, '225': 201, 'banner': 1269, 'protect': 6169, 'dvdxxxvideo': 2974, 'midget': 5183, 'squirter': 7072, 'tranni': 7562, 'granni': 3831, 'fine': 3478, 'dvd': 2973, 'east': 3003, 'indian': 4290, 'movi': 5314, '48': 356, 'temporarili': 7381, 'unavail': 7668, 'word': 8052, 'dernier': 2679, 'sondag': 6995, 'avant': 1183, 'élection': 8173, 'presidentiel': 6082, 'partenariat': 5768, 'lection': 4729, 'prsidentiel': 6184, 'ralis': 6271, 'seront': 6801, 'envoy': 3179, 'tou': 7538, 'avril': 1196, 'mai': 4952, 'minuit': 5219, 'candidat': 1750, 'allez': 861, 'voter': 7905, 'dimanch': 2769, 'jacqu': 4465, 'chirac': 1936, 'politiqu': 5989, 'rassembl': 6289, 'rpubliqu': 6602, 'an': 921, 'situat': 6923, 'famil': 3396, 'mari': 5004, 'pre': 6049, 'deux': 2713, 'mtier': 5324, 'origin': 5651, 'haut': 3959, 'fonctionnair': 3540, 'mandat': 4979, 'cour': 2366, 'prsident': 6183, 'depui': 2672, '1995': 165, 'jean': 4487, 'pen': 5831, 'front': 3639, 'nation': 5387, 'troi': 7608, 'dorigin': 2893, 'chef': 1915, 'dentrepris': 2658, 'dput': 2909, 'europen': 3268, '1984': 158, 'je': 4486, 'voterai': 7906, 'nsp': 5522, 'sui': 7218, 'mon': 5263, 'choix': 1945, 'encor': 3127, 'dfinitif': 2724, 'avez': 1189, 'vot': 7902, 'ler': 4751, 'choisir': 1944, 'laguil': 4660, 'madelin': 4942, 'megret': 5110, 'boutin': 1553, 'lepag': 4750, 'taubira': 7341, 'gluckstein': 3780, 'bayrou': 1314, 'saint': 6638, 'joss': 4526, 'cheven': 1921, 'jospin': 4525, 'mamer': 4972, 'besancenot': 1392, 'hue': 4145, 'civilit': 1997, 'mlle': 5237, 'naissanc': 5376, 'agriculteur': 805, 'cheur': 1920, 'artisan': 1079, 'ing': 4321, 'nieur': 5461, 'commer': 2147, 'ant': 974, 'dirig': 2789, 'sup': 7235, 'rieur': 6521, 'employ': 3117, 'quival': 6257, 'enseign': 3158, 'chercheur': 1917, 'etudi': 3258, 'femm': 3445, 'homm': 4083, 'foyer': 3592, 'lib': 4778, 'rale': 6270, 'prof': 6131, 'artistiqu': 1081, 'sportiv': 7053, 'ouvrier': 5684, 'retrait': 6492, 'technicien': 7357, 'trise': 7606, 'souhaitez': 7008, 'recevoir': 6333, 'resultat': 6482, 'precisez': 6054, 'nominatif': 5485, 'adress': 754, 'panel': 5739, 'internaut': 4386, 'il': 4209, 'peut': 5882, 'ca': 1697, 'tre': 7581, 'considr': 2261, 'comm': 2141, 'reprsentatif': 6441, 'popul': 6004, 'franais': 3601, 'doit': 2874, 'porter': 6014, 'influenc': 4309, 'quelconqu': 6242, 'rel': 6391, 'informatiqu': 4316, 'pri': 6093, 'vendredi': 7809, 'ho': 4059, '0': 15, 'indiquez': 4292, 'champ': 1879, 'validez': 7781, 'meridia': 5141, '®': 8168, 'oral': 5637, 'obes': 5546, 'mainten': 4961, 'prescrib': 6074, 'practiction': 6043, 'xenic': 8093, 'overweight': 5696, 'retin': 6490, 'treatment': 7588, 'acn': 690, 'valtrex': 7785, 'treatement': 7586, 'herp': 4021, 'propecia': 6152, 'pattern': 5801, 'zyban': 8160, 'nicotin': 5459, 'claritin': 2010, 'symptom': 7302, 'allergi': 859, 'exit': 3322, 'extract': 3364, 'kisling': 4613, '987': 599, 'eudoramail': 3259, 'ur': 7739, 'rock': 6552, 'super': 7236, 'ciali': 1971, 'viag': 7835, 'affect': 781, 'away': 1202, '36': 294, 'discret': 2812, 'door': 2889, 'morn': 5292, 'inexpens': 4297, 'galleri': 3688, 'instantli': 4347, 'stationeri': 7105, 'promo': 6146, 'creat': 2406, 'nomin': 5484, 'fee': 3435, 'hear': 3975, 'wade': 7918, 'lst': 4902, 'annuiti': 968, 'bonu': 1518, 'nurs': 5535, 'waiver': 7922, 'citi': 1990, 'surrend': 7262, 'vari': 7793, 'ct': 2458, 'md': 5084, 'sc': 6681, 'usg': 7760, 'equit': 3196, 'iowa': 4425, '909': 541, 'locust': 4852, 'moin': 5258, '50309': 369, 'ira': 4433, 'qualifi': 6230, 'tax': 7343, 'alter': 879, 'bonus': 1519, 'minimum': 5211, 'ado': 746, '20257': 180, 'insurancemail': 4360, 'pivot': 5947, 'badg': 1235, 'asinin': 1092, 'genierc': 3722, 'viarga': 7838, 'caiil': 1709, 'cilai': 1976, 'spuer': 7065, 'vagira': 7774, 'suepr': 7212, 'vairga': 7775, 'cilck': 1977, 'virgaa': 7863, 'vigara': 7853, 'intreset': 4400, 'obviou': 5555, 'abbey': 634, 'hoi': 4065, 'granari': 3827, 'quakeress': 6228, 'hemispher': 4002, 'pitchston': 5944, 'concur': 2207, 'conveni': 2303, 'andorra': 939, 'freeman': 3617, 'debar': 2571, 'birefring': 1452, 'kept': 4583, 'font': 3541, 'alberto': 832, 'benson': 1377, 'heath': 3980, 'psychot': 6189, 'screwbal': 6719, 'isotop': 4445, 'backboard': 1222, 'digest': 2764, 'loir': 4864, 'andromach': 942, 'creameri': 2405, 'inspir': 4343, 'hotel': 4112, 'jaeger': 4467, 'car': 1767, 'rodney': 6556, 'schoolbook': 6701, 'gag': 3679, 'bedford': 1336, 'berkeley': 1386, 'handyman': 3929, 'cradl': 2394, 'bragg': 1569, 'dispers': 2825, 'disturb': 2845, 'depress': 2669, 'fescu': 3449, 'chandler': 1882, 'scribe': 6720, 'debat': 2572, 'adam': 715, 'mercuri': 5137, 'aperiod': 1003, 'arrowroot': 1071, 'faber': 3376, 'henc': 4005, 'fixat': 3499, 'criteria': 2429, 'around': 1063, 'chinamen': 1932, 'impenetr': 4234, 'iceberg': 4185, 'cashew': 1801, 'arti': 1076, 'nirvana': 5470, 'breve': 1596, 'commissariat': 2151, 'astrophys': 1127, 'barnard': 1287, 'dervish': 2681, 'girlish': 3761, 'mcmahon': 5082, 'cautiou': 1819, 'dorothi': 2895, 'indent': 4286, 'caveman': 1820, 'cottrel': 2354, 'dunn': 2963, 'callaghan': 1723, 'idyl': 4199, 'oppos': 5625, 'queue': 6248, 'chisholm': 1938, 'coachmen': 2068, 'bayonn': 1313, 'invers': 4409, 'laryng': 4684, 'barrow': 1294, 'geographi': 3729, 'pi': 5916, 'imagin': 4219, 'omit': 5606, 'remand': 6407, 'rise': 6527, 'approach': 1027, 'decad': 2583, 'philosoph': 5903, 'impieti': 4236, 'malay': 4969, 'norri': 5496, 'mushroom': 5349, 'pound': 6033, 'ere': 3205, 'deja': 2618, 'amman': 909, 'mcdonald': 5072, 'infami': 4300, 'captain': 1765, 'hurdl': 4158, 'drift': 2931, 'mayor': 5065, 'acquit': 695, 'featherbrain': 3428, 'fluorspar': 3525, 'mackey': 4937, 'fort': 3577, 'beefi': 1344, 'mission': 5229, 'pinwheel': 5937, 'econom': 3019, 'desper': 2695, 'shi': 6849, 'peroxid': 5864, 'inasmuch': 4256, 'hazelnut': 3963, 'manner': 4988, 'accompani': 671, 'fleck': 3510, 'cog': 2091, 'churchgo': 1966, 'everett': 3281, 'biblic': 1419, 'biltmor': 1439, 'manchest': 4977, 'barycentr': 1295, 'palermo': 5730, 'adjac': 734, 'antipod': 985, 'pipelin': 5940, '\\': 620, 'vper': 7910, 'august': 1166, 'food': 3544, 'tuesday': 7620, 'pm': 5978, 'salt': 6646, 'lake': 4662, 'ut': 7764, 'wire': 8027, 'aug': 1165, 'otc': 5662, 'pk': 5949, 'manufactur': 4991, 'distributor': 2843, 'premier': 6065, 'supplement': 7244, 'newli': 5434, 'establish': 3239, 'largest': 4680, 'wholesal': 8002, 'organ': 5646, 'nationwid': 5388, 'varieti': 7796, 'retail': 6485, 'chain': 1869, 'independ': 4287, 'convent': 2304, 'supermarket': 7240, 'mountain': 5309, 'partial': 5771, 'clip': 2041, 'electr': 3074, 'commerci': 2149, 'water': 7945, 'radar': 6265, 'overview': 5695, 'utah': 7765, '1993': 163, 'liquid': 4818, 'domest': 2879, 'ph': 5888, 'balanc': 1246, 'recogn': 6341, 'dietari': 2754, 'sport': 7052, 'acid': 687, 'edg': 3025, 'seriou': 6799, 'magnesium': 4950, 'cleans': 2021, 'cell': 1836, 'rid': 6517, 'healthi': 3974, 'ab': 629, 'grow': 3868, 'presenc': 6076, 'enhanc': 3147, 'gemini': 3715, 'southwest': 7015, 'california': 1719, 'region': 6376, 'continu': 2290, 'eastern': 3005, 'maryland': 5027, 'territori': 7403, 'pennsylvania': 5839, 'june': 4547, 'patient': 5798, 'suffer': 7213, 'chronic': 1961, 'insuffici': 4356, 'third': 7437, 'basic': 1301, 'ingredi': 4322, 'agenc': 793, '9': 536, 'proprietari': 6162, 'review': 6500, 'determin': 2707, 'guidelin': 3892, 'chemic': 1916, 'substanc': 7201, 'substanti': 7203, 'tap': 7333, '14': 92, 'creativ': 2408, 'innov': 4331, 'diego': 2749, 'appoint': 1023, 'critic': 2431, 'levin': 4764, 'lifestyl': 4792, 'rob': 6542, 'eat': 3006, 'signific': 6890, 'daili': 2511, 'stress': 7159, 'lack': 4654, 'proper': 6154, 'refus': 6371, 'destroy': 2703, 'clean': 2019, 'likewis': 4800, 'assail': 1102, 'brian': 1599, 'certifi': 1857, 'canadian': 1741, 'journal': 4528, 'nutrit': 5536, 'miner': 5208, 'immun': 4228, 'bactericid': 1232, 'formula': 3575, 'peak': 5822, 'builder': 1653, 'japan': 4481, 'facil': 3380, 'analyz': 929, 'afterward': 790, 'numer': 5531, 'menu': 5130, 'joann': 4506, 'heavili': 3983, 'rose': 6581, '965': 566, 'spent': 7037, 'fourth': 3589, 'quarter': 6237, 'roll': 6561, 'prepar': 6069, 'dramat': 2916, 'revis': 6501, 'readi': 6314, 'aggress': 798, 'owner': 5700, 'divers': 2851, 'conclus': 2206, 'consum': 2277, 'savvi': 6677, 'miss': 5227, 'screen': 6718, 'section': 6742, '1933': 138, 'exchang': 3307, '1934': 139, 'predict': 6057, 'belief': 1359, 'object': 5547, 'assumpt': 1114, 'histor': 4051, 'made': 4941, 'anticip': 984, 'identifi': 4197, 'forese': 3557, 'understand': 7683, 'occur': 5560, 'repres': 6438, 'necessari': 5407, 'therein': 7429, 'mislead': 5225, 'pertain': 5872, 'understood': 7684, 'sr': 7073, 'reader': 6313, 'none': 5489, 'verg': 7819, 'bankruptci': 1268, 'herein': 4016, 'thorough': 7442, 'dilig': 2767, 'complianc': 2180, 'sectionl': 6743, 'alexand': 842, 'llc': 4836, 'awar': 1200, 'conflict': 2227, 'compens': 2169, 'anytim': 996, 'advers': 763, 'impact': 4230, 'factual': 3384, 'emerg': 3105, 'accuraci': 681, 'constitut': 2269, '1771': 125, 'road': 6540, '342': 281, 'westport': 7985, '06880': 43, 'rx': 6626, 'counter': 2359, 'canada': 1740, 'forbid': 3552, 'prevent': 6090, 'stretch': 7160, 'pregnanc': 6061, 'load': 4844, 'cab': 1698, 'sat': 6667, 'haunch': 3957, 'tini': 7483, 'piglet': 5924, 'kitten': 4617, 'rough': 6588, 'eureka': 3264, 'knock': 4626, 'paw': 5808, 'american': 903, 'suppos': 7248, 'minist': 5213, 'stare': 7096, 'face': 3378, 'suddenli': 7210, 'room': 6579, 'silent': 6894, 'eye': 3370, 'guess': 3888, 'boy': 1559, 'charact': 1889, 'pocket': 5982, 'cap': 1758, 'norton': 5501, 'antiviru': 986, 'pect': 5827, 'anu': 988, 'mi': 5167, 'sun': 7230, 'array': 1066, 'seal': 6727, '4500': 346, '124': 77, '600': 408, '3500': 290, '280': 236, 'el': 3069, 'in': 4252, 'fit': 3495, 'toll': 7513, '001': 19, '407': 321, '323': 264, 'mass': 5032, 'mistak': 5230, 'perman': 5861, 'leas': 4724, 'wife': 8010, 'anymor': 993, 'urpris': 7748, 'ife': 4202, 'ould': 5669, 'ard': 1046, 'ction': 2459, 'iali': 4180, 'ast': 1116, 'petat': 5877, 'ener': 3138, 'workingup': 8056, 'twic': 7641, 'iagra': 4178, 'ronger': 6574, 'rection': 6349, 'stronger': 7173, 'exual': 3367, 'ncreas': 5397, 'xual': 8103, 'stamina': 7088, 'onfidenti': 5609, 'discr': 2807, 'ete': 3254, 'ackag': 688, 'ctor': 2460, 'app': 1014, 'mor': 5288, 'ey': 3369, 'bac': 1218, 'satisf': 6670, 'gua': 3879, 'rante': 6283, 'here': 4014, 'crk': 2432, '45': 344, '5652': 394, 'uo': 7725, 'wsllhk': 8081, '219': 196, 'ko': 4632, 'ergwn': 3208, '4311': 337, 'bggv': 1415, 'mll': 5236, '746': 475, 'buht': 1650, 'wzo': 8088, '39': 306, 'qrn': 6226, 'zd': 8138, 'qcc': 6220, 'dy': 2978, 'uwvqv': 7770, '62': 418, 'ei': 3054, 'lagoon': 4659, 'backyardkati': 1230, 'bemus': 1364, 'intellig': 4366, 'backyardi': 1229, 'backyard': 1228, 'joseph': 4523, 'loan': 4845, 'evalu': 3272, 'lender': 4745, 'bill': 1435, 'creditor': 2414, 'brief': 1605, 'minut': 5220, 'oblig': 5549, 'remind': 6411, 'equiti': 3197, 'tx': 7644, 'sorri': 7003, 'zip': 8151, 'code': 2084, '334': 276, '123': 74, '567': 395, '8901': 533, 'famili': 3397, 'resid': 6459, 'condominium': 2212, 'acquir': 693, 'owe': 5698, 'fix': 3498, 'adjust': 737, 'monthli': 5282, 'nd': 5398, 'gross': 3864, 'poor': 6001, 'afternoon': 789, 'debt': 2580, 'consolid': 2264, 'verifi': 7821, 'especi': 3230, 'button': 1683, 'shortli': 6871, 'ffffa': 3453, 'mime': 5203, 'multipart': 5340, 'boundari': 1550, 'nextpart': 5442, '0080': 23, 'bdf': 1320, 'fabaclbo': 3375, 'text': 7411, 'plain': 5955, 'transfer': 7567, 'encod': 3125, 'printabl': 6108, 'candid': 1749, 'guild': 3893, 'registri': 6379, 'covet': 2379, 'honor': 4091, 'millennium': 5194, 'searchabl': 6731, 'rom': 6563, 'inclus': 4269, 'recognit': 6342, 'standard': 7090, 'light': 4797, 'internationa': 4385, 'biograph': 1446, 'dept': 2670, 'bottom': 1544, 'earliest': 2992, 'titl': 7491, 'provinc': 6179, 'usacanada': 7751, 'postal': 6026, 'svc': 7275, 'apparel': 1016, 'aerospac': 775, 'govern': 3806, 'util': 7766, 'fg': 3454, 'dist': 2837, 'contractor': 2294, 'emgmt': 3106, 'civil': 1995, 'nuclear': 5526, 'physic': 5913, 'pathologist': 5796, 'aircraft': 816, 'cosmet': 2349, 'plastic': 5960, 'snack': 6957, 'liveri': 4831, 'brows': 1628, 'outgo': 5675, 'acquaint': 692, 'exot': 3324, 'eyebrow': 3371, 'wit': 8034, 'repositori': 6437, 'neurophysiolog': 5425, 'map': 4993, 'canon': 1754, 'curios': 2478, 'invok': 4419, 'auberg': 1153, 'steam': 7111, 'alic': 846, 'label': 4650, 'muezzin': 5330, 'contralto': 2296, 'cement': 1842, 'propel': 6153, 'dispos': 2828, 'motiv': 5304, 'communig': 2158, 'societi': 6967, 'bear': 1322, 'middl': 5180, 'bracket': 1565, 'necess': 5406, 'monday': 5265, 'dog': 2873, 'inspector': 4342, 'drop': 2939, 'permit': 5863, 'garag': 3699, 'convers': 2306, 'wednesday': 7964, 'daughter': 2545, 'attend': 1142, 'anoth': 972, 'ramif': 6273, 'speed': 7034, 'warrant': 7939, 'son': 6994, 'clue': 2054, 'friday': 3631, 'ex': 3293, 'spous': 7057, 'child': 1929, 'unjustifi': 7703, 'knew': 4623, 'unfair': 7691, 'lost': 4882, 'bought': 1547, 'difficulti': 2761, 'troubl': 7609, 'landlord': 4669, 'disput': 2830, 'divorc': 2859, 'represent': 6439, 'kid': 4596, 'somewher': 6993, 'em': 3096, 'ail': 812, 'visitng': 7875, '126': 79, 'salsa': 6645, 'session': 6808, 'nom': 5483, 'ici': 4188, 'danc': 2522, 'bar': 1275, 'latin': 4690, 'dame': 2516, 'restaur': 6475, 'teacher': 7351, 'hurt': 4163, 'pharmaceut': 5890, 'weightloss': 7971, 'adipren': 732, '720': 465, 'guaranté': 3883, 'abdomin': 637, 'reduct': 6357, '70': 452, 'overal': 5685, 'metabol': 5152, '76': 481, 'burn': 1668, 'calor': 1726, 'suppress': 7249, 'appetit': 1020, 'sugar': 7216, 'boost': 1526, 'esteem': 3242, 'adiprenl': 733, 'interplay': 4390, 'prefer': 6059, 'contribut': 2299, 'grammar': 3825, 'disclosur': 2800, 'transit': 7570, 'ridicul': 6520, 'anheus': 953, '`': 624, 'got': 3801, 'treason': 7582, 'arthur': 1075, 'convinc': 2308, 'stupid': 7187, 'other': 5664, 'conscienc': 2248, 'ach': 684, 'fight': 3464, 'peac': 5821, 'angel': 944, 'sang': 6658, 'seven': 6815, 'cruis': 2445, 'down': 2905, '88': 526, 'steel': 7113, 'denver': 2661, 'encount': 3128, 'record': 6344, 'bull': 1657, '999': 611, '900': 538, 'min': 5204, 'talent': 7324, 'audit': 1162, 'lunch': 4918, 'wonder': 8046, 'johnson': 4513, '1500': 108, 'michigan': 5172, 'nov': 5513, 'warehous': 7937, 'catch': 1810, 'contest': 2285, 'promis': 6145, 'paper': 5747, 'updat': 7729, 'heard': 3976, 'scam': 6685, 'princip': 6105, 'honest': 4086, 'cross': 2435, 'token': 7510, '025': 32, '1000': 54, 'paypal': 5816, 'card': 1770, '866': 520, '236': 210, 'chat': 1903, 'horoscop': 4103, 'ebay': 3008, 'topic': 7530, '1618': 117, 'iii': 4207, '105': 60, 'congress': 2238, 'letter': 4759, 'sender': 6775, 'method': 5158, 'glad': 3766, 'eas': 2999, 'quickli': 6250, 'aliv': 850, 'foundat': 3586, 'portfolio': 6015, 'proce': 6121, 'comfort': 2139, 'retir': 6491, 'outstand': 5683, 'estat': 3241, 'adob': 747, 'xp': 8102, 'fellow': 3442, 'softtwar': 6971, 'genuin': 3726, 'ft': 3645, 'prriicegreat': 6182, 'bargaain': 1282, 'discoount': 2802, 'chaeap': 1866, 'window': 8021, '299': 244, 'saav': 6629, '249': 215, 'photoshop': 5909, 'cs': 2452, '609': 414, '529': 379, '499': 361, '399': 310, 'acrobaat': 698, '449': 343, '349': 287, '419': 331, '54': 382, 'coreldraw': 2331, 'pagemak': 5721, '599': 405, '519': 377, 'macromedia': 4939, 'mc': 5068, 'afee': 778, 'adobe': 748, 'nero': 5418, 'pinnacl': 5933, 'powerquest': 6039, 'redhat': 6354, 'riverdeep': 6531, 'roxio': 6599, 'symaantec': 7299, '321': 263, 'studio': 7183, 'cliickk': 2034, 'shiip': 6852, 'africa': 786, 'finland': 3483, 'cheaep': 1906, 'discounnt': 2803, 'investig': 4412, 'astound': 1122, 'lv': 4922, '508': 371, 'sg': 6824, 'enemi': 3137, 'boss': 1540, 'mammoth': 4973, 'explor': 3346, 'untrac': 7722, 'adopt': 749, 'neighbor': 5412, 'transcript': 7566, 'court': 2370, 'cloak': 2044, 'alimoni': 848, 'wiretap': 8029, 'shock': 6859, 'url': 7747, '}': 8163, 'tgobk': 7415, 'nkiy': 5472, 'leap': 4722, 'prank': 6045, 'discount': 2804, 'loo': 4873, 'anti': 983, 'anxieti': 989, 'prozac': 6181, 'zoloft': 8156, 'paxil': 5809, 'soft': 6970, 'tablet': 7313, 'levitra': 4765, 'celebrex': 1835, 'vioxx': 7862, 'diabet': 2728, 'glucophag': 3781, 'lipitor': 4816, 'solv': 6985, 'dispatch': 2823, 'buck': 1643, 'satisfact': 6671, 'cheeap': 1913, 'discreet': 2808, 'cyclic': 2501, 'hanukkah': 3933, 'cia': 1969, '93': 550, 'amblen': 898, 'vallum': 7784, 'clall': 2002, 'lnfo': 4841, 'hey': 4027, 'na': 5370, 'cpn': 2389, 'vp': 7909, '84': 514, '324': 265, 'ipd': 4427, 'bow': 1555, 'lf': 4770, 'cc': 1822, 'qo': 6225, '53': 381, '780': 488, 'mm': 5239, 'kc': 4572, 'ly': 4925, '66': 435, 'lw': 4923, 'cn': 2062, '77': 482, '46': 349, '74': 472, 'sn': 6956, 'rnd': 6538, 'syb': 7296, 'prone': 6150, 'impuls': 4251, 'danubian': 2526, 'virginia': 7865, 'elm': 3089, 'handicraftsmen': 3926, 'lauri': 4698, 'anastigmat': 930, 'chickwe': 1926, 'papaw': 5745, 'blake': 1468, 'authent': 1169, 'xerox': 8095, 'heel': 3992, 'logic': 4857, 'oxal': 5702, 'limbo': 4802, 'anthracnos': 980, 'leasehold': 4725, 'paleolith': 5729, 'allot': 865, 'absorb': 655, 'injunct': 4328, 'creep': 2416, '45954036': 348, 'userid': 7759, '56075519': 392, 'turnkey': 7628, 'turori': 7630, 'clile': 2035, 'ban': 1257, 'cornfield': 2336, 'burnsid': 1669, 'coordin': 2316, 'marlborough': 5015, 'jano': 4478, 'artific': 1078, 'auditor': 1163, 'millionth': 5200, 'honeymoon': 4089, 'haggl': 3913, 'pang': 5741, 'dominick': 2881, 'earsplit': 2997, 'glutam': 3782, 'binari': 1442, 'homeown': 4078, '125': 78, 'ratio': 6293, 'refinanc': 6364, 'quotat': 6259, 'strongli': 7175, 'ourmail': 5670, 'retain': 6486, 'toadminist': 7501, 'removey': 6417, 'youdo': 8123, 'bottomof': 1545, 'usagain': 7753, 'centuri': 1850, '023154': 31, 'reflnanc': 6366, 'lnterest': 4842, 'bralamon': 1573, 'insbuy': 4335, 'disabl': 2791, 'medicar': 5100, 'dental': 2655, 'nsuranc': 5523, 'travel': 7579, 'viatic': 7839, 'settlement': 6812, 'auto': 1171, 'length': 4746, 'sex': 6819, 'matt': 5052, 'fl': 3501, 'girlfriend': 3760, 'pleasur': 5971, 'bigger': 1429, 'realist': 6317, 'gain': 3682, 'stud': 7180, 'rear': 6323, 'mate': 5044, 'utter': 7768, 'cri': 2422, 'oranjestad': 5639, 'aruba': 1084, 'po': 5981, '1200': 71, 'lone': 4867, 'spot': 7056, 'blow': 1486, 'bird': 1450, 'wing': 8022, 'bend': 1366, 'head': 3965, 'meta': 5151, 'equiv': 3198, 'style': 7189, 'css': 2455, '{': 8161, 'verdana': 7817, 'px': 6218, 'border': 1530, 'solid': 6980, 'left': 4736, '000000': 18, 'decor': 2597, 'bgcolor': 1414, 'ff': 3452, 'tabl': 7312, '750': 477, 'align': 847, 'cellpad': 1837, 'cellspac': 1838, 'td': 7347, '63': 421, '161': 116, 'side': 6882, 'gif': 3751, 'br': 1564, 'rowspan': 6598, 'img': 4222, 'src': 7074, 'jpg': 4533, '03': 33, 'repeat': 6429, 'scroll': 6722, 'row': 6597, 'col': 2103, 'nice': 5451, 'trip': 7605, 'girl': 3759, 'entertain': 3163, 'bang': 1262, 'realiti': 6318, 'fratern': 3610, 'vacat': 7773, 'rail': 6268, 'fresh': 3625, 'dude': 2957, 'speak': 7026, 'gang': 3694, 'stumbl': 7185, 'extrem': 3365, 'straight': 7146, 'pic': 5917, 'ass': 1101, 'textarea': 7412, 'nbsp': 5395, 'colspan': 2127, 'href': 4133, '106': 61, '160': 115, 'gt': 3875, 'fontfont': 3543, '582': 401, '102': 59, '94': 557, 'amp': 915, 'htmlimg': 4139, 'elimin': 3084, 'mea': 5087, 'verbal': 7815, '808': 502, '347': 285, '1880': 131, 'fontbr': 3542, 'david': 2549, 'distanc': 2838, 'debit': 2577, 'greet': 3852, 'benedicta': 1369, 'hendrick': 4007, 'enough': 3152, 'apolog': 1012, 'pray': 6047, 'kindli': 4608, 'humbl': 4151, '290': 241, 'gb': 3707, 'appreci': 1024, 'canyon': 1757, 'valley': 7783, '818': 506, '908': 540, '171': 123, 'bad': 1233, 'pull': 6202, 'hgkkdc': 4029, 'jami': 4471, 'higg': 4034, 'lesser': 4754, 'java': 4484, 'collat': 2111, 'zh': 8145, 'paramet': 5757, 'impli': 4239, 'behavior': 1353, 'upsid': 7736, 'bond': 1512, 'buyer': 1687, 'anybodi': 991, 'er': 3201, 'ect': 3022, 'hurri': 4161, 'hot': 4111, 'wait': 7920, 'laid': 4661, '800': 493, 'cb': 1821, 'nbc': 5394, 'pharmacourt': 5892, 'worlwid': 8062, 'guarrante': 3884, 'lisa': 4819, 'freightmart': 3621, 'xent': 8094, 'fork': 3566, 'pherentermin': 5897, 'experienc': 3334, 'webrx': 7961, 'severa': 6818, 'eek': 3039, 'sta': 7077, 'rting': 6609, 'ta': 7310, 'ke': 4573, 'ng': 5445, 'ess': 3233, 'incredimail': 4280, 'evolv': 3290, 'stacey': 7081, 'parallelogram': 5756, 'crack': 2393, 'random': 6279, 'tie': 7468, 'schedul': 6691, 'regular': 6382, 'club': 2052, 'cancel': 1744, 'introductori': 4405, 'shipment': 6854, 'fulfil': 3653, 'forfeit': 3562, 'esalesl': 3220, 'ae': 771, '354': 292, 'tekmail': 7364, 'optinrealbig': 5633, '1333': 86, '120': 70, 'ave': 1184, '101': 57, 'westminst': 7984, '80234': 499, 'goodby': 3797, 'clare': 2006, 'hecat': 3987, 'oil': 5589, '423': 334, 'swap': 7281, 'skill': 6927, 'slot': 6939, 'disappoint': 2793, 'teach': 7350, 'michael': 5170, 'unblock': 7671, 'favorit': 3419, 'signatur': 6889, 'cliffhang': 2033, 'told': 7511, 'actress': 707, 'cj': 1998, '5000': 365, '422': 333, 'tricki': 7600, 'setup': 6813, 'bypass': 1695, 'retent': 6488, 'anonym': 971, 'guid': 3890, 'ws': 8079, 'dictat': 2744, 'gregori': 3854, 'slash': 6931, 'chosen': 1950, 'dale': 2513, 'dawn': 2551, 'clemon': 2028, 'carol': 1787, 'cohen': 2096, 'denni': 2653, 'mustard': 5353, 'yellow': 8115, 'paragraph': 5752, 'shown': 6876, 'worthwhil': 8068, 'took': 7525, 'scream': 6717, 'spell': 7035, 'mayb': 5064, 'bold': 1508, 'unnecessarili': 7712, 'classifi': 2014, 'colour': 2126, 'detract': 2709, 'tempt': 7382, 'confus': 2230, 'cheer': 1914, 'tidbit': 7467, 'bother': 1542, 'tip': 7485, 'whose': 8004, 'scratch': 6715, 'perhap': 5856, 'flood': 3519, 'presum': 6087, 'split': 7045, 'drown': 2941, 'layout': 4710, 'jana': 4473, 'frame': 3597, 'minor': 5217, 'modif': 5251, 'adapt': 716, 'environ': 3177, 'courtesi': 2372, 'ami': 906, 'moder': 5249, 'currenc': 2479, 'trillion': 7602, 'vs': 7913, 'trader': 7556, 'forex': 3561, 'fx': 3671, 'importantli': 4242, 'acct': 678, 'inconveni': 4274, 'weir': 7973, 'bash': 1299, 'titan': 7490, 'clever': 2030, 'beaux': 1328, 'hast': 3951, 'stapl': 7094, 'lousi': 4890, 'expressway': 3356, 'browbeaten': 1626, 'cataract': 1809, 'intensifi': 4369, 'urin': 7746, 'dice': 2740, 'autocrat': 1172, 'exxon': 3368, 'deplet': 2666, 'mg': 5165, 'dose': 2897, 'physician': 5914, 'sit': 6918, '888': 529, 'xm': 8098, 'withi': 8037, 'con': 2194, 'lowest': 4897, 'simplifi': 6904, 'dream': 2924, 'hate': 3954, 'night': 5464, 'ch': 1865, 'apest': 1004, 'agr': 801, 'nline': 5475, 'stay': 7108, 'ck': 1999, 'inf': 4298, 'rm': 6535, 'ti': 7463, '1814': 128, '96': 563, 'fe': 3426, 'lo': 4843, 'cp': 2386, 'irrepress': 4438, 'anger': 948, 'consensu': 2253, 'gari': 3701, 'qj': 6223, '92': 545, '3311': 270, 'af': 777, 'russian': 6625, 'photo': 5908, '2500': 218, 'videotap': 7850, 'ricki': 6516, 'fox': 3591, 'washington': 7942, 'houston': 4124, 'tba': 7346, 'tough': 7540, 'amt': 919, 'condit': 2211, 'femal': 3444, 'aneurysm': 943, 'surgic': 7259, 'declin': 2594, 'attack': 1138, '1997': 167, 'pacemak': 5712, 'alcohol': 837, 'dri': 2930, 'pack': 5715, 'cigarett': 1974, 'smoker': 6951, 'pref': 6058, 'nonsmok': 5490, 'tobacco': 7502, 'chewer': 1922, 'insuranceiq': 4359, 'optout': 5635, 'complex': 2179, 'particularli': 5774, 'utmost': 7767, 'introduct': 4404, 'colleagu': 2112, 'senior': 6776, 'offici': 5574, 'float': 3518, 'commenc': 2143, 'militari': 5191, 'regim': 6375, 'invoic': 4418, 'civilian': 1996, 'decre': 2598, 'virtu': 7868, 'servant': 6803, 'oversea': 5693, 'five': 3497, 'ii': 4206, 'settl': 6811, 'till': 7474, 'rais': 6269, 'receipt': 6329, 'descript': 2684, 'acknowledg': 689, 'endeavour': 3132, 'furnish': 3665, 'offshor': 5579, 'donald': 2882, 'frank': 3604, 'moment': 5262, 'pleasant': 5970, 'maria': 5005, 'wash': 7941, 'sara': 6664, 'admiss': 743, 'snapshot': 6958, 'grati': 3839, 'ua': 7650, 'discontinu': 2801, 'mess': 5147, 'viet': 7851, 'vernon': 7823, 'viola': 7859, 'balm': 1255, 'await': 1198, 'pomad': 5996, 'barbit': 1280, 'kiev': 4598, 'marin': 5008, 'portray': 6019, 'mauricio': 5057, 'ballfield': 1252, 'willard': 8014, 'pouch': 6032, 'matchbook': 5043, 'victori': 7847, 'barrier': 1293, 'basalt': 1296, 'wadsworth': 7919, 'azimuth': 1211, 'bandgap': 1260, '2000': 173, 'illustr': 4215, 'corel': 2330, 'borland': 1534, 'delphi': 2635, 'sql': 7069, '110': 64, 'quark': 6236, 'acrobat': 700, 'mx': 5361, 'creator': 2409, 'symantec': 7300, 'vl': 7886, 'exclus': 3313, 'xl': 8097, 'greek': 3849, 'bowi': 1557, 'sy': 7295, 'cv': 2497, '743': 474, 'wm': 8041, '3326': 273, '97': 569, 'avf': 1190, 'romanian': 6567, 'export': 3350, 'fazeka': 3423, 'hu': 4141, 'attn': 1147, 'bucharest': 1642, 'campaign': 1737, 'marketplac': 5013, 'inquiri': 4333, 'man': 4974, 'mapdraw': 4994, 'situ': 6922, 'tribun': 7597, 'bureau': 1664, 'supervis': 7242, 'typic': 7648, 'ministri': 5215, 'justic': 4556, 'itali': 4451, 'oracl': 5636, 'ice': 4184, 'foresaw': 3556, 'resigt': 6462, 'italian': 4452, 'browser': 1629, 'navig': 5391, 'criteri': 2428, 'visualbas': 7878, 'museum': 5347, 'multimedia': 5338, 'corba': 2325, 'idl': 4198, 'orb': 5640, 'orbacu': 5641, 'librari': 4780, 'firenz': 3487, 'informat': 4315, 'bibliograph': 1421, 'interflora': 4378, 'consist': 2262, 'flowerist': 3524, 'port': 6011, 'activex': 706, 'unico': 7694, 'acquisit': 694, 'iva': 4456, 'fiscal': 3491, 'legisl': 4739, 'architectur': 1043, 'socket': 6968, 'conceiv': 2197, 'sheet': 6840, 'disposit': 2829, 'synthet': 7305, 'sogei': 6973, 'peripher': 5858, 'customhous': 2493, 'iccrea': 4183, 'mainfram': 4959, 'cobol': 2076, 'cic': 1972, 'microfilm': 5175, 'anagrafica': 922, 'iq': 4431, 'optic': 5629, 'veneto': 7810, 'ambient': 897, 'gco': 3708, 'systemat': 7308, 'interel': 4375, 'rfm': 6505, 'infoedg': 4312, 'reti': 6489, 'datanet': 2543, 'dsa': 2948, 'mainway': 4962, 'transmiss': 7571, 'telemat': 7369, 'unix': 7702, 'knowledg': 4630, 'meteorolog': 5156, 'padova': 5718, 'dec': 2582, 'vax': 7802, 'vm': 7890, 'informix': 4317, 'decnet': 2595, 'configur': 2224, 'router': 6593, 'bridg': 1602, 'gateway': 3703, 'inter': 4371, 'government': 3807, 'romania': 6566, 'thu': 7457, 'curent': 2476, 'feed': 3436, 'csibe': 2453, 'shoot': 6862, 'breast': 1589, 'ak': 822, 'jasper': 4483, 'bcc': 1317, 'wealthi': 7953, 'reveal': 6497, '0400': 36, 'edt': 3032, 'ascii': 1087, 'hedg': 3990, 'shoulder': 6873, 'hr': 4132, 'zk': 8153, 'anglican': 951, 'glassin': 3771, 'murder': 5342, 'prosecut': 6163, 'awhil': 1204, 'london': 4866, 'ya': 8106, 'sandi': 6657, 'outsourcehub': 5682, 'archetyp': 1041, 'cake': 1710, 'penni': 5838, 'violat': 7860, 'bustard': 1679, 'anthracit': 979, 'grope': 3863, 'converg': 2305, 'quest': 6245, 'trencherman': 7591, 'solidu': 6981, 'rental': 6424, 'lonesom': 4868, 'gallagh': 3686, 'balloon': 1253, 'collet': 2118, 'topocentr': 7531, 'divid': 2855, 'picofarad': 5920, 'belfast': 1356, 'slice': 6935, 'palladium': 5732, 'harden': 3939, 'merri': 5143, 'christma': 1956, '306': 253, 'sp': 7017, '41': 324, 'mode': 5246, 'copi': 2319, '107': 62, 'codeword': 2086, 'mongolia': 5272, 'genii': 3723, 'modesti': 5250, 'predic': 6056, 'emiss': 3109, 'aphrodit': 1007, 'accessori': 668, 'parboil': 5758, 'intellect': 4364, 'aggreg': 797, 'hemorrhag': 4003, 'spike': 7040, 'twelfth': 7637, 'dodd': 2868, 'condens': 2209, 'denmark': 2652, 'caterpillar': 1813, 'harm': 3942, 'coffey': 2090, 'estrang': 3248, 'smalley': 6944, 'accentu': 664, 'cuddli': 2464, 'evelyn': 3276, 'millionair': 5199, 'bulletin': 1659, 'ob': 5544, 'televis': 7372, 'outrag': 5679, 'jam': 4469, 'boast': 1498, 'superior': 7239, 'vehicl': 7804, 'proport': 6159, 'approxim': 1031, 'stage': 7085, 'slate': 6932, 'venu': 7813, 'toronto': 7535, 'bb': 1315, 'launch': 4693, 'conjunct': 2239, 'richard': 6513, 'dividend': 2856, 'mike': 5187, 'myer': 5362, 'candi': 1748, 'martin': 5022, 'eugen': 3260, 'levi': 4763, 'nevada': 5429, 'ontario': 5616, 'symbol': 7301, 'royalti': 6601, '2005': 178, 'newspap': 5438, 'cano': 1753, 'player': 5966, 'patent': 5793, 'pend': 5834, 'sold': 6975, 'tire': 7487, 'freedom': 3615, 'ethic': 3255, 'train': 7560, 'legitim': 4741, 'fail': 3386, 'scheme': 6693, 'commit': 2152, 'sort': 7004, 'incid': 4264, 'napoleon': 5382, 'hill': 4044, 'lli': 4838, '68': 440, 'unhappi': 7693, 'atleast': 1134, 'masterdisc': 5040, 'disc': 2795, '145': 98, 'gigabyt': 3753, 'big': 1427, 'hook': 4095, 'ver': 7814, 'demo': 2643, '199': 160, '954': 561, '340': 278, '1628': 120, 'finest': 3479, 'white': 7996, 'discreetlist': 2810, 'gendermail': 3720, 'gender': 3719, 'marketmak': 5012, 'maxdisc': 5059, 'metro': 5161, 'pitboss': 5943, 'avid': 1192, 'sa': 6627, 'south': 7013, 'dozen': 2907, 'belong': 1362, 'visa': 7872, 'mastercard': 5039, 'telemarket': 7368, '49': 358, '1917': 134, '051102': 40, '79': 490, 'pfizer': 5883, 'daniel': 2524, 'mutad': 5354, 'trueli': 7613, 'busine': 1676, 'optimist': 5632, 'zimbabw': 8148, 'elect': 3072, 'robert': 6544, 'mugab': 5334, 'inflat': 4308, 'sanction': 6655, 'brutal': 1632, 'farmer': 3407, 'land': 4668, 'wise': 8032, 'abroad': 649, 'magnitud': 4951, 'push': 6214, 'intoyour': 4397, 'moneywil': 5271, 'incur': 4283, 'refrain': 6368, 'urgentlyrec': 7744, 'essenc': 3234, 'done': 2884, 'homework': 4081, 'smooth': 6952, 'usher': 7761, 'shortest': 6868, 'dmutad': 2861, 'dave': 2546, 'expn': 3347, 'expnmail': 3348, 'doubt': 2900, 'abil': 641, 'contrast': 2298, 'bright': 1607, 'green': 3850, 'pink': 5931, 'black': 1461, 'aaron': 628, 'brain': 1571, 'somebodi': 6987, 'worth': 8066, 'similar': 6898, 'courier': 2368, 'arial': 1055, 'helvetica': 4001, 'curv': 2490, 'georgia': 3734, 'easier': 3001, 'ah': 806, 'everybodi': 3285, 'tall': 7326, '425': 335, 'nevertheless': 5431, 'written': 8076, 'connor': 2244, 'bi': 1416, 'entitl': 3167, 'saver': 6675, 'instinct': 4350, 'hint': 4048, 'gem': 3714, 'wisdom': 8031, 'theft': 7419, 'hyperlink': 4174, 'forget': 3563, 'offlin': 5575, 'heck': 3988, 'henri': 4008, 'flyer': 3526, 'brochur': 1617, 'desert': 2689, '89': 531, 'batch': 1303, 'lotteri': 4884, 'unwarr': 7724, 'fiduci': 3458, 'jone': 4520, '847': 516, '913': 544, 'disqualifi': 2832, 'kenneth': 4580, 'din': 2773, 'bed': 1335, 'terrifi': 7402, 'breviti': 1597, 'soul': 7009, 'suspicion': 7271, 'haunt': 3958, 'guilti': 3894, 'salli': 6642, 'dread': 2922, 'afraid': 785, 'wet': 7987, 'besid': 1395, 'buggi': 1649, 'scare': 6688, 'battl': 1307, 'turk': 7625, 'slip': 6938, 'beneath': 1368, 'rider': 6519, 'earth': 2998, 'urgenc': 7742, 'union': 7697, 'headquart': 3969, 'formal': 3569, 'ag': 791, 'zurich': 8158, 'jan': 4472, 'abandon': 632, 'nobodi': 5478, 'eman': 3099, 'donat': 2883, 'chariti': 1892, 'particular': 5773, 'earnest': 2995, 'faith': 3391, 'phillip': 5902, 'committe': 2153, 'contracr': 2292, 'tune': 7622, 'agreem': 803, 'reqiur': 6445, 'asid': 1091, 'expenc': 3329, 'formarl': 3570, 'justifi': 4557, 'masseg': 5034, 'god': 3788, 'bless': 1475, 'edward': 3035, 'rder': 6308, '98': 572, 'stroke': 7171, 'worthi': 8067, 'statu': 7107, 'laurent': 4697, 'democrat': 2644, 'republ': 6442, 'opposit': 5626, 'bedroom': 1339, 'privileg': 6116, 'father': 3416, 'diamond': 2734, 'treasur': 7583, 'vault': 7801, 'cabinet': 1699, 'polit': 5987, 'resolv': 6466, 'partnership': 5777, 'strict': 7163, 'honour': 4093, 'sildenafil': 6893, 'citrat': 1992, 'headach': 3966, 'dysfunct': 2983, 'explan': 3341, 'twice': 7642, 'webmail': 7959, 'exchequ': 3308, 'audio': 1160, 'counsel': 2357, 'kiss': 4614, 'mill': 5192, 'nebraska': 5405, 'hessian': 4024, 'foe': 3533, 'broken': 1619, 'anderson': 937, 'scientist': 6708, 'ceil': 1831, 'danburi': 2521, 'satir': 6669, 'burrough': 1670, 'frederick': 3613, 'compel': 2167, 'fisherman': 3493, 'intric': 4401, 'hyperbol': 4173, 'abrog': 650, 'foray': 3550, 'bookcas': 1523, 'fascicul': 3409, 'liechtenstein': 4788, 'bewar': 1411, 'dentistri': 2657, 'noon': 5492, 'hospit': 4109, 'gonzalez': 3795, 'glean': 3772, 'barbarian': 1277, 'corros': 2347, 'clubhous': 2053, 'dissoci': 2835, 'lucil': 4908, 'illum': 4214, 'beard': 1324, 'imped': 4233, 'dismiss': 2822, 'fest': 3450, 'carleton': 1781, 'analyst': 927, 'eddi': 3024, 'galveston': 3691, 'charta': 1898, 'czerniak': 2506, 'elliott': 3087, 'fraser': 3609, 'accomplish': 672, 'immin': 4227, 'cargo': 1778, 'postag': 6025, 'okay': 5593, 'horror': 4105, 'mcgowan': 5077, 'abey': 639, 'pintail': 5936, 'banist': 1264, 'cofactor': 2088, 'denebola': 2650, 'german': 3736, 'nashvil': 5383, 'protest': 6170, 'domin': 2880, 'habitat': 3908, 'cater': 1812, 'dyer': 2979, 'district': 2844, 'cinquefoil': 1982, 'papa': 5744, 'anilin': 954, 'beset': 1394, 'graham': 3824, 'hypnosi': 4175, 'gibbi': 3745, 'rocket': 6553, 'panick': 5743, 'aviat': 1191, 'grave': 3842, 'incent': 4261, 'born': 1535, 'shelton': 6845, 'metaphor': 5155, 'carey': 1776, 'polic': 5985, 'buckwheat': 1645, 'cancer': 1745, 'cobalt': 2075, 'barnet': 1288, 'bitt': 1455, 'hereaft': 4015, 'definit': 2614, 'lock': 4849, 'finger': 3480, 'secondari': 6738, 'replac': 6432, 'boat': 1499, 'mccullough': 5071, 'netscap': 5423, '^': 622, 'ic': 4182, 'incorrectli': 4276, 'guest': 3889, 'winter': 8025, 'recov': 6346, 'gotten': 3802, 'sweet': 7283, 'calori': 1727, 'chocol': 1942, 'delect': 2623, 'crazi': 2404, 'cozi': 2385, 'step': 7119, 'vocabulari': 7892, 'mom': 5261, 'awesom': 1203, 'upfront': 7730, 'unsolicit': 7718, 'cl': 2000, 'transport': 7574, '893': 534, 'elig': 3083, '213': 192, '139': 90, 'sobr': 6963, 'manual': 4990, 'ar': 1037, 'sistema': 6916, 'desd': 2687, 'uma': 7660, 'instalar': 4345, 'alarm': 828, 'um': 7659, 'como': 2160, 'saber': 6630, 'muito': 5335, 'kit': 4615, 'para': 5750, 'mensagem': 5123, 'acess': 683, 'hardwork': 3941, 'log': 4855, 'shipwreck': 6856, '314': 260, 'zone': 8157, 'rfc': 6504, '3066': 254, 'radic': 6266, 'intermediari': 4381, 'oz': 5706, 'bait': 1242, 'india': 4289, 'discreetli': 2809, 'judgment': 4540, 'mo': 5243, 'appar': 1015, 'strang': 7149, 'feet': 3439, 'crowd': 2440, 'fell': 3441, 'pace': 5711, 'dial': 2732, 'orang': 5638, 'stad': 7083, 'rub': 6610, 'constern': 2267, 'air': 815, 'caught': 1815, 'cling': 2039, 'mount': 5308, 'piti': 5945, 'frighten': 3636, 'oceania': 5562, 'payout': 5815, 'harvey': 3948, '1102': 65, 'failur': 3387, 'identif': 4196, 'lsluk': 4901, '2031': 182, '8161': 505, '011': 26, 'elizabeth': 3086, 'threat': 7447, '64': 429, '756': 480, 'bc': 1316, '3772': 302, 'citizen': 1991, 'ordin': 5643, 'miningnew': 5212, 'stori': 7144, 'arrang': 1065, 'confer': 2217, 'buri': 1667, 'hatchet': 3953, 'friedland': 3632, 'australian': 1168, 'shot': 6872, 'gold': 3791, 'indonesia': 4294, 'resum': 6483, 'sand': 6656, 'georg': 3731, 'infil': 4305, 'drill': 2932, 'alkan': 851, 'footprint': 3549, 'belt': 1363, 'burgess': 1666, 'western': 7983, 'perth': 5873, 'sulphid': 7224, 'zinc': 8150, 'wow': 8070, 'junior': 4550, 'gap': 3698, 'nickel': 5455, 'papua': 5748, 'guinea': 3895, 'infer': 4303, 'tonn': 7524, 'celtic': 1841, 'subsidiari': 7200, 'wa': 7917, 'shore': 6864, 'centr': 1847, 'statist': 7106, '1910': 133, 'preliminari': 6063, 'safeti': 6634, 'boom': 1525, 'copper': 2322, 'grant': 3832, 'namesak': 5379, 'beta': 1401, 'hunt': 4156, '8000': 494, 'decis': 2590, 'alpha': 874, 'prospect': 6164, 'alto': 882, 'northern': 5499, 'half': 3916, 'equip': 3195, 'turnov': 7629, 'despit': 2696, 'dip': 2778, 'forgotten': 3565, 'password': 5785, 'helpdesk': 3999, 'aspermont': 1099, 'abn': 643, '375': 300, '048': 37, 'leedervil': 4733, '6902': 447, '9489': 559, '9100': 543, '9381': 555, '1848': 129, 'dryblow': 2946, 'commod': 2154, 'ipo': 4428, 'mst': 5321, 'resourcestock': 6469, 'coal': 2070, 'bauxit': 1309, 'alum': 885, 'chromium': 1960, 'gemston': 3717, 'iron': 4435, 'kaolin': 4563, 'manganes': 4983, 'oilshal': 5590, 'pgm': 5886, 'rare': 6287, 'tantalum': 7331, 'tin': 7481, 'tungsten': 7623, 'uranium': 7740, 'vanadium': 7790, 'amer': 901, 'primex': 6102, 'expo': 3349, 'ground': 3865, 'bfp': 1413, 'ajm': 821, 'minehaul': 5207, 'haulag': 3956, 'surfac': 7255, 'cochran': 2080, 'argu': 1053, 'matur': 5055, 'percent': 5850, 'synergi': 7304, 'commerc': 2148, 'leverag': 4762, 'maxim': 5060, 'orient': 5650, 'undervalu': 7686, 'interpret': 4391, 'ple': 5967, 'judg': 4539, 'disclos': 2799, 'intent': 4370, 'caution': 1818, 'variou': 7797, 'neither': 5415, 'reform': 6367, 'distinct': 2840, 'weekday': 7966, 'fw': 3669, 'bare': 1281, 'negoti': 5410, 'zero': 8143, 'unlik': 7706, 'asset': 1107, 'wr': 8071, 'te': 7348, 'juan': 4538, 'ns': 5520, 'herbalonlin': 4013, 'checksum': 1912, 'robertson': 6545, 'adjunct': 736, 'backwat': 1227, 'fumbl': 3656, 'blond': 1482, 'chip': 1935, 'shell': 6843, 'kitchen': 4616, 'floor': 3520, 'mariam': 5006, 'abacha': 630, 'gidado': 3750, 'criscent': 2424, 'kano': 4562, 'ummah': 7661, 'compliment': 2183, 'widow': 8007, 'sanni': 6662, 'former': 3572, '1998': 168, 'cardiac': 1772, 'arrest': 1067, 'incumb': 4282, 'persecut': 5867, 'olusegun': 5602, 'obasanjo': 5545, 'klieglight': 4621, 'actviti': 710, 'freez': 3619, 'uncl': 7674, 'moham': 5255, 'nigerian': 5463, 'bail': 1240, 'strick': 7161, 'accus': 682, 'chamber': 1876, 'viabil': 7834, 'ginger': 3758, 'hell': 3995, 'bent': 1378, 'disgrac': 2816, 'secretli': 6741, 'evad': 3271, 'confisc': 2226, 'movement': 5313, 'plung': 5977, 'migrat': 5186, 'asylum': 1128, 'grief': 3857, 'stricken': 7162, 'pertin': 5874, 'machineri': 4936, 'swung': 7294, 'iook': 4424, 'poll': 5990, 'lover': 4893, 'groundbreak': 3866, 'possess': 6022, 'fool': 3545, 'gave': 3705, 'breakthrough': 1588, 'insert': 4337, 'lengthen': 4747, 'tiscali': 7488, 'senat': 6773, 'victor': 7846, 'reput': 6444, 'accid': 669, 'beneficiari': 1371, 'leav': 4727, 'behind': 1354, 'custodi': 2491, 'consent': 2254, 'nuke': 5529, 'teamnitroassassin': 7353, '350': 289, 'ton': 7519, 'combat': 2134, 'chamberlain': 1877, 'layup': 4711, 'socrat': 6969, 'bonaventur': 1511, 'calumni': 1729, 'bluejacket': 1490, 'park': 5762, 'presbyteri': 6071, 'impot': 4245, 'blumenth': 1491, 'astigmat': 1120, 'conniv': 2243, 'nsl': 5521, 'webdocc': 7958, 'ganglion': 3695, 'earl': 2989, 'mile': 5189, 'sea': 6726, 'laugh': 4692, 'sailor': 6637, 'explain': 3340, 'ev': 3269, 'shook': 6861, 'fewer': 3451, 'vt': 7914, 'coher': 2097, 'pope': 6003, 'coil': 2099, 'lobbi': 4846, 'infus': 4320, 'deuteron': 2711, 'endors': 3135, 'infal': 4299, 'phylogeni': 5912, 'rica': 6510, 'hologram': 4072, 'dreamboat': 2925, 'konrad': 4635, 'adventur': 762, 'chalklin': 1873, 'shorthand': 6870, 'clutch': 2056, 'barn': 1286, 'cord': 2326, 'bonifac': 1516, 'crawl': 2403, 'actuari': 709, 'circumst': 1988, 'guidanc': 3891, 'dreadnought': 2923, 'robbin': 6543, 'awkward': 1205, 'davi': 2548, 'michel': 5171, 'hurrican': 4162, 'gagwrit': 3680, 'grizzli': 3859, 'chromatographi': 1958, 'bini': 1444, 'ruffl': 6615, 'nova': 5514, 'albright': 833, 'cyclopean': 2502, 'hydrophob': 4170, 'psychoanalyt': 6188, 'grapevin': 3834, 'concis': 2203, 'plaster': 5959, 'lunari': 4917, 'hoy': 4127, 'cilia': 1978, 'buss': 1678, 'englewood': 3144, 'farina': 3405, 'erda': 3204, 'deciph': 2589, 'dragon': 2914, 'lie': 4787, 'despond': 2697, 'imparti': 4232, 'efficaci': 3046, 'cambric': 1730, 'clio': 2040, 'hydroxyl': 4171, 'cognat': 2093, 'boatmen': 1500, 'simonson': 6899, 'beaumont': 1326, 'ditzel': 2849, 'facilit': 3381, 'enthusiast': 3165, 'freight': 3620, 'bedspr': 1340, 'curt': 2488, 'daisi': 2512, 'chlorat': 1940, 'elfin': 3079, 'explod': 3344, 'mcgee': 5074, 'deu': 2710, 'embellish': 3104, 'wu': 8082, 'bt': 1637, 'plea': 5968, 'pretoria': 6088, 'behalf': 1352, 'overdu': 5688, 'percentag': 5851, 'nine': 5469, 'excess': 3306, 'miscellan': 5223, 'favour': 3420, 'notifi': 5510, 'mlm': 5238, 'commiss': 2150, 'bahama': 1239, 'accommod': 670, 'dell': 2632, 'satellit': 6668, 'dish': 2817, 'resend': 6457, 'marcia': 5000, '4623': 350, 'eim': 3061, 'dune': 2962, 'alaska': 829, 'fresnel': 3626, 'darken': 2532, 'sunris': 7234, 'glan': 3769, 'croydon': 2441, 'throwaway': 7455, 'teeth': 7363, 'lukemia': 4914, 'precoc': 6055, 'marjori': 5009, 'ha': 3903, 'enforc': 3140, 'gear': 3711, 'urban': 7741, 'del': 2619, 'mar': 4995, 'septemb': 6789, 'ernest': 3211, 'ceo': 1851, 'trauma': 7577, 'bag': 1237, 'versatil': 7825, 'rug': 6616, 'effici': 3047, 'assess': 1106, 'bush': 1673, '402': 316, 'highlight': 4039, 'soldier': 6976, '890': 532, 'measur': 5093, 'detect': 2705, 'marshal': 5020, '22': 197, 'defens': 2608, 'alloc': 864, 'fbi': 3424, 'emil': 3107, 'advisori': 768, 'leadership': 4718, 'philosophi': 5904, 'postur': 6029, 'evacu': 3270, 'pentagon': 5842, 'terrorist': 7404, 'strike': 7167, 'storm': 7145, 'invalu': 4406, 'steer': 7115, 'pilot': 5928, 'ronni': 6576, 'colonel': 2123, 'ron': 6572, 'counti': 2363, 'ticker': 7465, 'personnel': 5870, 'jeffrey': 4491, 'oceansid': 5563, 'familiar': 3398, 'wed': 7963, 'expos': 3351, 'greatest': 3846, 'sankoh': 6661, 'foday': 3532, 'ecomog': 3018, 'sierra': 6885, 'leon': 4749, 'underground': 7681, 'abidjan': 640, 'cote': 2352, 'ivoir': 4458, 'thereaft': 7426, 'rush': 6622, 'refuge': 6369, 'côte': 2507, 'meanwhil': 5092, 'neaarbi': 5400, 'taxat': 7344, 'takegreat': 7320, 'theinvest': 7420, 'willb': 8015, 'overs': 5691, 'christian': 1953, 'hassl': 3950, '250': 217, '43': 336, '134': 87, 'histori': 4052, 'medicaldirectori': 5099, 'physiciansguid': 5915, 'healthcar': 3973, 'hmo': 4058, 'rapidli': 6285, 'maker': 4967, 'merg': 5139, '575': 398, 'reg': 6372, '495': 360, '825': 509, '995': 610, '905': 539, '751': 478, '0199': 28, '0919': 50, 'infosourc': 4318, 'notinus': 5511, 'takeoff': 7322, 'sportsbook': 7055, 'bet': 1400, 'sick': 6881, 'loos': 4877, 'highest': 4037, '162': 118, 'perl': 5859, '1323': 84, '345': 283, 'lauderdal': 4691, '33316': 274, 'phrasemak': 5911, 'emancip': 3100, 'vprx': 7911, 'ciilck': 1975, 'groat': 3862, 'demot': 2647, 'role': 6560, 'chi': 1924, 'enzymolog': 3180, 'combust': 2136, 'honore': 4092, 'reap': 6322, 'curricula': 2482, 'incarcer': 4259, 'coca': 2077, 'einsteinium': 3063, 'moustach': 5311, 'cock': 2081, 'bridgehead': 1603, 'crewman': 2421, 'crude': 2444, 'prophet': 6158, 'aldrin': 838, 'atwood': 1151, 'inconclus': 4273, 'rational': 6295, 'argon': 1052, 'borderlin': 1531, 'destini': 2702, 'conserv': 2256, 'libido': 4779, 'ego': 3051, 'atroph': 1135, 'cutler': 2496, 'ben': 1365, 'northerli': 5498, 'carolyn': 1788, 'exclud': 3312, 'cynic': 2503, 'hurray': 4160, 'furlough': 3664, 'frustrat': 3643, 'caliph': 1721, 'adjoin': 735, 'eighteen': 3059, 'conferr': 2219, 'fujitsu': 3652, 'prospectu': 6165, 'diurnal': 2850, 'espionag': 3232, 'greenbelt': 3851, 'harriman': 3944, 'alleyway': 860, 'birthright': 1453, 'christoph': 1957, 'dabbl': 2509, 'dun': 2961, 'flee': 3511, 'knightsbridg': 4625, 'covari': 2374, 'cough': 2355, 'athen': 1132, 'aggrav': 796, 'prompt': 6148, 'bedlam': 1337, 'cowl': 2381, 'fresno': 3627, 'framework': 3598, 'pear': 5824, 'convolut': 2310, 'capac': 1760, 'aqua': 1036, 'nook': 5491, 'breakoff': 1587, 'holdup': 4068, 'cervant': 1860, 'coral': 2324, 'bogeymen': 1507, 'expir': 3337, 'camouflag': 1735, 'regret': 6380, 'francisco': 3603, 'compendia': 2168, 'shaw': 6837, 'revers': 6499, 'instil': 4349, 'brennan': 1592, 'clyde': 2057, 'repris': 6440, 'hang': 3930, 'pgp': 5887, 'nlb': 5474, 'dfikbaqugvipevwbi': 2723, 'akaa': 823, 'mv': 5358, 'truth': 7616, 'anni': 962, 'companion': 2163, 'lium': 4829, 'bien': 1425, 'phen': 5895, 'pkg': 5950, 'qeh': 6221, 'reli': 6397, 'royal': 6600, 'mangaboosal': 4982, 'princ': 6104, 'ruler': 6619, 'immemori': 4225, 'alesha': 840, 'lynch': 4929, 'ftbug': 3646, 'tuan': 7618, 'crain': 2397, 'guy': 3900, 'clement': 2027, 'gadbaw': 3678, 'alfredo': 844, 'berh': 1384, 'immunocompromis': 4229, 'therapi': 7425, 'comparison': 2165, 'lactam': 4655, 'monotherapi': 5276, 'lactamaminoglycosid': 4656, 'restrict': 6478, 'neutropenia': 5427, 'contrasellarl': 2297, 'estirar': 3244, 'primearsecola': 6101, 'gena': 3718, 'estoma': 3246, 'tica': 7464, 'jane': 4474, 'efi': 3049, 'seeker': 6754, 'thelast': 7421, 'disk': 2820, 'compil': 2173, 'addressess': 722, 'spider': 7039, 'newsgroup': 5436, 'reciept': 6335, 'payabl': 5811, '5863': 402, '408': 322, 'oronto': 5656, 'ont': 5615, 'rio': 6525, 'expiri': 3338, 'cardhold': 1771, 'rn': 6537, 'ftremov': 3648, '32663': 266, '372': 299, '05': 38, '£': 8165, 'ltd': 4903, 'andrew': 941, '312': 257, 'middlesex': 5181, 'tp': 7547, '301': 249, 'undeliver': 7678, 'grownup': 3870, '0100': 25, 'recipi': 6337, 'tfi': 7414, 'kpn': 4638, 'feb': 3430, 'mt': 5322, 'ptt': 6193, 'mtpi': 5325, '70590202251232': 458, 'fjt': 3500, 'msexch': 5320, '7059': 457, 'dont': 2888, 'wast': 7943, 'viagara': 7836, 'ocd': 5561, 'reliev': 6403, 'spasm': 7024, 'nexium': 5440, 'cure': 2475, 'wild': 8011, 'larri': 4682, '273': 234, '645': 431, '840': 515, '248': 214, 'bin': 1441, 'sub': 7192, 'yyyi': 8132, 'ri': 6509, 'ight': 4203, 'bantam': 1272, 'recept': 6332, 'clariti': 2009, 'transpar': 7573, 'interrupt': 4392, 'weak': 7951, 'controvert': 2302, 'bruce': 1630, 'laptop': 4675, 'surplu': 7260, 'grade': 3817, 'ghz': 3743, 'mb': 5066, 'floppi': 3521, 'modem': 5248, 'lan': 4667, '1394': 91, 'keyboard': 4588, 'labor': 4651, 'tech': 7355, 'hotlin': 4113, 'erron': 3215, 'french': 3622, 'nearest': 5403, 'faster': 3411, '150': 107, '630': 422, '6801': 441, 'suicid': 7219, 'nj': 5471, 'mini': 5209, 'plant': 5958, 'pipe': 5939, 'bakeri': 1245, 'nail': 5375, 'fruit': 3642, 'juic': 4542, 'retread': 6493, 'reinforc': 6386, 'roof': 6577, 'faad': 3374, 'plate': 5961, 'drum': 2945, 'aluminum': 887, 'bucket': 1644, 'inject': 4327, 'polypropylen': 5995, 'housewar': 4123, 'melamin': 5114, 'glass': 3770, 'cup': 2472, 'mug': 5333, 'muffler': 5332, 'weld': 7976, 'mesh': 5146, 'sanitari': 6659, 'hypoderm': 4176, 'syring': 7306, 'hemostat': 4004, 'clamp': 2005, 'raw': 6299, 'fifti': 3463, 'sarah': 6665, 'mathew': 5048, 'dick': 2743, 'margin': 5003, '320': 262, '135': 88, 'crew': 2420, 'yummi': 8131, 'virgin': 7864, 'ss': 7075, 'sail': 6636, 'throw': 7454, 'pretti': 6089, '60000': 409, '660': 436, 'ent': 3160, 'adjut': 738, 'undul': 7689, 'compuls': 2192, 'votari': 7903, 'nassau': 5384, 'reliant': 6400, 'apach': 1001, 'bluegrass': 1489, 'burrow': 1671, 'cur': 2474, 'steven': 7126, 'esta': 3237, 'forma': 3568, 'toda': 7503, 'van': 7789, 'ma': 4933, 'proceso': 6124, 'una': 7663, 'materia': 5046, 'prima': 6097, 'internacion': 4383, 'por': 6007, 'mismo': 5226, 'recurso': 6351, 'recibir': 6334, 'bumptiou': 1662, 'arizona': 1057, 'optim': 5630, 'carmen': 1785, 'louis': 4888, 'clergymen': 2029, 'dissip': 2834, 'compress': 2189, 'objectifi': 5548, 'proletariat': 6144, 'deterior': 2706, 'rather': 6292, 'metric': 5160, 'cow': 2380, 'cone': 2214, 'draftsmen': 2912, 'demerit': 2641, 'collinear': 2120, 'chaperon': 1886, 'apr': 1032, 'astart': 1117, 'mcgill': 5075, 'marsha': 5019, 'saloonkeep': 6644, 'fritter': 3637, 'quantifi': 6233, 'doughnut': 2902, 'wordsworth': 8053, 'heroin': 4020, 'gosh': 3799, 'pastor': 5787, 'preach': 6050, 'eno': 3151, 'exhaust': 3319, 'imprint': 4248, 'clay': 2016, 'gratuiti': 3841, 'declassifi': 2593, 'athwart': 1133, 'deliver': 2630, 'wolf': 8042, 'cutback': 2495, 'louisiana': 4889, 'mylar': 5363, 'cress': 2418, 'tori': 7534, 'eir': 3064, 'decontrol': 2596, 'intang': 4362, 'tonight': 7523, 'abdic': 636, 'courag': 2367, 'bobbi': 1503, 'clamber': 2003, 'baptism': 1274, 'genteel': 3724, 'diesel': 2752, 'euphrat': 3262, 'cheryl': 1918, 'pars': 5765, 'routin': 6594, 'delawar': 2621, 'clearanc': 2024, 'bavaria': 1310, 'carthag': 1795, 'compliant': 2181, 'constrain': 2270, 'ragout': 6267, 'incipi': 4265, 'programm': 6140, 'atropo': 1136, 'slavic': 6933, 'delmarva': 2634, 'whip': 7995, 'borneo': 1536, 'conced': 2196, 'handhold': 3924, 'quirki': 6255, 'cohomolog': 2098, 'patterson': 5802, 'lare': 4677, 'swept': 7284, 'invinc': 4416, 'homebuild': 4075, 'croatia': 2433, 'martingal': 5025, 'blackout': 1464, 'neill': 5414, 'damp': 2518, 'irvin': 4439, 'throttl': 7451, 'blotch': 1485, 'samuel': 6653, 'thunder': 7458, 'delud': 2637, 'tower': 7544, 'cornwal': 2337, 'befit': 1346, 'corona': 2338, 'confere': 2218, 'alp': 873, 'zeal': 8139, 'cholinesteras': 1948, 'natal': 5386, 'harrisburg': 3945, 'asteroid': 1118, 'cascad': 1798, 'bullet': 1658, 'conrad': 2247, 'horseplay': 4107, 'brook': 1621, 'eros': 3213, 'diction': 2745, 'venou': 7811, 'ceas': 1828, 'assign': 1109, 'falter': 3394, 'nostalgia': 5504, 'disjunct': 2819, 'jim': 4500, 'crossbar': 2436, 'anted': 976, 'rattl': 6296, 'amelior': 899, 'avuncular': 1197, 'craft': 2395, 'homosexu': 4084, 'berniec': 1390, 'standeth': 7091, 'beef': 1343, 'veto': 7829, 'confess': 2220, 'confucian': 2229, 'blain': 1466, 'lodgepol': 4853, 'chrysanthemum': 1963, 'butan': 1680, 'dimpl': 2772, 'sonnet': 6998, 'scrawl': 6716, 'lummox': 4915, 'delft': 2626, 'knockout': 4627, 'celanes': 1832, 'hodg': 4063, 'camil': 1734, 'cotman': 2353, 'rmeov': 6536, 'forethought': 3559, 'string': 7168, 'progress': 6141, 'regulatori': 6384, 'default': 2606, 'rea': 6310, 'inspect': 4341, 'qualif': 6229, 'ay': 1209, 'emai': 3097, 'ee': 3037, 'sole': 6977, 'confident': 2222, 'unbeliev': 7670, 'closur': 2050, 'priicc': 6096, 'resel': 6455, 'oem': 5569, 'preced': 6051, 'pollen': 5991, 'bantu': 1273, 'wili': 8012, 'kim': 4602, 'pont': 5999, 'avenu': 1186, 'vicki': 7844, 'baldi': 1247, 'versa': 7824, 'babyhood': 1216, 'walli': 7926, 'boston': 1541, 'spare': 7022, 'england': 3143, 'occup': 5558, '240': 212, 'spread': 7061, 'jet': 4496, 'queri': 6243, 'peng': 5835, 'inventori': 4407, 'unsold': 7717, 'dirt': 2790, 'angier': 950, 'grate': 3838, 'sensori': 6781, 'intak': 4361, 'expend': 3330, 'someth': 6990, 'medit': 5103, 'empti': 3120, 'consciou': 2249, 'joy': 4530, 'magnanim': 4949, 'finish': 3482, 'deleg': 2624, 'empow': 3119, 'ebooklet': 3011, 'successnet': 7209, 'successmark': 7208, 'adreport': 753, '156074': 112, 'duplicat': 2965, 'abund': 657, 'gina': 3757, 'abundancegroup': 658, 'hitter': 4056, 'spillov': 7042, 'matrix': 5051, 'trafficentr': 7559, 'lwd': 4924, 'camscap': 1739, 'dsl': 2950, 'tweak': 7636, 'knopk': 4628, 'imco': 4221, 'telusplanet': 7374, 'schoolofgeomat': 6703, 'virus': 7871, 'crimin': 2423, 'gssgeomat': 3874, 'stitzel': 7137, 'oldstitz': 5598, 'lhtdma': 4773, 'bloodbath': 1484, 'capella': 1761, 'antarct': 975, 'digram': 2766, 'elgin': 3081, 'barberri': 1279, 'blinn': 1479, 'lowel': 4895, 'chateaux': 1904, 'ivori': 4459, 'dissemin': 2833, 'jeremi': 4493, 'rubin': 6611, 'fructifi': 3641, 'stewart': 7129, 'doctrin': 2866, 'asthma': 1119, 'coloss': 2125, 'carlson': 1783, 'earmark': 2993, 'spuriou': 7066, 'whiten': 7997, 'coffe': 2089, 'hoyt': 4128, 'tactic': 7314, 'practition': 6044, 'annoy': 965, 'riverfront': 6532, 'appendic': 1019, 'audaci': 1158, 'simplici': 6903, 'dobb': 2862, 'ipsilater': 4430, 'builtin': 1655, 'evid': 3289, 'gym': 3901, 'accumul': 679, 'rosemari': 6582, 'sidearm': 6883, 'brad': 1566, 'carn': 1786, 'derrick': 2680, 'dewdrop': 2719, 'cuisin': 2466, 'lawn': 4704, 'jimmi': 4501, 'bradford': 1567, 'reward': 6503, 'yoghurt': 8120, 'galvan': 3690, 'kibbutzim': 4593, 'whitetail': 7998, 'pearc': 5825, 'topsi': 7532, 'christlik': 1955, 'mach': 4934, 'betid': 1405, 'lenten': 4748, 'uganda': 7652, 'abstract': 656, 'amid': 907, 'passion': 5781, 'parakeet': 5753, 'murray': 5345, 'philip': 5900, 'caddi': 1704, 'diaper': 2737, 'aliquot': 849, 'kodak': 4634, 'stater': 7102, 'coney': 2215, 'astraddl': 1123, 'blink': 1478, 'competitor': 2172, 'entrepreneur': 3170, 'surfer': 7256, 'punch': 6205, '151': 109, 'magazin': 4946, 'charter': 1899, 'flight': 3516, 'moscow': 5299, 'discoveri': 2806, 'stipul': 7136, 'collabor': 2110, 'avert': 1188, 'neg': 5409, 'lao': 4674, '703': 454, 'eventu': 3279, 'passport': 5784, 'proof': 6151, 'famou': 3399, 'hop': 4096, 'granddaught': 3829, 'sister': 6917, 'nicki': 5456, 'mere': 5138, 'tape': 7334, 'pam': 5735, 'tommi': 7516, 'herew': 4017, 'exam': 3297, 'pop': 6002, 'mous': 5310, 'forev': 3560, 'icon': 4190, 'desktop': 2694, 'ward': 7936, 'everyday': 3286, 'novelti': 5515, 'fr': 3594, 'friendli': 3635, 'clock': 2045, 'alright': 877, 'strongest': 7174, 'abneg': 644, 'previous': 6092, 'miami': 5168, '0200': 30, 'lyco': 4926, 'terra': 7398, 'abrbr': 647, 'jp': 4531, 'inflamm': 4307, 'lynx': 4931, 'traci': 7552, 'gerund': 3739, 'brittani': 1612, 'horrend': 4104, 'clothesmen': 2051, 'nobelium': 5477, 'aden': 725, 'beach': 1321, 'brim': 1610, 'cluster': 2055, 'conceal': 2195, 'berra': 1391, 'bitwis': 1457, 'earphon': 2996, 'suspect': 7268, 'lizzi': 4834, 'cardioid': 1773, 'churchyard': 1967, 'dark': 2531, 'abernathi': 638, 'contriv': 2300, 'hrothgar': 4135, 'epiderm': 3185, 'coincid': 2100, 'buddha': 1646, 'rapid': 6284, 'buzzword': 1689, 'dress': 2928, 'ncaa': 5396, 'apoge': 1009, 'affric': 784, 'divest': 2853, 'antonio': 987, 'begun': 1351, 'mit': 5231, 'mckenzi': 5080, 'cocktail': 2083, 'lab': 4649, 'grimac': 3858, 'semaphor': 6769, 'deborah': 2578, 'confut': 2231, 'anthropomorph': 982, 'sydney': 7297, 'emit': 3110, 'brookhaven': 1622, '6176': 417, '143': 95, 'vol': 7895, 'enrol': 3154, 'parent': 5760, 'hidden': 4033, 'closet': 2049, 'headlin': 3968, 'nightli': 5465, 'elsewher': 3093, 'mother': 5302, 'laundri': 4694, 'brown': 1627, 'pile': 5926, 'junk': 4551, 'envelop': 3174, 'bike': 1432, 'went': 7980, 'ride': 6518, 'dad': 2510, 'regul': 6381, '255': 222, 'prohibit': 6142, 'bound': 1549, 'attain': 1139, 'minim': 5210, 'astonish': 1121, '610': 416, 'hedland': 3991, 'lee': 4732, 'jersey': 4494, 'gambl': 3692, 'walaa': 7923, '710': 461, 'corner': 2334, 'sequenc': 6791, 'greedi': 3848, 'cycl': 2500, 'accur': 680, '555': 388, '550': 385, 'pencil': 5833, 'calcul': 1713, 'dare': 2528, 'wrap': 8072, 'jame': 4470, 'powel': 6037, 'ohio': 5587, '218': 195, 'walter': 7930, 'stuart': 7179, '4028': 317, '331': 269, 'jose': 4522, 'larson': 4683, 'king': 4610, 'exceedingli': 3302, 'mitchel': 5233, 'jodi': 4509, 'chicago': 1925, 'grumbl': 3872, 'spout': 7058, 'ignor': 4204, 'merciless': 5134, 'illinoi': 4212, 'cram': 2398, 'sondstrom': 6996, 'alberta': 831, 'luckili': 4911, '490': 359, 'susan': 7267, 'suza': 7274, '560': 391, 'beauti': 1327, 'fred': 3612, 'dellaca': 2633, 'mailer': 4954, 'ozma': 5707, 'anxious': 990, 'courteou': 2371, 'graduat': 3823, 'grandnephew': 3830, 'ash': 1088, 'paceset': 5713, 'buick': 1651, 'dud': 2956, 'coon': 2313, 'debug': 2581, 'porto': 6018, 'besmirch': 1396, 'assidu': 1108, 'elucid': 3094, 'samarium': 6650, 'winifr': 8023, 'hymn': 4172, 'pellagra': 5830, 'everglad': 3282, 'delux': 2638, 'extrus': 3366, 'pursuant': 6213, 'invigor': 4415, 'agnew': 799, 'cabletv': 1702, 'exact': 3294, 'carcinogen': 1769, 'bevel': 1409, 'residuum': 6461, 'boatswain': 1501, 'cynthia': 2504, 'calm': 1725, 'infirm': 4306, '418': 330, '2575': 224, 'deed': 2603, 'eworld': 3292, 'lend': 4744, 'uh': 7653, 'reschedul': 6451, 'hunter': 4157, 'di': 2727, 'â': 8172, 'virul': 7870, 'maxin': 5062, 'equatori': 3194, 'balkan': 1248, 'magenta': 4947, 'steen': 7114, 'exquisit': 3357, 'concurr': 2208, 'kentucki': 4582, 'baudelair': 1308, 'bernard': 1387, 'treati': 7587, 'fractur': 3596, 'incens': 4260, 'conting': 2289, 'crumbl': 2447, 'freak': 3611, 'velvet': 7807, 'franki': 3605, 'siegmund': 6884, 'kingston': 4611, 'beckon': 1333, 'mobster': 5245, 'tentacl': 7389, 'afterlif': 788, 'braze': 1579, 'samoa': 6651, 'murki': 5343, 'doric': 2892, 'disastr': 2794, 'leigh': 4743, 'frock': 3638, 'weissman': 7974, 'darrow': 2537, 'puriti': 6210, 'kill': 4599, 'parthenon': 5769, 'luggag': 4912, 'lick': 4785, 'ornament': 5655, 'duster': 2970, 'hike': 4042, 'stun': 7186, 'credibl': 2411, 'tmc': 7498, 'ww': 8084, 'dyn': 2980, 'crest': 2419, 'grassi': 3837, 'gover': 3805, 'escal': 3221, 'morel': 5290, 'shaki': 6826, 'nich': 5452, 'roth': 6586, 'degeneraci': 2616, 'droplet': 2940, 'donnybrook': 2885, 'congratulatori': 2236, 'christi': 1952, 'dwight': 2976, 'cant': 1755, 'broom': 1623, 'norwegian': 5502, 'cryogen': 2449, 'placat': 5952, 'discrimin': 2813, 'epistemolog': 3186, 'befog': 1347, 'assay': 1103, 'conscript': 2250, 'hapsburg': 3936, 'bluebonnet': 1488, 'breadfruit': 1584, 'beli': 1358, 'fishmong': 3494, 'brenda': 1591, 'mercur': 5136, 'bifoc': 1426, 'bennett': 1375, 'fiend': 3460, 'chairperson': 1872, 'supris': 7250, 'toni': 7522, 'frozen': 3640, 'surviv': 7266, 'sad': 6632, 'reimburs': 6385, 'joke': 4517, 'inde': 4284, 'broadband': 1614, 'mechan': 5094, 'cold': 2104, 'truck': 7611, 'pickup': 5919, 'seduct': 6750, 'enhancemefast': 3148, 'herbal': 4012, 'herb': 4011, 'tone': 7521, '1575332211111': 113, 'bore': 1532, 'cool': 2312, 'song': 6997, 'missi': 5228, 'billi': 1436, 'jackson': 4464, 'batman': 1305, 'danni': 2525, 'elfman': 3080, 'bangl': 1263, 'flinston': 3517, 'barbera': 1278, 'aaliyah': 627, 'madonna': 4943, 'gon': 3793, 'rhyme': 6507, 'achi': 685, 'breaki': 1586, 'ray': 6300, 'cyru': 2505, 'spangl': 7021, 'smith': 6949, 'concentr': 2198, 'rand': 6277, '111': 66, 'oprah': 5627, 'medicin': 5101, 'hunger': 4154, 'crave': 2402, 'strenuou': 7158, 'ql': 6224, 'lq': 4899, 'unbeat': 7669, 'filter': 3471, 'gladli': 3768, 'refund': 6370, '227': 203, 'lift': 4795, '1996': 166, 'amber': 895, 'crappi': 2400, 'audiotap': 1161, 'darkl': 2533, 'gelatin': 3713, 'dirichlet': 2788, 'dey': 2721, 'bourbaki': 1552, 'pamela': 5736, 'argument': 1054, 'dublin': 2954, 'triangular': 7596, 'embedd': 3103, 'boogi': 1520, 'indemnifi': 4285, 'merck': 5135, 'wi': 8005, 'mil': 5188, 'sing': 6909, 'kn': 4622, 'psychic': 6187, 'tarot': 7338, 'rune': 6621, 'biorhythm': 1447, 'chart': 1897, 'depth': 2671, 'numerolog': 5532, 'ouija': 5668, 'astrolog': 1126, 'ching': 1934, 'orgasm': 5649, 'prematur': 6064, 'sotwar': 7006, 'rejoic': 6390, 'hurtl': 4164, 'brent': 1593, 'decreas': 2599, 'dot': 2898, 'atalanta': 1129, 'brush': 1631, 'apprehend': 1025, 'passiv': 5782, 'goucher': 3803, 'irregular': 4437, '303': 251, 'nfj': 5443, 'kj': 4618, 'aa': 626, 'eric': 3210, 'vincent': 7857, 'divert': 2852, 'claus': 2015, 'war': 7935, 'honestli': 4088, 'closer': 2048, 'warn': 7938, 'clarifi': 2008, 'blue': 1487, 'rescind': 6452, 'afterimag': 787, 'condiment': 2210, 'bade': 1234, 'crossroad': 2438, 'dime': 2770, 'homicid': 4082, 'coy': 2384, 'airfoil': 817, 'fundrais': 3661, 'bedrock': 1338, 'chafe': 1867, 'heterozyg': 4025, 'calam': 1712, 'flashi': 3505, 'quirk': 6254, 'doldrum': 2875, 'beribbon': 1385, 'duck': 2955, 'chigger': 1928, 'aros': 1062, 'headwal': 3970, 'laboratori': 4652, 'aphas': 1005, 'crotch': 2439, 'benedictin': 1370, 'bilater': 1433, 'consol': 2263, 'imperi': 4235, 'dewey': 2720, 'prefix': 6060, 'coveral': 2378, 'nonchal': 5488, 'hasp': 3949, 'gloss': 3778, 'miscibl': 5224, 'kopper': 4636, 'denatur': 2648, 'allemand': 856, 'aspir': 1100, 'chao': 1885, 'gladdi': 3767, 'eleanor': 3071, 'gradual': 3822, 'calligraph': 1724, 'blister': 1480, 'parochi': 5763, 'communic': 2157, 'bong': 1515, 'hightail': 4040, 'marvin': 5026, 'gail': 3681, 'brillouin': 1609, 'birdse': 1451, 'gallinul': 3689, 'dielectr': 2750, 'durham': 2968, 'admixtur': 745, 'liar': 4777, 'crucifi': 2443, 'abash': 633, 'disson': 2836, 'fingertip': 3481, 'aegean': 772, 'rue': 6614, 'devil': 2716, 'drag': 2913, 'pasadena': 5778, 'biject': 1431, 'monoxid': 5277, 'hyde': 4167, 'demean': 2640, 'tadalafil': 7316, '234': 209, 'cy': 2498, 'rt': 6608, 'lu': 4904, 'merlin': 5142, 'ascet': 1086, 'flaki': 3503, 'glen': 3773, 'edwina': 3036, 'hub': 4143, 'boyc': 1560, 'parenthet': 5761, 'decrypt': 2601, 'glotti': 3779, 'baggag': 1238, 'argillac': 1051, 'housebreak': 4119, 'offset': 5578, 'resolut': 6465, 'appropri': 1028, 'cartoon': 1796, 'polem': 5984, 'annul': 969, 'orin': 5653, 'epoxi': 3189, 'incommensur': 4272, 'gnostic': 3785, 'adag': 713, 'scurri': 6723, 'deathb': 2569, 'metallurg': 5154, 'fletcher': 3512, 'boson': 1539, 'elmira': 3090, 'gall': 3685, 'locomot': 4851, 'sensuou': 6782, 'bookbind': 1522, 'remington': 6412, 'imprecis': 4246, 'perpetu': 5865, 'errat': 3214, 'asham': 1089, 'grab': 3814, 'olav': 5595, 'inver': 4408, 'bestir': 1398, 'cologn': 2121, 'prosthet': 6168, 'bateman': 1304, 'sequestr': 6792, 'seder': 6749, 'aesthet': 776, 'duplic': 2964, 'niacin': 5450, 'diagram': 2731, 'amateur': 892, 'cum': 2470, 'scenario': 6690, 'han': 3921, 'determinist': 2708, 'berni': 1389, 'salin': 6641, 'lean': 4721, 'ecol': 3017, 'conqueror': 2246, 'astral': 1124, 'oj': 5591, 'dodg': 2869, 'squeez': 7071, 'beat': 1325, 'columbia': 2128, 'suspens': 7270, 'sharpli': 6836, 'economist': 3021, 'metal': 5153, 'hole': 4069, 'februari': 3431, 'sharp': 6835, 'prime': 6100, 'overcom': 5686, 'archaic': 1039, 'cgfsaw': 1863, 'cmdaawlolmrlbw': 2060, 'rcmlob': 6305, 'muz': 5357, 'affair': 780, 'twain': 7635, 'gigant': 3754, 'tenant': 7384, 'roommat': 6580, 'nanni': 5381, 'housekeep': 4122, 'lookup': 4875, 'bjk': 1459, 'xk': 8096, 'killer': 4601, 'bile': 1434, 'delhi': 2627, 'moral': 5289, 'tenuou': 7390, 'darl': 2534, 'pinochl': 5935, 'accrual': 677, 'rash': 6288, 'mint': 5218, 'oliv': 5600, 'lavend': 4701, 'scar': 6687, 'sheila': 6841, 'babi': 1215, 'shelli': 6844, 'stuff': 7184, 'steve': 7125, 'chest': 1919, 'mulligan': 5336, 'william': 8016, '281': 237, 'sh': 6825, 'lane': 4670, 'wizard': 8040, 'upload': 7732, 'bandwidth': 1261, 'pet': 5876, 'confect': 2216, 'oak': 5541, 'equival': 3199, 'expedit': 3328, 'ds': 2947, '629': 420, '401': 315, '233': 208, 'emin': 3108, '867': 521, 'collin': 2119, 'factor': 3383, 'tension': 7388, 'procur': 6128, 'securit': 6748, 'constraint': 2271, 'serious': 6800, 'residu': 6460, 'giant': 3744, 'bid': 1423, 'becam': 1331, 'up': 7727, 'therebi': 7427, 'grew': 3855, 'significantli': 6891, 'publicli': 6195, 'deem': 2604, 'lieu': 4790, 'adequ': 727, 'thoroughli': 7443, 'gov': 3804, 'airport': 819, 'luxuri': 4921, 'resort': 6467, 'conglomer': 2233, 'tourism': 7542, 'organis': 5647, 'streamlin': 7154, 'linen': 4812, 'furnitur': 3666, 'bose': 1538, 'apart': 1002, 'architect': 1042, 'evan': 3274, 'buteo': 1682, 'edison': 3027, 'gallberri': 3687, 'audrey': 1164, 'endgam': 3133, 'sought': 7007, 'decker': 2591, '695': 450, 'steadi': 7109, 'unwant': 7723, 'moresign': 5291, 'thru': 7456, 'max': 5058, 'checkout': 1911, '215': 194, 'hallway': 3919, 'coat': 2073, 'gerard': 3735, 'eisner': 3066, 'eidet': 3055, 'bearberri': 1323, 'upstair': 7737, 'romano': 6568, 'defector': 2607, 'debauch': 2573, 'sourwood': 7012, 'departur': 2663, 'epicycl': 3184, 'corduroy': 2328, 'pathogen': 5795, 'dutton': 2972, 'banach': 1258, 'absenc': 652, 'grape': 3833, 'madrig': 4944, 'cultur': 2469, 'savoy': 6676, 'alcmena': 836, 'depict': 2665, 'crumb': 2446, 'bookend': 1524, 'platitud': 5963, 'allen': 857, 'arpeggio': 1064, 'lessen': 4753, 'circumcis': 1987, 'dortmund': 2896, 'bedtim': 1342, 'curio': 2477, 'sue': 7211, 'punit': 6207, 'bushel': 1674, 'dwelt': 2975, 'decept': 2587, 'westchest': 7982, 'climax': 2037, 'frequent': 3624, 'toler': 7512, 'badinag': 1236, 'dru': 2942, 'gs': 3873, 'dispel': 2824, 'sentiment': 6785, 'sylvia': 7298, 'avon': 1195, 'clammi': 2004, 'intrigu': 4402, 'sunday': 7231, 'californian': 1720, 'climat': 2036, 'barbara': 1276, 'sunglass': 7232, 'hawaiian': 3960, 'smile': 6948, 'ate': 1131, 'booz': 1529, 'tea': 7349, 'carlo': 1782, 'intens': 4368, 'smtp': 6954, 'geograph': 3728, 'moneymak': 5270, 'tremend': 7590, 'eb': 3007, 'sooner': 7000, 'oney': 5608, 'forgot': 3564, 'observ': 5551, 'presidenti': 6081, 'thirteen': 7438, 'wrote': 8078, 'secretari': 6740, 'reject': 6389, 'republican': 6443, 'kernel': 4585, 'majordomo': 4964, 'vger': 7830, 'tux': 7632, 'lkml': 4835, 'youth': 8128, 'englnal': 3146, 'subscr': 7196, 'amerig': 904, 'lisv': 4825, 'yourst': 8127, 'drudg': 2943, 'moonlit': 5286, 'muffl': 5331, 'sprawl': 7060, 'cupboard': 2473, 'kindr': 4609, 'pagan': 5719, 'monetari': 5268, 'abrad': 646, 'trilog': 7603, 'meal': 5088, 'destin': 2701, 'romant': 6569, 'orlando': 5654, 'except': 3304, 'ownership': 5701, 'household': 4121, 'bargain': 1283, 'haircut': 3915, 'exclaim': 3311, 'inbox': 4257, 'trash': 7576, 'inappropri': 4254, 'lp': 4898, 'dd': 2559, 'pp': 6040, 'aff': 779, '206': 184, 'infantil': 4301, 'lester': 4757, 'exorcis': 3323, 'hexan': 4026, 'diluent': 2768, 'obsequi': 5550, 'foster': 3583, 'betsey': 1407, 'hopkin': 4098, 'rhythm': 6508, 'northwestern': 5500, 'stanley': 7093, 'whoever': 8000, 'westward': 7986, 'crust': 2448, 'sneak': 6959, 'angri': 952, 'smash': 6946, 'phantom': 5889, 'cabinetmak': 1700, 'angi': 949, 'leukemia': 4760, 'hepatica': 4010, 'leak': 4720, 'ditch': 2846, 'lifo': 4794, 'tycoon': 7646, 'assert': 1105, 'auxiliari': 1181, 'douglass': 2903, 'circumcircl': 1986, 'vacant': 7772, 'rack': 6264, '0500': 39, 'redempt': 6353, 'robin': 6547, 'yemen': 8116, 'housebroken': 4120, 'sic': 6880, 'cull': 2467, 'adenin': 726, 'tog': 7507, 'dentur': 2659, 'expound': 3354, 'exert': 3318, 'shoe': 6860, 'dialogu': 2733, 'crossbil': 2437, 'spontan': 7051, 'perspect': 5871, 'habit': 3907, 'lotti': 4885, 'ballet': 1251, 'buttonhol': 1684, 'bitumin': 1456, 'percentil': 5852, 'alchemi': 835, 'franklin': 3607, 'loop': 4876, 'vibrat': 7840, 'seller': 6764, 'aspart': 1097, 'derefer': 2674, 'littor': 4828, 'semant': 6768, 'walton': 7932, 'cheyenn': 1923, 'curriculum': 2483, 'fri': 3630, 'insubstanti': 4355, 'abbott': 635, 'walpol': 7928, '442': 340, 'volcan': 7897, 'hydra': 4168, 'cheapsoft': 1908, 'preciou': 6053, 'ni': 5449, 'mat': 5041, 'ter': 7393, 'tom': 7514, 'huck': 4144, 'jail': 4468, 'rescript': 6453, 'crystallographi': 2451, 'smuggl': 6955, 'deriv': 2677, 'thwack': 7462, 'bay': 1312, 'mason': 5031, 'prbolem': 6048, 'blyth': 1494, 'carlton': 1784, 'uninomin': 7696, 'albani': 830, 'luci': 4907, 'barley': 1285, 'insist': 4340, 'effemin': 3045, 'explic': 3342, 'polloi': 5992, 'lockian': 4850, 'spoilag': 7046, 'neuros': 5426, 'bernardo': 1388, 'protract': 6173, 'fifth': 3462, 'glenn': 3776, 'mediocr': 5102, 'surceas': 7252, 'twentieth': 7640, 'larkin': 4681, 'cummin': 2471, 'quanta': 6232, 'verdict': 7818, 'abrupt': 651, 'diari': 2738, 'didrex': 2747, 'entrant': 3168, 'forrest': 3576, 'lynn': 4930, 'greg': 3853, '385': 305, 'expans': 3326, 'glenda': 3775, 'pentium': 5845, 'acceler': 663, 'parallel': 5755, 'flat': 3506, 'hood': 4094, 'repair': 6427, 'tuition': 7621, 'jason': 4482, 'liter': 4826, 'wilson': 8018, '25711': 223, 'crystal': 2450, '7358': 470, 'daytim': 2554, 'nighttim': 5466, 'ferret': 3448, 'ballard': 1250, 'ligament': 4796, 'yaqui': 8110, 'woodland': 8050, 'segovia': 6758, 'shut': 6878, 'diagnostician': 2730, 'annett': 961, 'charli': 1894, 'correctli': 2343, 'draft': 2911, 'element': 3077, 'theolog': 7423, 'seminari': 6770, 'su': 7191, 'estudio': 3251, 'teol': 7391, 'gico': 3749, 'consejeria': 2252, 'cristiana': 2426, 'clase': 2012, 'comienzan': 2140, 'sept': 6788, 'acreditado': 696, 'southern': 7014, 'accredit': 676, 'bibl': 1418, 'amf': 905, 'saabc': 6628, 'acsi': 702, 'bachillerato': 1220, 'teolog': 7392, 'cr': 2392, 'ditosx': 2848, 'arriba': 1068, 'dito': 2847, 'ced': 1830, 'nt': 5524, 'paul': 5804, 'ot': 5661, 'tabernacl': 7311, '403': 318, 'expositori': 3352, 'spt': 7063, '404': 319, 'religion': 6404, 'cult': 2468, 'roman': 6565, 'pentateuch': 5843, 'paulin': 5806, 'epistl': 3187, 'pth': 6192, 'iv': 4455, 'maestr': 4945, 'credito': 2413, '501': 366, 'hermeneut': 4018, 'phl': 5905, 'apologet': 1013, 'bibliolog': 1422, '502': 367, 'anthropolog': 981, 'hamartiolog': 3920, '503': 368, 'soteriolog': 7005, 'pneumatiolog': 5980, '601': 410, 'angelolog': 947, 'divin': 2857, '602': 411, 'ecclesiolog': 3014, 'eschatolog': 3222, 'propheci': 6157, 'grk': 3860, 'heb': 3984, 'hebrew': 3986, 'thesiso': 7431, 'consej': 2251, '803': 500, 'tempera': 7377, '511': 375, '513': 376, 'codepend': 2085, '604': 412, 'violenc': 7861, '608': 413, 'crisi': 2425, 'addict': 718, 'cec': 1829, '706': 459, '802': 498, 'thesi': 7430, 'doctorado': 2865, 'solo': 6983, 'mese': 5145, 'requerido': 6447, 'tener': 7387, 'oferta': 5571, 'temporada': 7379, 'descuento': 2686, 'cada': 1703, 'cursola': 2487, 'septiembr': 6790, 'querido': 6244, 'ministro': 5216, 'ahora': 808, 'tien': 7470, 'oportunidad': 5622, 'estudiar': 3250, 'hacert': 3911, 'profesion': 6132, 'diez': 2757, 'obteniendo': 5554, 'licenciatura': 4783, 'totalment': 7537, 'nuestro': 5528, 'seminario': 6771, 'esto': 3245, 'pued': 6198, 'lograr': 4861, 'comodidad': 2161, 'tu': 7617, 'casa': 1797, 'vive': 7882, 'fuera': 3651, 'correo': 2345, 'viven': 7883, 'puedenasistir': 6201, 'campu': 1738, 'espa': 3229, 'aprovech': 1035, 'gran': 3826, 'ofrec': 5584, 'trav': 7578, 'ministerio': 5214, 'ancla': 935, 'salvaci': 6647, 'costo': 2351, 'siguient': 6892, 'mensual': 5125, 'precio': 6052, 'incluido': 4268, 'libro': 4781, 'toga': 7508, 'certificado': 1859, 'graduaci': 3819, 'titulo': 7493, 'requisito': 6450, 'debe': 2575, 'haber': 3906, 'terminado': 7397, 'escuela': 3226, 'secundaria': 6746, 'instituto': 4352, 'blico': 1477, 'secular': 6745, 'cnico': 2063, 'presentar': 6078, 'nota': 5505, 'certificada': 1858, 'tiempo': 7469, 'duraci': 2966, 'curso': 2486, 'me': 5086, 'carrera': 1789, 'centro': 1849, 'lune': 4919, 'rcolesyjuevesd': 6306, 'contenido': 2282, 'hora': 4100, 'semana': 6767, 'examen': 3298, 'leer': 4734, 'completo': 2178, 'hacer': 3910, 'trabajo': 7549, 'pagina': 5723, 'escribir': 3225, 'tesi': 7405, 'nima': 5468, 'consultar': 2276, 'autor': 1177, 'tema': 7376, 'seleccionado': 6760, 'bibliograf': 1420, 'bebe': 1329, 'uno': 7713, 'daremo': 2529, 'cinco': 1979, 'ust': 7762, 'dio': 2777, 'bendiga': 1367, 'mucho': 5329, 'continuaci': 2291, 'informaci': 4314, 'todo': 7505, 'grado': 3818, 'cursado': 2485, 'tienen': 7471, 'nuestra': 5527, 'graduacion': 3820, 'junio': 4549, 'cuidad': 2465, 'tampa': 7329, 'estudiant': 3249, 'tomara': 7515, 'adem': 724, 'mene': 5122, 'tomo': 7517, 'entregara': 3169, 'investigaci': 4413, 'conocida': 2245, 'matricula': 5049, 'mensualidad': 5126, 'otro': 5666, 'puedan': 6200, 'acreditar': 697, 'deben': 2576, 'ser': 6793, 'oficial': 5582, 'acumulan': 711, '220': 198, 'matriculars': 5050, 'comenzar': 2138, 'gano': 3697, 'quier': 6253, 'nosotro': 5503, 'mandaremo': 4978, 'aplicaci': 1008, 'llenara': 4837, 'pondr': 5998, 'foto': 3584, 'enviara': 3175, 'directament': 2784, 'junto': 4552, 'env': 3173, 'copia': 2320, 'tipo': 7486, 'incluyendo': 4270, 'original': 5652, 'graduado': 3821, 'universidad': 7701, 'diplomay': 2780, 'oficialesu': 5583, 'constancia': 2265, 'aprobado': 1034, 'evaluaremo': 3273, 'pago': 5724, 'webdel': 7957, 'internetla': 4388, 'cantidad': 1756, 'cual': 2461, 'enviaremo': 3176, 'leccion': 4728, 'coreo': 2332, 'nico': 5458, 'igualment': 4205, 'accesoria': 666, 'pregunta': 6062, 'usara': 7754, 'consulta': 2275, 'quien': 6252, 'varia': 7794, 'asociacion': 1095, 'colegio': 2106, 'yseminario': 8130, 'cristiano': 2427, 'estado': 3240, 'encontrara': 3126, 'anchorofsalvacion': 932, 'escribano': 3224, 'masi': 5030, 'bellsouth': 1361, '2955': 242, '204': 183, '33135': 271, 'telefax': 7367, '305': 252, '642': 430, '2218': 199, 'anchorofsalv': 931, 'desea': 2688, 'escriba': 3223, 'direcci': 2782, 'abajo': 631, 'diciendo': 2742, 'remueva': 6419, 'netor': 5422, 'disculp': 2814, 'molestia': 5260, 'mensaj': 5124, 'considerado': 2260, 'mientra': 5184, 'pueda': 6199, 'removido': 6418, 'efecto': 3042, 'adherimo': 729, 'consideracion': 2259, 'establecida': 3238, 'requeri': 6446, 'secci': 6736, 'rrafo': 6603, 'bajo': 1243, 'decreto': 2600, 'ro': 6539, 'congreso': 2237, 'normativa': 5495, 'internacional': 4384, 'regardless': 6374, '¬': 8167, '°': 8169, '´': 8170, 'õâàï': 8174, '½': 8171, 'øèë': 8175, 'tag': 7317, 'xml': 8100, 'dictionari': 2746, 'gp': 3809, 'rook': 6578, 'ravag': 6297, 'penil': 5837, 'tem': 7375, 'justin': 4558, 'anis': 956, 'cankerworm': 1751, 'bug': 1648, 'homemak': 4076, 'compos': 2187, 'carborundum': 1768, 'nyc': 5538, 'esoft': 3228, 'sellersl': 6765, 'systemwork': 7309, 'dreamweav': 2927, 'longhorn': 4872, 'titlepric': 7492, 'dealspric': 2565, 'schmidt': 6696, 'germani': 3737, 'cheat': 1909, 'belgium': 1357, 'mp': 5315, 'gmx': 3784, 'christin': 1954, 'pte': 6191, 'anteroom': 977, 'simul': 6905, 'ac': 660, 'cowri': 2383, 'proton': 6172, 'aubrey': 1154, 'contextu': 2287, 'sphere': 7038, 'chisel': 1937, 'bacon': 1231, 'tenderfoot': 7386, 'bleach': 1474, 'demit': 2642, 'gabriel': 3677, 'homeomorph': 4077, 'amplifi': 916, 'helmholtz': 3997, 'mushi': 5348, 'simil': 6897, 'holster': 4073, 'payn': 5814, 'bombay': 1510, 'coccidiosi': 2079, 'franz': 3608, 'bergland': 1383, 'angelo': 946, 'excis': 3309, 'eigenvector': 3057, 'dichotomi': 2741, 'foal': 3529, 'straightforward': 7147, 'linda': 4807, 'plausibl': 5964, 'wallpap': 7927, 'candac': 1746, 'copenhagen': 2318, 'threonin': 7450, 'acrobaci': 699, 'charley': 1893, 'btu': 1638, 'arrow': 1070, 'erni': 3212, 'befoul': 1348, 'exploit': 3345, 'blest': 1476, 'elud': 3095, 'mccoy': 5070, 'mcconnel': 5069, 'conclav': 2204, 'jr': 4534, 'brazzavil': 1582, 'cat': 1804, 'amtrak': 920, 'numismatist': 5533, 'pursu': 6212, 'monoid': 5275, 'gibbou': 3746, '133': 85, 'brighten': 1608, 'dentist': 2656, 'stabl': 7080, 'structur': 7177, 'steward': 7128, 'decent': 2586, 'stern': 7124, 'ador': 750, 'thundershow': 7459, 'dolphin': 2877, 'race': 6263, 'silicon': 6895, 'fame': 3395, 'renew': 6420, 'loui': 4887, 'tn': 7499, 'chrome': 1959, 'upper': 7734, 'rat': 6290, 'ion': 4423, 'attribut': 1150, 'petit': 5879, 'oh': 5586, '203': 181, 'bye': 1693, 'milit': 5190, 'linear': 4811, 'andersen': 936, 'habitu': 3909, 'lawyer': 4707, 'jure': 4553, 'bounc': 1548, 'quaver': 6239, 'danzig': 2527, 'ineffect': 4296, 'hydro': 4169, 'conni': 2242, 'braggart': 1570, 'handout': 3928, 'rsvp': 6607, 'marksmen': 5014, 'convoc': 2309, 'discrep': 2811, 'batavia': 1302, 'caucasu': 1814, 'lawsuit': 4706, 'ohmmet': 5588, 'calculi': 1714, 'anniversari': 963, 'sergei': 6796, 'clark': 2011, 'dinghi': 2774, 'april': 1033, 'resembl': 6456, 'bullish': 1660, 'cognit': 2094, 'citywid': 1994, 'implic': 4240, 'capston': 1763, 'cowork': 2382, 'taylor': 7345, 'threaten': 7448, 'imprison': 4249, 'sam': 6648, 'upset': 7735, 'boot': 1527, 'adio': 731, 'muchacho': 5328, 'uout': 7726, '484': 357, 'complain': 2174, 'coagul': 2069, 'tue': 7619, 'nowher': 5518, 'suspend': 7269, 'cockey': 2082, 'bing': 1443, 'advoc': 769, 'aphasia': 1006, 'ellips': 3088, 'philanthropi': 5899, 'procrastin': 6127, 'montana': 5279, 'bigg': 1428, 'mele': 5115, 'gardner': 3700, 'bedstraw': 1341, 'juneau': 4548, 'berat': 1381, 'ghost': 3742, 'dam': 2514, 'prescott': 6073, 'certainti': 1855, 'dingo': 2775, 'terrif': 7401, 'dragonfli': 2915, 'roger': 6558, 'estrada': 3247, 'expenditur': 3331, '<': 614, 'dreamwav': 2926, 'score': 6710, 'ran': 6275, 'station': 7103, 'river': 6530, 'omaha': 5603, 'cornet': 2335, 'music': 5350, 'struck': 7176, 'lamp': 4665, 'cigar': 1973, 'mostli': 5301, 'syndic': 7303, 'nicknam': 5457, 'west': 7981, 'retard': 6487, 'recoveri': 6347, 'awak': 1199, 'borrow': 1537, 'woodwork': 8051, 'crook': 2434, 'shift': 6851, 'somewhat': 6992, 'danger': 2523, 'onl': 5612, 'crucibl': 2442, 'brasilia': 1577, 'stealth': 7110, 'flaw': 3508, 'inapt': 4255, 'geometrician': 3730, 'anna': 960, 'hong': 4090, 'felt': 3443, 'curs': 2484, 'waiv': 7921, 'imping': 4237, 'conceptu': 2200, 'contradict': 2295, 'weather': 7955, 'vein': 7805, '1953': 149, 'placement': 5954, 'outlook': 5677, 'earlier': 2991, 'surg': 7257, 'red': 6352, 'underwrit': 7687, 'horizon': 4101, 'undevelop': 7688, 'mexico': 5163, 'sd': 6724, 'professor': 6135, 'sustain': 7272, 'printer': 6109, 'copier': 2321, 'beck': 1332, 'flynn': 3527, 'descend': 2682, 'switch': 7292, 'adequaci': 728, 'hoagi': 4060, 'saturday': 6673, 'script': 6721, 'diagnost': 2729, 'chamfer': 1878, 'pioneer': 5938, 'sweeney': 7282, 'empir': 3116, 'salari': 6639, 'edmondson': 3031, 'kickoff': 4595, 'omiss': 5605, 'emphas': 3113, 'barr': 1290, 'dessert': 2698, 'wherea': 7992, 'emma': 3111, 'counterattack': 2360, 'bidirect': 1424, 'anisotropi': 957, 'eli': 3082, 'seaman': 6728, 'brandish': 1576, 'protrus': 6174, 'verit': 7822, 'carla': 1780, 'bonnevil': 1517, 'jade': 4466, 'spill': 7041, 'nyu': 5540, 'theori': 7424, 'dietz': 2756, 'flag': 3502, 'archer': 1040, 'leaf': 4719, 'newsstand': 5439, 'mhz': 5166, 'fan': 3400, 'ny': 5537, 'popup': 6006, 'montros': 5283, 'scrap': 6714, 'firework': 3488, 'graph': 3835, 'blanc': 1470, 'patti': 5803, 'exagger': 3296, 'attest': 1145, 'monad': 5264, 'backstop': 1225, 'newcom': 5433, 'parson': 5766, 'lin': 4805, 'phil': 5898, 'forum': 3581, 'hanson': 3932, 'cessna': 1861, 'alan': 827, 'embargo': 3101, 'phase': 5893, 'mangel': 4984, 'analyt': 928, 'counterpart': 2361, 'jacki': 4462, 'elain': 3070, 'assort': 1112, 'pervas': 5875, 'mcpherson': 5083, 'annum': 970, 'janet': 4476, 'shawn': 6838, 'palm': 5733, 'dermal': 2678, 'atch': 1130, 'ment': 5127, 'che': 1905, 'tor': 7533, 'viriiiti': 7867, 'lgger': 4772, 'icker': 4189, 'erget': 3207, 'sky': 6930, 'lessli': 4755, 'isfi': 4440, 'lov': 4891, 'roven': 6596, 'listr': 4824, '822': 508, 'ini': 4324, 'texa': 7409, 'merger': 5140, 'lb': 4712, 'stat': 7099, 'uri': 7745, 'sb': 6680, 'skinner': 6929, '875': 524, '302': 250, 'mei': 5112, 'smart': 6945, 'opp': 5623, 'folder': 3535, 'gibson': 3748, 'pinkish': 5932, 'millenium': 5193, 'codi': 2087, 'withdraw': 8035, '731': 469, 'emphasi': 3114, 'explicitli': 3343, 'whatsoev': 7990, 'terri': 7399, 'emphat': 3115, 'fuel': 3650, 'tree': 7589, 'gun': 3897, 'flow': 3523, 'versu': 7827, 'sentenc': 6784, 'shorter': 6867, 'surgeri': 7258, 'endless': 3134, 'ark': 1058, 'stick': 7130, 'excerpt': 3305, 'insult': 4357, 'inferior': 4304, 'outdat': 5673, 'recap': 6328, 'imposs': 4244, 'fire': 3486, 'entex': 3164, 'fyi': 3672, 'vinc': 7856, 'jordan': 4521, 'elektro': 3076, 'enron': 3155, 'lui': 4913, 'henriqu': 4009, 'scotia': 6711, 'pulp': 6203, 'kate': 4565, 'cole': 2105, '713': 462, '853': 518, '1624': 119, '646': 432, '8007': 496, 'stelli': 7118, 'nymex': 5539, '224': 200, 'herod': 4019, 'hou': 4115, 'nommensen': 5486, 'scotti': 6713, 'gilbert': 3755, 'katherin': 4566, 'kelli': 4578, 'baxter': 1311, 'randal': 6278, 'gay': 3706, 'pinion': 5930, 'trisha': 7607, 'luong': 4920, 'dian': 2735, 'niestrath': 5460, 'dba': 2557, 'edi': 3026, '0057': 21, 'kaminski': 4560, 'hl': 4057, 'delainey': 2620, 'laura': 4695, 'luce': 4906, 'lavorato': 4702, 'enronxg': 3157, 'shive': 6858, 'pikofski': 5925, '541': 383, '1225': 73, 'patienc': 5797, 'congrat': 2234, 'dana': 2520, 'dinner': 2776, '5053': 370, 'hsc': 4136, 'mmbtu': 5240, '37008': 297, 'wanda': 7933, 'curri': 2481, 'baker': 1244, 'smoothli': 6953, 'ken': 4579, 'walther': 7931, 'ena': 3122, 'blvd': 1493, 'ted': 7361, 'tex': 7408, 'mex': 5162, 'pastoria': 5789, 'chri': 1951, 'calger': 1718, 'pdx': 5820, 'parquet': 5764, 'sf': 6823, 'ozzi': 5708, 'tingleaf': 7482, 'memo': 5119, 'scott': 6712, 'pleu': 5974, 'mrha': 5318, 'rudi': 6612, 'zipter': 8152, 'xma': 8099, 'wolfin': 8043, 'spyro': 7067, 'marago': 4997, 'dynegi': 2982, 'volatil': 7896, 'sanjeev': 6660, 'khanna': 4592, 'pg': 5884, 'correl': 2344, 'morsch': 5296, 'optimis': 5631, 'stanford': 7092, 'craig': 2396, 'pirrong': 5941, 'olin': 5599, 'plenari': 5972, 'nagali': 5373, 'challa': 1874, 'sith': 6921, 'banker': 1266, 'asap': 1085, '925': 546, '1864': 130, 'ext': 3358, 'keen': 4575, 'flatter': 3507, 'aep': 774, 'draper': 2917, 'gray': 3843, '1400': 93, '77002': 483, 'frevert': 3629, 'kevin': 4586, 'presto': 6086, 'hopley': 4099, 'ga': 3676, 'sherri': 6848, 'chuck': 1964, 'watson': 7946, 'singleton': 6912, 'texaco': 7410, 'inlet': 4330, 'travi': 7580, 'murphi': 5344, 'neal': 5401, 'altra': 883, 'duke': 2960, 'harri': 3943, 'reliantenergi': 6401, 'massey': 5035, 'wood': 8049, 'harrison': 3946, 'doug': 2901, 'shirley': 6857, 'eileen': 3060, 'supplier': 7246, 'paso': 5779, 'txu': 7645, 'outlin': 5676, '415': 328, 'lewi': 4767, 'lon': 4865, 'piss': 5942, 'pat': 5790, 'lloyd': 4839, 'coach': 2067, 'attl': 1146, 'summari': 7227, 'consumpt': 2278, 'involuntari': 4420, 'qf': 6222, 'ferc': 3446, 'puc': 6197, 'dwr': 2977, 'bankrupt': 1267, 'odd': 5566, 'sce': 6689, 'legislatur': 4740, 'governor': 3808, 'burton': 1672, 'manipul': 4986, 'sacramento': 6631, 'socal': 6964, 'hebert': 3985, 'grid': 3856, 'bpa': 1562, 'mwh': 5360, 'kathi': 4567, 'adr': 752, 'martinez': 5024, 'gpg': 3810, 'eol': 3182, 'shult': 6877, 'angela': 945, 'jennif': 4492, 'tara': 7335, 'column': 2131, 'lara': 4676, 'outcom': 5672, 'deficit': 2611, 'lew': 4766, 'postpon': 6028, 'jurisdict': 4554, 'likelihood': 4799, 'koch': 4633, '6722': 439, 'aime': 814, 'lannou': 4673, 'clyne': 2058, 'daren': 2530, '1800': 127, 'baseload': 1298, 'approx': 1030, 'outag': 5671, 'moor': 5287, 'lyn': 4928, 'malina': 4971, 'crenshaw': 2417, 'wherebi': 7993, 'hpl': 4129, 'duran': 2967, 'aucoin': 1155, 'janel': 4475, 'heather': 3981, 'sukali': 7222, 'miller': 5195, 'transwestern': 7575, 'tariff': 7337, 'shipper': 6855, 'substant': 7202, '344': 282, 'raptor': 6286, 'unresolv': 7715, 'followup': 3538, 'unassign': 7665, 'lavaca': 4700, 'offsystem': 5581, 'hplc': 4130, 'midcon': 5179, 'unpath': 7714, 'unsresolv': 7719, 'rec': 6327, 'mtr': 5326, '6366': 426, '6203': 419, 'yanowski': 8108, 'redmond': 6355, 'ring': 6524, 'chokshi': 1946, 'troy': 7610, 'benoit': 1376, 'egmnom': 3050, 'shapiro': 6831, 'offsit': 5580, 'stinson': 7135, 'gibner': 3747, 'masson': 5037, 'vasant': 7798, 'shanbhogu': 6828, 'maureen': 5056, 'raymond': 6301, 'pinnamaneni': 5934, 'krishnarao': 4641, 'zimin': 8149, 'azurix': 1213, 'amitava': 908, 'dhar': 2726, 'hrgovcic': 4134, 'huang': 4142, 'kindal': 4607, 'osman': 5659, 'sezgen': 6822, 'tanya': 7332, 'tamarchenko': 7327, 'tang': 7330, 'ravi': 6298, 'thuraisingham': 7460, 'paulo': 5807, 'issler': 4447, 'ross': 6584, 'sergeev': 6795, 'patricia': 5799, 'tlapek': 7495, 'zadorozhni': 8136, 'martina': 5023, 'sokolov': 6974, 'goodmorn': 3798, 'unabl': 7664, '34710': 286, 'rli': 6534, 'yao': 8109, '172': 124, '144': 97, 'esmtp': 3227, '1942': 144, 'sunphol': 7233, 'phne': 5906, '14041': 94, 'smi': 6947, 'svr': 7277, 'resubmit': 6480, '827': 510, '6364': 425, '265': 230, '8003': 495, 'vkaminski': 7885, 'billingl': 1437, 'wincenti': 8020, 'snowbird': 6961, '77381': 486, 'rep': 6426, 'mailid': 4955, 'swiftmail': 7288, 'jefferi': 4490, 'fawcett': 3421, 'kay': 4571, 'ronald': 6573, 'galassini': 3683, 'centilli': 1846, 'darrel': 2535, 'schoolcraft': 6702, 'gpgfin': 3811, 'julia': 4544, 'hyatt': 4166, 'ipp': 4429, 'built': 1654, 'mw': 5359, 'dth': 2952, 'amort': 913, 'interconnect': 4374, 'throught': 7453, 'surround': 7263, 'suffici': 7215, 'payback': 5812, 'fairli': 3390, 'iain': 4179, 'temporari': 7380, 'kl': 4619, '5290': 380, 'pennzoil': 5841, 'dscottl': 2949, 'devon': 2717, 'stx': 7188, 'fitzpatrick': 3496, 'portland': 6017, 'trick': 7599, 'jonathan': 4519, 'lawrenc': 4705, 'workshop': 8058, 'hank': 3931, 'melissa': 5116, 'jill': 4499, 'sutton': 7273, '012': 27, 'solmonson': 6982, 'mckay': 5078, 'tisdal': 7489, 'besancon': 1393, 'shawna': 6839, 'guadalup': 3880, 'swinney': 7290, '986833': 598, '989730': 605, 'swickheim': 7286, '984056': 576, '985754': 586, 'fld': 3509, '985982': 589, 'coletto': 2108, 'creek': 2415, '986063': 591, 'mokeen': 5259, '986140': 592, '989620': 600, '984046': 575, '985547': 585, '989664': 603, 'talber': 7323, '986757': 596, 'sheridan': 6847, '985972': 588, 'hugh': 4147, '986668': 593, 'pentex': 5844, '985541': 584, 'esperanza': 3231, '984724': 579, '984959': 580, '985360': 582, 'bnp': 1496, 'petroleum': 5881, '984143': 577, 'hilcorp': 4043, '984286': 578, 'spindletop': 7043, '985430': 583, '989679': 604, 'strand': 7148, '989663': 602, '985801': 587, 'vintag': 7858, '989629': 601, 'petro': 5880, '986722': 594, '989736': 606, 'berclair': 1382, '989813': 607, 'luca': 4905, '986725': 595, '986015': 590, 'mider': 5182, '985192': 581, 'sarco': 6666, '36449': 295, 'swamp': 7280, 'speaker': 7027, 'agenda': 794, 'faculti': 3385, 'infocast': 4311, 'vkamin': 7884, 'ronh': 6575, 'henderson': 4006, 'valuat': 7788, 'farther': 3408, '4445': 341, 'pjm': 5948, 'ecar': 3013, 'turbin': 7624, 'nepool': 5417, 'palo': 5734, 'verd': 7816, 'hourli': 4117, 'mathemat': 5047, 'extent': 3361, 'autorcorrel': 1178, 'stationar': 7104, 'akaik': 824, 'criterion': 2430, 'briefli': 1606, 'rig': 6522, 'dash': 2539, 'rac': 6262, 'delta': 2636, 'allegheni': 853, 'morrel': 5293, '8321': 512, 'eprm': 3190, 'grace': 3815, 'remedi': 6409, 'sitara': 6919, 'reinhardt': 6387, 'stephani': 7120, 'meyer': 5164, 'lrc': 4900, 'fundament': 3660, 'forest': 3558, 'cleaner': 2020, 'hire': 4050, 'russel': 6623, 'carter': 1794, 'judi': 4541, 'thompson': 7441, 'jess': 4495, 'bryson': 1635, 'sullivan': 7223, 'norman': 5494, 'edu': 3033, 'johnston': 4514, '39934': 311, 'kristin': 4643, 'walsh': 7929, '39510': 307, 'absent': 653, 'mitch': 5232, 'ea': 2988, 'bio': 1445, 'golf': 3792, 'astro': 1125, 'milwauke': 5202, 'coo': 2311, 'patrick': 5800, 'morrow': 5295, 'signatori': 6888, 'brodski': 1618, 'jb': 4485, 'bori': 1533, 'azteca': 1212, 'velasquez': 7806, 'pitman': 5946, 'mckeever': 5079, 'pastora': 5788, 'cafferti': 1707, 'evanston': 3275, 'homer': 4080, 'livingston': 4832, 'centel': 1844, 'alleghani': 852, 'toft': 7506, 'pec': 5826, 'kean': 4574, 'spoken': 7048, 'spoke': 7047, 'counterparti': 2362, 'haedick': 3912, 'oxley': 5703, 'we': 7950, 'colwel': 2132, 'tim': 7476, 'deffner': 2610, 'schwieger': 6706, 'philipp': 5901, 'bibi': 1417, 'fran': 3599, 'schneider': 6697, 'geoff': 3727, 'zhiyong': 8146, 'schopp': 6704, 'tammi': 7328, 'stephen': 7121, 'perlman': 5860, 'beth': 1404, 'timelin': 7479, 'spinnak': 7044, 'gd': 3709, '138': 89, 'dow': 2904, '580': 400, 'davenport': 2547, '9272': 547, 'deni': 2651, 'recoup': 6345, 'undercollect': 7679, 'forbear': 3551, 'impos': 4243, 'equal': 3193, 'politician': 5988, 'panic': 5742, 'workout': 8057, 'shield': 6850, 'proceed': 6123, '3131': 258, '3132': 259, 'ebl': 3009, 'restrain': 6477, 'pager': 5722, '635': 423, 'unifi': 7695, '229': 204, 'calpin': 1728, 'mirant': 5222, 'remaind': 6406, 'salomon': 6643, 'barney': 1289, '816': 504, 'enpow': 3153, 'cleanup': 2022, 'diana': 2736, 'scholt': 6698, 'sean': 6729, 'crandal': 2399, 'fischer': 3492, 'alonso': 871, 'richter': 6514, 'vendor': 7808, 'modul': 5253, 'portion': 6016, 'specifi': 7031, 'supervisor': 7243, 'graci': 3816, 'presa': 6070, '7394': 471, 'shortag': 6866, 'steff': 7116, 'neil': 5413, 'comn': 2159, 'clayton': 2018, 'dasovich': 2540, 'mara': 4996, 'kaufman': 4570, 'unclear': 7676, 'roughli': 6589, 'weigh': 7969, 'shortfal': 6869, 'dg': 2725, 'peaker': 5823, 'environment': 3178, '7422': 473, '970': 570, 'janett': 4477, 'cpuc': 2391, 'kwh': 4645, 'bailout': 1241, 'rosenfield': 6583, 'referendum': 6361, 'reportedli': 6435, 'impair': 4231, 'logist': 4858, '1431': 96, 'howard': 4125, 'camp': 1736, 'neuweil': 5428, '92943': 548, 'oct': 5564, 'hc': 3964, 'ramona': 6274, 'betancourt': 1402, 'nacey': 5371, 'buchanan': 1641, 'stoke': 7140, 'duff': 2959, 'gerri': 3738, 'medel': 5096, 'blair': 1467, 'lorrain': 4879, 'lindberg': 4808, 'hanagriff': 3922, 'debbi': 2574, 'moseley': 5300, 'trevino': 7593, 'jeann': 4488, 'tk': 7494, 'lohman': 4862, 'darveaux': 2538, 'cinergi': 1981, 'stella': 7117, 'morri': 5294, '986782': 597, 'continent': 2288, 'elev': 3078, 'nois': 5482, 'strobe': 7170, 'keith': 4577, 'dziadek': 2986, 'donovan': 2887, 'bridgelin': 1604, 'merril': 5144, 'mtg': 5323, 'carl': 1779, 'calendar': 1716, 'attende': 1143, 'rotat': 6585, 'slide': 6936, 'paula': 5805, 'dpr': 2908, 'lyondel': 4932, 'buyback': 1686, 'lamphier': 4666, 'kristen': 4642, 'teco': 7360, '1517': 110, '149': 105, 'terribl': 7400, 'kinda': 4606, 'cindi': 1980, 'olson': 5601, 'whalley': 7988, 'nim': 5467, 'panama': 5738, 'anthoni': 978, 'valero': 7778, '8018': 497, 'ngo': 5446, 'majur': 4965, 'brazil': 1580, 'attatch': 1140, 'gist': 3762, 'arci': 1045, 'chapman': 1887, 'fh': 3455, 'brett': 1595, 'joao': 4507, 'albuquerqu': 834, 'stride': 7166, 'apolig': 1010, 'catalyz': 1808, 'axel': 1207, 'hinsch': 4047, 'argentin': 1049, 'cargil': 1777, 'stearn': 7112, '1980': 157, 'hoffman': 4064, 'swiss': 7291, 'brazilian': 1581, 'glencor': 3774, 'expla': 3339, 'invovl': 4422, 'tarrif': 7339, 'fyl': 3673, 'manageri': 4976, 'kimberli': 4603, '464': 351, 'hilli': 4045, 'belden': 1355, 'driscol': 2934, 'swerzbin': 7285, 'motley': 5305, '1201': 72, 'foust': 3590, 'humlicek': 4152, 'hawthorn': 3962, 'bubenko': 1640, 'cubicl': 2463, 'occupi': 5559, 'credenza': 2410, 'meg': 5106, 'fiber': 3456, '3754': 301, 'rollout': 6562, 'calgari': 1717, 'met': 5150, 'marlin': 5016, 'charlott': 1895, 'oss': 5660, 'cpr': 2390, 'fed': 3432, 'villarr': 7855, 'kathryn': 4568, '8992': 535, '398': 309, 'kern': 4584, 'backup': 1226, 'rocki': 6554, 'divestitur': 2854, 'var': 7792, 'ene': 3136, 'megawatt': 5109, 'schlesing': 6694, 'pdf': 5819, 'helsinki': 4000, 'rita': 6529, 'wynn': 8087, 'rent': 6423, '1938': 142, '1941': 143, '1944': 145, '1945': 146, '1947': 147, '1949': 148, '8322': 513, '1962': 150, '3848': 304, '4748': 354, '1964': 151, '1966': 152, '1970': 153, '1972': 154, 'tricia': 7598, 'holloway': 4071, 'epsc': 3192, '0011': 20, '100038': 55, '1930': 136, '1932': 137, '1935': 140, '1936': 141, '35957': 293, '2963': 243, '1928': 135, 'brainstorm': 1572, 'eog': 3181, 'erwin': 3217, 'georgeann': 3732, 'nogid': 5480, 'eugenio': 3261, 'perez': 5853, 'stevenson': 7127, 'derek': 2676, 'claybrook': 2017, 'killen': 4600, 'ecm': 3016, 'pge': 5885, 'spreadsheet': 7062, 'twelv': 7638, 'fn': 3528, 'hickerson': 4031, 'yosemit': 8122, '3405': 280, 'quantiti': 6235, 'rev': 6496, 'caledonia': 1715, 'psa': 6186, 'oec': 5568, 'liz': 4833, '2540': 221, 'mmcf': 5241, 'scada': 6682, 'alvarez': 888, 'ngpl': 5447, 'kh': 4591, 'vega': 7803, 'bum': 1661, 'beer': 1345, 'yeah': 8112, 'funni': 3663, 'admit': 744, 'papayoti': 5746, 'heartland': 3978, 'summar': 7226, 'bowen': 1556, 'lydeck': 4927, 'buyout': 1688, 'stockman': 7139, 'blackston': 1465, 'omb': 5604, 'reagan': 6315, 'irr': 4436, 'ripe': 6526, 'scaleup': 6684, 'mascotech': 5029, 'harsh': 3947, 'axl': 1208, 'drivelin': 2936, 'aikman': 811, 'acoust': 691, 'fabric': 3377, 'interior': 4380, 'trim': 7604, 'hip': 4049, 'creation': 2407, 'administ': 740, 'interven': 4394, 'catalytica': 1807, 'ajello': 820, 'contempl': 2281, 'intercompani': 4373, 'illiquid': 4213, 'monet': 5267, 'darren': 2536, 'enrononlin': 3156, '34523': 284, 'aim': 813, 'exec': 3314, 'coker': 2101, 'karen': 4564, '8692': 522, 'ec': 3012, 'cst': 2456, '77251': 485, 'packet': 5717, 'upstream': 7738, 'vaughn': 7800, 'pennzenergi': 5840, 'corpu': 2341, 'ranch': 6276, 'evergreen': 3283, '9758': 571, '9651': 567, '41500': 329, '9676': 568, '95912': 562, 'abridg': 648, 'fernley': 3447, 'payrol': 5817, 'reclassif': 6339, 'reclass': 6338, 'kinneman': 4612, 'bradley': 1568, 'masada': 5028, 'volunt': 7900, 'boudreaux': 1546, 'quantit': 6234, 'spudeck': 7064, 're': 6309, 'myriad': 5364, 'frankli': 3606, 'academ': 661, 'naic': 5374, 'immens': 4226, 'underli': 7682, '889': 530, '4417': 339, 'rspudeck': 6605, 'resumer': 6484, 'margaret': 5002, 'carson': 1792, 'stab': 7078, 'doe': 2871, 'summit': 7229, 'etim': 3256, 'teresa': 7394, '285': 239, '982': 573, 'krishna': 4640, 'elsa': 3092, 'zamit': 8137, '007': 22, 'coast': 2071, '4149': 327, 'cellular': 1839, '562': 393, 'romeo': 6571, 'souza': 7016, 'realloc': 6321, '130': 83, 'lillian': 4801, 'schemat': 6692, 'interim': 4379, 'bldg': 1473, 'lonestar': 4869, 'oasi': 5542, 'marg': 5001, 'cera': 1852, 'insight': 4339, 'eprofil': 3191, 'methodolog': 5159, 'cambridg': 1731, 'unauthor': 7667, 'to': 7500, 'handi': 3925, '688': 445, 'transco': 7565, 'bammel': 1256, 'chase': 1900, 'sap': 6663, 'intranet': 4398, 'macro': 4938, 'cob': 2074, 'andi': 938, 'causey': 1817, 'kostinec': 4637, '7294': 467, 'milli': 5196, 'slightli': 6937, 'uncertain': 7672, 'debra': 2579, 'organiz': 5648, 'wscc': 8080, 'reclassifi': 6340, 'ercot': 3203, 'dietrich': 2755, '39796': 308, 'milnthorp': 5201, '089': 48, 'panenergi': 5740, 'anita': 958, 'revisit': 6502, '4045': 320, '34000': 279, 'displac': 2826, 'rebekah': 6326, 'whomev': 8003, 'ccmail': 1823, 'mkt': 5235, '55397': 387, '64749': 433, '57065': 397, 'renomin': 6422, 'tranport': 7563, '984045': 574, 'pentiumc': 5846, 'seper': 6787, '1233': 75, '148376': 99, '148382': 101, '148381': 100, '148390': 102, '148391': 103, '148396': 104, 'repath': 6428, 'renom': 6421, 'maricela': 5007, 'shannon': 6829, 'rodger': 6555, 'coleman': 2107, 'joan': 4504, 'tonai': 7520, 'lehr': 4742, 'brenton': 1594, 'jett': 4497, 'lipp': 4817, 'pak': 5728, 'pair': 5727, 'amanda': 891, 'schultz': 6705, '332': 272, 'josey': 4524, 'wither': 8036, 'mclarney': 5081, 'vanc': 7791, '081': 47, 'mcf': 5073, 'kri': 4639, '5555': 389, 'felip': 3440, '77056': 484, '964': 565, '9434': 558, 'ledger': 4731, 'quickref': 6251, 'sophi': 7001, 'rodriguez': 6557, 'preserv': 6079, 'derat': 2673, 'samantha': 6649, 'mandey': 4980, 'mandi': 4981, 'adedeji': 723, 'alleghenyenergi': 854, 'bevilacqua': 1410, 'ewg': 3291, 'passov': 5783, 'easter': 3004, 'roadshow': 6541, '665': 437, '2716': 233, 'virgo': 7866, 'durhan': 2969, 'wayn': 7949, 'esa': 3219, 'nick': 5454, 'cocavessi': 2078, 'blackham': 1463, 'mysteri': 5368, 'liabl': 4776, 'bondhold': 1513, 'surcharg': 7253, 'inclin': 4266, 'dyson': 2984, 'suffic': 7214, 'hillier': 4046, '450': 345, '594': 404, 'vu': 7915, 'nanci': 5380, 'variabl': 7795, 'fsp': 3644, 'nat': 5385, 'pierc': 5923, '0357': 34, 'eecc': 3038, 'nepco': 5416, 'dodson': 2870, 'leff': 4735, 'eix': 3068, 'argentina': 1050, 'lorna': 4878, 'cfm': 1862, '5526': 386, '1235': 76, 'stimul': 7133, 'preschedul': 6072, 'curtail': 2489, 'oati': 5543, 'reorgan': 6425, 'robinson': 6548, '2256': 202, '7214': 466, '2527': 220, '3537': 291, '7058': 456, '4776': 355, '4465': 342, '264': 229, 'penalti': 5832, '1554': 111, 'kati': 4569, 'hplol': 4131, 'rice': 6511, 'swift': 7287, 'increment': 4281, '9610': 564, 'cage': 1708, 'coastal': 2072, 'vlt': 7889, '6353': 424, 'gtc': 3877, 'cokino': 2102, '6373': 427, '128952': 80, '4120': 326, '93883': 556, 'encina': 3124, '6392': 428, '93487': 552, 'midcoast': 5178, '5097': 373, '92956': 549, '93728': 553, 'wellhead': 7978, '93750': 554, '7159': 463, 'interst': 4393, '693': 449, 'gulf': 3896, '1991': 162, 'stack': 7082, 'arora': 1061, 'dayao': 2553, 'resold': 6464, 'heat': 3979, 'imbal': 4220, 'led': 4730, 'deregul': 2675, 'blame': 1469, 'martha': 5021, 'sharon': 6834, 'lindi': 4809, 'donoho': 2886, 'peral': 5849, 'patel': 5792, '33321': 275, 'chahal': 1868, 'monterrey': 5280, 'gro': 3861, 'fastow': 3413, 'eci': 3015, 'barri': 1292, 'millin': 5197, 'gosnel': 3800, 'lauren': 4696, 'gate': 3702, 'etring': 3257, 'transist': 7569, 'concernig': 2202, 'nguyen': 5448, '37159': 298, 'responsibilit': 6473, 'tracey': 7551, 'intrast': 4399, 'andrea': 940, 'prostaff': 6167, '1979': 155, 'pose': 6020, 'overtim': 5694, 'spp': 7059, 'superti': 7241, 'choat': 1941, 'epmi': 3188, 'hector': 3989, 'meantim': 5091, '1994': 164, 'internship': 4389, 'benjamin': 1374, 'sensat': 6778, 'inja': 4326, 'chun': 1965, 'sheri': 6846, 'daze': 2555, 'burchfield': 1663, 'friedman': 3633, 'csiko': 2454, 'cite': 1989, 'settanni': 6810, 'apollo': 1011, 'yzaguirr': 8133, 'unnam': 7710, 'exempt': 3316, 'jpeepl': 4532, 'columbienergi': 2130, 'logonid': 4860, 'cdeaton': 1826, 'peepl': 5829, 'licarion': 4782, '2845': 238, '2597': 226, 'deaton': 2570, 'columbiaga': 2129, 'denot': 2654, 'filenam': 3467, 'mdb': 5085, 'rburchf': 6303, 'csulliv': 2457, 'bprice': 1563, 'reportlist': 6436, 'reiter': 6388, 'vastar': 7799, 'bentley': 1379, 'complaint': 2175}
+
+
+STARTING GLOBAL ITERATION 1
+
+
+Initializing PSO...
+Performing clustering...
+Iteration: 0, best solution: 2.6279490583230516e-10
+Iteration: 1, best solution: 2.6279490583230516e-10
+Iteration: 2, best solution: 2.6192532642847743e-10
+Iteration: 3, best solution: 2.4128587897571983e-10
+Iteration: 4, best solution: 2.3987532980560566e-10
+Iteration: 5, best solution: 2.313688756716302e-10
+Iteration: 6, best solution: 1.6623094280755476e-10
+Iteration: 7, best solution: 1.4078521632566092e-10
+Iteration: 8, best solution: 8.109957809859658e-11
+Iteration: 9, best solution: 6.581429536412677e-11
+Iteration: 10, best solution: 6.25453205564136e-11
+Iteration: 11, best solution: 5.957994268578502e-11
+Iteration: 12, best solution: 5.947500371339362e-11
+Iteration: 13, best solution: 4.819114420685544e-11
+Iteration: 14, best solution: 4.033348219645842e-11
+Iteration: 15, best solution: 3.9804401885895865e-11
+Iteration: 16, best solution: 3.684785464099157e-11
+Iteration: 17, best solution: 3.512187215734603e-11
+Iteration: 18, best solution: 3.02455716912872e-11
+Iteration: 19, best solution: 2.811618405206735e-11
+Cluster 1
+---------------------------------------------------------------
+Legitimate: 390, spam: 308
+---------------------------------------------------------------
+Cluster 0
+---------------------------------------------------------------
+Legitimate: 110, spam: 192
+---------------------------------------------------------------
+
+
+STARTING GLOBAL ITERATION 2
+
+
+Initializing PSO...
+Performing clustering...
+Iteration: 0, best solution: 2.0939049446665485e-10
+Iteration: 1, best solution: 1.9883484992374255e-10
+Iteration: 2, best solution: 1.7109081851252713e-10
+Iteration: 3, best solution: 1.7109081851252713e-10
+Iteration: 4, best solution: 1.699289608621095e-10
+Iteration: 5, best solution: 1.453693180903224e-10
+Iteration: 6, best solution: 1.3050606923572238e-10
+Iteration: 7, best solution: 1.3050606923572238e-10
+Iteration: 8, best solution: 1.2039596249713956e-10
+Iteration: 9, best solution: 1.1851600605330205e-10
+Iteration: 10, best solution: 1.1257352672903284e-10
+Iteration: 11, best solution: 1.0804862711803993e-10
+Iteration: 12, best solution: 1.04581820611619e-10
+Iteration: 13, best solution: 9.815718261455897e-11
+Iteration: 14, best solution: 8.842653502820314e-11
+Iteration: 15, best solution: 8.183708178375675e-11
+Iteration: 16, best solution: 7.522114161331603e-11
+Iteration: 17, best solution: 7.149229805621561e-11
+Iteration: 18, best solution: 6.551550078296693e-11
+Iteration: 19, best solution: 6.221617493245692e-11
+Cluster 0
+---------------------------------------------------------------
+Legitimate: 486, spam: 464
+---------------------------------------------------------------
+Cluster 1
+---------------------------------------------------------------
+Legitimate: 14, spam: 36
+---------------------------------------------------------------
+
+
+STARTING GLOBAL ITERATION 3
+
+
+Initializing PSO...
+Performing clustering...
+Iteration: 0, best solution: 3.4150699876523355e-10
+Iteration: 1, best solution: 3.4150699876523355e-10
+Iteration: 2, best solution: 3.279937466673508e-10
+Iteration: 3, best solution: 2.7087140247686646e-10
+Iteration: 4, best solution: 2.066387387523828e-10
+Iteration: 5, best solution: 1.7238543155930346e-10
+Iteration: 6, best solution: 8.554376373082798e-11
+Iteration: 7, best solution: 7.564503196025053e-11
+Iteration: 8, best solution: 6.596452071017237e-11
+Iteration: 9, best solution: 5.344014979298437e-11
+Iteration: 10, best solution: 4.010541899391205e-11
+Iteration: 11, best solution: 3.45632704818935e-11
+Iteration: 12, best solution: 3.176899710564965e-11
+Iteration: 13, best solution: 2.6800667909254085e-11
+Iteration: 14, best solution: 2.477427515926858e-11
+Iteration: 15, best solution: 1.8759767597816854e-11
+Iteration: 16, best solution: 1.3550433208321026e-11
+Iteration: 17, best solution: 1.2408295247554905e-11
+Iteration: 18, best solution: 1.229979634438355e-11
+Iteration: 19, best solution: 1.0712607579320295e-11
+Cluster 1
+---------------------------------------------------------------
+Legitimate: 430, spam: 424
+---------------------------------------------------------------
+Cluster 0
+---------------------------------------------------------------
+Legitimate: 70, spam: 76
+---------------------------------------------------------------
+
+
+STARTING GLOBAL ITERATION 4
+
+
+Initializing PSO...
+Performing clustering...
+Iteration: 0, best solution: 1.5025888275980227e-10
+Iteration: 1, best solution: 1.5025888275980227e-10
+Iteration: 2, best solution: 1.5025888275980227e-10
+Iteration: 3, best solution: 1.2805186171875142e-10
+Iteration: 4, best solution: 1.0206663323071296e-10
+Iteration: 5, best solution: 3.993073118295255e-11
+Iteration: 6, best solution: 3.4349827291385564e-11
+Iteration: 7, best solution: 1.7900747728318373e-11
+Iteration: 8, best solution: 9.799163271767947e-12
+Iteration: 9, best solution: 8.694800999343626e-12
+Iteration: 10, best solution: 7.347007263511081e-12
+Iteration: 11, best solution: 4.3675112808958895e-12
+Iteration: 12, best solution: 4.3675112808958895e-12
+Iteration: 13, best solution: 4.3675112808958895e-12
+Iteration: 14, best solution: 4.3675112808958895e-12
+Iteration: 15, best solution: 4.3675112808958895e-12
+Iteration: 16, best solution: 4.3675112808958895e-12
+Iteration: 17, best solution: 4.3675112808958895e-12
+Iteration: 18, best solution: 4.3675112808958895e-12
+Iteration: 19, best solution: 4.3675112808958895e-12
+Cluster 0
+---------------------------------------------------------------
+Legitimate: 497, spam: 471
+---------------------------------------------------------------
+Cluster 1
+---------------------------------------------------------------
+Legitimate: 3, spam: 29
+---------------------------------------------------------------
+
+
+STARTING GLOBAL ITERATION 5
+
+
+Initializing PSO...
+Performing clustering...
+Iteration: 0, best solution: 6.255828616364566e-10
+Iteration: 1, best solution: 5.950091832553053e-10
+Iteration: 2, best solution: 5.785087812016173e-10
+Iteration: 3, best solution: 4.726579826293265e-10
+Iteration: 4, best solution: 3.955188382341216e-10
+Iteration: 5, best solution: 3.8882392319310674e-10
+Iteration: 6, best solution: 3.591752200373408e-10
+Iteration: 7, best solution: 3.5529173545893986e-10
+Iteration: 8, best solution: 3.3944340422883873e-10
+Iteration: 9, best solution: 3.3944340422883873e-10
+Iteration: 10, best solution: 3.2981930800874003e-10
+Iteration: 11, best solution: 3.2981930800874003e-10
+Iteration: 12, best solution: 3.1594947103534914e-10
+Iteration: 13, best solution: 3.113761445393854e-10
+Iteration: 14, best solution: 2.9570587546477224e-10
+Iteration: 15, best solution: 2.929063277348158e-10
+Iteration: 16, best solution: 2.84008965423659e-10
+Iteration: 17, best solution: 2.642508715439579e-10
+Iteration: 18, best solution: 2.4761546954628223e-10
+Iteration: 19, best solution: 2.2647607358572324e-10
+Cluster 1
+---------------------------------------------------------------
+Legitimate: 485, spam: 451
+---------------------------------------------------------------
+Cluster 0
+---------------------------------------------------------------
+Legitimate: 15, spam: 49
+---------------------------------------------------------------
+
+
+STARTING GLOBAL ITERATION 1
+
+
+Initializing PSO...
+Performing clustering...
+Iteration: 0, best solution: 2.2469625631868314e-10
+Iteration: 1, best solution: 2.2469625631868314e-10
+Iteration: 2, best solution: 1.943434758134495e-10
+Iteration: 3, best solution: 1.943434758134495e-10
+Iteration: 4, best solution: 1.599801090030403e-10
+Iteration: 5, best solution: 1.1568904902096852e-10
+Iteration: 6, best solution: 1.0899431015350612e-10
+Iteration: 7, best solution: 9.588355438318572e-11
+Iteration: 8, best solution: 7.925412009533709e-11
+Iteration: 9, best solution: 7.089156881493426e-11
+Iteration: 10, best solution: 5.742748769035834e-11
+Iteration: 11, best solution: 5.402376732176236e-11
+Iteration: 12, best solution: 4.249079521533714e-11
+Iteration: 13, best solution: 3.7303752880931414e-11
+Iteration: 14, best solution: 2.847973021016046e-11
+Iteration: 15, best solution: 1.9358134947186306e-11
+Iteration: 16, best solution: 1.6408859826093185e-11
+Iteration: 17, best solution: 1.4641792233285852e-11
+Iteration: 18, best solution: 1.4404348968349196e-11
+Iteration: 19, best solution: 1.2621624797638963e-11
+Cluster 0
+---------------------------------------------------------------
+Legitimate: 475, spam: 457
+---------------------------------------------------------------
+Cluster 1
+---------------------------------------------------------------
+Legitimate: 25, spam: 43
+---------------------------------------------------------------
+
+
+STARTING GLOBAL ITERATION 2
+
+
+Initializing PSO...
+Performing clustering...
+Iteration: 0, best solution: 1.2198888458327582e-10
+Iteration: 1, best solution: 1.2198888458327582e-10
+Iteration: 2, best solution: 1.2198888458327582e-10
+Iteration: 3, best solution: 1.2198888458327582e-10
+Iteration: 4, best solution: 1.0596173738674386e-10
+Iteration: 5, best solution: 9.105088398662144e-11
+Iteration: 6, best solution: 9.105088398662144e-11
+Iteration: 7, best solution: 9.105088398662144e-11
+Iteration: 8, best solution: 9.035474787781686e-11
+Iteration: 9, best solution: 8.734390869754294e-11
+Iteration: 10, best solution: 8.585497897297645e-11
+Iteration: 11, best solution: 8.032967190486076e-11
+Iteration: 12, best solution: 7.006627129085826e-11
+Iteration: 13, best solution: 6.792226149409707e-11
+Iteration: 14, best solution: 6.600170247714426e-11
+Iteration: 15, best solution: 6.385336205387127e-11
+Iteration: 16, best solution: 5.441542375272083e-11
+Iteration: 17, best solution: 5.270042982702246e-11
+Iteration: 18, best solution: 4.924120808137413e-11
+Iteration: 19, best solution: 4.881915679483291e-11
+Cluster 1
+---------------------------------------------------------------
+Legitimate: 498, spam: 489
+---------------------------------------------------------------
+Cluster 0
+---------------------------------------------------------------
+Legitimate: 2, spam: 11
+---------------------------------------------------------------
+
+
+STARTING GLOBAL ITERATION 3
+
+
+Initializing PSO...
+Performing clustering...
+Iteration: 0, best solution: 2.3283505656616624e-10
+Iteration: 1, best solution: 2.3283505656616624e-10
+Iteration: 2, best solution: 1.6440067397430626e-10
+Iteration: 3, best solution: 1.495039640124047e-10
+Iteration: 4, best solution: 1.1609373254514689e-10
+Iteration: 5, best solution: 8.772825256318437e-11
+Iteration: 6, best solution: 6.035043854133044e-11
+Iteration: 7, best solution: 4.488151317355343e-11
+Iteration: 8, best solution: 3.744052360364192e-11
+Iteration: 9, best solution: 3.571821940899e-11
+Iteration: 10, best solution: 3.116610423135645e-11
+Iteration: 11, best solution: 2.25570498598471e-11
+Iteration: 12, best solution: 1.9786775317181036e-11
+Iteration: 13, best solution: 1.936182910007812e-11
+Iteration: 14, best solution: 1.852797038682175e-11
+Iteration: 15, best solution: 1.7490103162002855e-11
+Iteration: 16, best solution: 1.531179520942065e-11
+Iteration: 17, best solution: 1.4848828417509415e-11
+Iteration: 18, best solution: 1.4848828417509415e-11
+Iteration: 19, best solution: 1.4321874074788011e-11
+Cluster 1
+---------------------------------------------------------------
+Legitimate: 427, spam: 351
+---------------------------------------------------------------
+Cluster 0
+---------------------------------------------------------------
+Legitimate: 73, spam: 149
+---------------------------------------------------------------
+
+
+STARTING GLOBAL ITERATION 4
+
+
+Initializing PSO...
+Performing clustering...
+Iteration: 0, best solution: 2.1142661850066328e-10
+Iteration: 1, best solution: 2.1142661850066328e-10
+Iteration: 2, best solution: 1.9486528297760038e-10
+Iteration: 3, best solution: 1.9486528297760038e-10
+Iteration: 4, best solution: 1.850223862972653e-10
+Iteration: 5, best solution: 1.607253750345614e-10
+Iteration: 6, best solution: 1.5804520064671814e-10
+Iteration: 7, best solution: 1.371478406447073e-10
+Iteration: 8, best solution: 1.371478406447073e-10
+Iteration: 9, best solution: 1.227180592479217e-10
+Iteration: 10, best solution: 1.227180592479217e-10
+Iteration: 11, best solution: 1.215828236141034e-10
+Iteration: 12, best solution: 1.215828236141034e-10
+Iteration: 13, best solution: 1.199109454561798e-10
+Iteration: 14, best solution: 1.1936452732530622e-10
+Iteration: 15, best solution: 1.1154063892665392e-10
+Iteration: 16, best solution: 1.1130497014989847e-10
+Iteration: 17, best solution: 1.1128140327222286e-10
+Iteration: 18, best solution: 1.0793668937245866e-10
+Iteration: 19, best solution: 1.034304612409152e-10
+Cluster 0
+---------------------------------------------------------------
+Legitimate: 490, spam: 452
+---------------------------------------------------------------
+Cluster 1
+---------------------------------------------------------------
+Legitimate: 10, spam: 48
+---------------------------------------------------------------
+
+
+STARTING GLOBAL ITERATION 5
+
+
+Initializing PSO...
+Performing clustering...
+Iteration: 0, best solution: 5.10341349620882e-10
+Iteration: 1, best solution: 5.10341349620882e-10
+Iteration: 2, best solution: 4.675027451937674e-10
+Iteration: 3, best solution: 4.038345038748025e-10
+Iteration: 4, best solution: 3.487423587823659e-10
+Iteration: 5, best solution: 2.607691825684111e-10
+Iteration: 6, best solution: 2.5984932938776175e-10
+Iteration: 7, best solution: 2.340885761364085e-10
+Iteration: 8, best solution: 1.3231023846782996e-10
+Iteration: 9, best solution: 9.444610725977195e-11
+Iteration: 10, best solution: 9.240523471797386e-11
+Iteration: 11, best solution: 9.010893817089486e-11
+Iteration: 12, best solution: 8.498160750482921e-11
+Iteration: 13, best solution: 7.76209215276642e-11
+Iteration: 14, best solution: 6.985502844051569e-11
+Iteration: 15, best solution: 6.677393082395386e-11
+Iteration: 16, best solution: 5.791100057771641e-11
+Iteration: 17, best solution: 5.791100057771641e-11
+Iteration: 18, best solution: 5.4725896715590016e-11
+Iteration: 19, best solution: 4.4499758295415695e-11
+Cluster 0
+---------------------------------------------------------------
+Legitimate: 444, spam: 420
+---------------------------------------------------------------
+Cluster 1
+---------------------------------------------------------------
+Legitimate: 56, spam: 80
+---------------------------------------------------------------
+
+
+STARTING GLOBAL ITERATION 1
+
+
+Initializing PSO...
+Performing clustering...
+Iteration: 0, best solution: 5.323441202604792e-10
+Iteration: 1, best solution: 4.4161998080789e-10
+Iteration: 2, best solution: 3.452008632694717e-10
+Iteration: 3, best solution: 3.0554012582252596e-10
+Iteration: 4, best solution: 2.9307486227226705e-10
+Iteration: 5, best solution: 2.8993815772804594e-10
+Iteration: 6, best solution: 2.7334413582746064e-10
+Iteration: 7, best solution: 2.394914849367806e-10
+Iteration: 8, best solution: 1.6890159751332028e-10
+Iteration: 9, best solution: 1.6878596218664348e-10
+Iteration: 10, best solution: 1.6878596218664348e-10
+Iteration: 11, best solution: 1.604995465187887e-10
+Iteration: 12, best solution: 1.5174812986755842e-10
+Iteration: 13, best solution: 1.3509905260300748e-10
+Iteration: 14, best solution: 1.2317597370089286e-10
+Iteration: 15, best solution: 1.1814586702880232e-10
+Iteration: 16, best solution: 1.1720038361392444e-10
+Iteration: 17, best solution: 1.1190727375300849e-10
+Iteration: 18, best solution: 1.1174057475037713e-10
+Iteration: 19, best solution: 1.0454208512599366e-10
+Cluster 1
+---------------------------------------------------------------
+Legitimate: 440, spam: 435
+---------------------------------------------------------------
+Cluster 0
+---------------------------------------------------------------
+Legitimate: 60, spam: 65
+---------------------------------------------------------------
+
+
+STARTING GLOBAL ITERATION 2
+
+
+Initializing PSO...
+Performing clustering...
+Iteration: 0, best solution: 2.546529552184168e-10
+Iteration: 1, best solution: 2.546529552184168e-10
+Iteration: 2, best solution: 1.972254195314301e-10
+Iteration: 3, best solution: 1.972254195314301e-10
+Iteration: 4, best solution: 1.5226018682234659e-10
+Iteration: 5, best solution: 1.1638487797646209e-10
+Iteration: 6, best solution: 8.195551769380711e-11
+Iteration: 7, best solution: 7.148400321625005e-11
+Iteration: 8, best solution: 6.318532355134138e-11
+Iteration: 9, best solution: 6.318532355134138e-11
+Iteration: 10, best solution: 5.510260409337601e-11
+Iteration: 11, best solution: 5.373132216461828e-11
+Iteration: 12, best solution: 5.125871578054171e-11
+Iteration: 13, best solution: 4.6193454141494576e-11
+Iteration: 14, best solution: 4.007062053048737e-11
+Iteration: 15, best solution: 3.66898113563608e-11
+Iteration: 16, best solution: 3.403671023047662e-11
+Iteration: 17, best solution: 3.10029373977875e-11
+Iteration: 18, best solution: 3.074482927016017e-11
+Iteration: 19, best solution: 3.074482927016017e-11
+Cluster 0
+---------------------------------------------------------------
+Legitimate: 490, spam: 477
+---------------------------------------------------------------
+Cluster 1
+---------------------------------------------------------------
+Legitimate: 10, spam: 23
+---------------------------------------------------------------
+
+
+STARTING GLOBAL ITERATION 3
+
+
+Initializing PSO...
+Performing clustering...
+Iteration: 0, best solution: 2.9235253763875284e-10
+Iteration: 1, best solution: 2.9235253763875284e-10
+Iteration: 2, best solution: 2.618784247280309e-10
+Iteration: 3, best solution: 2.2025740826285564e-10
+Iteration: 4, best solution: 1.916180598600882e-10
+Iteration: 5, best solution: 1.0724511250114793e-10
+Iteration: 6, best solution: 9.055703108719141e-11
+Iteration: 7, best solution: 6.764728130674732e-11
+Iteration: 8, best solution: 5.260208637671212e-11
+Iteration: 9, best solution: 4.748586658946838e-11
+Iteration: 10, best solution: 4.298611260147778e-11
+Iteration: 11, best solution: 3.841272045224929e-11
+Iteration: 12, best solution: 3.698786209600085e-11
+Iteration: 13, best solution: 3.5811030829121085e-11
+Iteration: 14, best solution: 3.4853830118731026e-11
+Iteration: 15, best solution: 3.4456122526194436e-11
+Iteration: 16, best solution: 3.163106755791319e-11
+Iteration: 17, best solution: 3.0131536158387056e-11
+Iteration: 18, best solution: 2.8692760564802835e-11
+Iteration: 19, best solution: 2.7398488121443375e-11
+Cluster 1
+---------------------------------------------------------------
+Legitimate: 484, spam: 476
+---------------------------------------------------------------
+Cluster 0
+---------------------------------------------------------------
+Legitimate: 16, spam: 24
+---------------------------------------------------------------
+
+
+STARTING GLOBAL ITERATION 4
+
+
+Initializing PSO...
+Performing clustering...
+Iteration: 0, best solution: 4.977897600929171e-10
+Iteration: 1, best solution: 4.977897600929171e-10
+Iteration: 2, best solution: 4.0383351759662973e-10
+Iteration: 3, best solution: 3.9680376518413737e-10
+Iteration: 4, best solution: 3.572979408437084e-10
+Iteration: 5, best solution: 3.1860387646793334e-10
+Iteration: 6, best solution: 2.0204330079542882e-10
+Iteration: 7, best solution: 1.7597792752322508e-10
+Iteration: 8, best solution: 1.4672641968785308e-10
+Iteration: 9, best solution: 1.0659957638661774e-10
+Iteration: 10, best solution: 9.037520577886712e-11
+Iteration: 11, best solution: 8.775080779058908e-11
+Iteration: 12, best solution: 6.252962660833909e-11
+Iteration: 13, best solution: 6.203359610025108e-11
+Iteration: 14, best solution: 6.036659465837196e-11
+Iteration: 15, best solution: 5.845419953114378e-11
+Iteration: 16, best solution: 4.237212214228604e-11
+Iteration: 17, best solution: 4.1440357941648884e-11
+Iteration: 18, best solution: 3.796431454697463e-11
+Iteration: 19, best solution: 3.4211266831373014e-11
+Cluster 0
+---------------------------------------------------------------
+Legitimate: 233, spam: 228
+---------------------------------------------------------------
+Cluster 1
+---------------------------------------------------------------
+Legitimate: 267, spam: 272
+---------------------------------------------------------------
+
+
+STARTING GLOBAL ITERATION 5
+
+
+Initializing PSO...
+Performing clustering...
+Iteration: 0, best solution: 3.639083154022438e-10
+Iteration: 1, best solution: 3.639083154022438e-10
+Iteration: 2, best solution: 2.787388540488664e-10
+Iteration: 3, best solution: 2.536112153475037e-10
+Iteration: 4, best solution: 2.48817172548603e-10
+Iteration: 5, best solution: 2.209286068198924e-10
+Iteration: 6, best solution: 2.0395540286173568e-10
+Iteration: 7, best solution: 1.7520458798092812e-10
+Iteration: 8, best solution: 1.6255268245477582e-10
+Iteration: 9, best solution: 1.356360111696226e-10
+Iteration: 10, best solution: 1.2856942266962976e-10
+Iteration: 11, best solution: 8.477262432717317e-11
+Iteration: 12, best solution: 8.477262432717317e-11
+Iteration: 13, best solution: 8.197128930624293e-11
+Iteration: 14, best solution: 7.563850095773101e-11
+Iteration: 15, best solution: 5.927717960276815e-11
+Iteration: 16, best solution: 5.5553527459253634e-11
+Iteration: 17, best solution: 5.168678448685497e-11
+Iteration: 18, best solution: 4.8538507712608374e-11
+Iteration: 19, best solution: 4.591846450460933e-11
+Cluster 1
+---------------------------------------------------------------
+Legitimate: 310, spam: 331
+---------------------------------------------------------------
+Cluster 0
+---------------------------------------------------------------
+Legitimate: 190, spam: 169
+---------------------------------------------------------------
+
+
+STARTING GLOBAL ITERATION 1
+
+
+Initializing PSO...
+Performing clustering...
+Iteration: 0, best solution: 2.575473960251404e-10
+Iteration: 1, best solution: 2.4996942190510864e-10
+Iteration: 2, best solution: 2.435918523270318e-10
+Iteration: 3, best solution: 1.8132436287357735e-10
+Iteration: 4, best solution: 1.8013900308603706e-10
+Iteration: 5, best solution: 1.771699370230717e-10
+Iteration: 6, best solution: 1.7346263752568396e-10
+Iteration: 7, best solution: 1.4985196718249379e-10
+Iteration: 8, best solution: 1.4794148131140913e-10
+Iteration: 9, best solution: 1.4239718903744824e-10
+Iteration: 10, best solution: 1.3202431015513604e-10
+Iteration: 11, best solution: 1.295686028871943e-10
+Iteration: 12, best solution: 1.2455356513399016e-10
+Iteration: 13, best solution: 1.1907778348198748e-10
+Iteration: 14, best solution: 1.0234915521408574e-10
+Iteration: 15, best solution: 9.277133361405887e-11
+Iteration: 16, best solution: 8.909966298639014e-11
+Iteration: 17, best solution: 8.909966298639014e-11
+Iteration: 18, best solution: 8.898313168693376e-11
+Iteration: 19, best solution: 8.898313168693376e-11
+Cluster 1
+---------------------------------------------------------------
+Legitimate: 425, spam: 366
+---------------------------------------------------------------
+Cluster 0
+---------------------------------------------------------------
+Legitimate: 75, spam: 134
+---------------------------------------------------------------
+
+
+STARTING GLOBAL ITERATION 2
+
+
+Initializing PSO...
+Performing clustering...
+Iteration: 0, best solution: 2.7738332354331794e-10
+Iteration: 1, best solution: 2.7738332354331794e-10
+Iteration: 2, best solution: 2.544762812624785e-10
+Iteration: 3, best solution: 2.5188914927015645e-10
+Iteration: 4, best solution: 2.344100465491382e-10
+Iteration: 5, best solution: 2.3000823000557775e-10
+Iteration: 6, best solution: 1.8237635164623833e-10
+Iteration: 7, best solution: 1.3618220415070685e-10
+Iteration: 8, best solution: 1.3469123034716367e-10
+Iteration: 9, best solution: 9.750388683957626e-11
+Iteration: 10, best solution: 9.53579478639207e-11
+Iteration: 11, best solution: 8.053963034306568e-11
+Iteration: 12, best solution: 6.512121802519413e-11
+Iteration: 13, best solution: 6.167546749917924e-11
+Iteration: 14, best solution: 5.5685606341093186e-11
+Iteration: 15, best solution: 5.221852541655162e-11
+Iteration: 16, best solution: 5.0268573727810115e-11
+Iteration: 17, best solution: 4.676472526866562e-11
+Iteration: 18, best solution: 4.6208208323851705e-11
+Iteration: 19, best solution: 4.4441546989064277e-11
+Cluster 0
+---------------------------------------------------------------
+Legitimate: 414, spam: 344
+---------------------------------------------------------------
+Cluster 1
+---------------------------------------------------------------
+Legitimate: 86, spam: 156
+---------------------------------------------------------------
+
+
+STARTING GLOBAL ITERATION 3
+
+
+Initializing PSO...
+Performing clustering...
+Iteration: 0, best solution: 6.134164646779516e-10
+Iteration: 1, best solution: 6.018503420211908e-10
+Iteration: 2, best solution: 6.018503420211908e-10
+Iteration: 3, best solution: 4.840780947825465e-10
+Iteration: 4, best solution: 3.6001908648329554e-10
+Iteration: 5, best solution: 3.6001908648329554e-10
+Iteration: 6, best solution: 3.6001908648329554e-10
+Iteration: 7, best solution: 3.5051214070505896e-10
+Iteration: 8, best solution: 3.4148566505811456e-10
+Iteration: 9, best solution: 3.3901791201230526e-10
+Iteration: 10, best solution: 3.387126388303321e-10
+Iteration: 11, best solution: 3.1965837699877034e-10
+Iteration: 12, best solution: 3.039112699154925e-10
+Iteration: 13, best solution: 2.624687601577919e-10
+Iteration: 14, best solution: 2.624687601577919e-10
+Iteration: 15, best solution: 2.6169192778938284e-10
+Iteration: 16, best solution: 2.580937779999302e-10
+Iteration: 17, best solution: 2.5700985347377267e-10
+Iteration: 18, best solution: 2.4786875416788973e-10
+Iteration: 19, best solution: 2.463829495039901e-10
+Cluster 1
+---------------------------------------------------------------
+Legitimate: 269, spam: 372
+---------------------------------------------------------------
+Cluster 0
+---------------------------------------------------------------
+Legitimate: 231, spam: 128
+---------------------------------------------------------------
+
+
+STARTING GLOBAL ITERATION 4
+
+
+Initializing PSO...
+Performing clustering...
+Iteration: 0, best solution: 3.130096806097227e-10
+Iteration: 1, best solution: 3.130096806097227e-10
+Iteration: 2, best solution: 2.8886600391723934e-10
+Iteration: 3, best solution: 2.7853289665033657e-10
+Iteration: 4, best solution: 2.7853289665033657e-10
+Iteration: 5, best solution: 2.581300524204629e-10
+Iteration: 6, best solution: 2.353363719887024e-10
+Iteration: 7, best solution: 2.2344975875875976e-10
+Iteration: 8, best solution: 2.1967108545829433e-10
+Iteration: 9, best solution: 2.1920833051192276e-10
+Iteration: 10, best solution: 2.014765505448565e-10
+Iteration: 11, best solution: 1.889685316142058e-10
+Iteration: 12, best solution: 1.751889223982609e-10
+Iteration: 13, best solution: 1.7021245722017603e-10
+Iteration: 14, best solution: 1.7021245722017603e-10
+Iteration: 15, best solution: 1.567868314603071e-10
+Iteration: 16, best solution: 1.5660760645183326e-10
+Iteration: 17, best solution: 1.45873612659078e-10
+Iteration: 18, best solution: 1.4314339044390977e-10
+Iteration: 19, best solution: 1.3235028134493547e-10
+Cluster 1
+---------------------------------------------------------------
+Legitimate: 488, spam: 436
+---------------------------------------------------------------
+Cluster 0
+---------------------------------------------------------------
+Legitimate: 12, spam: 64
+---------------------------------------------------------------
+
+
+STARTING GLOBAL ITERATION 5
+
+
+Initializing PSO...
+Performing clustering...
+Iteration: 0, best solution: 2.542771227539754e-10
+Iteration: 1, best solution: 2.542771227539754e-10
+Iteration: 2, best solution: 2.542771227539754e-10
+Iteration: 3, best solution: 2.2446157594725116e-10
+Iteration: 4, best solution: 2.0993064761359465e-10
+Iteration: 5, best solution: 1.7886182489622528e-10
+Iteration: 6, best solution: 1.2441268531978656e-10
+Iteration: 7, best solution: 1.133128260247137e-10
+Iteration: 8, best solution: 8.52122776071266e-11
+Iteration: 9, best solution: 8.324951158224083e-11
+Iteration: 10, best solution: 8.268234398275683e-11
+Iteration: 11, best solution: 7.154230810180813e-11
+Iteration: 12, best solution: 6.407169559980218e-11
+Iteration: 13, best solution: 6.023490131873972e-11
+Iteration: 14, best solution: 5.535630207480945e-11
+Iteration: 15, best solution: 5.462494684082939e-11
+Iteration: 16, best solution: 5.129279795269593e-11
+Iteration: 17, best solution: 4.870307202941825e-11
+Iteration: 18, best solution: 4.26091325285533e-11
+Iteration: 19, best solution: 3.637568365288732e-11
+Cluster 0
+---------------------------------------------------------------
+Legitimate: 431, spam: 384
+---------------------------------------------------------------
+Cluster 1
+---------------------------------------------------------------
+Legitimate: 69, spam: 116
+---------------------------------------------------------------
+
+
+STARTING GLOBAL ITERATION 1
+
+
+Initializing PSO...
+Performing clustering...
+Iteration: 0, best solution: 1.8537444162246264e-10
+Iteration: 1, best solution: 1.8537444162246264e-10
+Iteration: 2, best solution: 1.8537444162246264e-10
+Iteration: 3, best solution: 1.4273383531894875e-10
+Iteration: 4, best solution: 1.1391218934482475e-10
+Iteration: 5, best solution: 8.699676231104775e-11
+Iteration: 6, best solution: 6.877136446320113e-11
+Iteration: 7, best solution: 6.207233148905361e-11
+Iteration: 8, best solution: 5.2526875616021976e-11
+Iteration: 9, best solution: 4.9739696231216665e-11
+Iteration: 10, best solution: 4.9739696231216665e-11
+Iteration: 11, best solution: 4.396555601955578e-11
+Iteration: 12, best solution: 2.985816099177721e-11
+Iteration: 13, best solution: 1.858517516241461e-11
+Iteration: 14, best solution: 1.4348684251765513e-11
+Iteration: 15, best solution: 1.271464432501916e-11
+Iteration: 16, best solution: 1.1082001477687712e-11
+Iteration: 17, best solution: 1.0050201087709426e-11
+Iteration: 18, best solution: 9.765102061403159e-12
+Iteration: 19, best solution: 8.088703665559863e-12
+Cluster 0
+---------------------------------------------------------------
+Legitimate: 315, spam: 364
+---------------------------------------------------------------
+Cluster 1
+---------------------------------------------------------------
+Legitimate: 185, spam: 136
+---------------------------------------------------------------
+
+
+STARTING GLOBAL ITERATION 2
+
+
+Initializing PSO...
+Performing clustering...
+Iteration: 0, best solution: 5.203431070355647e-10
+Iteration: 1, best solution: 5.203431070355647e-10
+Iteration: 2, best solution: 5.203431070355647e-10
+Iteration: 3, best solution: 4.5902344242286304e-10
+Iteration: 4, best solution: 3.0943162401460847e-10
+Iteration: 5, best solution: 2.703326885196588e-10
+Iteration: 6, best solution: 2.4882139367149555e-10
+Iteration: 7, best solution: 2.3804261333450586e-10
+Iteration: 8, best solution: 2.3003737718207971e-10
+Iteration: 9, best solution: 2.2621151766636456e-10
+Iteration: 10, best solution: 2.1423648184431828e-10
+Iteration: 11, best solution: 2.0676203273555552e-10
+Iteration: 12, best solution: 1.9457755749646178e-10
+Iteration: 13, best solution: 1.8947084632213053e-10
+Iteration: 14, best solution: 1.7515362790806917e-10
+Iteration: 15, best solution: 1.5948476757810481e-10
+Iteration: 16, best solution: 1.5777320679000718e-10
+Iteration: 17, best solution: 1.5185971811809765e-10
+Iteration: 18, best solution: 1.4008206437486538e-10
+Iteration: 19, best solution: 1.3538735789000628e-10
+Cluster 1
+---------------------------------------------------------------
+Legitimate: 134, spam: 153
+---------------------------------------------------------------
+Cluster 0
+---------------------------------------------------------------
+Legitimate: 366, spam: 347
+---------------------------------------------------------------
+
+
+STARTING GLOBAL ITERATION 3
+
+
+Initializing PSO...
+Performing clustering...
+Iteration: 0, best solution: 3.842671138114842e-10
+Iteration: 1, best solution: 2.516989089257375e-10
+Iteration: 2, best solution: 2.516989089257375e-10
+Iteration: 3, best solution: 2.301026333857557e-10
+Iteration: 4, best solution: 1.570992377677216e-10
+Iteration: 5, best solution: 1.5093868121074262e-10
+Iteration: 6, best solution: 1.252475293397982e-10
+Iteration: 7, best solution: 1.017426333394617e-10
+Iteration: 8, best solution: 1.017426333394617e-10
+Iteration: 9, best solution: 1.017426333394617e-10
+Iteration: 10, best solution: 8.393671908057442e-11
+Iteration: 11, best solution: 6.650666207571953e-11
+Iteration: 12, best solution: 5.7767021883857966e-11
+Iteration: 13, best solution: 5.597795486772771e-11
+Iteration: 14, best solution: 4.559017697383939e-11
+Iteration: 15, best solution: 4.286795364432914e-11
+Iteration: 16, best solution: 3.718309569706219e-11
+Iteration: 17, best solution: 2.991985575278891e-11
+Iteration: 18, best solution: 2.991985575278891e-11
+Iteration: 19, best solution: 2.8856766918210257e-11
+Cluster 1
+---------------------------------------------------------------
+Legitimate: 485, spam: 446
+---------------------------------------------------------------
+Cluster 0
+---------------------------------------------------------------
+Legitimate: 15, spam: 54
+---------------------------------------------------------------
+
+
+STARTING GLOBAL ITERATION 4
+
+
+Initializing PSO...
+Performing clustering...
+Iteration: 0, best solution: 1.2121900255300454e-10
+Iteration: 1, best solution: 1.2121900255300454e-10
+Iteration: 2, best solution: 1.1873524123392345e-10
+Iteration: 3, best solution: 9.603695839487498e-11
+Iteration: 4, best solution: 8.14116177787696e-11
+Iteration: 5, best solution: 7.812319826372116e-11
+Iteration: 6, best solution: 7.708211480626057e-11
+Iteration: 7, best solution: 7.23604223976679e-11
+Iteration: 8, best solution: 6.019807060135643e-11
+Iteration: 9, best solution: 5.646880415862559e-11
+Iteration: 10, best solution: 4.1581288113279225e-11
+Iteration: 11, best solution: 2.3808029838165486e-11
+Iteration: 12, best solution: 2.2199273998543066e-11
+Iteration: 13, best solution: 2.0728286543185218e-11
+Iteration: 14, best solution: 1.724779457972284e-11
+Iteration: 15, best solution: 1.718962406198506e-11
+Iteration: 16, best solution: 1.681743619877614e-11
+Iteration: 17, best solution: 1.6386731093247083e-11
+Iteration: 18, best solution: 1.57881718847188e-11
+Iteration: 19, best solution: 1.5070277060465876e-11
+Cluster 1
+---------------------------------------------------------------
+Legitimate: 458, spam: 421
+---------------------------------------------------------------
+Cluster 0
+---------------------------------------------------------------
+Legitimate: 42, spam: 79
+---------------------------------------------------------------
+
+
+STARTING GLOBAL ITERATION 5
+
+
+Initializing PSO...
+Performing clustering...
+Iteration: 0, best solution: 3.35382089794051e-10
+Iteration: 1, best solution: 2.9101392344341144e-10
+Iteration: 2, best solution: 2.430447232399616e-10
+Iteration: 3, best solution: 2.2392385668122066e-10
+Iteration: 4, best solution: 1.6113869962999443e-10
+Iteration: 5, best solution: 1.036688665688466e-10
+Iteration: 6, best solution: 8.220470147263829e-11
+Iteration: 7, best solution: 7.583347362536195e-11
+Iteration: 8, best solution: 6.373406350535606e-11
+Iteration: 9, best solution: 4.672820630620815e-11
+Iteration: 10, best solution: 3.545693470527014e-11
+Iteration: 11, best solution: 3.305005897462226e-11
+Iteration: 12, best solution: 2.4475172925544967e-11
+Iteration: 13, best solution: 2.1161536209173255e-11
+Iteration: 14, best solution: 2.0929388325604867e-11
+Iteration: 15, best solution: 1.568020587134324e-11
+Iteration: 16, best solution: 1.568020587134324e-11
+Iteration: 17, best solution: 1.529220615125769e-11
+Iteration: 18, best solution: 1.4701806607316572e-11
+Iteration: 19, best solution: 1.4324857599514781e-11
+Cluster 1
+---------------------------------------------------------------
+Legitimate: 496, spam: 486
+---------------------------------------------------------------
+Cluster 0
+---------------------------------------------------------------
+Legitimate: 4, spam: 14
+---------------------------------------------------------------
+
+
+STARTING GLOBAL ITERATION 1
+
+
+Initializing PSO...
+Performing clustering...
+Iteration: 0, best solution: 2.1232654668856744e-10
+Iteration: 1, best solution: 2.1232654668856744e-10
+Iteration: 2, best solution: 2.1232654668856744e-10
+Iteration: 3, best solution: 1.8338490322453522e-10
+Iteration: 4, best solution: 1.4666802054685263e-10
+Iteration: 5, best solution: 1.2150480001432785e-10
+Iteration: 6, best solution: 1.1079580277891442e-10
+Iteration: 7, best solution: 1.1079580277891442e-10
+Iteration: 8, best solution: 1.1079580277891442e-10
+Iteration: 9, best solution: 1.0319997454978651e-10
+Iteration: 10, best solution: 8.531212105943954e-11
+Iteration: 11, best solution: 7.952499771273119e-11
+Iteration: 12, best solution: 6.162893026822779e-11
+Iteration: 13, best solution: 4.238021740471264e-11
+Iteration: 14, best solution: 3.1003865297161214e-11
+Iteration: 15, best solution: 3.063344980961695e-11
+Iteration: 16, best solution: 2.810892548807997e-11
+Iteration: 17, best solution: 2.2984554204563468e-11
+Iteration: 18, best solution: 2.2293075683576852e-11
+Iteration: 19, best solution: 1.958374308852995e-11
+Cluster 0
+---------------------------------------------------------------
+Legitimate: 495, spam: 465
+---------------------------------------------------------------
+Cluster 1
+---------------------------------------------------------------
+Legitimate: 5, spam: 35
+---------------------------------------------------------------
+
+
+STARTING GLOBAL ITERATION 2
+
+
+Initializing PSO...
+Performing clustering...
+Iteration: 0, best solution: 1.1896746193340826e-10
+Iteration: 1, best solution: 1.1896746193340826e-10
+Iteration: 2, best solution: 1.1896746193340826e-10
+Iteration: 3, best solution: 9.215476877593987e-11
+Iteration: 4, best solution: 8.320716174807875e-11
+Iteration: 5, best solution: 7.291135740734083e-11
+Iteration: 6, best solution: 6.85633065211283e-11
+Iteration: 7, best solution: 5.87249467242182e-11
+Iteration: 8, best solution: 5.2500590442533515e-11
+Iteration: 9, best solution: 3.0771125759606475e-11
+Iteration: 10, best solution: 2.5170682739652717e-11
+Iteration: 11, best solution: 2.4211760384166058e-11
+Iteration: 12, best solution: 1.7669972198885085e-11
+Iteration: 13, best solution: 1.6731620739055932e-11
+Iteration: 14, best solution: 1.6463088773154364e-11
+Iteration: 15, best solution: 1.5105963415256293e-11
+Iteration: 16, best solution: 1.408492388842307e-11
+Iteration: 17, best solution: 1.1149698228548244e-11
+Iteration: 18, best solution: 1.0105649383476804e-11
+Iteration: 19, best solution: 9.504916784867421e-12
+Cluster 0
+---------------------------------------------------------------
+Legitimate: 301, spam: 276
+---------------------------------------------------------------
+Cluster 1
+---------------------------------------------------------------
+Legitimate: 199, spam: 224
+---------------------------------------------------------------
+
+
+STARTING GLOBAL ITERATION 3
+
+
+Initializing PSO...
+Performing clustering...
+Iteration: 0, best solution: 5.390043708172032e-10
+Iteration: 1, best solution: 3.883310968148062e-10
+Iteration: 2, best solution: 3.640623978998878e-10
+Iteration: 3, best solution: 2.3466188316542333e-10
+Iteration: 4, best solution: 1.8545202472474003e-10
+Iteration: 5, best solution: 1.6188748232942424e-10
+Iteration: 6, best solution: 1.563509138024953e-10
+Iteration: 7, best solution: 1.0829059217205261e-10
+Iteration: 8, best solution: 1.0280434242054208e-10
+Iteration: 9, best solution: 7.353856726277916e-11
+Iteration: 10, best solution: 6.432820354420054e-11
+Iteration: 11, best solution: 4.5604560142583176e-11
+Iteration: 12, best solution: 2.7257171870343136e-11
+Iteration: 13, best solution: 2.708765574185977e-11
+Iteration: 14, best solution: 1.2869279660775828e-11
+Iteration: 15, best solution: 7.298474328697973e-12
+Iteration: 16, best solution: 7.298474328697973e-12
+Iteration: 17, best solution: 5.2208495432450485e-12
+Iteration: 18, best solution: 3.0546585751716588e-12
+Iteration: 19, best solution: 2.4830773160836885e-12
+Cluster 0
+---------------------------------------------------------------
+Legitimate: 411, spam: 448
+---------------------------------------------------------------
+Cluster 1
+---------------------------------------------------------------
+Legitimate: 89, spam: 52
+---------------------------------------------------------------
+
+
+STARTING GLOBAL ITERATION 4
+
+
+Initializing PSO...
+Performing clustering...
+Iteration: 0, best solution: 5.155403222134493e-10
+Iteration: 1, best solution: 5.155403222134493e-10
+Iteration: 2, best solution: 4.600023115235814e-10
+Iteration: 3, best solution: 3.467504017825615e-10
+Iteration: 4, best solution: 3.380370056505702e-10
+Iteration: 5, best solution: 2.3833522541769824e-10
+Iteration: 6, best solution: 1.8748462957187035e-10
+Iteration: 7, best solution: 1.2135404511607094e-10
+Iteration: 8, best solution: 6.690909522048142e-11
+Iteration: 9, best solution: 4.989122032779903e-11
+Iteration: 10, best solution: 3.622061030852867e-11
+Iteration: 11, best solution: 1.878297223697826e-11
+Iteration: 12, best solution: 1.5323552080641247e-11
+Iteration: 13, best solution: 1.0608931371110387e-11
+Iteration: 14, best solution: 7.362874570532537e-12
+Iteration: 15, best solution: 4.50941712080084e-12
+Iteration: 16, best solution: 3.698820739271581e-12
+Iteration: 17, best solution: 1.4148004081233933e-12
+Iteration: 18, best solution: 1.1918962264613228e-12
+Iteration: 19, best solution: 1.1471662748229073e-12
+Cluster 1
+---------------------------------------------------------------
+Legitimate: 433, spam: 424
+---------------------------------------------------------------
+Cluster 0
+---------------------------------------------------------------
+Legitimate: 67, spam: 76
+---------------------------------------------------------------
+
+
+STARTING GLOBAL ITERATION 5
+
+
+Initializing PSO...
+Performing clustering...
+Iteration: 0, best solution: 2.1768872477624388e-10
+Iteration: 1, best solution: 2.1768872477624388e-10
+Iteration: 2, best solution: 1.279522843333129e-10
+Iteration: 3, best solution: 1.227508239613948e-10
+Iteration: 4, best solution: 1.0702926858186374e-10
+Iteration: 5, best solution: 1.0702926858186374e-10
+Iteration: 6, best solution: 1.0702926858186374e-10
+Iteration: 7, best solution: 1.0095137348202867e-10
+Iteration: 8, best solution: 9.815199900277082e-11
+Iteration: 9, best solution: 9.44953951189586e-11
+Iteration: 10, best solution: 8.568220358322704e-11
+Iteration: 11, best solution: 8.303646486202003e-11
+Iteration: 12, best solution: 8.264902694232078e-11
+Iteration: 13, best solution: 7.854566008580295e-11
+Iteration: 14, best solution: 7.389132683032618e-11
+Iteration: 15, best solution: 7.333335156274694e-11
+Iteration: 16, best solution: 7.028765649997894e-11
+Iteration: 17, best solution: 6.299713471961055e-11
+Iteration: 18, best solution: 5.422733239947233e-11
+Iteration: 19, best solution: 5.363154255785257e-11
+Cluster 0
+---------------------------------------------------------------
+Legitimate: 499, spam: 490
+---------------------------------------------------------------
+Cluster 1
+---------------------------------------------------------------
+Legitimate: 1, spam: 10
+---------------------------------------------------------------
+
+
+STARTING GLOBAL ITERATION 1
+
+
+Initializing PSO...
+Performing clustering...
+Iteration: 0, best solution: 3.442195506721836e-10
+Iteration: 1, best solution: 3.442195506721836e-10
+Iteration: 2, best solution: 3.442195506721836e-10
+Iteration: 3, best solution: 3.1803762227022637e-10
+Iteration: 4, best solution: 2.5780003677023463e-10
+Iteration: 5, best solution: 2.5368866680415456e-10
+Iteration: 6, best solution: 2.477039224290641e-10
+Iteration: 7, best solution: 2.392135803127556e-10
+Iteration: 8, best solution: 2.2183511924534827e-10
+Iteration: 9, best solution: 1.8487098642752886e-10
+Iteration: 10, best solution: 1.7613844261181526e-10
+Iteration: 11, best solution: 1.7116921446223374e-10
+Iteration: 12, best solution: 1.64549760803319e-10
+Iteration: 13, best solution: 1.6273740765851723e-10
+Iteration: 14, best solution: 1.5578990878006674e-10
+Iteration: 15, best solution: 1.4558998008954414e-10
+Iteration: 16, best solution: 1.4314523312732292e-10
+Iteration: 17, best solution: 1.4314265875483315e-10
+Iteration: 18, best solution: 1.4192279295844608e-10
+Iteration: 19, best solution: 1.4058540631725827e-10
+Cluster 0
+---------------------------------------------------------------
+Legitimate: 416, spam: 440
+---------------------------------------------------------------
+Cluster 1
+---------------------------------------------------------------
+Legitimate: 84, spam: 60
+---------------------------------------------------------------
+
+
+STARTING GLOBAL ITERATION 2
+
+
+Initializing PSO...
+Performing clustering...
+Iteration: 0, best solution: 6.302620885378045e-10
+Iteration: 1, best solution: 6.302620885378045e-10
+Iteration: 2, best solution: 5.618241502691426e-10
+Iteration: 3, best solution: 4.157007573435506e-10
+Iteration: 4, best solution: 4.157007573435506e-10
+Iteration: 5, best solution: 3.494878012341805e-10
+Iteration: 6, best solution: 3.312185426242873e-10
+Iteration: 7, best solution: 2.9327637827624437e-10
+Iteration: 8, best solution: 2.747029226706442e-10
+Iteration: 9, best solution: 2.693540031938149e-10
+Iteration: 10, best solution: 2.5810211475684657e-10
+Iteration: 11, best solution: 2.5516040920095267e-10
+Iteration: 12, best solution: 2.452615998721819e-10
+Iteration: 13, best solution: 2.415338549632608e-10
+Iteration: 14, best solution: 2.4021950700433084e-10
+Iteration: 15, best solution: 2.2999380219972954e-10
+Iteration: 16, best solution: 2.215849380623147e-10
+Iteration: 17, best solution: 2.1412762818513327e-10
+Iteration: 18, best solution: 2.1294160990882363e-10
+Iteration: 19, best solution: 2.0929546869760761e-10
+Cluster 0
+---------------------------------------------------------------
+Legitimate: 409, spam: 459
+---------------------------------------------------------------
+Cluster 1
+---------------------------------------------------------------
+Legitimate: 91, spam: 41
+---------------------------------------------------------------
+
+
+STARTING GLOBAL ITERATION 3
+
+
+Initializing PSO...
+Performing clustering...
+Iteration: 0, best solution: 1.642807051813136e-10
+Iteration: 1, best solution: 1.642807051813136e-10
+Iteration: 2, best solution: 1.642807051813136e-10
+Iteration: 3, best solution: 1.5838379232748214e-10
+Iteration: 4, best solution: 1.4487707446709276e-10
+Iteration: 5, best solution: 1.3943594092736466e-10
+Iteration: 6, best solution: 1.3943594092736466e-10
+Iteration: 7, best solution: 1.3863245409516573e-10
+Iteration: 8, best solution: 1.3102231609803817e-10
+Iteration: 9, best solution: 1.2360523734244586e-10
+Iteration: 10, best solution: 1.0474762150506966e-10
+Iteration: 11, best solution: 9.805245268559953e-11
+Iteration: 12, best solution: 9.47985562891563e-11
+Iteration: 13, best solution: 9.478968460576818e-11
+Iteration: 14, best solution: 9.017662595156855e-11
+Iteration: 15, best solution: 8.866265011619716e-11
+Iteration: 16, best solution: 8.698015665809961e-11
+Iteration: 17, best solution: 8.431568392462327e-11
+Iteration: 18, best solution: 8.260974741573452e-11
+Iteration: 19, best solution: 8.024760169636439e-11
+Cluster 0
+---------------------------------------------------------------
+Legitimate: 435, spam: 427
+---------------------------------------------------------------
+Cluster 1
+---------------------------------------------------------------
+Legitimate: 65, spam: 73
+---------------------------------------------------------------
+
+
+STARTING GLOBAL ITERATION 4
+
+
+Initializing PSO...
+Performing clustering...
+Iteration: 0, best solution: 4.102315652696991e-10
+Iteration: 1, best solution: 4.102315652696991e-10
+Iteration: 2, best solution: 4.102315652696991e-10
+Iteration: 3, best solution: 4.0260689699622736e-10
+Iteration: 4, best solution: 3.5130207956034356e-10
+Iteration: 5, best solution: 3.0242672598432895e-10
+Iteration: 6, best solution: 2.657546355017887e-10
+Iteration: 7, best solution: 2.5793740587982204e-10
+Iteration: 8, best solution: 2.481884430774498e-10
+Iteration: 9, best solution: 2.390959144896111e-10
+Iteration: 10, best solution: 2.280330357036469e-10
+Iteration: 11, best solution: 2.110295861471083e-10
+Iteration: 12, best solution: 2.0823751419379942e-10
+Iteration: 13, best solution: 1.9911409354369992e-10
+Iteration: 14, best solution: 1.867327918672207e-10
+Iteration: 15, best solution: 1.845187662067147e-10
+Iteration: 16, best solution: 1.8272092769691553e-10
+Iteration: 17, best solution: 1.802696439868155e-10
+Iteration: 18, best solution: 1.8002023481235757e-10
+Iteration: 19, best solution: 1.79163330746514e-10
+Cluster 0
+---------------------------------------------------------------
+Legitimate: 384, spam: 419
+---------------------------------------------------------------
+Cluster 1
+---------------------------------------------------------------
+Legitimate: 116, spam: 81
+---------------------------------------------------------------
+
+
+STARTING GLOBAL ITERATION 5
+
+
+Initializing PSO...
+Performing clustering...
+Iteration: 0, best solution: 1.7855600671605095e-10
+Iteration: 1, best solution: 1.7855600671605095e-10
+Iteration: 2, best solution: 1.248090486844848e-10
+Iteration: 3, best solution: 1.1857150853103455e-10
+Iteration: 4, best solution: 8.909558346822747e-11
+Iteration: 5, best solution: 7.961264944721285e-11
+Iteration: 6, best solution: 7.417702347696341e-11
+Iteration: 7, best solution: 6.898371343434643e-11
+Iteration: 8, best solution: 5.941842312492437e-11
+Iteration: 9, best solution: 5.841897081023594e-11
+Iteration: 10, best solution: 5.73984960908743e-11
+Iteration: 11, best solution: 5.517195488192184e-11
+Iteration: 12, best solution: 5.0620047821853973e-11
+Iteration: 13, best solution: 5.03230373103869e-11
+Iteration: 14, best solution: 4.949501471125046e-11
+Iteration: 15, best solution: 4.828984741210066e-11
+Iteration: 16, best solution: 4.4925666324302117e-11
+Iteration: 17, best solution: 4.410058602691067e-11
+Iteration: 18, best solution: 4.319542742006207e-11
+Iteration: 19, best solution: 4.2531117617589084e-11
+Cluster 1
+---------------------------------------------------------------
+Legitimate: 482, spam: 468
+---------------------------------------------------------------
+Cluster 0
+---------------------------------------------------------------
+Legitimate: 18, spam: 32
+---------------------------------------------------------------
+
+
+STARTING GLOBAL ITERATION 1
+
+
+Initializing PSO...
+Performing clustering...
+Iteration: 0, best solution: 1.6122934466883648e-10
+Iteration: 1, best solution: 1.6122934466883648e-10
+Iteration: 2, best solution: 1.2589717356777338e-10
+Iteration: 3, best solution: 1.0504506498303838e-10
+Iteration: 4, best solution: 8.245919725627101e-11
+Iteration: 5, best solution: 7.354388002033814e-11
+Iteration: 6, best solution: 6.944454620483991e-11
+Iteration: 7, best solution: 6.36359715000087e-11
+Iteration: 8, best solution: 6.334798449820563e-11
+Iteration: 9, best solution: 6.31655756294266e-11
+Iteration: 10, best solution: 6.300417468668557e-11
+Iteration: 11, best solution: 5.667547515567792e-11
+Iteration: 12, best solution: 5.6615433919117215e-11
+Iteration: 13, best solution: 5.627820946501547e-11
+Iteration: 14, best solution: 5.6192210834736725e-11
+Iteration: 15, best solution: 5.6132947249600366e-11
+Iteration: 16, best solution: 5.608079936315096e-11
+Iteration: 17, best solution: 5.603516201254876e-11
+Iteration: 18, best solution: 5.602206916421169e-11
+Iteration: 19, best solution: 5.5995864105125794e-11
+Cluster 1
+---------------------------------------------------------------
+Legitimate: 493, spam: 474
+---------------------------------------------------------------
+Cluster 0
+---------------------------------------------------------------
+Legitimate: 7, spam: 26
+---------------------------------------------------------------
+
+
+STARTING GLOBAL ITERATION 2
+
+
+Initializing PSO...
+Performing clustering...
+Iteration: 0, best solution: 1.545519048430443e-10
+Iteration: 1, best solution: 1.545519048430443e-10
+Iteration: 2, best solution: 1.545519048430443e-10
+Iteration: 3, best solution: 1.545519048430443e-10
+Iteration: 4, best solution: 1.408939775800916e-10
+Iteration: 5, best solution: 1.408939775800916e-10
+Iteration: 6, best solution: 1.408939775800916e-10
+Iteration: 7, best solution: 1.408939775800916e-10
+Iteration: 8, best solution: 1.408939775800916e-10
+Iteration: 9, best solution: 1.408939775800916e-10
+Iteration: 10, best solution: 1.408939775800916e-10
+Iteration: 11, best solution: 1.408939775800916e-10
+Iteration: 12, best solution: 1.408939775800916e-10
+Iteration: 13, best solution: 1.408939775800916e-10
+Iteration: 14, best solution: 1.408939775800916e-10
+Iteration: 15, best solution: 1.408939775800916e-10
+Iteration: 16, best solution: 1.408939775800916e-10
+Iteration: 17, best solution: 1.408939775800916e-10
+Iteration: 18, best solution: 1.408939775800916e-10
+Iteration: 19, best solution: 1.408939775800916e-10
+Cluster 0
+---------------------------------------------------------------
+Legitimate: 494, spam: 470
+---------------------------------------------------------------
+Cluster 1
+---------------------------------------------------------------
+Legitimate: 6, spam: 30
+---------------------------------------------------------------
+
+
+STARTING GLOBAL ITERATION 3
+
+
+Initializing PSO...
+Performing clustering...
+Iteration: 0, best solution: 1.0654992345182366e-10
+Iteration: 1, best solution: 1.0654992345182366e-10
+Iteration: 2, best solution: 1.0654992345182366e-10
+Iteration: 3, best solution: 9.440565946978621e-11
+Iteration: 4, best solution: 9.42260254584033e-11
+Iteration: 5, best solution: 9.137013065669238e-11
+Iteration: 6, best solution: 9.082545347431184e-11
+Iteration: 7, best solution: 8.92980067691373e-11
+Iteration: 8, best solution: 8.729197631267225e-11
+Iteration: 9, best solution: 8.333636342335917e-11
+Iteration: 10, best solution: 8.302600631166419e-11
+Iteration: 11, best solution: 8.071035904221593e-11
+Iteration: 12, best solution: 7.97771452767461e-11
+Iteration: 13, best solution: 7.776685297074829e-11
+Iteration: 14, best solution: 7.672539805293599e-11
+Iteration: 15, best solution: 7.625274727104202e-11
+Iteration: 16, best solution: 7.593605394336016e-11
+Iteration: 17, best solution: 7.558092466876576e-11
+Iteration: 18, best solution: 7.533915236083156e-11
+Iteration: 19, best solution: 7.513107345542407e-11
+Cluster 0
+---------------------------------------------------------------
+Legitimate: 441, spam: 423
+---------------------------------------------------------------
+Cluster 1
+---------------------------------------------------------------
+Legitimate: 59, spam: 77
+---------------------------------------------------------------
+
+
+STARTING GLOBAL ITERATION 4
+
+
+Initializing PSO...
+Performing clustering...
+Iteration: 0, best solution: 2.4396087968861054e-10
+Iteration: 1, best solution: 2.4396087968861054e-10
+Iteration: 2, best solution: 2.335753019814795e-10
+Iteration: 3, best solution: 2.305734812678769e-10
+Iteration: 4, best solution: 2.209019174102632e-10
+Iteration: 5, best solution: 2.1385603432386618e-10
+Iteration: 6, best solution: 2.0297381876100859e-10
+Iteration: 7, best solution: 1.9945783904720247e-10
+Iteration: 8, best solution: 1.9472849724323738e-10
+Iteration: 9, best solution: 1.901881733447415e-10
+Iteration: 10, best solution: 1.8632470013331363e-10
+Iteration: 11, best solution: 1.8573749671194947e-10
+Iteration: 12, best solution: 1.8499524199136239e-10
+Iteration: 13, best solution: 1.8369659946916956e-10
+Iteration: 14, best solution: 1.8317306551007615e-10
+Iteration: 15, best solution: 1.830875208611227e-10
+Iteration: 16, best solution: 1.828083743172476e-10
+Iteration: 17, best solution: 1.8252414477729963e-10
+Iteration: 18, best solution: 1.8198998034484942e-10
+Iteration: 19, best solution: 1.8190912108997104e-10
+Cluster 1
+---------------------------------------------------------------
+Legitimate: 492, spam: 458
+---------------------------------------------------------------
+Cluster 0
+---------------------------------------------------------------
+Legitimate: 8, spam: 42
+---------------------------------------------------------------
+
+
+STARTING GLOBAL ITERATION 5
+
+
+Initializing PSO...
+Performing clustering...
+Iteration: 0, best solution: 4.5863503809644784e-10
+Iteration: 1, best solution: 4.5863503809644784e-10
+Iteration: 2, best solution: 4.5863503809644784e-10
+Iteration: 3, best solution: 4.5863503809644784e-10
+Iteration: 4, best solution: 4.5639183481244633e-10
+Iteration: 5, best solution: 4.439170467238621e-10
+Iteration: 6, best solution: 4.4036226185763306e-10
+Iteration: 7, best solution: 4.339572004402207e-10
+Iteration: 8, best solution: 4.2627218581259156e-10
+Iteration: 9, best solution: 4.236103900395867e-10
+Iteration: 10, best solution: 4.2313565405006447e-10
+Iteration: 11, best solution: 4.220169219264267e-10
+Iteration: 12, best solution: 4.175615976492098e-10
+Iteration: 13, best solution: 4.162350399155593e-10
+Iteration: 14, best solution: 4.159285533726516e-10
+Iteration: 15, best solution: 4.153233762783511e-10
+Iteration: 16, best solution: 4.148709252643411e-10
+Iteration: 17, best solution: 4.142707915875514e-10
+Iteration: 18, best solution: 4.1412912270070495e-10
+Iteration: 19, best solution: 4.1397601190229503e-10
+Cluster 1
+---------------------------------------------------------------
+Legitimate: 366, spam: 442
+---------------------------------------------------------------
+Cluster 0
+---------------------------------------------------------------
+Legitimate: 134, spam: 58
+---------------------------------------------------------------
+
+Process finished with exit code 0
