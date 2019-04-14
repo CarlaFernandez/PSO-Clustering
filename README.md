@@ -1,6 +1,6 @@
 # PSO-Clustering
 
-## Core: Done
+## Core
 
 * Clean data: 
     * Tokenization
@@ -19,6 +19,8 @@
 
 
 ## Extensions
-* Performance comparison with different parameters
-* Implement different algorithms (ACO, K-Means...)
-* Supervised classification
+* Performance comparison with different hyperparameters
+
+## Results
+* Performance comparison performed on the Enron Spam and BBC News datasets.
+* Found in the file results.xlsx
