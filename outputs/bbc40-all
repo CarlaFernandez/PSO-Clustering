@@ -1,0 +1,1870 @@
+/usr/bin/python3.6 /home/carla/Documentos/Multiagentes/implementation/PSO-Clustering/sources/main.py -d bbc-less-40
+Creating TF-IDF matrix...
+{'clark': 708, 'press': 2323, 'card': 617, 'new': 2050, 'home': 1544, 'secretari': 2651, 'charl': 667, 'vow': 3232, 'plan': 2259, 'despit': 970, 'call': 596, '``': 205, 'paus': 2205, 'thought': 3036, "''": 6, 'kennedi': 1723, '.': 23, 'lib': 1807, 'dem': 953, 'leader': 1777, 'said': 2611, 'david': 913, 'blunkett': 529, "'s": 14, 'resign': 2518, 'good': 1433, 'opportun': 2128, 'question': 2403, 'whether': 3280, 'legisl': 1791, 'necessari': 2039, 'mr': 2011, 'support': 2939, 'argu': 383, 'cabinet': 592, 'mean': 1921, 'creat': 873, 'secur': 2655, 'societi': 2776, ',': 21, 'acknowledg': 227, 'measur': 1924, 'introduc': 1651, 'remain': 2491, 'matter': 1912, 'debat': 921, 'alreadi': 315, 'significantli': 2725, 'influenc': 1618, 'recommend': 2460, 'common': 766, "'": 5, 'affair': 264, 'committe': 764, 'issu': 1665, 'would': 3323, 'parliament': 2185, 'next': 2056, 'monday': 1986, 'schedul': 2627, 'insist': 1629, 'earlier': 1078, 'whose': 3285, 'parti': 2190, 'oppos': 2129, 'deepli': 936, 'flaw': 1310, 'christma': 692, 'come': 753, 'time': 3054, 'think': 3030, 'told': 3063, 'bbc': 470, 'radio': 2416, '4': 155, 'today': 3060, 'programm': 2352, 'report': 2507, 'less': 1798, 'enthusiast': 1150, 'predecessor': 2313, "n't": 2029, 'sweep': 2960, 'clean': 713, 'respect': 2523, 'need': 2040, 'first': 1301, 'place': 2256, '?': 202, 'ask': 400, 'week': 3266, 'tori': 3071, 'announc': 346, 'back': 444, 'govern': 1438, 'although': 319, 'michael': 1949, 'howard': 1560, 'forc': 1330, 'deni': 957, 'shadow': 2691, 'decis': 929, 'decid': 928, 'polic': 2278, 'help': 1512, 'fight': 1285, 'terror': 3012, 'crime': 879, 'illeg': 1583, 'immigr': 1588, 'among': 327, 'seriou': 2677, 'reserv': 2516, 'strategi': 2890, 'senior': 2667, 'member': 1935, 'davi': 912, 'oliv': 2116, 'letwin': 1801, 'tim': 3053, 'chairman': 653, 'bar': 455, 'council': 855, 'guy': 1472, 'warn': 3245, 'real': 2447, 'risk': 2560, 'peopl': 2220, 'margin': 1895, 'driven': 1060, 'hand': 1482, 'go': 1425, 'happen': 1489, 'young': 3336, 'asian': 398, 'men': 1937, 'bomb': 536, 'gone': 1432, 'somewher': 2786, 'stop': 2880, '[': 203, ']': 204, 'offic': 2109, 'say': 2623, 'pay': 2206, 'passport': 2201, 'togeth': 3062, 'fee': 1265, 'separ': 2672, '2008': 113, 'bill': 505, 'suggest': 2929, 'could': 854, 'make': 1880, 'carri': 624, 'also': 316, 'crimin': 880, 'offenc': 2105, 'fals': 1239, 'ident': 1579, 'document': 1030, 'civil': 702, 'penalti': 2214, 'includ': 1600, 'fine': 1297, '£1,000': 3347, 'fail': 1234, 'move': 2006, 'hous': 1558, 'chang': 660, 'detail': 973, '£2,500': 3368, 'sign': 2722, 'becom': 475, 'scheme': 2628, 'independ': 1607, 'watchdog': 3251, 'mp': 2009, 'aid': 283, 'royal': 2590, 'incom': 1601, 'offici': 2110, 'two': 3130, 'bodi': 532, 'gener': 1399, 'privat': 2339, 'queen': 2402, 'wale': 3236, 'lancast': 1754, 'appear': 367, 'public': 2378, 'account': 223, 'spend': 2816, 'parker': 2184, 'bowl': 549, 'correspond': 849, 'peter': 2236, 'respons': 2525, 'money': 1987, 'spent': 2817, 'may': 1915, 'unabl': 3140, 'answer': 350, 'provid': 2372, 'annual': 347, 'across': 230, '25': 126, 'counti': 860, 'residenti': 2517, 'properti': 2362, 'shop': 2709, 'stock': 2876, 'share': 2695, 'set': 2684, 'king': 1734, 'edward': 1100, 'iii': 1582, 'success': 2925, 'cover': 867, 'cost': 851, 'life': 1813, '-': 22, 'neither': 2046, 'william': 3293, 'harri': 1495, 'receiv': 2456, 'taxpay': 2989, 'list': 1827, 'howev': 1561, '£4m': 3396, 'depart': 960, 'last': 1766, 'year': 3332, 'almost': 311, '£12m': 3358, 'paid': 2174, 'tax': 2988, 'current': 892, '40': 158, '%': 3, 'sinc': 2733, '1993': 81, 'eu': 1170, 'fraud': 1358, 'urg': 3182, 'state': 2853, 'irregular': 1663, 'fund': 1379, 'consist': 811, 'basi': 463, 'uk': 3135, 'nation': 2034, 'audit': 423, 'latest': 1769, 'figur': 1288, 'show': 2715, 'fall': 1237, 'still': 2873, 'definit': 945, 'express': 1218, 'concern': 794, '10th': 40, 'european': 1173, 'court': 865, 'auditor': 424, 'nao': 2032, 'push': 2390, 'improv': 1595, ':': 200, 'anti-fraud': 353, 'opinion': 2126, 'commun': 768, 'decad': 925, 'essenti': 1165, 'author': 427, 'involv': 1657, 'contribut': 834, 'strengthen': 2895, 'revenu': 2541, 'expenditur': 1208, 'financi': 1295, 'manag': 1885, 'use': 3186, 'resourc': 2522, 'case': 626, '2003': 103, 'worth': 3322, '(': 19, 'euro': 1171, ')': 20, '2002.': 102, 'throughout': 3045, 'drop': 1062, 'leigh': 1794, 'britain': 562, 'exampl': 1190, 'assum': 407, 'presid': 2322, 'potenti': 2299, 'given': 1419, 'second': 2649, 'largest': 1765, 'net': 2047, 'sure': 2940, "'re": 13, 'everyth': 1185, 'possibl': 2295, 'weed': 3265, 'must': 2025, 'take': 2973, 'afford': 266, 'commiss': 761, 'equal': 1157, 'robust': 2569, 'stanc': 2847, 'rais': 2422, 'overal': 2157, 'standard': 2849, 'spokesman': 2821, 'organis': 2138, 'agre': 279, 'assess': 403, 'qualiti': 2396, 'differ': 989, 'room': 2577, 'ad': 237, 'specif': 2812, 'statist': 2857, 'studi': 2910, 'strateg': 2889, 'way': 3254, 'detect': 974, 'attack': 414, 'defenc': 940, 'ministri': 1970, 'criticis': 884, 'soar': 2774, 'grow': 1459, 'delay': 947, 'top': 3069, 'equip': 1158, 'project': 2354, '20': 94, 'biggest': 503, 'risen': 2559, '£1.7bn': 3350, 'past': 2202, 'littl': 1830, 'evid': 1186, 'perform': 2225, 'introduct': 1652, 'smart': 2766, 'acquisit': 229, 'polici': 2279, 'six': 2741, 'ago': 278, 'lesson': 1799, 'learn': 1779, 'total': 3072, 'expect': 1207, 'reach': 2441, '14': 52, 'higher': 1525, 'origin': 2139, 'amount': 329, 'month': 1990, 'averag': 433, 'individu': 1612, 'rise': 2558, 'three': 3040, 'sir': 2737, 'john': 1693, 'bourn': 548, 'head': 1497, 'problem': 2342, 'principl': 2334, 'known': 1744, 'appli': 369, 'mani': 1887, 'fact': 1232, 'enough': 1143, 'phase': 2238, 'found': 1345, 'launch': 1771, 'start': 2852, 'worri': 3319, 'older': 2115, 'speak': 2806, 'paul': 2204, 'adam': 238, 'reflect': 2471, 'earli': 1077, 'cycl': 895, 'agenc': 274, 'buy': 588, 'lord': 1849, 'minist': 1969, 'obvious': 2101, 'disappoint': 1000, 'increas': 1602, 'shown': 2717, 'huge': 1564, 'work': 3314, 'expos': 1217, 'underli': 3146, 'find': 1296, 'follow': 1325, 'string': 2901, 'critic': 883, 'within': 3307, '12': 48, 'accord': 222, 'contain': 824, 'surpris': 2945, 'turn': 3123, 'around': 387, 'like': 1817, 'tri': 3100, 'super': 2935, 'tanker': 2982, 'long': 1843, 'inde': 1605, 'joint': 1695, 'strike': 2899, 'fighter': 1286, 'aircraft': 287, 'type': 3133, '45': 163, 'destroy': 972, 'heavi': 1506, 'lift': 1815, 'friend': 1367, 'student': 2909, 'factor': 1233, 'play': 2262, 'record': 2461, 'number': 2094, 'south': 2798, 'border': 543, 'univers': 3159, 'scotland': 2637, 'lifelong': 1814, 'jim': 1690, 'result': 2530, 'scottish': 2639, 'miss': 1974, 'applic': 371, 'england': 1139, 'rose': 2580, '17': 62, 'januari': 1683, '2005': 107, 'previou': 2329, 'fear': 1261, 'refuge': 2473, 'avoid': 435, 'june': 1712, 'propos': 2364, 'english': 1140, '£2,000': 3367, 'attempt': 415, 'prevent': 2327, 'yet': 3334, 'due': 1066, 'effect': 1102, 'autumn': 431, '2006': 109, 'addit': 242, 'made': 1870, 'thursday': 3048, 'admiss': 248, 'servic': 2682, 'repres': 2509, 'princip': 2333, 'claim': 704, 'squeez': 2834, 'director': 999, 'major': 1879, 'morn': 1997, 'reason': 2453, 'opt': 2131, 'high': 1520, 'offer': 2108, 'attract': 419, 'cours': 864, 'seen': 2660, 'know': 1742, 'hit': 1534, 'part': 2189, 'inflat': 1617, 'see': 2656, 'thousand': 3037, 'look': 1847, 'explain': 1213, 'translat': 3090, 'accept': 217, 'pictur': 2248, 'blur': 530, '19': 69, 'world': 3316, 'regard': 2476, 'educ': 1099, 'held': 1510, 'want': 3242, 'choic': 688, 'natur': 2035, 'sort': 2793, 'pressur': 2324, 'situat': 2740, 'imposs': 1593, 'get': 1410, 'cheap': 673, 'option': 2133, 'often': 2112, 'experi': 1210, 'enhanc': 1141, 'wide': 3287, 'rang': 2425, 'background': 445, 'wrong': 3328, 'exclud': 1197, 'tsunami': 3118, 'debt': 922, 'deal': 917, 'chancellor': 659, 'gordon': 1435, 'brown': 574, 'hope': 1548, 'suspend': 2954, 'interest': 1644, 'repay': 2502, 'later': 1768, 'friday': 1366, 'agreement': 280, 'g8': 1382, 'group': 1458, 'wealthi': 3257, 'save': 2621, 'affect': 265, 'countri': 861, '£3bn': 3390, 'pound': 2301, 'hammer': 1480, 'night': 2063, 'japan': 1684, 'one': 2119, 'creditor': 877, 'final': 1292, 'idea': 1577, 'believ': 486, 'bank': 452, 'intern': 1646, 'complet': 782, 'analysi': 330, 'face': 1230, 'disast': 1001, 'lock': 1839, 'talk': 2980, 'financ': 1294, 'chair': 652, 'germani': 1408, 'freez': 1362, 'canada': 606, 'begun': 480, 'moratorium': 1994, 'foreign': 1332, 'jack': 1670, 'straw': 2891, 'briton': 564, 'dead': 916, 'care': 619, 'sum': 2931, 'commit': 763, 'free': 1360, 'person': 2232, 'research': 2515, 'institut': 1635, 'ahead': 282, 'base': 462, 'deputi': 963, 'health': 1501, 'pledg': 2268, 'holyrood': 1543, 'nicola': 2062, 'sturgeon': 2912, 'stem': 2864, 'seri': 2675, 'mistak': 1976, 'develop': 980, 'execut': 1199, 'expert': 1211, 'prepar': 2319, 'publish': 2380, 'quarterli': 2401, 'econom': 1089, 'commentari': 758, 'assumpt': 408, 'drive': 1059, 'anoth': 349, '£130m': 3359, 'husband': 1570, 'wife': 3290, 'economist': 1091, 'team': 2993, 'margaret': 1894, 'ms': 2012, 'got': 1436, 'examin': 1189, 'along': 313, 'great': 1448, 'nurs': 2095, 'futur': 1381, 'absolut': 212, 'doubt': 1043, 'forward': 1343, 'age': 273, 'rest': 2526, 'assur': 409, 'met': 1945, 'minimum': 1968, 'rate': 2436, 'foster': 1344, 'parent': 2182, 'carer': 621, 'guarante': 1463, 'allow': 309, 'payment': 2208, 'level': 1802, 'area': 381, '£50': 3400, 'cloth': 729, 'food': 1326, 'children': 684, 'famili': 1240, 'hodg': 1536, 'ensur': 1145, 'fair': 1236, 'local': 1838, 'extra': 1221, 'cash': 627, '50,000': 171, 'live': 1832, 'end': 1133, 'meet': 1931, 'pocket': 2271, 'child': 682, 'crucial': 887, 'role': 2572, 'arrang': 388, 'transpar': 3091, 'better': 498, 'encourag': 1132, 'consid': 809, 'reward': 2545, 'seek': 2657, 'pass': 2197, 'establish': 1167, 'network': 2048, 'robert': 2568, 'exist': 1204, 'system': 2966, 'valu': 3195, 'depend': 961, '8,000': 191, 'sustain': 2956, 'chariti': 666, 'babi': 443, 'survey': 2948, 'discov': 1005, 'much': 2014, '£100': 3353, 'per': 2221, 'associ': 406, 'social': 2775, 'toni': 3066, 'lot': 1853, 'hidden': 1518, 'fulli': 1376, 'proper': 2361, 'order': 2135, 'sensibl': 2669, 'practic': 2305, 'emerg': 1123, 'rail': 2420, 'link': 1823, 'campaign': 604, 'ralli': 2423, 'stage': 2841, 'close': 726, '1969': 74, 'reopen': 2501, 'mark': 1900, 'anniversari': 345, 'line': 1821, 'closur': 728, 'ran': 2424, 'edinburgh': 1094, 'walk': 3237, 'restor': 2527, 'prosper': 2367, 'msp': 2013, 'passeng': 2198, '£100m': 3354, 'boost': 542, '2000': 97, 'economi': 1090, 'suffer': 2927, 'lobbi': 1837, 'determin': 978, 'keep': 1719, 'join': 1694, 'us': 3183, 'march': 1893, 'tirelessli': 3056, 'eventu': 1180, 'instanc': 1632, 'investig': 1654, 'extend': 1219, 'protect': 2368, 'charact': 664, 'enterpris': 1147, 'oper': 2124, 'railway': 2421, 'west': 3276, 'main': 1875, 'blackberri': 515, 'threat': 3038, 'thrown': 3047, 'chamber': 655, 'speaker': 2807, 'martin': 1903, 'rule': 2595, '£200': 3372, 'handheld': 1483, 'comput': 789, 'phone': 2243, 'send': 2666, 'e-mail': 1076, 'devic': 981, 'gain': 1386, 'promin': 2357, 'campbel': 605, 'messag': 1944, 'newsnight': 2054, 'journalist': 1702, 'reveal': 2538, 'electron': 1112, 'sound': 2795, 'mobil': 1980, 'strong': 2903, 'either': 1107, 'charg': 665, 'enforc': 1136, 'convent': 837, 'alway': 320, 'chosen': 691, 'colleagu': 744, 'nomin': 2073, 'give': 1418, 'polit': 2280, 'russian': 2602, 'hunger': 1568, 'intellig': 1638, 'enter': 1146, 'seventh': 2688, 'near': 2037, '10': 35, 'down': 1046, 'street': 2892, '50': 170, 'british': 563, 'promis': 2358, 'citizen': 701, 'settlement': 2686, 'four': 1348, 'statu': 2858, 'decent': 927, 'pension': 2219, 'weapon': 3258, 'resort': 2521, 'realis': 2448, 'righteous': 2556, 'without': 3308, 'came': 601, 'broken': 568, 'becam': 474, 'secret': 2650, 'agent': 276, 'happi': 1490, 'treat': 3096, 'comment': 757, 'fat': 1256, 'demand': 954, 'everi': 1182, 'former': 1338, 'lead': 1776, 'confirm': 801, 'inform': 1619, 'western': 3277, 'alli': 307, 'unit': 3158, 'kingdom': 1735, 'probabl': 2341, 'power': 2304, 'took': 3067, 'victor': 3213, 'left': 1787, 'hang': 1486, 'cold': 739, '1970': 75, 'russia': 2601, 'fellow': 1270, 'pupil': 2384, 'school': 2630, 'headquart': 1500, 'post': 2296, 'diplomat': 996, 'traffic': 3083, '1980': 76, 'rank': 2428, 'disench': 1010, 'regim': 2477, 'fuell': 1372, 'poland': 2276, 'teacher': 2992, 'approach': 374, 'began': 478, 'sent': 2670, '35': 147, 'hard': 1491, 'labour': 1750, 'camp': 603, 'releas': 2486, '1992': 80, 'contact': 823, "'d": 8, 'chanc': 658, 'arriv': 390, 'london': 1841, '13': 50, 'feel': 1266, 'fulfil': 1373, 'period': 2228, 'deterior': 977, 'legal': 1789, 'action': 232, 'settl': 2685, 'small': 2763, 'right': 2555, 'someth': 2784, 'trust': 3116, 'sourc': 2797, 'abl': 208, 'appeal': 366, 'welsh': 3271, '6': 177, 'assembl': 402, 'sue': 2926, 'essex': 1166, '£3.2bn': 3381, 'full': 1374, 'treasuri': 3095, 'opposit': 2130, 'busi': 585, 'grant': 1446, 'enabl': 1130, 'kept': 1725, '5': 167, 'confid': 800, 'eve': 1177, 'signific': 2724, 'cut': 894, 'vital': 3227, 'limit': 1820, 'avail': 432, 'continu': 830, 'reduc': 2467, 'deleg': 948, 'north': 2081, 'visit': 3225, 'listen': 1828, 'view': 3217, 'recognis': 2458, 'larg': 1763, 'recent': 2457, 'awar': 437, 'particularli': 2193, 'band': 451, 'domest': 1034, 'even': 1178, 'capit': 613, 'budget': 578, 'plaid': 2258, 'cymru': 896, 'short': 2710, 'anger': 340, 'massiv': 1905, 'hike': 1529, 'mike': 1957, 'german': 1407, 'liber': 1808, 'democrat': 956, 'discuss': 1008, '...': 24, 'conserv': 808, 'glyn': 1423, 'verg': 3205, 'third': 3031, 'household': 1559, 'upward': 3181, 'least': 1780, 'inevit': 1616, 'doubl': 1042, 'blair': 519, 'predict': 2314, 'hundr': 1567, 'million': 1964, 'prime': 2332, 'publicli': 2379, 'return': 2535, 'holiday': 1541, 'egypt': 1105, 'intim': 1649, 'abroad': 211, 'estim': 1169, '150,000': 56, '41': 161, 'die': 988, 'struck': 2906, 'asia': 397, 'box': 550, 'day': 914, 'other': 2144, 'shock': 2706, 'horror': 1549, 'lost': 1852, 'import': 1591, 'thing': 3029, 'word': 3313, '£50m': 3402, 'far': 1247, 'seven': 2687, 'easier': 1082, 'put': 2391, 'sever': 2689, 'away': 440, 'match': 1907, 'generos': 1400, 'immedi': 1586, 'doctor': 1029, 'stori': 2883, 'surgeri': 2943, 'unfortun': 3154, 'tuesday': 3120, 'daili': 899, 'spoke': 2819, 'telephon': 3003, 'georg': 1404, 'bush': 584, 'sri': 2835, 'indonesia': 1613, 'intens': 1640, 'initi': 1622, '$': 2, '3bn': 152, 'donat': 1036, 'thailand': 3021, 'trip': 3107, 'confer': 798, 'jakarta': 1678, 'thai': 3020, 'search': 2645, 'rel': 2483, 'hilari': 1530, 'aceh': 225, 'well': 3270, 'suppli': 2938, 'region': 2478, 'flight': 1316, 'ship': 2705, 'fleet': 1312, 'dilig': 993, 'charter': 671, 'plane': 2260, 'deliv': 950, 'news': 2053, 'special': 2808, 'rememb': 2494, '24': 125, 'gmt': 1424, 'wednesday': 3264, 'wait': 3234, 'target': 2984, 'hospit': 1551, 'appoint': 372, '18': 65, '2006.': 110, 'monthli': 1991, 'treatment': 3097, 'outsid': 2151, 'consult': 820, 'dr': 1050, 'richard': 2549, 'lewi': 1804, 'medic': 1928, 'welcom': 3268, 'faster': 1253, 'progress': 2353, 'done': 1037, 'behind': 484, 'capac': 611, 'built': 580, 'invest': 1653, 'wors': 3320, 'analyst': 331, 'impress': 1594, 'key': 1727, 'modernis': 1983, 'staff': 2840, 'structur': 2907, 'achiev': 226, 'unaccept': 3141, 'corner': 846, 'intend': 1639, 'no-on': 2069, 'let': 1800, 'forget': 1334, 'minor': 1971, 'thoma': 3034, 'exactli': 1188, '1999': 89, 'qualif': 2395, 'leav': 1781, 'jonathan': 1697, 'morgan': 1995, 'effici': 1103, 'quit': 2407, 'meanwhil': 1923, 'fallen': 1238, 'novemb': 2092, 'declin': 932, 'octob': 2104, 'fell': 1268, 'excel': 1192, 'kind': 1733, 'subsidis': 2921, 'exercis': 1201, 'sens': 2668, 'ancram': 332, 'white': 3283, 'paper': 2181, 'accus': 224, 'run': 2597, 'scare': 2625, 'cooper': 841, 'control': 835, 'prospect': 2366, '2005.': 108, 'stabil': 2837, 'theme': 3025, 'juli': 1709, 'africa': 269, 'climat': 720, 'featur': 1262, 'highli': 1527, '1': 26, 'europ': 1172, 'output': 2149, 'add': 240, 'justifi': 1716, 'design': 967, 'print': 2335, 'sell': 2664, 'advanc': 253, 'forthcom': 1340, 'elect': 1109, 'understand': 3149, '500': 172, 'page': 2173, 'simpl': 2729, 'kid': 1730, 'approv': 376, 'union': 3156, 'elector': 1110, 'satisfi': 2618, 'easi': 1081, 'spring': 2829, 'vote': 3230, 'prolong': 2356, 'uncertainti': 3144, 'date': 909, 'attitud': 418, 'partner': 2195, 'bring': 561, 'field': 1282, 'asylum': 410, 'ignor': 1581, 'reform': 2472, 'agricultur': 281, 'access': 218, 'market': 1901, 'arm': 386, 'impos': 1592, 'china': 685, 'squar': 2833, 'taken': 2976, 'chines': 686, 'human': 1566, 'nine': 2064, 'oversea': 2161, 'effort': 1104, 'bahama': 448, 'east': 1084, 'shake-up': 2692, '£6m': 3407, 'prioriti': 2337, 'honorari': 1546, 'mostli': 1999, 'america': 324, 'franc': 1354, 'portug': 2293, 'replac': 2505, '11.': 43, 'redund': 2468, 'written': 3327, 'statement': 2855, 'underpin': 3148, 'commonwealth': 767, 'prolifer': 2355, 'counter-terror': 858, 'energi': 1135, 'certain': 648, 'job': 1692, 'open': 2123, 'mission': 1975, 'iraq': 1659, 'afghanistan': 267, 'korea': 1745, '1997': 85, 'aim': 284, '2008.': 114, 'similar': 2726, 'constant': 816, 'clearer': 715, 'dramat': 1052, 'commerci': 760, 'advers': 256, "'to": 15, 'winter': 3302, 'death': 920, 'fuel': 1371, '60': 179, '£300': 3385, 'swap': 2957, 'ed': 1092, 'davey': 911, 'scandal': 2624, 'ten': 3007, 'old': 2114, 'choos': 689, 'compet': 775, 'present': 2321, 'scot': 2635, 'smoke': 2769, 'ban': 450, 'lament': 1752, 'levi': 1803, 'employ': 1128, 'licenc': 1810, 'remov': 2498, 'licens': 1811, 'trade': 3081, 'prior': 2336, 'argument': 384, 'outweigh': 2155, 'tourist': 3076, 'enjoy': 1142, 'environ': 1154, 'sick': 2719, 'man': 1884, 'imag': 1584, 'hold': 1538, 'acceler': 216, 'declar': 931, 'lack': 1751, 'drug': 1063, 'abus': 213, 'excess': 1194, 'drink': 1058, 'clear': 714, 'poor': 2283, 'singl': 2736, 'caus': 634, 'provis': 2373, 'point': 2275, 'environment': 1155, 'law': 1773, 'maximum': 1914, 'persist': 2231, 'refus': 2474, 'compli': 784, 'ultim': 3136, 'sanction': 2616, 'lose': 1850, 'fix': 1306, 'notic': 2087, 'break': 554, 'cigarett': 695, 'sale': 2613, 'york': 3335, '16': 60, 'ireland': 1661, 'cent': 643, 'afternoon': 271, 'toward': 3078, 'passiv': 2200, '70': 188, 'desper': 969, 'persuad': 2234, 'mcletchi': 1920, 'exempt': 1200, 'keen': 1718, 'prison': 2338, 'perhap': 2227, 'entir': 1151, 'typic': 3134, 'green': 1451, 'spokeswoman': 2823, 'scott': 2638, 'pleas': 2267, 'breath': 556, 'harm': 1494, 'tobacco': 3059, 'protest': 2369, 'airport': 290, 'challeng': 654, 'expans': 1206, 'build': 579, 'fierc': 1283, 'oppon': 2127, '£2bn': 3379, 'unless': 3162, 'block': 523, 'owner': 2166, 'upgrad': 3176, 'land': 1755, 'complain': 780, 'luton': 1866, 'take-off': 2974, 'procedur': 2343, 'win': 3295, 'aviat': 434, 'outlin': 2146, 'transport': 3092, 'ruin': 2594, 'adequ': 243, 'judg': 1706, 'inquiri': 1627, 'politician': 2281, 'apart': 363, 'termin': 3010, 'hub': 1563, 'airlin': 288, 'glasgow': 1420, 'septemb': 2673, '2004': 105, 'price': 2331, 'air': 285, 'compani': 770, 'doom': 1038, 'millennium': 1963, 'catalogu': 630, 'error': 1162, 'decision-mak': 930, 'went': 3274, 'exhibit': 1202, 'maintain': 1877, 'sport': 2826, 'entertain': 1148, 'venu': 3204, 'sector': 2654, 'site': 2739, 'deliveri': 951, 'benefit': 491, 'substanti': 2923, 'villag': 3219, 'elsewher': 1120, 'prove': 2371, 'seem': 2659, 'process': 2344, 'confus': 804, 'eleph': 1114, 'incred': 1604, 'whole': 3284, 'bid': 500, 'difficult': 990, 'circumst': 699, 'failur': 1235, 'competit': 776, 'partnership': 2196, 'sheffield': 2700, 'conduct': 797, 'posit': 2294, 'relat': 2484, 'parliamentari': 2186, 'ticket': 3049, 'offens': 2107, 'alleg': 305, 'biographi': 510, 'understood': 3150, 'giant': 1413, 'mess': 1943, 'cultur': 889, 'weak': 3256, ';': 201, 'truth': 3117, 'voter': 3231, 'admit': 249, 'class': 710, 'apologis': 364, 'genuin': 1403, 'write': 3325, 'meant': 1922, 'westminst': 3278, 'philip': 2240, 'servant': 2680, 'alan': 293, 'nanni': 2031, 'stay': 2861, 'round': 2584, 'battl': 467, 'son': 2787, 'stress': 2896, 'fox': 1352, 'lie': 1812, 'war': 3243, 'liam': 1806, 'agenda': 275, 'will': 3292, 'anyth': 360, '£500,000': 3401, 'defeat': 939, 'ratchet': 2435, 'weekend': 3267, 'tour': 3075, 'speech': 2814, 'poll': 2282, 'sunday': 2934, 'passion': 2199, 'door': 1039, 'describ': 966, 'relationship': 2485, 'struggl': 2908, 'voic': 3228, 'throw': 3046, 'complac': 779, 'chose': 690, 'goe': 1428, 'tell': 3005, 'tactic': 2971, 'reveng': 2540, 'newspap': 2055, 'treasur': 3094, 'loan': 1836, 'construct': 819, 'begin': 479, 'manchest': 1886, 'liverpool': 1834, 'leicest': 1793, 'northern': 2083, 'citi': 700, 'contest': 828, 'southern': 2800, 'rural': 2599, 'seat': 2647, 'especi': 1164, 'contend': 826, 'regain': 2475, 'commission': 762, 'professor': 2349, 'al': 291, 'overse': 2160, 'clinic': 722, 'count': 856, 'draw': 1053, 'ruth': 2603, 'kelli': 1721, 'lectur': 1783, 'oxford': 2169, 'train': 3087, 'colleg': 746, 'switzerland': 2963, 'proud': 2370, 'previous': 2330, 'alcohol': 296, 'advisori': 261, 'safeti': 2609, 'road': 2564, 'speed': 2815, 'fewer': 1280, 'injuri': 1624, 'compar': 771, '2003.': 104, '1998': 87, 'driver': 1061, 'lower': 1859, 'tend': 3008, 'exceed': 1191, 'slightli': 2752, 'half': 1474, 'accid': 219, 'content': 827, 'impact': 1589, 'motor': 2003, 'andrew': 336, 'consensu': 807, 'alon': 312, 'killer': 1732, '29': 136, 'danger': 905, 'read': 2443, 'roadsid': 2566, 'test': 3014, 'stagger': 2842, 'caught': 633, 'incent': 1598, 'articl': 394, 'select': 2662, 'slight': 2751, 'low': 1856, 'car': 616, 'someon': 2783, 'surviv': 2949, "'more": 12, 'adult': 252, 'math': 1910, 'skill': 2745, 'prais': 2307, 'basic': 464, '1.5': 32, '2010': 116, 'creativ': 874, '26': 130, 'defin': 944, 'purpos': 2388, 'compil': 778, 'normal': 2079, 'slowli': 2760, 'richer': 2550, '2001': 99, '£3.7bn': 3383, 'implement': 1590, 'gather': 1397, 'enthusiasm': 1149, 'knowledg': 1743, 'personalis': 2233, 'voluntari': 3229, 'frequent': 1364, 'journey': 1703, '11': 41, 'equival': 1159, 'particip': 2191, '2007.': 112, 'lowest': 1860, 'pace': 2170, 'collin': 747, 'highlight': 1528, 'acquir': 228, 'repeatedli': 2504, 'phil': 2239, 'fit': 1304, 'duti': 1074, '£1bn': 3366, 'packag': 2172, 'big': 501, 'matern': 1909, 'upbeat': 3175, 'pre-budget': 2308, 'borrow': 545, 'hail': 1473, 'growth': 1461, 'industri': 1614, 'histori': 1533, 'red': 2466, 'tape': 2983, 'dub': 1065, 'golden': 1430, 'tide': 3050, 'credibl': 875, 'vincent': 3221, 'cabl': 593, 'tough': 3074, 'gave': 1398, 'dollar': 1033, 'rapid': 2430, 'downturn': 1049, 'confront': 803, 'reject': 2482, 'book': 539, 'forecast': 1331, 'wish': 3304, 'editor': 1097, 'evan': 1175, 'inject': 1623, 'transfer': 3088, 'mother': 2000, 'father': 1257, '15': 54, 'hour': 1557, 'april': 377, '0800': 25, 'welfar': 3269, 'fiscal': 1303, 'tip': 3055, '2': 92, '£105m': 3355, 'innov': 1626, 'simon': 2727, 'feder': 1264, 'clearli': 716, 'mind': 1965, 'amid': 326, 'central': 645, 'optimist': 2132, 'stabilis': 2838, 'rich': 2548, 'term': 3009, '2001.': 100, '3': 138, '3.5': 140, 'turnaround': 3124, 'ca': 591, 'black': 514, 'hole': 1540, 'fanci': 1244, 'hide': 1519, 'insur': 1636, 'saw': 2622, 'session': 2683, 'shape': 2694, 'gap': 1391, 'wast': 3249, 'unsuccess': 3168, 'curb': 891, 'bad': 446, 'behaviour': 483, 'truanci': 3115, 'slow': 2758, 'everyon': 1184, 'instead': 1633, 'worker': 3315, 'chain': 651, 'automat': 429, 'quota': 2409, 'centr': 644, 'fantasi': 1245, 'island': 1664, 'seeker': 2658, 'un': 3138, 'onlin': 2121, 'brand': 553, 'disgrac': 1011, 'scrap': 2640, 'chief': 681, 'moral': 1993, 'ventur': 3203, 'ambiti': 323, 'take-up': 2975, 'suffici': 2928, 'collaps': 743, 'dotcom': 1041, 'boom': 541, 'surround': 2947, 'internet': 1647, 'quarter': 2399, 'profit': 2350, 'virtual': 3223, 'worldwid': 3318, 'technolog': 2997, '200': 95, 'websit': 3262, 'investor': 1655, 'direct': 997, 'freedom': 1361, 'barri': 460, 'extraordinari': 1222, 'abil': 207, 'fresh': 1365, 'serial': 2676, 'brought': 573, '40,000': 159, 'contract': 831, 'fast': 1252, 'track': 3080, 'prosecut': 2365, 'tackl': 2970, 'nearli': 2038, 'skip': 2747, 'adopt': 250, 'attend': 416, 'worst': 3321, 'sixth': 2743, 'hotspot': 1555, 'pick': 2247, 'twice': 3128, 'routin': 2587, 'dodg': 1032, 'accompani': 221, 'form': 1335, 'seiz': 2661, 'tool': 3068, 'crack': 868, 'row': 2589, 'art': 392, 'artist': 395, 'jame': 1680, 'crass': 870, 'liken': 1819, 'quango': 2397, 'review': 2542, 'hitler': 1535, 'emphasis': 1127, 'actual': 236, 'abolish': 209, 'board': 531, 'umbrella': 3137, '£30,000': 3384, 'paint': 2176, 'prize': 2340, 'distanc': 1020, 'inaccur': 1596, 'straight': 2886, 'quot': 2408, "'it": 9, 'civilis': 703, '20th': 118, 'centuri': 646, 'underground': 3145, 'rather': 2437, 'compromis': 788, 'best': 494, 'moment': 1985, 'scene': 2626, 'realli': 2451, 'valley': 3194, 'respond': 2524, 'shortli': 2712, 'born': 544, 'melbourn': 1933, 'theatr': 3023, 'studio': 2911, 'cap': 609, 'favour': 1259, 'spark': 2805, '£10,000': 3352, 'candid': 608, '2002': 101, 'gift': 1415, 'small-scal': 2764, 'relief': 2488, '£3m': 3391, 'entitl': 1152, 'shift': 2704, 'engag': 1137, 'sam': 2614, 'younger': 3337, 'democraci': 955, 'visibl': 3224, 'reluct': 2490, 'wider': 3289, 'radic': 2415, 'fire': 1299, 'billion': 507, 'useless': 3187, 'guid': 1467, 'dan': 903, '111': 46, '1997.': 86, 'slim': 2753, 'axe': 441, 'merg': 1941, 'unavail': 3143, 'statutori': 2860, 'potato': 2298, 'milk': 1962, 'wage': 3233, 'wine': 3298, 'foundat': 1346, 'footbal': 1329, 'promot': 2359, '£80m': 3413, 'renew': 2500, 'eight': 1106, 'jacket': 1671, 'farmer': 1248, 'advantag': 254, '£27m': 3377, 'wayn': 3255, 'rooney': 2578, 'tune': 3121, 'tank': 2981, 'shed': 2698, 'hamper': 1481, 'easili': 1083, 'shoot': 2707, 'capabl': 610, 'pc': 2209, 'custom': 893, 'reloc': 2489, 'wave': 3253, 'museum': 2022, 'galleri': 1387, 'librari': 1809, 'controversi': 836, 'rescu': 2514, '250,000': 128, 'five': 1305, 'crisi': 882, 'mainten': 1878, 'certainli': 649, 'convinc': 840, 'american': 325, 'function': 1378, 'angri': 343, 'chase': 672, 'outstand': 2153, 'michel': 1950, 'twin': 3129, 'penni': 2218, 'on-go': 2118, 'theresa': 3026, 'doug': 1044, 'smith': 2768, 'serious': 2678, 'badli': 447, 'blame': 520, 'appar': 365, 'toler': 3064, 'desir': 968, 'murder': 2021, 'remind': 2495, 'grip': 1455, 'uphold': 3177, 'blind': 522, 'eye': 1224, 'racist': 2413, 'prompt': 2360, 'fill': 1290, 'safe': 2608, 'ward': 3244, 'taylor': 2990, 'quick': 2404, 'firm': 1300, 'conflict': 802, 'earn': 1079, 'advic': 258, 'advis': 259, 'noth': 2086, 'motion': 2001, 'client': 719, 'sought': 2794, 'guidanc': 1468, 'clarifi': 707, 'complaint': 781, 'guard': 1464, "'m": 11, 'aris': 385, "'ll": 10, 'lawyer': 1775, 'retir': 2534, 'negoti': 2043, '1960': 73, 'oxfam': 2168, 'industrialis': 1615, 'barbara': 456, 'histor': 1532, 'act': 231, 'global': 1421, 'poverti': 2303, 'oblig': 2097, 'justic': 1715, '34': 146, 'none': 2077, 'felt': 1272, 'threaten': 3039, 'diseas': 1009, 'gross': 1456, 'terrorist': 3013, 'conscienc': 806, 'owe': 2163, 'facil': 1231, 'object': 2096, 'buyer': 589, '£150,000': 3362, 'swept': 2961, 'ever': 1181, 'altern': 318, '2007': 111, 'dismiss': 1012, 'length': 1796, 'women': 3311, 'flexibl': 1314, 'decemb': 926, 'recycl': 2465, 'closer': 727, 'commerc': 759, 'crippl': 881, 'salari': 2612, 'recruit': 2464, 'advertis': 257, 'strain': 2887, '90': 198, 'cup': 890, 'holder': 1539, 'utd': 3191, 'everton': 1183, 'premiership': 2316, 'chelsea': 678, 'tie': 3051, 'fa': 1228, 'fifth': 1284, 'drawn': 1054, 'newcastl': 2051, 'side': 2720, 'divis': 1028, 'replay': 2506, 'travel': 3093, 'southampton': 2799, 'lancashir': 1753, 'rival': 2561, 'blackburn': 516, 'teenag': 2998, 'striker': 2900, 'club': 730, 'nottingham': 2088, 'forest': 1333, 'boss': 546, 'gari': 1394, 'brom': 569, 'tottenham': 3073, 'arsen': 391, 'charlton': 668, 'bolton': 535, 'await': 436, 'winner': 3301, 'v': 3193, 'athlet': 412, 'februari': 1263, 'jone': 1698, 'file': 1289, 'cont': 822, 'lawsuit': 1774, 'marion': 1899, 'defam': 937, 'balco': 449, 'performance-enhanc': 2226, 'sydney': 2964, 'olymp': 2117, 'gold': 1429, 'medallist': 1926, 'damag': 900, 'reput': 2511, '25m': 129, '£13m': 3360, 'suit': 2930, 'dope': 1040, 'televis': 3004, 'indict': 1611, 'grand': 1445, 'juri': 1714, 'varieti': 3198, 'email': 1121, 'stand': 2848, 'medal': 1925, 'bronz': 570, '2000.': 98, 'district': 1023, 'san': 2615, 'francisco': 1355, 'sprinter': 2830, 'detector': 975, 'never': 2049, 'malici': 1883, 'abc': 206, 'program': 2351, 'nichol': 2059, 'steadfastli': 2862, '42-count': 162, 'decor': 933, 'femal': 1273, 'wildli': 3291, 'contradictori': 832, 'unsubstanti': 3167, 'simpli': 2730, 'submit': 2916, 'iaaf': 1571, 'cautiou': 635, 'anti-dop': 352, 'nick': 2061, 'light': 1816, 'interview': 1648, 'monitor': 1988, 'usa': 3184, 'appropri': 375, 'disciplinari': 1004, 'watch': 3250, 'steroid': 2868, 'substanc': 2922, 'zinc': 3345, 'supplement': 2937, 'athen': 411, 'august': 425, 'distribut': 1021, 'launder': 1772, 'trial': 3101, 'spain': 2802, 'coach': 735, 'racism': 2412, 'lui': 1863, 'aragon': 378, 'thierri': 3027, 'henri': 1513, 'guilti': 1469, '£22,000': 3374, 'angel': 339, 'maria': 1897, 'villar': 3220, 'request': 2512, 'anti-viol': 355, 'club-mat': 731, 'jose': 1699, 'antonio': 357, 'rey': 2546, 'motiv': 2002, 'player': 2263, 'offend': 2106, 'anyon': 359, 'colloqui': 748, 'languag': 1761, 'framework': 1353, 'world.': 3317, 'wear': 3259, 'anti-rac': 354, 't-shirt': 2968, 'friendli': 1368, 'madrid': 1871, 'storm': 2884, 'chant': 662, 'spanish': 2804, 'fan': 1243, 'game': 1388, '1-0.': 27, 'jaim': 1677, 'lissavetzki': 1826, 'neg': 2042, 'zero': 3343, 'morient': 1996, 'race': 2410, 'fernando': 1276, '£3.5m': 3382, '28-year-old': 135, 'echo': 1087, 'anfield': 338, 'rafa': 2417, 'benitez': 492, 'attent': 417, 'anelka': 337, '£7m': 3409, 'season': 2646, '£5m': 3405, 'highest': 1526, 'statur': 2859, 'realist': 2449, 'spoken': 2820, 'appreci': 373, 'gerard': 1406, 'seal': 2644, 'perman': 2229, 'switch': 2962, 'name': 2030, 'van': 3196, 'tripl': 3108, 'keith': 1720, "'ve": 17, 'steve': 2869, 'career': 620, 'physic': 2246, 'competitor': 777, 'rugbi': 2593, 'specialis': 2809, 'psycholog': 2377, 'inspir': 1630, 'leg': 1788, 'triumph': 3109, 'captain': 614, 'squad': 2832, 'championship': 657, 'itali': 1666, '£40m': 3395, 'dutch': 1072, 'mix': 1978, 'testament': 3015, 'profession': 2348, 'rover': 2588, 'ferguson': 1275, 'ranger': 2426, 'midfield': 1954, 'dialogu': 983, '26-year-old': 131, 'park': 2183, 'ibrox': 1574, '£6.5m': 3406, 'conclud': 795, 'window': 3297, 'shut': 2718, 'conced': 791, 'unlik': 3163, 'saturday': 2619, 'recov': 2463, 'hugh': 1565, 'emot': 1126, 'furiou': 1380, 'punish': 2383, 'though': 3035, 'merit': 1942, 'remark': 2493, 'team-mat': 2994, 'suspens': 2955, 'wenger': 3273, '£15,000': 3361, 'ruud': 2604, 'nistelrooy': 2068, 'cheat': 676, 'unfair': 3153, 'bull': 582, 'kill': 1731, 'famou': 1241, 'hear': 1503, 'bit': 513, 'leagu': 1778, 'leed': 1786, 'st': 2836, 'ian': 1572, 'consider': 810, 'connect': 805, 'obviou': 2100, 'cardiff': 618, 'talent': 2979, 'code': 737, 'famous': 1242, 'clive': 724, 'griffith': 1454, 'gibb': 1414, 'lion': 1825, 'wembley': 3272, '1996': 84, 'barcelona': 458, 'clash': 709, 'damien': 901, 'champion': 656, 'nou': 2089, 'knee': 1739, 'mourinho': 2005, 'pain': 2175, 'defend': 941, 'line-up': 1822, 'blue': 528, 'unusu': 3172, 'step': 2865, 'cole': 740, '£24m': 3375, 'disput': 1017, 'matt': 1911, 'immers': 1587, 'courag': 863, 'convict': 839, 'expens': 1209, '£20': 3371, 'note': 2085, 'untru': 3170, 'irish': 1662, 'counterpart': 859, 'summer': 2932, 'philosophi': 2241, 'slam': 2749, 'savag': 2620, 'birmingham': 512, 'reportedli': 2508, 'front': 1369, 'star': 2851, '30': 141, '£2.2m': 3369, 'sun': 2933, 'specul': 2813, 'display': 1015, 'crowd': 885, 'ovat': 2156, 'nice': 2057, 'fantast': 1246, 'rumour': 2596, 'bruce': 575, 'terrif': 3011, 'love': 1854, 'hell': 1511, 'els': 1119, 'celtic': 641, 'late': 1767, 'bellami': 488, 'craig': 869, 'magpi': 1874, 'graem': 1443, 'souness': 2796, 'exclus': 1198, 'tv': 3126, 'disrupt': 1019, 'minut': 1972, 'freddi': 1359, 'shepherd': 2703, 'unprofession': 3166, 'parri': 2188, 'gerrard': 1409, '1900': 71, 'constantli': 817, 'steven': 2870, '£30m': 3386, 'subject': 2915, 'readi': 2446, 'explor': 1215, 'sponsorship': 2825, 'stadium': 2839, 'pundit': 2382, 'stalwart': 2845, 'hansen': 1488, 'ongo': 2120, 'sharehold': 2696, 'premier': 2315, 'rafael': 2418, 'asset': 404, 'sincer': 2734, 're-affirm': 2439, 'crave': 871, 'nobodi': 2070, 'dearli': 919, '£30m-plu': 3387, 'mood': 1992, 'myth': 2028, 'realiti': 2450, 'beyond': 499, 'mayb': 1916, 'wo': 3309, "'bi": 7, 'finalis': 1293, 'stanley': 2850, 'confess': 799, 'emir': 1125, 'sponsor': 2824, 'ground': 1457, 'size': 2744, 'eye-open': 1225, 'frankli': 1357, 'cheapli': 675, 'contempl': 825, "'wow": 18, 'palat': 2178, 'counter': 857, 'remiss': 2496, 'mysteri': 2027, 'middl': 1953, 'withdraw': 3305, 'tycoon': 3132, 'frustrat': 1370, 'indecis': 1606, 'stalk': 2844, 'hors': 1550, '2004.': 106, 'agm': 277, 'magnitud': 1873, 'excit': 1196, 'evalu': 1174, 'perfectli': 2224, 'dream': 1055, 'cleverli': 718, 'ideal': 1578, 'owen': 2164, 'rebuild': 2454, '£35m': 3389, 'clever': 717, 'constru': 818, 'ambit': 322, 'up': 3174, 'ant': 351, 'succeed': 2924, 'foolish': 1327, 'pend': 2216, 'non-champion': 2075, 'trick': 3102, 'victim': 3212, 'spaniard': 2803, 'emilio': 1124, 'butragueno': 587, '21-year-old': 119, 'cope': 842, '£17m': 3364, 'superb': 2936, 'gradual': 1441, 'dress': 1057, 'surfac': 2941, 'media': 1927, 'trophi': 3112, 'disc': 1002, 'desailli': 965, 'marcel': 1892, 'repeat': 2503, 'french': 1363, 'crush': 888, '5-1': 169, 'quarter-fin': 2400, 'afraid': 268, 'destin': 971, 'stamford': 2846, 'bridg': 558, '3-1': 139, 'courtesi': 866, 'goal': 1426, 'tore': 3070, 'andr': 334, 'flo': 1317, 'gianfranco': 1411, 'zola': 3346, 'rivaldo': 2562, 'figo': 1287, 'dani': 906, 'patrick': 2203, 'kluivert': 1738, 'al-gharafa': 292, 'qatar': 2392, 'comparison': 772, 'mental': 1938, 'stronger': 2904, '36-year-old': 149, '£4.6m': 3393, 'ac': 214, 'milan': 1959, 'gullit': 1470, 'gianluca': 1412, 'vialli': 3210, 'claudio': 712, 'ranieri': 2427, 'occur': 2102, 'billionair': 508, 'roman': 2574, 'abramovich': 210, 'bought': 547, 'instil': 1634, 'marseil': 1902, '1994': 82, 'titl': 3058, 'wind': 3296, 'alongsid': 314, 'frank': 1356, 'lebeouf': 1782, 'josep': 1700, 'guardiola': 1466, 'titi': 3057, 'camara': 597, 'gabriel': 1384, 'batistuta': 465, 'christoph': 693, 'dugarri': 1067, 'admir': 247, 'mid-90': 1952, 'paolo': 2180, 'maldini': 1882, 'alessandro': 298, 'costacurta': 853, 'amaz': 321, '&': 4, '£1.2m': 3349, 'sebastian': 2648, '15th': 59, 'plagu': 2257, 'alex': 299, 'disreput': 1018, 'pair': 2177, 'event': 1179, 'trafford': 3084, 'highburi': 1524, 'tunnel': 3122, 'behav': 482, 'slip': 2756, 'smaller': 2765, 'expand': 1205, 'reaction': 2442, 'feet': 1267, 'phrase': 2245, 'incid': 1599, 'kick': 1729, 'pitch': 2254, 'nonsens': 2078, 'resolv': 2520, 'ashley': 396, 'dutchman': 1073, 'spirit': 2818, 'winger': 3300, 'denmark': 958, 'loss': 1851, 'adjust': 245, 'daughter': 910, 'delight': 949, 'bolster': 534, 'requir': 2513, 'coupl': 862, 'takeov': 2977, 'ken': 1722, 'stake': 2843, 'belong': 489, 'jon': 1696, 'task': 2986, 'flow': 1321, 'outgo': 2145, 'medium': 1929, 'consolid': 813, 'solv': 2782, 'percent': 2222, 'consortium': 814, 'undisclos': 3151, 'unpaid': 3165, 'serv': 2679, '£4.5m': 3392, 'todd': 3061, 'stretch': 2897, '£10m': 3356, 'withdrew': 3306, 'administr': 246, 'indian': 1609, 'beat': 471, 'afterward': 272, 'tournament': 3077, '5,000': 168, 'merced': 1940, 'adriano': 251, 'inter': 1642, '22-year-old': 122, 'de': 915, 'score': 2634, 'practis': 2306, 'tag': 2972, 'ronaldo': 2576, 'rick': 2552, 'lure': 1865, 'reiter': 2481, 'scotch': 2636, 'stevi': 2871, 'intent': 1641, 'knock': 1741, 'strength': 2894, 'pountney': 2302, 'northampton': 2082, 'budg': 577, 'refere': 2470, 'lander': 1756, 'six-week': 2742, 'plead': 2266, 'panel': 2179, 'technic': 2996, '£8m': 3414, 'bernabeu': 493, 'bigger': 502, 'might': 1956, 'purchas': 2385, 'kevin': 1726, 'invit': 1656, 'heart': 1505, 'sole': 2780, 'upset': 3179, 'academi': 215, 'four-year': 1349, '£350m': 3388, 'tabl': 2969, 'sit': 2738, 'fledgl': 1311, '1990': 79, 'deep': 934, 'insid': 1628, 'credit': 876, 'piec': 2249, 'method': 1947, 'indic': 1610, 'uniqu': 3157, 'quiet': 2406, 'advisor': 260, 'formal': 1336, 'trail': 3086, 'attach': 413, 'pull': 2381, 'landscap': 1759, 'label': 1749, 'multi-million': 2017, 'eas': 1080, 'host': 1552, 'australian': 426, 'irb': 1660, 'cream': 872, 'compris': 787, '9': 196, 'pack': 2171, '£5.9m': 3399, 'chronicl': 694, 'heard': 1504, 'led': 1784, 'strongli': 2905, 'tight': 3052, 'extrem': 1223, 'recal': 2455, 'remot': 2497, 'sold': 2779, 'anywher': 361, 'hurt': 1569, 'prevail': 2326, 'hong': 1545, 'asid': 399, 'broke': 567, 'victoria': 3214, 'organ': 2137, 'auction': 420, 'jacqu': 1675, 'lane': 1760, 'onto': 2122, 'fixtur': 1307, 'spur': 2831, 'continent': 829, 'model': 1981, 'deeper': 935, 'disciplin': 1003, 'encount': 1131, '32-year-old': 145, 'presenc': 2320, 'magazin': 1872, 'employe': 1129, 'usher': 3189, 'intrigu': 1650, 'veteran': 3207, 'youth': 3338, 'fun': 1377, 'beer': 477, 'blow': 527, 'strang': 2888, 'tradit': 3082, 'grew': 1452, 'rap': 2429, 'andi': 333, 'manner': 1889, 'african': 270, '#': 1, '8m': 195, 'arthur': 393, 'republ': 2510, '£2m': 3380, 'expir': 1212, 'regularli': 2480, 'mini': 1966, 'product': 2347, 'maker': 1881, 'machineri': 1869, 'shell': 2701, '200,000': 96, 'produc': 2346, '100,000': 38, 'vast': 3200, 'quickli': 2405, 'brad': 552, 'automot': 430, 'convert': 838, 'fetch': 1279, '£8,000': 3410, 'consum': 821, 'slower': 2759, 'plant': 2261, 'increasingli': 1603, 'tear': 2995, 'adventur': 255, '£10': 3351, 'phoenix': 2242, 'own': 2165, 'award-win': 439, 'vehicl': 3202, 'longbridg': 1845, 'mg': 1948, '6,000': 178, '110,000': 44, 'shanghai': 2693, 'corpor': 848, 'saic': 2610, 'yuko': 3341, 'oil': 2113, 'state-own': 2854, 'rosneft': 2581, 'yugansk': 3340, 'revel': 2539, 'long-term': 1844, 'medium-s': 1930, 'unknown': 3160, '9.3bn': 197, 'embattl': 1122, 'bankruptci': 453, 'downfal': 1047, 'founder': 1347, 'mikhail': 1958, 'khodorkovski': 1728, 'richest': 2551, 'evas': 1176, 'thirst': 3033, 'steel': 2863, 'commod': 765, '27.5bn': 134, 'jami': 1681, 'reuter': 2537, 'default': 938, 'little-known': 1831, 'ryanair': 2605, 'boe': 533, 'carrier': 625, '100': 37, 'airbu': 286, 'biggest-sel': 504, 'japanes': 1685, 'util': 3192, 'allianc': 308, 'engin': 1138, 'mainli': 1876, 'fault': 1258, 'secretli': 2652, 'yen': 3333, 'carmak': 623, 'celebr': 639, 'stood': 2879, 'troubl': 3113, 'parmalat': 2187, 'italian': 1667, 'pre-tax': 2310, 'fourth': 1350, '100m': 39, 'violat': 3222, 'bare': 459, 'complex': 783, 'enrico': 1144, 'bondi': 538, 'su': 2913, 'bond': 537, '49': 166, 'mass': 1904, 'exchang': 1195, '2bn': 137, 'specialist': 2810, 'element': 1113, 'solut': 2781, 'telegraph': 3002, 'reader': 2445, 'sluggish': 2761, 'teeth': 2999, 'sack': 2607, 'observ': 2098, 'format': 1337, 'circul': 698, 'guardian': 1465, 'bet': 497, 'larger': 1764, 'popular': 2287, 'brother': 572, 'mull': 2016, 'retail': 2532, 'colour': 751, 'alik': 303, 'corp': 847, 'triniti': 3106, 'heavili': 1507, 'subsidi': 2919, 'poorer': 2284, 'trillion': 3103, 'sooner': 2791, 'sharp': 2697, 'deutsch': 979, 'telecom': 3001, '2.8': 93, '11bn': 47, 't-mobil': 2967, 'dresdner': 1056, 'kleinwort': 1737, 'wasserstein': 3248, 'dividend': 1027, 'focus': 1324, 'wall': 3239, '1.2': 29, 'two-third': 3131, '£5.7bn': 3398, 'ice': 1575, 'portfolio': 2290, 'three-year': 3042, '31': 143, '£160m': 3363, 'data': 908, 'restructur': 2529, 'tom': 3065, 'weather': 3260, 'combin': 752, 'materi': 1908, 'dip': 995, '1.4': 31, 'water': 3252, 'dispos': 1016, 'condit': 796, 'contrast': 833, 'except': 1193, 'outperform': 2148, 'flat': 1309, '1bn': 91, 'icon': 1576, 'unveil': 3173, 'trevor': 3099, 'focu': 1323, '1.2bn': 30, '8.1': 192, 'grown': 1460, '4.3': 156, 'partli': 2194, 'spread': 2828, 'livelihood': 1833, 'stimul': 2875, 'barrier': 461, 'reli': 2487, 'tariff': 2985, 'export': 1216, 'thank': 3022, 'divid': 1026, 'divers': 1024, 'latin': 1770, 'caribbean': 622, 'full-year': 1375, 'offset': 2111, 'turnov': 3125, 'low-cost': 1858, 'outlook': 2147, 'anticip': 356, 'pretti': 2325, 'modest': 1984, 'cost-cut': 852, 'whilst': 3281, 'bed': 476, 'penc': 2215, 'grab': 1439, 'colombia': 749, 'colombian': 750, 'popul': 2286, '36': 148, 'cheaper': 674, 'electr': 1111, 'revis': 2543, 'obtain': 2099, 'vice': 3211, 'joshua': 1701, 'feloni': 1271, 'defraud': 946, 'longer': 1846, 'ownership': 2167, 'domin': 1035, 'float': 1318, 'strip': 2902, '10,000': 36, 'liabl': 1805, 'greater': 1449, 'washington': 3247, 'reynold': 2547, 'manipul': 1888, 'addict': 241, 'surrend': 2946, '46': 165, '1998.': 88, '4.5': 157, 'trend': 3098, 'so-cal': 2772, '84': 194, 'recoup': 2462, 'unexpect': 3152, 'goldman': 1431, 'sach': 2606, 'surg': 2942, 'grey': 1453, 'walter': 3240, 'manufactur': 1890, 'applianc': 370, '27': 133, 'eastern': 1085, 'durham': 1069, 'garden': 1393, 'subsidiari': 2920, '2009': 115, 'sweden': 2959, 'fli': 1315, '11,000': 42, 'mile': 1961, 'rid': 2553, 'slimmer': 2755, 'much-anticip': 2015, 'sky': 2748, '2200': 123, 'airplan': 289, 'nich': 2058, 'ferri': 1277, 'categori': 631, '717': 189, 'cancel': 607, '1.13bn': 28, 'india': 1608, 'widen': 3288, 'user': 3188, '95': 199, '250': 127, '20bn': 117, 'coalit': 736, 'gartner': 1395, 'chapter': 663, 'halt': 1479, 'jail': 1676, 'activ': 233, 'texa': 3016, 'forum': 1342, 'ga': 1383, 'compens': 774, '600': 180, '150': 55, 'deter': 976, 'alert': 297, 'adher': 244, 'pay-out': 2207, '1.5bn': 33, 'film': 1291, 'formerli': 1339, 'cinema': 696, 'core': 845, 'rock': 2570, 'hollywood': 1542, 'concentr': 792, 'hotel': 1553, 'dvd': 1075, 'video': 3215, 'vh': 3208, 'bingo': 509, '38': 150, 'deficit': 943, 'clamp': 705, 'yuan': 3339, 'rapidli': 2431, 'proport': 2363, '1.76': 34, 'reviv': 2544, 'fortun': 1341, 'web': 3261, '17m': 64, 'googl': 1434, 'yahoo': 3331, 'retain': 2533, '59': 174, 'batteri': 466, 'cynthia': 897, 'discoveri': 1006, 'conspiraci': 815, 'extern': 1220, 'brief': 559, 'mention': 1939, 'sentenc': 2671, '45,000': 164, '7,000': 185, 'trim': 3105, 'czech': 898, 'hire': 1531, 'infrastructur': 1620, 'kit': 1736, 'lucr': 1862, '8': 190, 'evolut': 1187, 'fashion': 1251, 'norway': 2084, 'circuit': 697, 'store': 2882, 'transform': 3089, 'elimin': 1116, 'head-to-head': 1498, 'wal-mart': 3235, 'stride': 2898, 'midland': 1955, 'warner': 3246, 'jump': 1711, 'high-spe': 1523, 'aol': 362, 'subscrib': 2917, 'preced': 2312, 'item': 1668, 'broadband': 565, 'slump': 2762, 'alexand': 300, 'ring': 2557, 'trilog': 3104, 'regul': 2479, '300m': 142, 'music': 2023, 'award': 438, 'auto': 428, 'mp3': 2010, '22': 121, 'pew': 2237, 'gadget': 1385, 'digit': 992, 'dial-up': 982, 'upsurg': 3180, 'song': 2788, 'podcast': 2272, 'ipod': 1658, 'lee': 1785, 'pioneer': 2251, '£11.5m': 3357, 'screen': 2641, 'server': 2681, 'instal': 1631, 'portabl': 2288, 'copi': 843, 'gigabyt': 1416, 'dean': 918, 'visual': 3226, 'piraci': 2252, 'movi': 2008, 'documentari': 1031, 'restrict': 2528, 'pete': 2235, 'audienc': 421, 'distributor': 1022, 'sheer': 2699, 'portal': 2289, 'jerri': 1689, 'soon': 2790, 'rude': 2592, '18th': 68, 'classic': 711, 'novel': 2090, 'sophist': 2792, '1995': 83, 'appl': 368, 'survivor': 2950, 'wonder': 3312, 'interact': 1643, 'rack': 2414, 'comedian': 755, 'integr': 1637, 'modern': 1982, 'handset': 1485, 'rare': 2433, 'landlin': 1758, 'katherin': 1717, 'must-hav': 2026, 'signal': 2723, 'orang': 2134, 'newcom': 2052, 'text': 3018, 'download': 1048, 'consol': 812, 'gamer': 1389, 'la': 1747, 'vega': 3201, 'showcas': 2716, 'genr': 1402, '80': 193, 'blockbust': 524, 'usual': 3190, 'half-lif': 1475, 'halo': 1478, 'xbox': 3330, 'third-parti': 3032, 'multiplay': 2020, '£40': 3394, 'ce': 638, 'audio': 422, 'collect': 745, 'via': 3209, 'high-profil': 1522, 'ebay': 1086, 'dec': 924, 'telco': 3000, 'bt': 576, 'space': 2801, 'channel': 661, 'directli': 998, 'divert': 1025, 'portion': 2291, 'camera': 602, 'legitim': 1792, 'ibm': 1573, 'softwar': 2778, 'collabor': 742, 'linux-bas': 1824, 'version': 3206, 'movement': 2007, 'premis': 2317, 'compon': 786, 'hi-tech': 1517, 'danc': 904, '21st': 120, 'stone': 2878, 'graphic': 1447, 'render': 2499, '3d': 153, 'bell': 487, 'navig': 2036, 'joystick': 1704, 'river': 2563, '19th': 90, 'quak': 2394, 'handl': 1484, 'architectur': 380, 'anim': 344, 'self-express': 2663, 'photo': 2244, 'upload': 3178, 'unleash': 3161, 'penetr': 2217, 'pure': 2386, 'blogger': 526, 'inappropri': 1597, 'blog': 525, 'diari': 985, 'ellen': 1117, 'simonetti': 2728, 'wrote': 3329, 'anonym': 348, 'semi-fict': 2665, 'delta': 952, 'spokesperson': 2822, 'elabor': 1108, 'unauthoris': 3142, 'uniform': 3155, 'subsequ': 2918, 'discrimin': 1007, 'eeoc': 1101, 'texas-bas': 3017, 'explan': 1214, 'amongst': 328, 'fiction': 1281, 'non-fict': 2076, 'wing': 3299, '5bn': 175, '£2.7bn': 3370, 'pilot': 2250, '32': 144, 'defer': 942, '135m': 51, '600m': 181, 'playstat': 2264, 'soni': 2789, 'outstrip': 2154, 'microsoft': 1951, 'chart-track': 670, 'ps2-onli': 2375, 'theft': 3024, 'andrea': 335, '677,000': 184, 'briefli': 560, 'outsold': 2152, 'houlihan': 1556, 'computerandvideogames.com': 790, 'climb': 721, 'ps2': 2374, 'edinburgh-bas': 1095, 'rockstar': 2571, 'gta': 1462, 'potter': 2300, 'azkaban': 442, 'gangster-them': 1390, 'sequel': 2674, 'fastest-sel': 1255, 'best-sel': 495, 'acclaim': 220, 'coincid': 738, 'slimlin': 2754, 'shelv': 2702, 'run-up': 2598, 'battlefield': 468, 'certif': 650, 'plu': 2270, "'ultim": 16, 'sci-fi': 2631, 'shooter': 2708, 'blast': 521, 'ceremoni': 647, 'luca': 1861, 'shot': 2714, 'chart': 669, 'nintendo': 2065, 'legend': 1790, 'zelda': 3342, 'herald': 1514, 'era': 1160, 'concept': 793, 'first-person': 1302, '15m': 58, '£8.3m': 3411, 'honour': 1547, 'vietnam': 3216, 'riddick': 2554, 'escap': 1163, 'butcher': 586, 'bay': 469, 'unsung': 3169, 'hero': 1515, 'somewhat': 2785, 'eclips': 1088, 'storylin': 2885, 'crown': 886, '£1,152m': 3348, 'digest': 991, 'check': 677, 'peer-to-p': 2213, 'identifi': 1580, 'copyright': 844, 'thrive': 3044, 'stolen': 2877, 'edonkey': 1098, 'trowbridg': 3114, 'chicoin': 680, 'infring': 1621, 'guru': 1471, 'sub-': 2914, 'nichola': 2060, 'negropont': 2044, 'mit': 1977, 'lab': 1748, 'laptop': 1762, '£53': 3403, 'neighbourhood': 2045, 'rear': 2452, 'ordinari': 2136, 'skinni': 2746, 'processor': 2345, 'memori': 1936, 'bestsel': 496, 'resist': 2519, 'adapt': 239, 'cambodia': 598, 'cherish': 679, 'machin': 1868, 'textbook': 3019, 'nokia': 2071, 'cell': 640, 'quantiti': 2398, 'overhead': 2158, 'premium': 2318, 'rob': 2567, 'spot': 2827, 'behalf': 481, 'innoc': 1625, 'pirat': 2253, 'whatev': 3279, '!': 0, 'perpetr': 2230, 'assist': 405, 'variou': 3199, 'thiev': 3028, 'belfast': 485, '£5': 3397, 'god': 1427, '3g': 154, 'built-in': 581, 'wireless': 3303, 'fastest': 1254, 'smartphon': 2767, 'angl': 341, 'motorola': 2004, 'commut': 769, 'nomad': 2072, 'brian': 557, 'debut': 923, '5gb': 176, 'usb': 3185, 'storag': 2881, 'sexi': 2690, 'flash': 1308, 'multimedia': 2018, 'interfac': 1645, 'girl': 1417, 'compat': 773, 'camcord': 600, 'megapixel': 1932, 'array': 389, 'raid': 2419, 'suspect': 2953, 'co-ordin': 732, 'argonaut': 382, 'london-bas': 1842, 'cambridg': 599, 'healthi': 1502, 'knew': 1740, 'jason': 1686, 'edgwar': 1093, 'morphem': 1998, 'kentish': 1724, 'town': 3079, 'monster': 1989, 'rubin': 2591, 'resurrect': 2531, '64': 183, '1982': 77, 'pda': 2210, 'jupit': 1713, 'jukebox': 1708, 'overwhelm': 2162, 'high-capac': 1521, 'cd': 637, 'viewer': 3218, 'imagin': 1585, 'edit': 1096, 'favourit': 1260, '7.5m': 187, 'tast': 2987, 'plot': 2269, 'recognit': 2459, 'drama': 1051, 'peak': 2212, 'dumb': 1068, 'teach': 2991, 'perfect': 2223, 'alter': 317, 'romant': 2575, 'aesthet': 263, 'poetri': 2274, 'comedi': 754, 'woman': 3310, 'unnam': 3164, 'chip': 687, 'unus': 3171, 'psp': 2376, 'walkman': 3238, 'ds': 1064, 'surpass': 2944, 'rush': 2600, 'itun': 1669, 'buzz': 590, 'hardwar': 1492, 'matur': 1913, 'california': 595, 'simultan': 2731, '170': 63, 'preview': 2328, '7.4': 186, 'captur': 615, 'opera': 2125, 'lover': 1855, 'particular': 2192, 'stern': 2867, 'allen': 306, 'wilson': 3294, 'juic': 1707, 'map': 1891, '£99': 3417, 'mario': 1898, 'boy': 551, 'short-rang': 2711, 'metal': 1946, 'arcad': 379, 'enemi': 1134, 'alien': 302, 'geniu': 1401, 'refer': 2469, 'command': 756, 'gate': 1396, 'foot': 1328, 'musician': 2024, 'clint': 723, 'eric': 1161, 'soap': 2773, 'round-up': 2585, 'colin': 741, 'section': 2653, 'roll': 2573, 'script': 2642, 'niro': 2067, 'thriller': 3043, 'focker': 1322, 'oscar': 2141, 'sideway': 2721, 'multipl': 2019, 'lukewarm': 1864, '18m': 67, 'actor': 234, 'nomine': 2074, 'road-trip': 2565, '£9m': 3418, 'denni': 959, 'quaid': 2393, 'assault': 401, '19.1m': 70, '£9.9m': 3415, 'ben': 490, 'stiller': 2874, 'dustin': 1071, 'hoffman': 1537, 'barbra': 457, 'streisand': 2893, 'dergarabedian': 964, 'exhibitor': 1203, 'cast': 628, '26.5': 132, 'lemoni': 1795, 'snicket': 2770, 'finish': 1298, '£7.7m': 3408, 'leonardo': 1797, 'dicaprio': 986, 'albert': 294, 'co-written': 734, 'cosbi': 850, 'singer': 2735, 'jennif': 1688, 'lopez': 1848, 'pop': 2285, 'lo': 1835, 'beatl': 472, 'alicia': 301, 'album': 295, 'cb': 636, 'rapper': 2432, 'ray': 2438, 'billi': 506, 'darl': 907, 'fascin': 1250, 'stewart': 2872, 'greatest': 1450, 'festiv': 1278, 'shortlist': 2713, 'actress': 235, 'hector': 1508, 'dougla': 1045, 'jean': 1687, 'playwright': 2265, 'bursari': 583, 'whitbread': 3282, 'booker': 540, 'beauti': 473, 'geraldin': 1405, 'mccaughrean': 1918, '£25,000': 3376, 'mcdonald': 1919, 'writer': 3326, 'joann': 1691, 'post-war': 2297, 'landladi': 1757, 'lodger': 1840, 'jamaican': 1679, 'troop': 3111, 'didact': 987, 'preachi': 2311, 'eye-pop': 1226, 'anybodi': 358, 'susan': 2951, 'fletcher': 1313, 'norrel': 2080, 'susanna': 2952, 'graduat': 1442, 'anglia': 342, 'mari': 1896, 'readabl': 2444, 'scholarship': 2629, 'tragic': 3085, 'likeabl': 1818, 'tudor': 3119, 'clare': 706, 'symmon': 2965, 'poem': 2273, 'scoop': 2633, '1987': 78, 'dust': 1070, 'garcia': 1392, 'literari': 1829, 'roth': 2583, 'neeson': 2041, 'dinner': 994, 'lyric': 1867, 'oscar-nomin': 2142, 'overlook': 2159, 'stephen': 2866, 'rea': 2440, 'childhood': 683, 'portray': 2292, 'graham': 1444, 'eyr': 1227, 'cri': 878, 'disney': 1013, 'biopic': 511, 'florida': 1320, 'nude': 2093, '23': 124, 'mccartney': 1917, 'wow': 3324, 'mini-concert': 1967, 'janet': 1682, 'jackson-styl': 1673, '62-year-old': 182, 'sang': 2617, 'hey': 1516, 'jude': 1705, '12-minut': 49, 'half-tim': 1476, 'jackson': 1672, 'breast': 555, 'outrag': 2150, 'raci': 2411, 'specially-written': 2811, 'alltel': 310, 'jacksonvil': 1674, 'mellow': 1934, 'rous': 2586, 'temptat': 3006, 'headline-grab': 1499, 'banter': 454, 'slot': 2757, 'halfway': 1477, 'nipple-g': 2066, 'sweatshirt': 2958, 'underneath': 3147, 'pea': 2211, 'pre-gam': 2309, 'fergi': 1274, 'purpl': 2387, 'hotpant': 1554, '550,000': 173, '£292,000': 3378, 'mischer': 1973, '144.4': 53, 'aerosmith': 262, 'diana': 984, 'ross': 2582, 'gloria': 1422, 'estefan': 1168, 'grace': 1440, 'low-budget': 1857, 'entri': 1153, 'wed': 3263, 'rori': 2579, 'oscar-win': 2143, 'hayao': 1496, 'miyazaki': 1979, 'howl': 1562, 'castl': 629, 'ocean': 2103, 'twelv': 3127, 'caper': 612, 'clooney': 725, 'pitt': 2255, 'julia': 1710, '40.8m': 160, '£21m': 3373, 'master': 1906, 'heist': 1509, 'wesley': 3275, 'snipe': 2771, 'blade': 518, '16.1m': 61, '£8.4m': 3412, 'fabl': 1229, 'polar': 2277, 'hank': 1487, 'krank': 1746, 'fourth-biggest': 1351, 'narrowli': 2033, 'eleven': 1115, '38.1m': 151, '£19.8m': 3365, '184m': 66, '£95.8m': 3416, 'remak': 2492, 'sinatra': 2732, 'rat': 2434, 'soderbergh': 2777, 'reunit': 2536, 'damon': 902, 'elliott': 1118, 'gould': 1437, 'catherin': 632, 'zeta-jon': 3344, 'all-star': 304, 'fellman': 1269, 'bros.': 571, 'complimentari': 785, '110m': 45, '£57.2m': 3404, 'dispirit': 1014, 'vaniti': 3197, 'milder': 1960, 'unabashedli': 3139, 'trivial': 3110, 'sleep': 2750, 'wick': 3286, 'co-star': 733, 'orphan': 2140, 'novelist': 2091, 'cage': 594, 'epic': 1156, 'farrel': 1249, 'three-hour': 3041, '150m': 57, 'scienc': 2632, 'wander': 3241, 'blackmail': 517, 'scrub': 2643, 'pursu': 2389, 'depict': 962, 'broadcast': 566, 'station': 2856, '1920': 72, 'censor': 642, 'floor': 1319, 'hari': 1493, 'tale': 2978}
+
+
+STARTING GLOBAL ITERATION 1
+
+
+Initializing PSO...
+Performing clustering...
+Iteration: 0, best solution: 7.428608855652543e-09
+Iteration: 1, best solution: 7.428608855652543e-09
+Iteration: 2, best solution: 7.428608855652543e-09
+Iteration: 3, best solution: 7.253322635286741e-09
+Iteration: 4, best solution: 7.132451070511743e-09
+Iteration: 5, best solution: 6.748493161415527e-09
+Iteration: 6, best solution: 6.100342970913289e-09
+Iteration: 7, best solution: 6.100342970913289e-09
+Iteration: 8, best solution: 6.100342970913289e-09
+Iteration: 9, best solution: 5.6848873152167084e-09
+Iteration: 10, best solution: 5.4498805134454775e-09
+Iteration: 11, best solution: 5.375863415089447e-09
+Iteration: 12, best solution: 5.2881794541947885e-09
+Iteration: 13, best solution: 5.0225816248648676e-09
+Iteration: 14, best solution: 4.9746180913024644e-09
+Iteration: 15, best solution: 4.933003913636732e-09
+Iteration: 16, best solution: 4.895167217560003e-09
+Iteration: 17, best solution: 4.8013330797453625e-09
+Iteration: 18, best solution: 4.732513009619235e-09
+Iteration: 19, best solution: 4.6479136421111994e-09
+Cluster 2
+---------------------------------------------------------------
+Business: 4, entertainment: 6, politics: 13, sport: 8, tech: 6
+---------------------------------------------------------------
+Cluster 4
+---------------------------------------------------------------
+Business: 12, entertainment: 19, politics: 6, sport: 1, tech: 16
+---------------------------------------------------------------
+Cluster 1
+---------------------------------------------------------------
+Business: 24, entertainment: 14, politics: 21, sport: 30, tech: 18
+---------------------------------------------------------------
+Cluster 0
+---------------------------------------------------------------
+Business: 0, entertainment: 0, politics: 0, sport: 1, tech: 0
+---------------------------------------------------------------
+Cluster 3
+---------------------------------------------------------------
+Business: 0, entertainment: 1, politics: 0, sport: 0, tech: 0
+---------------------------------------------------------------
+
+
+STARTING GLOBAL ITERATION 2
+
+
+Initializing PSO...
+Performing clustering...
+Iteration: 0, best solution: 9.776936697213172e-09
+Iteration: 1, best solution: 9.160486135105808e-09
+Iteration: 2, best solution: 9.160486135105808e-09
+Iteration: 3, best solution: 9.160486135105808e-09
+Iteration: 4, best solution: 9.160486135105808e-09
+Iteration: 5, best solution: 9.160486135105808e-09
+Iteration: 6, best solution: 9.160486135105808e-09
+Iteration: 7, best solution: 9.160486135105808e-09
+Iteration: 8, best solution: 9.160486135105808e-09
+Iteration: 9, best solution: 9.160486135105808e-09
+Iteration: 10, best solution: 9.160486135105808e-09
+Iteration: 11, best solution: 9.160486135105808e-09
+Iteration: 12, best solution: 9.160486135105808e-09
+Iteration: 13, best solution: 9.160486135105808e-09
+Iteration: 14, best solution: 9.160486135105808e-09
+Iteration: 15, best solution: 9.160486135105808e-09
+Iteration: 16, best solution: 9.160486135105808e-09
+Iteration: 17, best solution: 9.160486135105808e-09
+Iteration: 18, best solution: 9.160486135105808e-09
+Iteration: 19, best solution: 9.160486135105808e-09
+Cluster 1
+---------------------------------------------------------------
+Business: 19, entertainment: 10, politics: 31, sport: 1, tech: 9
+---------------------------------------------------------------
+Cluster 3
+---------------------------------------------------------------
+Business: 5, entertainment: 10, politics: 3, sport: 4, tech: 5
+---------------------------------------------------------------
+Cluster 0
+---------------------------------------------------------------
+Business: 16, entertainment: 20, politics: 6, sport: 32, tech: 25
+---------------------------------------------------------------
+Cluster 4
+---------------------------------------------------------------
+Business: 0, entertainment: 0, politics: 0, sport: 1, tech: 1
+---------------------------------------------------------------
+Cluster 2
+---------------------------------------------------------------
+Business: 0, entertainment: 0, politics: 0, sport: 2, tech: 0
+---------------------------------------------------------------
+
+
+STARTING GLOBAL ITERATION 3
+
+
+Initializing PSO...
+Performing clustering...
+Iteration: 0, best solution: 8.186828751681322e-09
+Iteration: 1, best solution: 7.686024563891685e-09
+Iteration: 2, best solution: 7.336519738872622e-09
+Iteration: 3, best solution: 6.311651846770025e-09
+Iteration: 4, best solution: 6.311651846770025e-09
+Iteration: 5, best solution: 6.311651846770025e-09
+Iteration: 6, best solution: 6.311651846770025e-09
+Iteration: 7, best solution: 6.311651846770025e-09
+Iteration: 8, best solution: 6.311651846770025e-09
+Iteration: 9, best solution: 6.311651846770025e-09
+Iteration: 10, best solution: 6.311651846770025e-09
+Iteration: 11, best solution: 6.311651846770025e-09
+Iteration: 12, best solution: 6.311651846770025e-09
+Iteration: 13, best solution: 6.311651846770025e-09
+Iteration: 14, best solution: 6.311651846770025e-09
+Iteration: 15, best solution: 6.311651846770025e-09
+Iteration: 16, best solution: 6.311651846770025e-09
+Iteration: 17, best solution: 6.311651846770025e-09
+Iteration: 18, best solution: 6.311651846770025e-09
+Iteration: 19, best solution: 6.311651846770025e-09
+Cluster 0
+---------------------------------------------------------------
+Business: 24, entertainment: 21, politics: 35, sport: 37, tech: 12
+---------------------------------------------------------------
+Cluster 4
+---------------------------------------------------------------
+Business: 3, entertainment: 8, politics: 4, sport: 0, tech: 11
+---------------------------------------------------------------
+Cluster 1
+---------------------------------------------------------------
+Business: 11, entertainment: 3, politics: 1, sport: 1, tech: 14
+---------------------------------------------------------------
+Cluster 3
+---------------------------------------------------------------
+Business: 2, entertainment: 8, politics: 0, sport: 1, tech: 2
+---------------------------------------------------------------
+Cluster 2
+---------------------------------------------------------------
+Business: 0, entertainment: 0, politics: 0, sport: 1, tech: 1
+---------------------------------------------------------------
+
+
+STARTING GLOBAL ITERATION 4
+
+
+Initializing PSO...
+Performing clustering...
+Iteration: 0, best solution: 8.177280622875696e-09
+Iteration: 1, best solution: 7.969291466126367e-09
+Iteration: 2, best solution: 7.808406438372722e-09
+Iteration: 3, best solution: 7.545109453787521e-09
+Iteration: 4, best solution: 6.309243372320485e-09
+Iteration: 5, best solution: 6.309243372320485e-09
+Iteration: 6, best solution: 6.309243372320485e-09
+Iteration: 7, best solution: 6.309243372320485e-09
+Iteration: 8, best solution: 6.309243372320485e-09
+Iteration: 9, best solution: 6.309243372320485e-09
+Iteration: 10, best solution: 6.309243372320485e-09
+Iteration: 11, best solution: 6.309243372320485e-09
+Iteration: 12, best solution: 6.309243372320485e-09
+Iteration: 13, best solution: 6.309243372320485e-09
+Iteration: 14, best solution: 6.309243372320485e-09
+Iteration: 15, best solution: 6.309243372320485e-09
+Iteration: 16, best solution: 6.309243372320485e-09
+Iteration: 17, best solution: 6.309243372320485e-09
+Iteration: 18, best solution: 6.309243372320485e-09
+Iteration: 19, best solution: 6.309243372320485e-09
+Cluster 2
+---------------------------------------------------------------
+Business: 37, entertainment: 35, politics: 40, sport: 32, tech: 28
+---------------------------------------------------------------
+Cluster 3
+---------------------------------------------------------------
+Business: 1, entertainment: 2, politics: 0, sport: 2, tech: 0
+---------------------------------------------------------------
+Cluster 0
+---------------------------------------------------------------
+Business: 2, entertainment: 3, politics: 0, sport: 6, tech: 12
+---------------------------------------------------------------
+
+
+STARTING GLOBAL ITERATION 5
+
+
+Initializing PSO...
+Performing clustering...
+Iteration: 0, best solution: 8.167635075959275e-09
+Iteration: 1, best solution: 7.452268320293699e-09
+Iteration: 2, best solution: 7.452268320293699e-09
+Iteration: 3, best solution: 7.452268320293699e-09
+Iteration: 4, best solution: 7.242946173586736e-09
+Iteration: 5, best solution: 6.933237835589017e-09
+Iteration: 6, best solution: 6.91329989643913e-09
+Iteration: 7, best solution: 6.4153815459571025e-09
+Iteration: 8, best solution: 6.37723069554206e-09
+Iteration: 9, best solution: 6.3426427553455285e-09
+Iteration: 10, best solution: 6.20247795203858e-09
+Iteration: 11, best solution: 6.154019347676685e-09
+Iteration: 12, best solution: 6.061483603382689e-09
+Iteration: 13, best solution: 5.918302986100315e-09
+Iteration: 14, best solution: 5.834940582253903e-09
+Iteration: 15, best solution: 5.747608972898815e-09
+Iteration: 16, best solution: 5.534071718928349e-09
+Iteration: 17, best solution: 5.2492373398983785e-09
+Iteration: 18, best solution: 5.110491789338397e-09
+Iteration: 19, best solution: 5.046155098813153e-09
+Cluster 4
+---------------------------------------------------------------
+Business: 17, entertainment: 13, politics: 32, sport: 3, tech: 23
+---------------------------------------------------------------
+Cluster 3
+---------------------------------------------------------------
+Business: 5, entertainment: 2, politics: 2, sport: 2, tech: 0
+---------------------------------------------------------------
+Cluster 2
+---------------------------------------------------------------
+Business: 18, entertainment: 24, politics: 5, sport: 30, tech: 17
+---------------------------------------------------------------
+Cluster 0
+---------------------------------------------------------------
+Business: 0, entertainment: 0, politics: 1, sport: 5, tech: 0
+---------------------------------------------------------------
+Cluster 1
+---------------------------------------------------------------
+Business: 0, entertainment: 1, politics: 0, sport: 0, tech: 0
+---------------------------------------------------------------
+
+
+STARTING GLOBAL ITERATION 1
+
+
+Initializing PSO...
+Performing clustering...
+Iteration: 0, best solution: 7.2117289334515015e-09
+Iteration: 1, best solution: 7.2117289334515015e-09
+Iteration: 2, best solution: 7.2117289334515015e-09
+Iteration: 3, best solution: 6.625322275418463e-09
+Iteration: 4, best solution: 6.553278843885216e-09
+Iteration: 5, best solution: 6.2722271787868625e-09
+Iteration: 6, best solution: 6.2722271787868625e-09
+Iteration: 7, best solution: 6.1577554807660956e-09
+Iteration: 8, best solution: 5.954676400298808e-09
+Iteration: 9, best solution: 5.951247998026869e-09
+Iteration: 10, best solution: 5.937729666450735e-09
+Iteration: 11, best solution: 5.931725913419105e-09
+Iteration: 12, best solution: 5.773856598444892e-09
+Iteration: 13, best solution: 5.552080440260365e-09
+Iteration: 14, best solution: 5.495542825280344e-09
+Iteration: 15, best solution: 5.487919549854438e-09
+Iteration: 16, best solution: 5.43638571123351e-09
+Iteration: 17, best solution: 5.388265040808986e-09
+Iteration: 18, best solution: 5.378906363607008e-09
+Iteration: 19, best solution: 5.3538863365842625e-09
+Cluster 1
+---------------------------------------------------------------
+Business: 39, entertainment: 39, politics: 40, sport: 38, tech: 34
+---------------------------------------------------------------
+Cluster 4
+---------------------------------------------------------------
+Business: 0, entertainment: 0, politics: 0, sport: 1, tech: 0
+---------------------------------------------------------------
+Cluster 2
+---------------------------------------------------------------
+Business: 0, entertainment: 1, politics: 0, sport: 1, tech: 3
+---------------------------------------------------------------
+Cluster 0
+---------------------------------------------------------------
+Business: 1, entertainment: 0, politics: 0, sport: 0, tech: 2
+---------------------------------------------------------------
+Cluster 3
+---------------------------------------------------------------
+Business: 0, entertainment: 0, politics: 0, sport: 0, tech: 1
+---------------------------------------------------------------
+
+
+STARTING GLOBAL ITERATION 2
+
+
+Initializing PSO...
+Performing clustering...
+Iteration: 0, best solution: 8.181507017440195e-09
+Iteration: 1, best solution: 7.729840846152366e-09
+Iteration: 2, best solution: 7.729840846152366e-09
+Iteration: 3, best solution: 7.729840846152366e-09
+Iteration: 4, best solution: 6.8895557502141395e-09
+Iteration: 5, best solution: 6.8895557502141395e-09
+Iteration: 6, best solution: 6.8895557502141395e-09
+Iteration: 7, best solution: 6.591275043495359e-09
+Iteration: 8, best solution: 6.538150690399245e-09
+Iteration: 9, best solution: 6.440785959230922e-09
+Iteration: 10, best solution: 6.290728994425564e-09
+Iteration: 11, best solution: 6.258720514591342e-09
+Iteration: 12, best solution: 6.257039820947744e-09
+Iteration: 13, best solution: 6.256871751583384e-09
+Iteration: 14, best solution: 6.256854944646948e-09
+Iteration: 15, best solution: 6.256853263953306e-09
+Iteration: 16, best solution: 6.24822776513873e-09
+Iteration: 17, best solution: 6.240134446432291e-09
+Iteration: 18, best solution: 6.238519774157083e-09
+Iteration: 19, best solution: 6.2253528972124885e-09
+Cluster 4
+---------------------------------------------------------------
+Business: 34, entertainment: 40, politics: 31, sport: 34, tech: 23
+---------------------------------------------------------------
+Cluster 3
+---------------------------------------------------------------
+Business: 0, entertainment: 0, politics: 2, sport: 1, tech: 2
+---------------------------------------------------------------
+Cluster 2
+---------------------------------------------------------------
+Business: 6, entertainment: 0, politics: 7, sport: 2, tech: 12
+---------------------------------------------------------------
+Cluster 0
+---------------------------------------------------------------
+Business: 0, entertainment: 0, politics: 0, sport: 2, tech: 3
+---------------------------------------------------------------
+Cluster 1
+---------------------------------------------------------------
+Business: 0, entertainment: 0, politics: 0, sport: 1, tech: 0
+---------------------------------------------------------------
+
+
+STARTING GLOBAL ITERATION 3
+
+
+Initializing PSO...
+Performing clustering...
+Iteration: 0, best solution: 6.527829736401814e-09
+Iteration: 1, best solution: 6.527829736401814e-09
+Iteration: 2, best solution: 6.42895321221062e-09
+Iteration: 3, best solution: 6.0762094888019265e-09
+Iteration: 4, best solution: 5.163897000749725e-09
+Iteration: 5, best solution: 5.0856115410375744e-09
+Iteration: 6, best solution: 4.937703052134464e-09
+Iteration: 7, best solution: 4.924447046961651e-09
+Iteration: 8, best solution: 4.4921319150055945e-09
+Iteration: 9, best solution: 4.4921319150055945e-09
+Iteration: 10, best solution: 4.225100247990002e-09
+Iteration: 11, best solution: 4.009577049048683e-09
+Iteration: 12, best solution: 3.88158703331616e-09
+Iteration: 13, best solution: 3.88158703331616e-09
+Iteration: 14, best solution: 3.757485516009023e-09
+Iteration: 15, best solution: 3.757485516009023e-09
+Iteration: 16, best solution: 3.757485516009023e-09
+Iteration: 17, best solution: 3.6918630192818392e-09
+Iteration: 18, best solution: 3.677875860136607e-09
+Iteration: 19, best solution: 3.666111877181849e-09
+Cluster 0
+---------------------------------------------------------------
+Business: 14, entertainment: 2, politics: 12, sport: 3, tech: 10
+---------------------------------------------------------------
+Cluster 2
+---------------------------------------------------------------
+Business: 2, entertainment: 12, politics: 5, sport: 6, tech: 13
+---------------------------------------------------------------
+Cluster 1
+---------------------------------------------------------------
+Business: 17, entertainment: 13, politics: 20, sport: 21, tech: 7
+---------------------------------------------------------------
+Cluster 3
+---------------------------------------------------------------
+Business: 7, entertainment: 13, politics: 3, sport: 8, tech: 10
+---------------------------------------------------------------
+Cluster 4
+---------------------------------------------------------------
+Business: 0, entertainment: 0, politics: 0, sport: 2, tech: 0
+---------------------------------------------------------------
+
+
+STARTING GLOBAL ITERATION 4
+
+
+Initializing PSO...
+Performing clustering...
+Iteration: 0, best solution: 6.706374284951184e-09
+Iteration: 1, best solution: 6.706374284951184e-09
+Iteration: 2, best solution: 6.706374284951184e-09
+Iteration: 3, best solution: 6.706374284951184e-09
+Iteration: 4, best solution: 6.4481385127735335e-09
+Iteration: 5, best solution: 6.433736009613514e-09
+Iteration: 6, best solution: 5.7622736698003705e-09
+Iteration: 7, best solution: 5.7622736698003705e-09
+Iteration: 8, best solution: 5.7622736698003705e-09
+Iteration: 9, best solution: 5.565891295589302e-09
+Iteration: 10, best solution: 5.5391523952767e-09
+Iteration: 11, best solution: 5.5391523952767e-09
+Iteration: 12, best solution: 5.476075220454338e-09
+Iteration: 13, best solution: 5.451369604874038e-09
+Iteration: 14, best solution: 5.4376867268566725e-09
+Iteration: 15, best solution: 5.404795511054964e-09
+Iteration: 16, best solution: 5.4005666640663435e-09
+Iteration: 17, best solution: 5.356952547312041e-09
+Iteration: 18, best solution: 5.353970235729915e-09
+Iteration: 19, best solution: 5.344320834062331e-09
+Cluster 1
+---------------------------------------------------------------
+Business: 23, entertainment: 14, politics: 30, sport: 35, tech: 30
+---------------------------------------------------------------
+Cluster 0
+---------------------------------------------------------------
+Business: 16, entertainment: 25, politics: 9, sport: 5, tech: 10
+---------------------------------------------------------------
+Cluster 4
+---------------------------------------------------------------
+Business: 0, entertainment: 0, politics: 1, sport: 0, tech: 0
+---------------------------------------------------------------
+Cluster 2
+---------------------------------------------------------------
+Business: 1, entertainment: 0, politics: 0, sport: 0, tech: 0
+---------------------------------------------------------------
+Cluster 3
+---------------------------------------------------------------
+Business: 0, entertainment: 1, politics: 0, sport: 0, tech: 0
+---------------------------------------------------------------
+
+
+STARTING GLOBAL ITERATION 5
+
+
+Initializing PSO...
+Performing clustering...
+Iteration: 0, best solution: 7.289203848069819e-09
+Iteration: 1, best solution: 7.289203848069819e-09
+Iteration: 2, best solution: 7.289203848069819e-09
+Iteration: 3, best solution: 6.843085361493972e-09
+Iteration: 4, best solution: 6.617509162927311e-09
+Iteration: 5, best solution: 5.760493066379602e-09
+Iteration: 6, best solution: 5.760493066379602e-09
+Iteration: 7, best solution: 5.619577822346841e-09
+Iteration: 8, best solution: 5.609279907841935e-09
+Iteration: 9, best solution: 5.576996277767985e-09
+Iteration: 10, best solution: 5.576996277767985e-09
+Iteration: 11, best solution: 5.386021072645393e-09
+Iteration: 12, best solution: 5.213718636956129e-09
+Iteration: 13, best solution: 5.0687842488478e-09
+Iteration: 14, best solution: 4.891278933214961e-09
+Iteration: 15, best solution: 4.8286990190252705e-09
+Iteration: 16, best solution: 4.676539108554303e-09
+Iteration: 17, best solution: 4.51190183676912e-09
+Iteration: 18, best solution: 4.218013450389642e-09
+Iteration: 19, best solution: 4.197517073192048e-09
+Cluster 3
+---------------------------------------------------------------
+Business: 2, entertainment: 10, politics: 9, sport: 11, tech: 16
+---------------------------------------------------------------
+Cluster 4
+---------------------------------------------------------------
+Business: 37, entertainment: 29, politics: 31, sport: 28, tech: 22
+---------------------------------------------------------------
+Cluster 2
+---------------------------------------------------------------
+Business: 1, entertainment: 0, politics: 0, sport: 1, tech: 1
+---------------------------------------------------------------
+Cluster 1
+---------------------------------------------------------------
+Business: 0, entertainment: 0, politics: 0, sport: 0, tech: 1
+---------------------------------------------------------------
+Cluster 0
+---------------------------------------------------------------
+Business: 0, entertainment: 1, politics: 0, sport: 0, tech: 0
+---------------------------------------------------------------
+
+
+STARTING GLOBAL ITERATION 1
+
+
+Initializing PSO...
+Performing clustering...
+Iteration: 0, best solution: 6.8789919817107784e-09
+Iteration: 1, best solution: 6.8789919817107784e-09
+Iteration: 2, best solution: 6.259272819757986e-09
+Iteration: 3, best solution: 5.484338588007235e-09
+Iteration: 4, best solution: 5.42224198894357e-09
+Iteration: 5, best solution: 4.705237576276515e-09
+Iteration: 6, best solution: 3.870245814397818e-09
+Iteration: 7, best solution: 3.526625717203715e-09
+Iteration: 8, best solution: 3.3714367298054643e-09
+Iteration: 9, best solution: 3.3714367298054643e-09
+Iteration: 10, best solution: 3.2570353804245023e-09
+Iteration: 11, best solution: 3.124983044828266e-09
+Iteration: 12, best solution: 2.9266848986955932e-09
+Iteration: 13, best solution: 2.806073218982547e-09
+Iteration: 14, best solution: 2.6032814955130504e-09
+Iteration: 15, best solution: 2.4625489159349943e-09
+Iteration: 16, best solution: 2.409578021653073e-09
+Iteration: 17, best solution: 2.1087927357014984e-09
+Iteration: 18, best solution: 2.0299581497192273e-09
+Iteration: 19, best solution: 1.9841773720831333e-09
+Cluster 3
+---------------------------------------------------------------
+Business: 0, entertainment: 8, politics: 6, sport: 10, tech: 8
+---------------------------------------------------------------
+Cluster 0
+---------------------------------------------------------------
+Business: 2, entertainment: 11, politics: 1, sport: 0, tech: 0
+---------------------------------------------------------------
+Cluster 1
+---------------------------------------------------------------
+Business: 20, entertainment: 12, politics: 24, sport: 23, tech: 16
+---------------------------------------------------------------
+Cluster 2
+---------------------------------------------------------------
+Business: 6, entertainment: 1, politics: 9, sport: 7, tech: 9
+---------------------------------------------------------------
+Cluster 4
+---------------------------------------------------------------
+Business: 12, entertainment: 8, politics: 0, sport: 0, tech: 7
+---------------------------------------------------------------
+
+
+STARTING GLOBAL ITERATION 2
+
+
+Initializing PSO...
+Performing clustering...
+Iteration: 0, best solution: 7.331314010554253e-09
+Iteration: 1, best solution: 7.114348846943228e-09
+Iteration: 2, best solution: 6.807293263605293e-09
+Iteration: 3, best solution: 6.57203990859654e-09
+Iteration: 4, best solution: 6.460867636549152e-09
+Iteration: 5, best solution: 5.962388922615577e-09
+Iteration: 6, best solution: 5.320215292685232e-09
+Iteration: 7, best solution: 5.1045016818272514e-09
+Iteration: 8, best solution: 4.946429775211267e-09
+Iteration: 9, best solution: 4.64212619887668e-09
+Iteration: 10, best solution: 4.64212619887668e-09
+Iteration: 11, best solution: 4.6249428782158835e-09
+Iteration: 12, best solution: 4.568691651568259e-09
+Iteration: 13, best solution: 4.4655068247854794e-09
+Iteration: 14, best solution: 4.450283943424215e-09
+Iteration: 15, best solution: 4.391273672418401e-09
+Iteration: 16, best solution: 4.350865089746065e-09
+Iteration: 17, best solution: 4.350865089746065e-09
+Iteration: 18, best solution: 4.228340161306927e-09
+Iteration: 19, best solution: 4.138257257076757e-09
+Cluster 4
+---------------------------------------------------------------
+Business: 2, entertainment: 14, politics: 10, sport: 6, tech: 6
+---------------------------------------------------------------
+Cluster 1
+---------------------------------------------------------------
+Business: 13, entertainment: 9, politics: 6, sport: 6, tech: 2
+---------------------------------------------------------------
+Cluster 3
+---------------------------------------------------------------
+Business: 25, entertainment: 16, politics: 24, sport: 27, tech: 32
+---------------------------------------------------------------
+Cluster 0
+---------------------------------------------------------------
+Business: 0, entertainment: 0, politics: 0, sport: 1, tech: 0
+---------------------------------------------------------------
+Cluster 2
+---------------------------------------------------------------
+Business: 0, entertainment: 1, politics: 0, sport: 0, tech: 0
+---------------------------------------------------------------
+
+
+STARTING GLOBAL ITERATION 3
+
+
+Initializing PSO...
+Performing clustering...
+Iteration: 0, best solution: 7.198104163949915e-09
+Iteration: 1, best solution: 7.198104163949915e-09
+Iteration: 2, best solution: 7.040549307049657e-09
+Iteration: 3, best solution: 7.040549307049657e-09
+Iteration: 4, best solution: 7.040549307049657e-09
+Iteration: 5, best solution: 6.3248891673736224e-09
+Iteration: 6, best solution: 5.90955023795681e-09
+Iteration: 7, best solution: 5.630735048525136e-09
+Iteration: 8, best solution: 5.57291365142483e-09
+Iteration: 9, best solution: 5.57291365142483e-09
+Iteration: 10, best solution: 5.427348606399406e-09
+Iteration: 11, best solution: 5.2469376970276e-09
+Iteration: 12, best solution: 5.1193303634949335e-09
+Iteration: 13, best solution: 4.504205161681578e-09
+Iteration: 14, best solution: 4.232339884288098e-09
+Iteration: 15, best solution: 4.055028722886951e-09
+Iteration: 16, best solution: 4.031747638008509e-09
+Iteration: 17, best solution: 3.82064971948318e-09
+Iteration: 18, best solution: 3.6310739142651486e-09
+Iteration: 19, best solution: 3.09099800848699e-09
+Cluster 3
+---------------------------------------------------------------
+Business: 9, entertainment: 21, politics: 26, sport: 35, tech: 7
+---------------------------------------------------------------
+Cluster 1
+---------------------------------------------------------------
+Business: 16, entertainment: 8, politics: 7, sport: 3, tech: 15
+---------------------------------------------------------------
+Cluster 2
+---------------------------------------------------------------
+Business: 12, entertainment: 3, politics: 6, sport: 0, tech: 12
+---------------------------------------------------------------
+Cluster 4
+---------------------------------------------------------------
+Business: 2, entertainment: 5, politics: 1, sport: 2, tech: 6
+---------------------------------------------------------------
+Cluster 0
+---------------------------------------------------------------
+Business: 1, entertainment: 3, politics: 0, sport: 0, tech: 0
+---------------------------------------------------------------
+
+
+STARTING GLOBAL ITERATION 4
+
+
+Initializing PSO...
+Performing clustering...
+Iteration: 0, best solution: 7.558978872554763e-09
+Iteration: 1, best solution: 7.552642134035733e-09
+Iteration: 2, best solution: 6.838471540736467e-09
+Iteration: 3, best solution: 6.140515716946369e-09
+Iteration: 4, best solution: 6.140515716946369e-09
+Iteration: 5, best solution: 6.088373711153424e-09
+Iteration: 6, best solution: 5.895113430863568e-09
+Iteration: 7, best solution: 5.841072561284229e-09
+Iteration: 8, best solution: 5.676113762771759e-09
+Iteration: 9, best solution: 5.034046097425026e-09
+Iteration: 10, best solution: 5.034046097425026e-09
+Iteration: 11, best solution: 4.967673380452616e-09
+Iteration: 12, best solution: 4.9119840562261615e-09
+Iteration: 13, best solution: 4.7291159876239465e-09
+Iteration: 14, best solution: 4.645953448902824e-09
+Iteration: 15, best solution: 4.580263240859171e-09
+Iteration: 16, best solution: 4.4015973351556245e-09
+Iteration: 17, best solution: 3.995952440312804e-09
+Iteration: 18, best solution: 3.889317447257428e-09
+Iteration: 19, best solution: 3.6896755271495387e-09
+Cluster 0
+---------------------------------------------------------------
+Business: 12, entertainment: 1, politics: 35, sport: 6, tech: 5
+---------------------------------------------------------------
+Cluster 4
+---------------------------------------------------------------
+Business: 25, entertainment: 23, politics: 2, sport: 12, tech: 28
+---------------------------------------------------------------
+Cluster 2
+---------------------------------------------------------------
+Business: 3, entertainment: 16, politics: 1, sport: 9, tech: 5
+---------------------------------------------------------------
+Cluster 1
+---------------------------------------------------------------
+Business: 0, entertainment: 0, politics: 1, sport: 12, tech: 2
+---------------------------------------------------------------
+Cluster 3
+---------------------------------------------------------------
+Business: 0, entertainment: 0, politics: 1, sport: 1, tech: 0
+---------------------------------------------------------------
+
+
+STARTING GLOBAL ITERATION 5
+
+
+Initializing PSO...
+Performing clustering...
+Iteration: 0, best solution: 7.22712333825608e-09
+Iteration: 1, best solution: 7.22712333825608e-09
+Iteration: 2, best solution: 7.22712333825608e-09
+Iteration: 3, best solution: 6.637328169623764e-09
+Iteration: 4, best solution: 6.4340551583864196e-09
+Iteration: 5, best solution: 6.4340551583864196e-09
+Iteration: 6, best solution: 6.4340551583864196e-09
+Iteration: 7, best solution: 5.891591812608692e-09
+Iteration: 8, best solution: 5.891591812608692e-09
+Iteration: 9, best solution: 5.850104530439631e-09
+Iteration: 10, best solution: 5.735845374390613e-09
+Iteration: 11, best solution: 5.648305760699699e-09
+Iteration: 12, best solution: 5.2964267402987524e-09
+Iteration: 13, best solution: 5.1222455741965524e-09
+Iteration: 14, best solution: 5.0792548043021685e-09
+Iteration: 15, best solution: 4.908068598902567e-09
+Iteration: 16, best solution: 4.897508475904606e-09
+Iteration: 17, best solution: 4.265615757470924e-09
+Iteration: 18, best solution: 4.0485009365196825e-09
+Iteration: 19, best solution: 3.970989941967328e-09
+Cluster 1
+---------------------------------------------------------------
+Business: 8, entertainment: 24, politics: 25, sport: 33, tech: 25
+---------------------------------------------------------------
+Cluster 4
+---------------------------------------------------------------
+Business: 27, entertainment: 8, politics: 12, sport: 3, tech: 9
+---------------------------------------------------------------
+Cluster 3
+---------------------------------------------------------------
+Business: 1, entertainment: 0, politics: 1, sport: 0, tech: 0
+---------------------------------------------------------------
+Cluster 2
+---------------------------------------------------------------
+Business: 4, entertainment: 7, politics: 2, sport: 3, tech: 6
+---------------------------------------------------------------
+Cluster 0
+---------------------------------------------------------------
+Business: 0, entertainment: 1, politics: 0, sport: 1, tech: 0
+---------------------------------------------------------------
+
+
+STARTING GLOBAL ITERATION 1
+
+
+Initializing PSO...
+Performing clustering...
+Iteration: 0, best solution: 8.010854119727106e-09
+Iteration: 1, best solution: 8.010854119727106e-09
+Iteration: 2, best solution: 7.788062636357594e-09
+Iteration: 3, best solution: 7.170600729708344e-09
+Iteration: 4, best solution: 6.6940439954375946e-09
+Iteration: 5, best solution: 6.640609479707607e-09
+Iteration: 6, best solution: 6.635837405333147e-09
+Iteration: 7, best solution: 6.364703122719922e-09
+Iteration: 8, best solution: 6.364703122719922e-09
+Iteration: 9, best solution: 6.2531868979209475e-09
+Iteration: 10, best solution: 6.2531868979209475e-09
+Iteration: 11, best solution: 6.2531868979209475e-09
+Iteration: 12, best solution: 6.2531868979209475e-09
+Iteration: 13, best solution: 6.225335037552731e-09
+Iteration: 14, best solution: 6.214552134820128e-09
+Iteration: 15, best solution: 6.214552134820128e-09
+Iteration: 16, best solution: 6.211135109010654e-09
+Iteration: 17, best solution: 6.211135109010654e-09
+Iteration: 18, best solution: 6.205440862922256e-09
+Iteration: 19, best solution: 6.193091786592618e-09
+Cluster 4
+---------------------------------------------------------------
+Business: 3, entertainment: 23, politics: 15, sport: 31, tech: 13
+---------------------------------------------------------------
+Cluster 0
+---------------------------------------------------------------
+Business: 32, entertainment: 17, politics: 18, sport: 2, tech: 22
+---------------------------------------------------------------
+Cluster 1
+---------------------------------------------------------------
+Business: 4, entertainment: 0, politics: 7, sport: 5, tech: 4
+---------------------------------------------------------------
+Cluster 2
+---------------------------------------------------------------
+Business: 0, entertainment: 0, politics: 0, sport: 2, tech: 1
+---------------------------------------------------------------
+Cluster 3
+---------------------------------------------------------------
+Business: 1, entertainment: 0, politics: 0, sport: 0, tech: 0
+---------------------------------------------------------------
+
+
+STARTING GLOBAL ITERATION 2
+
+
+Initializing PSO...
+Performing clustering...
+Iteration: 0, best solution: 8.505485834711883e-09
+Iteration: 1, best solution: 8.505485834711883e-09
+Iteration: 2, best solution: 8.064041173421221e-09
+Iteration: 3, best solution: 8.064041173421221e-09
+Iteration: 4, best solution: 8.044141052737341e-09
+Iteration: 5, best solution: 7.824670452578112e-09
+Iteration: 6, best solution: 7.630614383634081e-09
+Iteration: 7, best solution: 7.31192623097856e-09
+Iteration: 8, best solution: 7.156642833292087e-09
+Iteration: 9, best solution: 7.061688657315141e-09
+Iteration: 10, best solution: 6.9940855393045386e-09
+Iteration: 11, best solution: 6.991494986745e-09
+Iteration: 12, best solution: 6.698340811809766e-09
+Iteration: 13, best solution: 6.687829799407659e-09
+Iteration: 14, best solution: 6.595324398184679e-09
+Iteration: 15, best solution: 6.136373157494979e-09
+Iteration: 16, best solution: 6.042066667769661e-09
+Iteration: 17, best solution: 6.0413777429417834e-09
+Iteration: 18, best solution: 6.041274404217602e-09
+Iteration: 19, best solution: 5.9335782339958815e-09
+Cluster 1
+---------------------------------------------------------------
+Business: 17, entertainment: 8, politics: 17, sport: 12, tech: 16
+---------------------------------------------------------------
+Cluster 2
+---------------------------------------------------------------
+Business: 9, entertainment: 15, politics: 11, sport: 2, tech: 1
+---------------------------------------------------------------
+Cluster 4
+---------------------------------------------------------------
+Business: 3, entertainment: 7, politics: 11, sport: 25, tech: 14
+---------------------------------------------------------------
+Cluster 0
+---------------------------------------------------------------
+Business: 11, entertainment: 9, politics: 1, sport: 1, tech: 8
+---------------------------------------------------------------
+Cluster 3
+---------------------------------------------------------------
+Business: 0, entertainment: 1, politics: 0, sport: 0, tech: 1
+---------------------------------------------------------------
+
+
+STARTING GLOBAL ITERATION 3
+
+
+Initializing PSO...
+Performing clustering...
+Iteration: 0, best solution: 7.452540040926392e-09
+Iteration: 1, best solution: 6.6068131442761865e-09
+Iteration: 2, best solution: 6.6068131442761865e-09
+Iteration: 3, best solution: 6.4061704389502056e-09
+Iteration: 4, best solution: 6.250757294339597e-09
+Iteration: 5, best solution: 6.009493976839924e-09
+Iteration: 6, best solution: 5.8079958397901785e-09
+Iteration: 7, best solution: 5.8079958397901785e-09
+Iteration: 8, best solution: 5.8079958397901785e-09
+Iteration: 9, best solution: 5.8079958397901785e-09
+Iteration: 10, best solution: 5.8079958397901785e-09
+Iteration: 11, best solution: 5.8079958397901785e-09
+Iteration: 12, best solution: 5.8079958397901785e-09
+Iteration: 13, best solution: 5.8079958397901785e-09
+Iteration: 14, best solution: 5.8079958397901785e-09
+Iteration: 15, best solution: 5.8079958397901785e-09
+Iteration: 16, best solution: 5.8079958397901785e-09
+Iteration: 17, best solution: 5.8079958397901785e-09
+Iteration: 18, best solution: 5.8079958397901785e-09
+Iteration: 19, best solution: 5.8079958397901785e-09
+Cluster 2
+---------------------------------------------------------------
+Business: 17, entertainment: 3, politics: 25, sport: 10, tech: 13
+---------------------------------------------------------------
+Cluster 1
+---------------------------------------------------------------
+Business: 16, entertainment: 8, politics: 3, sport: 2, tech: 5
+---------------------------------------------------------------
+Cluster 4
+---------------------------------------------------------------
+Business: 1, entertainment: 20, politics: 12, sport: 26, tech: 14
+---------------------------------------------------------------
+Cluster 0
+---------------------------------------------------------------
+Business: 0, entertainment: 0, politics: 0, sport: 1, tech: 0
+---------------------------------------------------------------
+Cluster 3
+---------------------------------------------------------------
+Business: 6, entertainment: 9, politics: 0, sport: 1, tech: 8
+---------------------------------------------------------------
+
+
+STARTING GLOBAL ITERATION 4
+
+
+Initializing PSO...
+Performing clustering...
+Iteration: 0, best solution: 9.046690315972562e-09
+Iteration: 1, best solution: 9.046690315972562e-09
+Iteration: 2, best solution: 8.858774294149212e-09
+Iteration: 3, best solution: 8.260006287266475e-09
+Iteration: 4, best solution: 8.260006287266475e-09
+Iteration: 5, best solution: 8.260006287266475e-09
+Iteration: 6, best solution: 8.170077493384646e-09
+Iteration: 7, best solution: 8.05491014295422e-09
+Iteration: 8, best solution: 7.221910296345845e-09
+Iteration: 9, best solution: 6.961623296224534e-09
+Iteration: 10, best solution: 6.6685700306463405e-09
+Iteration: 11, best solution: 6.6685700306463405e-09
+Iteration: 12, best solution: 6.624119595106989e-09
+Iteration: 13, best solution: 6.624119595106989e-09
+Iteration: 14, best solution: 6.254595941495703e-09
+Iteration: 15, best solution: 6.254595941495703e-09
+Iteration: 16, best solution: 6.254595941495703e-09
+Iteration: 17, best solution: 6.254595941495703e-09
+Iteration: 18, best solution: 6.178483609985186e-09
+Iteration: 19, best solution: 6.178483609985186e-09
+Cluster 4
+---------------------------------------------------------------
+Business: 5, entertainment: 13, politics: 17, sport: 15, tech: 11
+---------------------------------------------------------------
+Cluster 1
+---------------------------------------------------------------
+Business: 26, entertainment: 27, politics: 11, sport: 25, tech: 25
+---------------------------------------------------------------
+Cluster 2
+---------------------------------------------------------------
+Business: 8, entertainment: 0, politics: 2, sport: 0, tech: 2
+---------------------------------------------------------------
+Cluster 0
+---------------------------------------------------------------
+Business: 1, entertainment: 0, politics: 10, sport: 0, tech: 2
+---------------------------------------------------------------
+
+
+STARTING GLOBAL ITERATION 5
+
+
+Initializing PSO...
+Performing clustering...
+Iteration: 0, best solution: 5.5502920356975845e-09
+Iteration: 1, best solution: 5.5502920356975845e-09
+Iteration: 2, best solution: 5.5502920356975845e-09
+Iteration: 3, best solution: 5.5502920356975845e-09
+Iteration: 4, best solution: 5.37405563684214e-09
+Iteration: 5, best solution: 5.129389674110184e-09
+Iteration: 6, best solution: 5.0732097468672636e-09
+Iteration: 7, best solution: 5.0732097468672636e-09
+Iteration: 8, best solution: 5.0732097468672636e-09
+Iteration: 9, best solution: 5.026145203458837e-09
+Iteration: 10, best solution: 4.9836673566219e-09
+Iteration: 11, best solution: 4.9804311544336086e-09
+Iteration: 12, best solution: 4.965185258279327e-09
+Iteration: 13, best solution: 4.950700591758377e-09
+Iteration: 14, best solution: 4.950192068266195e-09
+Iteration: 15, best solution: 4.932918301600642e-09
+Iteration: 16, best solution: 4.922810082694938e-09
+Iteration: 17, best solution: 4.907167645418689e-09
+Iteration: 18, best solution: 4.892523480986092e-09
+Iteration: 19, best solution: 4.887542584513144e-09
+Cluster 0
+---------------------------------------------------------------
+Business: 1, entertainment: 0, politics: 4, sport: 28, tech: 0
+---------------------------------------------------------------
+Cluster 2
+---------------------------------------------------------------
+Business: 38, entertainment: 40, politics: 36, sport: 9, tech: 40
+---------------------------------------------------------------
+Cluster 3
+---------------------------------------------------------------
+Business: 0, entertainment: 0, politics: 0, sport: 1, tech: 0
+---------------------------------------------------------------
+Cluster 4
+---------------------------------------------------------------
+Business: 0, entertainment: 0, politics: 0, sport: 2, tech: 0
+---------------------------------------------------------------
+Cluster 1
+---------------------------------------------------------------
+Business: 1, entertainment: 0, politics: 0, sport: 0, tech: 0
+---------------------------------------------------------------
+
+
+STARTING GLOBAL ITERATION 1
+
+
+Initializing PSO...
+Performing clustering...
+Iteration: 0, best solution: 6.51627955783944e-09
+Iteration: 1, best solution: 6.51627955783944e-09
+Iteration: 2, best solution: 5.686269514826375e-09
+Iteration: 3, best solution: 5.492217934395664e-09
+Iteration: 4, best solution: 5.492217934395664e-09
+Iteration: 5, best solution: 5.450015007853606e-09
+Iteration: 6, best solution: 5.319508455618513e-09
+Iteration: 7, best solution: 5.319508455618513e-09
+Iteration: 8, best solution: 5.319508455618513e-09
+Iteration: 9, best solution: 5.319508455618513e-09
+Iteration: 10, best solution: 5.319508455618513e-09
+Iteration: 11, best solution: 5.2923278519232344e-09
+Iteration: 12, best solution: 5.2923278519232344e-09
+Iteration: 13, best solution: 5.131986363309755e-09
+Iteration: 14, best solution: 5.0089261630175655e-09
+Iteration: 15, best solution: 4.748792599735788e-09
+Iteration: 16, best solution: 4.748792599735788e-09
+Iteration: 17, best solution: 4.748792599735788e-09
+Iteration: 18, best solution: 4.707423927316588e-09
+Iteration: 19, best solution: 4.687647935073076e-09
+Cluster 4
+---------------------------------------------------------------
+Business: 38, entertainment: 38, politics: 37, sport: 40, tech: 19
+---------------------------------------------------------------
+Cluster 0
+---------------------------------------------------------------
+Business: 0, entertainment: 0, politics: 1, sport: 0, tech: 0
+---------------------------------------------------------------
+Cluster 1
+---------------------------------------------------------------
+Business: 2, entertainment: 2, politics: 2, sport: 0, tech: 19
+---------------------------------------------------------------
+Cluster 2
+---------------------------------------------------------------
+Business: 0, entertainment: 0, politics: 0, sport: 0, tech: 1
+---------------------------------------------------------------
+Cluster 3
+---------------------------------------------------------------
+Business: 0, entertainment: 0, politics: 0, sport: 0, tech: 1
+---------------------------------------------------------------
+
+
+STARTING GLOBAL ITERATION 2
+
+
+Initializing PSO...
+Performing clustering...
+Iteration: 0, best solution: 8.02750234376185e-09
+Iteration: 1, best solution: 8.02750234376185e-09
+Iteration: 2, best solution: 7.477412523975114e-09
+Iteration: 3, best solution: 6.4430251420036e-09
+Iteration: 4, best solution: 6.0186374450064035e-09
+Iteration: 5, best solution: 5.613371156840442e-09
+Iteration: 6, best solution: 4.51216042104665e-09
+Iteration: 7, best solution: 4.51216042104665e-09
+Iteration: 8, best solution: 4.51216042104665e-09
+Iteration: 9, best solution: 4.51216042104665e-09
+Iteration: 10, best solution: 4.51216042104665e-09
+Iteration: 11, best solution: 4.51216042104665e-09
+Iteration: 12, best solution: 4.51216042104665e-09
+Iteration: 13, best solution: 4.51216042104665e-09
+Iteration: 14, best solution: 4.51216042104665e-09
+Iteration: 15, best solution: 4.51216042104665e-09
+Iteration: 16, best solution: 4.51216042104665e-09
+Iteration: 17, best solution: 4.51216042104665e-09
+Iteration: 18, best solution: 4.51216042104665e-09
+Iteration: 19, best solution: 4.51216042104665e-09
+Cluster 0
+---------------------------------------------------------------
+Business: 5, entertainment: 17, politics: 16, sport: 18, tech: 25
+---------------------------------------------------------------
+Cluster 4
+---------------------------------------------------------------
+Business: 35, entertainment: 23, politics: 17, sport: 20, tech: 15
+---------------------------------------------------------------
+Cluster 3
+---------------------------------------------------------------
+Business: 0, entertainment: 0, politics: 1, sport: 0, tech: 0
+---------------------------------------------------------------
+Cluster 2
+---------------------------------------------------------------
+Business: 0, entertainment: 0, politics: 6, sport: 1, tech: 0
+---------------------------------------------------------------
+Cluster 1
+---------------------------------------------------------------
+Business: 0, entertainment: 0, politics: 0, sport: 1, tech: 0
+---------------------------------------------------------------
+
+
+STARTING GLOBAL ITERATION 3
+
+
+Initializing PSO...
+Performing clustering...
+Iteration: 0, best solution: 6.547715634863344e-09
+Iteration: 1, best solution: 6.547715634863344e-09
+Iteration: 2, best solution: 6.287661494584852e-09
+Iteration: 3, best solution: 5.349194492034395e-09
+Iteration: 4, best solution: 5.162954883044925e-09
+Iteration: 5, best solution: 4.750948495279837e-09
+Iteration: 6, best solution: 4.459390214018545e-09
+Iteration: 7, best solution: 3.9098204918306615e-09
+Iteration: 8, best solution: 3.9098204918306615e-09
+Iteration: 9, best solution: 3.6545493923669508e-09
+Iteration: 10, best solution: 3.2764231396117823e-09
+Iteration: 11, best solution: 2.9659985089123357e-09
+Iteration: 12, best solution: 2.8202824973100356e-09
+Iteration: 13, best solution: 2.7303267719945884e-09
+Iteration: 14, best solution: 2.5573377221811466e-09
+Iteration: 15, best solution: 2.5560665940085414e-09
+Iteration: 16, best solution: 2.541589671871997e-09
+Iteration: 17, best solution: 2.393951239205484e-09
+Iteration: 18, best solution: 2.279273584210484e-09
+Iteration: 19, best solution: 2.1730021099536625e-09
+Cluster 1
+---------------------------------------------------------------
+Business: 6, entertainment: 1, politics: 1, sport: 0, tech: 1
+---------------------------------------------------------------
+Cluster 4
+---------------------------------------------------------------
+Business: 33, entertainment: 36, politics: 24, sport: 28, tech: 26
+---------------------------------------------------------------
+Cluster 3
+---------------------------------------------------------------
+Business: 1, entertainment: 3, politics: 12, sport: 11, tech: 9
+---------------------------------------------------------------
+Cluster 0
+---------------------------------------------------------------
+Business: 0, entertainment: 0, politics: 3, sport: 1, tech: 3
+---------------------------------------------------------------
+Cluster 2
+---------------------------------------------------------------
+Business: 0, entertainment: 0, politics: 0, sport: 0, tech: 1
+---------------------------------------------------------------
+
+
+STARTING GLOBAL ITERATION 4
+
+
+Initializing PSO...
+Performing clustering...
+Iteration: 0, best solution: 5.652428271220504e-09
+Iteration: 1, best solution: 5.652428271220504e-09
+Iteration: 2, best solution: 5.652428271220504e-09
+Iteration: 3, best solution: 5.288866678840405e-09
+Iteration: 4, best solution: 5.021879675551418e-09
+Iteration: 5, best solution: 4.8720968213318316e-09
+Iteration: 6, best solution: 4.638146827872436e-09
+Iteration: 7, best solution: 4.638146827872436e-09
+Iteration: 8, best solution: 4.2271465861396615e-09
+Iteration: 9, best solution: 4.2267309402179935e-09
+Iteration: 10, best solution: 4.2267309402179935e-09
+Iteration: 11, best solution: 4.1413459793483614e-09
+Iteration: 12, best solution: 4.120563382653039e-09
+Iteration: 13, best solution: 4.07622313721937e-09
+Iteration: 14, best solution: 3.5858776517836166e-09
+Iteration: 15, best solution: 3.5858776517836166e-09
+Iteration: 16, best solution: 3.5760783165665444e-09
+Iteration: 17, best solution: 3.4897138430313445e-09
+Iteration: 18, best solution: 3.4591852616909415e-09
+Iteration: 19, best solution: 3.312953236021554e-09
+Cluster 4
+---------------------------------------------------------------
+Business: 4, entertainment: 2, politics: 13, sport: 7, tech: 2
+---------------------------------------------------------------
+Cluster 2
+---------------------------------------------------------------
+Business: 15, entertainment: 22, politics: 24, sport: 26, tech: 32
+---------------------------------------------------------------
+Cluster 0
+---------------------------------------------------------------
+Business: 3, entertainment: 0, politics: 2, sport: 0, tech: 0
+---------------------------------------------------------------
+Cluster 1
+---------------------------------------------------------------
+Business: 18, entertainment: 16, politics: 1, sport: 6, tech: 6
+---------------------------------------------------------------
+Cluster 3
+---------------------------------------------------------------
+Business: 0, entertainment: 0, politics: 0, sport: 1, tech: 0
+---------------------------------------------------------------
+
+
+STARTING GLOBAL ITERATION 5
+
+
+Initializing PSO...
+Performing clustering...
+Iteration: 0, best solution: 5.661842456899098e-09
+Iteration: 1, best solution: 5.661842456899098e-09
+Iteration: 2, best solution: 4.958944251406436e-09
+Iteration: 3, best solution: 4.9557088925696455e-09
+Iteration: 4, best solution: 4.8931609013057405e-09
+Iteration: 5, best solution: 4.5078449138609794e-09
+Iteration: 6, best solution: 4.1700169925128805e-09
+Iteration: 7, best solution: 3.888984216609137e-09
+Iteration: 8, best solution: 3.6455321707927888e-09
+Iteration: 9, best solution: 3.5901996258043866e-09
+Iteration: 10, best solution: 3.2819735070531754e-09
+Iteration: 11, best solution: 2.927867677313461e-09
+Iteration: 12, best solution: 2.667544723565063e-09
+Iteration: 13, best solution: 2.3962105923260946e-09
+Iteration: 14, best solution: 2.2334724956862772e-09
+Iteration: 15, best solution: 2.2334724956862772e-09
+Iteration: 16, best solution: 2.0185310674783143e-09
+Iteration: 17, best solution: 1.833397609253506e-09
+Iteration: 18, best solution: 1.6170303761320027e-09
+Iteration: 19, best solution: 1.445826283234826e-09
+Cluster 4
+---------------------------------------------------------------
+Business: 17, entertainment: 25, politics: 11, sport: 24, tech: 15
+---------------------------------------------------------------
+Cluster 1
+---------------------------------------------------------------
+Business: 2, entertainment: 6, politics: 17, sport: 10, tech: 10
+---------------------------------------------------------------
+Cluster 3
+---------------------------------------------------------------
+Business: 19, entertainment: 6, politics: 11, sport: 1, tech: 15
+---------------------------------------------------------------
+Cluster 2
+---------------------------------------------------------------
+Business: 1, entertainment: 3, politics: 1, sport: 5, tech: 0
+---------------------------------------------------------------
+Cluster 0
+---------------------------------------------------------------
+Business: 1, entertainment: 0, politics: 0, sport: 0, tech: 0
+---------------------------------------------------------------
+
+
+STARTING GLOBAL ITERATION 1
+
+
+Initializing PSO...
+Performing clustering...
+Iteration: 0, best solution: 5.833883861510708e-09
+Iteration: 1, best solution: 5.833883861510708e-09
+Iteration: 2, best solution: 5.833883861510708e-09
+Iteration: 3, best solution: 5.833883861510708e-09
+Iteration: 4, best solution: 5.833883861510708e-09
+Iteration: 5, best solution: 5.720055134053226e-09
+Iteration: 6, best solution: 4.983400648501143e-09
+Iteration: 7, best solution: 4.983400648501143e-09
+Iteration: 8, best solution: 4.726470187722532e-09
+Iteration: 9, best solution: 4.629022067958627e-09
+Iteration: 10, best solution: 4.624324807066507e-09
+Iteration: 11, best solution: 4.583100420219377e-09
+Iteration: 12, best solution: 4.5654276735814805e-09
+Iteration: 13, best solution: 4.462610222393544e-09
+Iteration: 14, best solution: 4.4202751199272475e-09
+Iteration: 15, best solution: 4.338069701234433e-09
+Iteration: 16, best solution: 4.318153376114395e-09
+Iteration: 17, best solution: 4.2786831064656735e-09
+Iteration: 18, best solution: 4.23917234758593e-09
+Iteration: 19, best solution: 4.23917234758593e-09
+Cluster 1
+---------------------------------------------------------------
+Business: 39, entertainment: 39, politics: 38, sport: 15, tech: 39
+---------------------------------------------------------------
+Cluster 2
+---------------------------------------------------------------
+Business: 1, entertainment: 1, politics: 1, sport: 20, tech: 1
+---------------------------------------------------------------
+Cluster 4
+---------------------------------------------------------------
+Business: 0, entertainment: 0, politics: 1, sport: 3, tech: 0
+---------------------------------------------------------------
+Cluster 3
+---------------------------------------------------------------
+Business: 0, entertainment: 0, politics: 0, sport: 1, tech: 0
+---------------------------------------------------------------
+Cluster 0
+---------------------------------------------------------------
+Business: 0, entertainment: 0, politics: 0, sport: 1, tech: 0
+---------------------------------------------------------------
+
+
+STARTING GLOBAL ITERATION 2
+
+
+Initializing PSO...
+Performing clustering...
+Iteration: 0, best solution: 6.366088029583252e-09
+Iteration: 1, best solution: 6.366088029583252e-09
+Iteration: 2, best solution: 6.366088029583252e-09
+Iteration: 3, best solution: 6.366088029583252e-09
+Iteration: 4, best solution: 6.366088029583252e-09
+Iteration: 5, best solution: 6.366088029583252e-09
+Iteration: 6, best solution: 6.167792265815206e-09
+Iteration: 7, best solution: 6.159665539507625e-09
+Iteration: 8, best solution: 5.726565060584388e-09
+Iteration: 9, best solution: 5.465882773480508e-09
+Iteration: 10, best solution: 5.35368889664851e-09
+Iteration: 11, best solution: 5.2676634452080276e-09
+Iteration: 12, best solution: 4.986941906246373e-09
+Iteration: 13, best solution: 4.819280312669279e-09
+Iteration: 14, best solution: 4.819280312669279e-09
+Iteration: 15, best solution: 4.819280312669279e-09
+Iteration: 16, best solution: 4.6108792665275594e-09
+Iteration: 17, best solution: 4.398978203616617e-09
+Iteration: 18, best solution: 4.398978203616617e-09
+Iteration: 19, best solution: 4.126258965713871e-09
+Cluster 4
+---------------------------------------------------------------
+Business: 35, entertainment: 36, politics: 36, sport: 18, tech: 33
+---------------------------------------------------------------
+Cluster 0
+---------------------------------------------------------------
+Business: 0, entertainment: 0, politics: 2, sport: 4, tech: 0
+---------------------------------------------------------------
+Cluster 3
+---------------------------------------------------------------
+Business: 4, entertainment: 3, politics: 1, sport: 1, tech: 5
+---------------------------------------------------------------
+Cluster 2
+---------------------------------------------------------------
+Business: 0, entertainment: 0, politics: 1, sport: 5, tech: 0
+---------------------------------------------------------------
+Cluster 1
+---------------------------------------------------------------
+Business: 1, entertainment: 1, politics: 0, sport: 12, tech: 2
+---------------------------------------------------------------
+
+
+STARTING GLOBAL ITERATION 3
+
+
+Initializing PSO...
+Performing clustering...
+Iteration: 0, best solution: 6.649539710835244e-09
+Iteration: 1, best solution: 6.54823150060859e-09
+Iteration: 2, best solution: 6.54823150060859e-09
+Iteration: 3, best solution: 6.54823150060859e-09
+Iteration: 4, best solution: 5.541529780065557e-09
+Iteration: 5, best solution: 5.541529780065557e-09
+Iteration: 6, best solution: 5.03818315378114e-09
+Iteration: 7, best solution: 5.03818315378114e-09
+Iteration: 8, best solution: 3.974489208671466e-09
+Iteration: 9, best solution: 3.821677558965963e-09
+Iteration: 10, best solution: 3.732695811740113e-09
+Iteration: 11, best solution: 3.696324122316624e-09
+Iteration: 12, best solution: 3.4353117558483575e-09
+Iteration: 13, best solution: 3.4220252505512313e-09
+Iteration: 14, best solution: 3.385946269785854e-09
+Iteration: 15, best solution: 3.3283454830735853e-09
+Iteration: 16, best solution: 3.022383313318473e-09
+Iteration: 17, best solution: 3.022383313318473e-09
+Iteration: 18, best solution: 2.6075628086687686e-09
+Iteration: 19, best solution: 2.5443183635040834e-09
+Cluster 3
+---------------------------------------------------------------
+Business: 8, entertainment: 9, politics: 26, sport: 18, tech: 17
+---------------------------------------------------------------
+Cluster 2
+---------------------------------------------------------------
+Business: 5, entertainment: 4, politics: 1, sport: 10, tech: 5
+---------------------------------------------------------------
+Cluster 4
+---------------------------------------------------------------
+Business: 27, entertainment: 27, politics: 12, sport: 11, tech: 18
+---------------------------------------------------------------
+Cluster 0
+---------------------------------------------------------------
+Business: 0, entertainment: 0, politics: 1, sport: 0, tech: 0
+---------------------------------------------------------------
+Cluster 1
+---------------------------------------------------------------
+Business: 0, entertainment: 0, politics: 0, sport: 1, tech: 0
+---------------------------------------------------------------
+
+
+STARTING GLOBAL ITERATION 4
+
+
+Initializing PSO...
+Performing clustering...
+Iteration: 0, best solution: 7.731123614879346e-09
+Iteration: 1, best solution: 7.731123614879346e-09
+Iteration: 2, best solution: 7.0405463684208185e-09
+Iteration: 3, best solution: 7.035810762991411e-09
+Iteration: 4, best solution: 7.035810762991411e-09
+Iteration: 5, best solution: 6.319979647639606e-09
+Iteration: 6, best solution: 6.215101579600803e-09
+Iteration: 7, best solution: 6.215101579600803e-09
+Iteration: 8, best solution: 5.632445871380441e-09
+Iteration: 9, best solution: 5.391106481745938e-09
+Iteration: 10, best solution: 5.112523431285289e-09
+Iteration: 11, best solution: 4.731600611283317e-09
+Iteration: 12, best solution: 4.500954420350598e-09
+Iteration: 13, best solution: 4.292113897888786e-09
+Iteration: 14, best solution: 4.292113897888786e-09
+Iteration: 15, best solution: 4.292113897888786e-09
+Iteration: 16, best solution: 4.171586452082767e-09
+Iteration: 17, best solution: 4.171586452082767e-09
+Iteration: 18, best solution: 4.171586452082767e-09
+Iteration: 19, best solution: 4.171586452082767e-09
+Cluster 3
+---------------------------------------------------------------
+Business: 35, entertainment: 30, politics: 37, sport: 38, tech: 40
+---------------------------------------------------------------
+Cluster 4
+---------------------------------------------------------------
+Business: 3, entertainment: 3, politics: 2, sport: 0, tech: 0
+---------------------------------------------------------------
+Cluster 0
+---------------------------------------------------------------
+Business: 1, entertainment: 5, politics: 1, sport: 0, tech: 0
+---------------------------------------------------------------
+Cluster 1
+---------------------------------------------------------------
+Business: 1, entertainment: 0, politics: 0, sport: 1, tech: 0
+---------------------------------------------------------------
+Cluster 2
+---------------------------------------------------------------
+Business: 0, entertainment: 2, politics: 0, sport: 1, tech: 0
+---------------------------------------------------------------
+
+
+STARTING GLOBAL ITERATION 5
+
+
+Initializing PSO...
+Performing clustering...
+Iteration: 0, best solution: 7.32327346210023e-09
+Iteration: 1, best solution: 7.32327346210023e-09
+Iteration: 2, best solution: 7.32327346210023e-09
+Iteration: 3, best solution: 6.603069927459952e-09
+Iteration: 4, best solution: 5.3331791943124514e-09
+Iteration: 5, best solution: 5.072146463325378e-09
+Iteration: 6, best solution: 4.7227245627929315e-09
+Iteration: 7, best solution: 4.132334421523037e-09
+Iteration: 8, best solution: 3.366853038499804e-09
+Iteration: 9, best solution: 3.2846534807820455e-09
+Iteration: 10, best solution: 2.6846819809046374e-09
+Iteration: 11, best solution: 2.6467037273504154e-09
+Iteration: 12, best solution: 2.6467037273504154e-09
+Iteration: 13, best solution: 2.499199267080255e-09
+Iteration: 14, best solution: 2.1443069058008566e-09
+Iteration: 15, best solution: 1.84908495220078e-09
+Iteration: 16, best solution: 1.838883082322536e-09
+Iteration: 17, best solution: 1.5065236965189616e-09
+Iteration: 18, best solution: 1.352425496087607e-09
+Iteration: 19, best solution: 1.352425496087607e-09
+Cluster 3
+---------------------------------------------------------------
+Business: 27, entertainment: 10, politics: 26, sport: 8, tech: 22
+---------------------------------------------------------------
+Cluster 2
+---------------------------------------------------------------
+Business: 7, entertainment: 18, politics: 13, sport: 22, tech: 12
+---------------------------------------------------------------
+Cluster 1
+---------------------------------------------------------------
+Business: 4, entertainment: 9, politics: 1, sport: 5, tech: 4
+---------------------------------------------------------------
+Cluster 0
+---------------------------------------------------------------
+Business: 0, entertainment: 3, politics: 0, sport: 3, tech: 0
+---------------------------------------------------------------
+Cluster 4
+---------------------------------------------------------------
+Business: 2, entertainment: 0, politics: 0, sport: 2, tech: 2
+---------------------------------------------------------------
+
+
+STARTING GLOBAL ITERATION 1
+
+
+Initializing PSO...
+Performing clustering...
+Iteration: 0, best solution: 7.419800483325506e-09
+Iteration: 1, best solution: 7.419800483325506e-09
+Iteration: 2, best solution: 7.419800483325506e-09
+Iteration: 3, best solution: 7.248704139095642e-09
+Iteration: 4, best solution: 6.986065725863769e-09
+Iteration: 5, best solution: 6.668248994242023e-09
+Iteration: 6, best solution: 6.338080916729815e-09
+Iteration: 7, best solution: 6.280515090612342e-09
+Iteration: 8, best solution: 6.175773124105246e-09
+Iteration: 9, best solution: 6.175773124105246e-09
+Iteration: 10, best solution: 6.150315447502061e-09
+Iteration: 11, best solution: 6.025436141055826e-09
+Iteration: 12, best solution: 6.007225344474815e-09
+Iteration: 13, best solution: 5.9330236798688444e-09
+Iteration: 14, best solution: 5.822440765471407e-09
+Iteration: 15, best solution: 5.779121882248274e-09
+Iteration: 16, best solution: 5.72892355841232e-09
+Iteration: 17, best solution: 5.725006245658588e-09
+Iteration: 18, best solution: 5.666280486611317e-09
+Iteration: 19, best solution: 5.666280486611317e-09
+Cluster 1
+---------------------------------------------------------------
+Business: 13, entertainment: 17, politics: 34, sport: 16, tech: 10
+---------------------------------------------------------------
+Cluster 2
+---------------------------------------------------------------
+Business: 27, entertainment: 22, politics: 4, sport: 21, tech: 28
+---------------------------------------------------------------
+Cluster 4
+---------------------------------------------------------------
+Business: 0, entertainment: 0, politics: 2, sport: 3, tech: 0
+---------------------------------------------------------------
+Cluster 3
+---------------------------------------------------------------
+Business: 0, entertainment: 0, politics: 0, sport: 0, tech: 2
+---------------------------------------------------------------
+Cluster 0
+---------------------------------------------------------------
+Business: 0, entertainment: 1, politics: 0, sport: 0, tech: 0
+---------------------------------------------------------------
+
+
+STARTING GLOBAL ITERATION 2
+
+
+Initializing PSO...
+Performing clustering...
+Iteration: 0, best solution: 7.163864507231994e-09
+Iteration: 1, best solution: 7.112388903552442e-09
+Iteration: 2, best solution: 6.509423097785956e-09
+Iteration: 3, best solution: 6.509423097785956e-09
+Iteration: 4, best solution: 6.509423097785956e-09
+Iteration: 5, best solution: 6.509423097785956e-09
+Iteration: 6, best solution: 6.509423097785956e-09
+Iteration: 7, best solution: 6.509423097785956e-09
+Iteration: 8, best solution: 6.509423097785956e-09
+Iteration: 9, best solution: 6.509423097785956e-09
+Iteration: 10, best solution: 6.509423097785956e-09
+Iteration: 11, best solution: 6.509423097785956e-09
+Iteration: 12, best solution: 6.509423097785956e-09
+Iteration: 13, best solution: 6.509423097785956e-09
+Iteration: 14, best solution: 6.509423097785956e-09
+Iteration: 15, best solution: 6.509423097785956e-09
+Iteration: 16, best solution: 6.509423097785956e-09
+Iteration: 17, best solution: 6.509423097785956e-09
+Iteration: 18, best solution: 6.509423097785956e-09
+Iteration: 19, best solution: 6.509423097785956e-09
+Cluster 4
+---------------------------------------------------------------
+Business: 34, entertainment: 32, politics: 32, sport: 29, tech: 27
+---------------------------------------------------------------
+Cluster 2
+---------------------------------------------------------------
+Business: 6, entertainment: 7, politics: 7, sport: 9, tech: 13
+---------------------------------------------------------------
+Cluster 0
+---------------------------------------------------------------
+Business: 0, entertainment: 0, politics: 1, sport: 1, tech: 0
+---------------------------------------------------------------
+Cluster 1
+---------------------------------------------------------------
+Business: 0, entertainment: 0, politics: 0, sport: 1, tech: 0
+---------------------------------------------------------------
+Cluster 3
+---------------------------------------------------------------
+Business: 0, entertainment: 1, politics: 0, sport: 0, tech: 0
+---------------------------------------------------------------
+
+
+STARTING GLOBAL ITERATION 3
+
+
+Initializing PSO...
+Performing clustering...
+Iteration: 0, best solution: 7.737427254354596e-09
+Iteration: 1, best solution: 7.063167363115916e-09
+Iteration: 2, best solution: 7.028341944559616e-09
+Iteration: 3, best solution: 6.687700895127674e-09
+Iteration: 4, best solution: 6.676875644295331e-09
+Iteration: 5, best solution: 6.675253584865698e-09
+Iteration: 6, best solution: 6.613108013319745e-09
+Iteration: 7, best solution: 6.498957206416995e-09
+Iteration: 8, best solution: 6.427990147608503e-09
+Iteration: 9, best solution: 6.423348281455844e-09
+Iteration: 10, best solution: 6.320404714004614e-09
+Iteration: 11, best solution: 6.1895450585419865e-09
+Iteration: 12, best solution: 6.104660922862424e-09
+Iteration: 13, best solution: 6.026297581159038e-09
+Iteration: 14, best solution: 5.9213448362799345e-09
+Iteration: 15, best solution: 5.870847899233307e-09
+Iteration: 16, best solution: 5.846337957346574e-09
+Iteration: 17, best solution: 5.7928459637465695e-09
+Iteration: 18, best solution: 5.749127824207428e-09
+Iteration: 19, best solution: 5.717504205394674e-09
+Cluster 4
+---------------------------------------------------------------
+Business: 9, entertainment: 0, politics: 4, sport: 5, tech: 3
+---------------------------------------------------------------
+Cluster 0
+---------------------------------------------------------------
+Business: 26, entertainment: 31, politics: 36, sport: 28, tech: 19
+---------------------------------------------------------------
+Cluster 3
+---------------------------------------------------------------
+Business: 0, entertainment: 0, politics: 0, sport: 1, tech: 0
+---------------------------------------------------------------
+Cluster 1
+---------------------------------------------------------------
+Business: 5, entertainment: 9, politics: 0, sport: 4, tech: 18
+---------------------------------------------------------------
+Cluster 2
+---------------------------------------------------------------
+Business: 0, entertainment: 0, politics: 0, sport: 2, tech: 0
+---------------------------------------------------------------
+
+
+STARTING GLOBAL ITERATION 4
+
+
+Initializing PSO...
+Performing clustering...
+Iteration: 0, best solution: 6.958566720408995e-09
+Iteration: 1, best solution: 6.958566720408995e-09
+Iteration: 2, best solution: 6.394510487988148e-09
+Iteration: 3, best solution: 6.130891243680459e-09
+Iteration: 4, best solution: 6.130891243680459e-09
+Iteration: 5, best solution: 6.0131147442787226e-09
+Iteration: 6, best solution: 6.00441223108131e-09
+Iteration: 7, best solution: 5.847603587958451e-09
+Iteration: 8, best solution: 5.677142429932261e-09
+Iteration: 9, best solution: 5.613554572326377e-09
+Iteration: 10, best solution: 5.492512605115259e-09
+Iteration: 11, best solution: 5.489812588102462e-09
+Iteration: 12, best solution: 5.489407585550545e-09
+Iteration: 13, best solution: 5.489346835167756e-09
+Iteration: 14, best solution: 5.467138076293189e-09
+Iteration: 15, best solution: 5.456235264688058e-09
+Iteration: 16, best solution: 5.411844335768245e-09
+Iteration: 17, best solution: 5.404204765204034e-09
+Iteration: 18, best solution: 5.3944851708682955e-09
+Iteration: 19, best solution: 5.391017248086618e-09
+Cluster 2
+---------------------------------------------------------------
+Business: 37, entertainment: 37, politics: 32, sport: 37, tech: 40
+---------------------------------------------------------------
+Cluster 3
+---------------------------------------------------------------
+Business: 0, entertainment: 0, politics: 3, sport: 0, tech: 0
+---------------------------------------------------------------
+Cluster 1
+---------------------------------------------------------------
+Business: 0, entertainment: 1, politics: 5, sport: 3, tech: 0
+---------------------------------------------------------------
+Cluster 4
+---------------------------------------------------------------
+Business: 1, entertainment: 0, politics: 0, sport: 0, tech: 0
+---------------------------------------------------------------
+Cluster 0
+---------------------------------------------------------------
+Business: 2, entertainment: 2, politics: 0, sport: 0, tech: 0
+---------------------------------------------------------------
+
+
+STARTING GLOBAL ITERATION 5
+
+
+Initializing PSO...
+Performing clustering...
+Iteration: 0, best solution: 7.402091674708851e-09
+Iteration: 1, best solution: 6.5613492613561604e-09
+Iteration: 2, best solution: 5.957866457833971e-09
+Iteration: 3, best solution: 5.670218014895453e-09
+Iteration: 4, best solution: 5.200004558143663e-09
+Iteration: 5, best solution: 5.191561207829601e-09
+Iteration: 6, best solution: 5.042459197665063e-09
+Iteration: 7, best solution: 5.036536714633825e-09
+Iteration: 8, best solution: 4.901848058093252e-09
+Iteration: 9, best solution: 4.896891695328054e-09
+Iteration: 10, best solution: 4.8489406250865196e-09
+Iteration: 11, best solution: 4.7273169721303025e-09
+Iteration: 12, best solution: 4.7273169721303025e-09
+Iteration: 13, best solution: 4.587926564989344e-09
+Iteration: 14, best solution: 4.564591796243769e-09
+Iteration: 15, best solution: 4.513164875051245e-09
+Iteration: 16, best solution: 4.455811342143553e-09
+Iteration: 17, best solution: 4.412337293262934e-09
+Iteration: 18, best solution: 4.412337293262934e-09
+Iteration: 19, best solution: 4.412337293262934e-09
+Cluster 1
+---------------------------------------------------------------
+Business: 3, entertainment: 12, politics: 5, sport: 10, tech: 0
+---------------------------------------------------------------
+Cluster 2
+---------------------------------------------------------------
+Business: 37, entertainment: 26, politics: 32, sport: 29, tech: 38
+---------------------------------------------------------------
+Cluster 3
+---------------------------------------------------------------
+Business: 0, entertainment: 0, politics: 2, sport: 0, tech: 0
+---------------------------------------------------------------
+Cluster 4
+---------------------------------------------------------------
+Business: 0, entertainment: 1, politics: 1, sport: 0, tech: 2
+---------------------------------------------------------------
+Cluster 0
+---------------------------------------------------------------
+Business: 0, entertainment: 1, politics: 0, sport: 1, tech: 0
+---------------------------------------------------------------
+
+
+STARTING GLOBAL ITERATION 1
+
+
+Initializing PSO...
+Performing clustering...
+Iteration: 0, best solution: 8.29397816068243e-09
+Iteration: 1, best solution: 8.284192211586744e-09
+Iteration: 2, best solution: 8.284192211586744e-09
+Iteration: 3, best solution: 8.284192211586744e-09
+Iteration: 4, best solution: 8.284192211586744e-09
+Iteration: 5, best solution: 8.284192211586744e-09
+Iteration: 6, best solution: 8.284192211586744e-09
+Iteration: 7, best solution: 8.284192211586744e-09
+Iteration: 8, best solution: 8.284192211586744e-09
+Iteration: 9, best solution: 8.284192211586744e-09
+Iteration: 10, best solution: 8.284192211586744e-09
+Iteration: 11, best solution: 8.284192211586744e-09
+Iteration: 12, best solution: 8.284192211586744e-09
+Iteration: 13, best solution: 8.284192211586744e-09
+Iteration: 14, best solution: 8.284192211586744e-09
+Iteration: 15, best solution: 8.284192211586744e-09
+Iteration: 16, best solution: 8.284192211586744e-09
+Iteration: 17, best solution: 8.284192211586744e-09
+Iteration: 18, best solution: 8.284192211586744e-09
+Iteration: 19, best solution: 8.284192211586744e-09
+Cluster 3
+---------------------------------------------------------------
+Business: 5, entertainment: 26, politics: 19, sport: 10, tech: 17
+---------------------------------------------------------------
+Cluster 1
+---------------------------------------------------------------
+Business: 34, entertainment: 12, politics: 14, sport: 16, tech: 19
+---------------------------------------------------------------
+Cluster 4
+---------------------------------------------------------------
+Business: 1, entertainment: 1, politics: 6, sport: 10, tech: 0
+---------------------------------------------------------------
+Cluster 0
+---------------------------------------------------------------
+Business: 0, entertainment: 1, politics: 1, sport: 4, tech: 4
+---------------------------------------------------------------
+
+
+STARTING GLOBAL ITERATION 2
+
+
+Initializing PSO...
+Performing clustering...
+Iteration: 0, best solution: 9.051677935162401e-09
+Iteration: 1, best solution: 8.929381453409523e-09
+Iteration: 2, best solution: 8.69387237638587e-09
+Iteration: 3, best solution: 8.305185133228476e-09
+Iteration: 4, best solution: 8.305185133228476e-09
+Iteration: 5, best solution: 8.217161033489977e-09
+Iteration: 6, best solution: 8.11687464727567e-09
+Iteration: 7, best solution: 8.102789888089258e-09
+Iteration: 8, best solution: 8.091058374233938e-09
+Iteration: 9, best solution: 8.079788993327835e-09
+Iteration: 10, best solution: 8.07045367309423e-09
+Iteration: 11, best solution: 8.027833629093705e-09
+Iteration: 12, best solution: 8.017384949120336e-09
+Iteration: 13, best solution: 7.99863838993504e-09
+Iteration: 14, best solution: 7.989830915229803e-09
+Iteration: 15, best solution: 7.986899380818099e-09
+Iteration: 16, best solution: 7.982967751912943e-09
+Iteration: 17, best solution: 7.973422975425273e-09
+Iteration: 18, best solution: 7.970767622442865e-09
+Iteration: 19, best solution: 7.9690374886483e-09
+Cluster 2
+---------------------------------------------------------------
+Business: 38, entertainment: 8, politics: 31, sport: 27, tech: 25
+---------------------------------------------------------------
+Cluster 3
+---------------------------------------------------------------
+Business: 2, entertainment: 18, politics: 8, sport: 10, tech: 11
+---------------------------------------------------------------
+Cluster 1
+---------------------------------------------------------------
+Business: 0, entertainment: 13, politics: 1, sport: 2, tech: 4
+---------------------------------------------------------------
+Cluster 0
+---------------------------------------------------------------
+Business: 0, entertainment: 0, politics: 0, sport: 1, tech: 0
+---------------------------------------------------------------
+Cluster 4
+---------------------------------------------------------------
+Business: 0, entertainment: 1, politics: 0, sport: 0, tech: 0
+---------------------------------------------------------------
+
+
+STARTING GLOBAL ITERATION 3
+
+
+Initializing PSO...
+Performing clustering...
+Iteration: 0, best solution: 6.264585210895536e-09
+Iteration: 1, best solution: 5.95739355885707e-09
+Iteration: 2, best solution: 5.95739355885707e-09
+Iteration: 3, best solution: 5.95739355885707e-09
+Iteration: 4, best solution: 5.95739355885707e-09
+Iteration: 5, best solution: 5.95739355885707e-09
+Iteration: 6, best solution: 5.95739355885707e-09
+Iteration: 7, best solution: 5.95739355885707e-09
+Iteration: 8, best solution: 5.95739355885707e-09
+Iteration: 9, best solution: 5.95739355885707e-09
+Iteration: 10, best solution: 5.95739355885707e-09
+Iteration: 11, best solution: 5.95739355885707e-09
+Iteration: 12, best solution: 5.95739355885707e-09
+Iteration: 13, best solution: 5.95739355885707e-09
+Iteration: 14, best solution: 5.95739355885707e-09
+Iteration: 15, best solution: 5.95739355885707e-09
+Iteration: 16, best solution: 5.95739355885707e-09
+Iteration: 17, best solution: 5.95739355885707e-09
+Iteration: 18, best solution: 5.95739355885707e-09
+Iteration: 19, best solution: 5.95739355885707e-09
+Cluster 2
+---------------------------------------------------------------
+Business: 1, entertainment: 8, politics: 13, sport: 27, tech: 11
+---------------------------------------------------------------
+Cluster 0
+---------------------------------------------------------------
+Business: 35, entertainment: 29, politics: 24, sport: 9, tech: 25
+---------------------------------------------------------------
+Cluster 3
+---------------------------------------------------------------
+Business: 3, entertainment: 0, politics: 3, sport: 1, tech: 1
+---------------------------------------------------------------
+Cluster 4
+---------------------------------------------------------------
+Business: 1, entertainment: 0, politics: 0, sport: 3, tech: 0
+---------------------------------------------------------------
+Cluster 1
+---------------------------------------------------------------
+Business: 0, entertainment: 3, politics: 0, sport: 0, tech: 3
+---------------------------------------------------------------
+
+
+STARTING GLOBAL ITERATION 4
+
+
+Initializing PSO...
+Performing clustering...
+Iteration: 0, best solution: 7.492706509616271e-09
+Iteration: 1, best solution: 6.9980149711230345e-09
+Iteration: 2, best solution: 6.9980149711230345e-09
+Iteration: 3, best solution: 6.824835846471931e-09
+Iteration: 4, best solution: 6.609042798690501e-09
+Iteration: 5, best solution: 6.5012231150239075e-09
+Iteration: 6, best solution: 6.1073069950881775e-09
+Iteration: 7, best solution: 6.094365966777876e-09
+Iteration: 8, best solution: 6.090271381332154e-09
+Iteration: 9, best solution: 5.943732123754864e-09
+Iteration: 10, best solution: 5.9192680056841694e-09
+Iteration: 11, best solution: 5.9167367785885885e-09
+Iteration: 12, best solution: 5.906690296970035e-09
+Iteration: 13, best solution: 5.898073915851745e-09
+Iteration: 14, best solution: 5.882921532801355e-09
+Iteration: 15, best solution: 5.882921532801355e-09
+Iteration: 16, best solution: 5.882921532801355e-09
+Iteration: 17, best solution: 5.882921532801355e-09
+Iteration: 18, best solution: 5.882921532801355e-09
+Iteration: 19, best solution: 5.882921532801355e-09
+Cluster 4
+---------------------------------------------------------------
+Business: 40, entertainment: 39, politics: 37, sport: 21, tech: 40
+---------------------------------------------------------------
+Cluster 2
+---------------------------------------------------------------
+Business: 0, entertainment: 0, politics: 2, sport: 11, tech: 0
+---------------------------------------------------------------
+Cluster 0
+---------------------------------------------------------------
+Business: 0, entertainment: 1, politics: 1, sport: 6, tech: 0
+---------------------------------------------------------------
+Cluster 3
+---------------------------------------------------------------
+Business: 0, entertainment: 0, politics: 0, sport: 1, tech: 0
+---------------------------------------------------------------
+Cluster 1
+---------------------------------------------------------------
+Business: 0, entertainment: 0, politics: 0, sport: 1, tech: 0
+---------------------------------------------------------------
+
+
+STARTING GLOBAL ITERATION 5
+
+
+Initializing PSO...
+Performing clustering...
+Iteration: 0, best solution: 8.506160136238639e-09
+Iteration: 1, best solution: 6.559300517107972e-09
+Iteration: 2, best solution: 6.559300517107972e-09
+Iteration: 3, best solution: 6.443304440399547e-09
+Iteration: 4, best solution: 6.3221125012871325e-09
+Iteration: 5, best solution: 6.304710597014416e-09
+Iteration: 6, best solution: 6.2010804331780915e-09
+Iteration: 7, best solution: 6.152281897586136e-09
+Iteration: 8, best solution: 6.092541699866783e-09
+Iteration: 9, best solution: 6.056561266647485e-09
+Iteration: 10, best solution: 6.028490596738006e-09
+Iteration: 11, best solution: 6.013712732757451e-09
+Iteration: 12, best solution: 6.009768809249766e-09
+Iteration: 13, best solution: 5.9603032798783535e-09
+Iteration: 14, best solution: 5.951703906483332e-09
+Iteration: 15, best solution: 5.937745370225347e-09
+Iteration: 16, best solution: 5.932910421169116e-09
+Iteration: 17, best solution: 5.912709112800615e-09
+Iteration: 18, best solution: 5.907773612364858e-09
+Iteration: 19, best solution: 5.898995652567513e-09
+Cluster 3
+---------------------------------------------------------------
+Business: 27, entertainment: 19, politics: 34, sport: 13, tech: 37
+---------------------------------------------------------------
+Cluster 0
+---------------------------------------------------------------
+Business: 13, entertainment: 19, politics: 6, sport: 15, tech: 2
+---------------------------------------------------------------
+Cluster 1
+---------------------------------------------------------------
+Business: 0, entertainment: 0, politics: 0, sport: 1, tech: 0
+---------------------------------------------------------------
+Cluster 4
+---------------------------------------------------------------
+Business: 0, entertainment: 0, politics: 0, sport: 6, tech: 0
+---------------------------------------------------------------
+Cluster 2
+---------------------------------------------------------------
+Business: 0, entertainment: 2, politics: 0, sport: 5, tech: 1
+---------------------------------------------------------------
+
+Process finished with exit code 0
+ 

@@ -63,14 +63,16 @@ class PSO:
             # pca.visualize_2D_pca(global_best_particle)
             # sleep(0.5)
 
-        return self.get_spam_stats(global_best_particle, iterations, num_particles, num_clusters, inertia, cognitive, social)
-        # self.print_bbc_stats(global_best_particle)
+        # return self.get_spam_stats(global_best_particle)
+        return self.get_bbc_stats(global_best_particle)
         # pca.keep_open()
 
 
     def get_bbc_stats(self, global_best_particle):
+        output_str = ""
         for key in global_best_particle.assigned:
             print("Cluster {0}".format(key))
+            output_str += "Cluster {0}\n".format(key)
             business_counter = 0
             entertainment_counter = 0
             politics_counter = 0
@@ -92,6 +94,10 @@ class PSO:
             print("Business: {0}, entertainment: {1}, politics: {2}, sport: {3}, tech: {4}"
                   .format(business_counter, entertainment_counter, politics_counter, sport_counter, tech_counter))
             print("---------------------------------------------------------------")
+            output_str += "Business: {0}, entertainment: {1}, politics: {2}, sport: {3}, tech: {4}"\
+                .format(business_counter, entertainment_counter, politics_counter, sport_counter, tech_counter)
+
+        return output_str, global_best_particle.fitness
 
     def __initialize_particles(self, num_clusters, num_particles):
         # each particle randomly chooses k different document vectors
@@ -106,7 +112,7 @@ class PSO:
     def __stop_condition_met(self, iterations):
         return self.num_iter == iterations
 
-    def get_spam_stats(self, global_best_particle, iterations, particles, clusters, inertia, cognitive, social):
+    def get_spam_stats(self, global_best_particle):
         output_str = ""
         for key in global_best_particle.assigned:
             print("Cluster {0}".format(key))

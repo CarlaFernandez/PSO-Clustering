@@ -20,7 +20,7 @@ def perform_iterations(particles, clusters, iterations, inertia, cognitive, soci
 
         if fitness < all_fitness[best_fitness_idx]:
             best_fitness_idx = i
-    with open("outputs/enron-{0}-{1}-{2}-{3}-{4}-{5}-{6}".format(iterations, particles, clusters, inertia, cognitive,
+    with open("outputs/bbc40-{0}-{1}-{2}-{3}-{4}-{5}-{6}".format(iterations, particles, clusters, inertia, cognitive,
                                                                  social, all_fitness[best_fitness_idx]), 'w') as f:
         f.write(all_outputs[best_fitness_idx])
 
@@ -39,7 +39,7 @@ file_manager = FileManager(args.d)
 tfidf = file_manager.create_tfidf(files='all')
 
 particles = PARTICLES_DEFAULT
-clusters = 2
+clusters = 5
 iterations = 20
 inertia = INERTIA_DEFAULT
 cognitive = COGNITIVE_DEFAULT
