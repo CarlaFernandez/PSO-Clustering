@@ -83,6 +83,8 @@ class FileManager:
 
         vectorizer = TfidfVectorizer(input='filename', tokenizer=self.__tokenize, min_df=2)
         X = vectorizer.fit_transform(to_load)
+        print("Vocabulary length: " + str(len(vectorizer.vocabulary_)))
+        print("Vocabulary:")
         print(vectorizer.vocabulary_)
 
         return X
