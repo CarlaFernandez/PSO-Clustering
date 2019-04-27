@@ -4,6 +4,10 @@ import pandas as pd
 from sklearn.decomposition import PCA
 
 class DocumentPCA:
+    """
+    This class allows to visualize a 2D PCA of document vectors and the centroid vectors.
+    of a single particle.
+    """
 
     def __init__(self):
         plt.ion()
@@ -13,6 +17,12 @@ class DocumentPCA:
         self.ax.set_ylabel('Principal Component 2', fontsize=15)
 
     def visualize_2D_pca(self, particle):
+        """
+        This function shows a visualization of a particle's centroid vectors together with
+        the document vectors.
+        :param particle: particle whose centroid vectors we will visualize.
+        :return: document-centroid plot.
+        """
 
         documents = list(particle.doc_vecs.toarray())
 
@@ -43,11 +53,6 @@ class DocumentPCA:
         self.ax.legend(targets)
         self.ax.grid()
         self.fig.canvas.draw()
-
-    def __indices(self, data):
-        max = np.max(data, axis=1)
-        min = np.min(data, axis=1)
-        return max, min
 
     def keep_open(self):
         plt.show(block=True)

@@ -6,10 +6,20 @@ import numpy as np
 
 
 class Particle:
+    """
+    This class holds all the information for a single particle in a PSO swarm.
+    """
+
     MIN_POS = 0
     MAX_POS = 1
 
     def __init__(self, doc_vectors, num_clusters):
+        """
+        Initialize a paticle by randomly assigning a document vector as the centroid for each cluster.
+        :param doc_vectors: document vectors to work with.
+        :param num_clusters: number of clusters for classification.
+        """
+
         self.centroid_vecs = []
         # dictionary of index of centroid vector and the documents it has assigned
         self.assigned = defaultdict(list)
@@ -28,7 +38,11 @@ class Particle:
         self.own_best_pos = self.centroid_vecs
 
     def assign_closest_centroids(self, distance_metric):
-        # for each document vector, check the closest centroid and assign it
+        """
+        for each document vector, assign it to the best fitting cluster in terms of distance to its centroid.
+        :param distance_metric: distance metric to use
+        :return: document-cluster assignment dict.
+        """
         self.assigned = defaultdict(list)
 
         for i in range(self.doc_vecs.shape[0]):
@@ -47,6 +61,13 @@ class Particle:
 
 
     def measure_distance(self, centroid, vector, metric):
+        """
+        Measure the distance between a centroid vector and a document vector.
+        :param centroid: cluster centroid vector.
+        :param vector: document vector.
+        :param metric: distance metric to use.
+        :return: distance between centroid and document.
+        """
         if metric == 'euclidean':
             return distance.euclidean(centroid, vector)
         elif metric == 'cosine':
@@ -56,6 +77,14 @@ class Particle:
 
 
     def move(self, inertia, cognitive, social, global_best_pos):
+        """
+        Change position of the particle according to its current velocity and position.
+        :param inertia: inertia of the movement.
+        :param cognitive: cognitive factor.
+        :param social: social factor.
+        :param global_best_pos: position of the current best particle in terms of fitness.
+        :return: updated position.
+        """
         for i in range(len(self.centroid_vecs)):
             self.__update_velocity(i, cognitive, global_best_pos, inertia, social)
 
@@ -63,7 +92,12 @@ class Particle:
 
 
     def __update_position(self, i):
-        # the particle changes position according to its velocity and wraps around
+        """
+        The particle changes position according to its velocity and wraps around.
+        :param i: cluster to modify.
+        :return: updated position.
+        """
+
         for pos in range(len(self.centroid_vecs[0])):
             updated_pos = self.centroid_vecs[i][pos] + self.velocity[i][pos]
             self.centroid_vecs[i][pos] = updated_pos
@@ -76,7 +110,16 @@ class Particle:
 
 
     def __update_velocity(self, i, cognitive, global_best_pos, inertia, social):
-        # the particle updates current velocity values
+        """
+        The particle changes its velocity according to the inertia, social and cognitive factors.
+        :param i: cluster to modify.
+        :param cognitive: cognitive factor.
+        :param global_best_pos: position of the current best particle in terms of fitness.
+        :param inertia: inertia of the movement.
+        :param social: social factor.
+        :return: updated velocity.
+        """
+        # the particle updates current velocity values.
         for pos in range(len(self.velocity[0])):
             this_cognitive = cognitive * random.uniform(0, 1) * (self.own_best_pos[i][pos] - self.centroid_vecs[i][pos])
             this_social = social * random.uniform(0, 1) * (global_best_pos[i][pos] - self.centroid_vecs[i][pos])
@@ -86,6 +129,11 @@ class Particle:
 
 
     def calculate_fitness(self, metric):
+        """
+        Calculates the Average Distance to the Cluster Centroid for this particle.
+        :param metric: distance metric to use.
+        :return: Fitness value for this particle.
+        """
 
         # if there are empty clusters
         if len(self.assigned.keys()) != len(self.centroid_vecs):

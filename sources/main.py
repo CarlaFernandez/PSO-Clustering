@@ -3,7 +3,18 @@ import argparse
 from preprocessing import FileManager
 from pso import PSO
 
+
 def perform_iterations(particles, clusters, iterations, inertia, cognitive, social):
+    """
+    Performs five runs of the PSO clustering algorithm.
+    :param particles: number of particles.
+    :param clusters: number of clusters.
+    :param iterations: number of iterations.
+    :param inertia: inertia parameter.
+    :param cognitive: cognitive factor.
+    :param social: social factor.
+    :return: creates an output file with results from the best run in terms of fitness.
+    """
     best_fitness_idx = 0
 
     all_fitness = []
@@ -35,9 +46,11 @@ parser = argparse.ArgumentParser(usage="Run PSO")
 parser.add_argument("-d", "-dir", required=True, help="Folder in which the dataset is stored")
 args = parser.parse_args()
 
+# create a FileManager to read the files in -d into a TF-IDF matrix
 file_manager = FileManager(args.d)
 tfidf = file_manager.create_tfidf(files='all')
 
+# Begin performing the iterations with hyperparameter combinations
 particles = PARTICLES_DEFAULT
 clusters = 5
 iterations = 20

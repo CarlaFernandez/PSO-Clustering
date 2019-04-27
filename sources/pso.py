@@ -1,16 +1,19 @@
-import csv
-
 import numpy as np
 
-from documentpca import DocumentPCA
 from particle import Particle
-from time import sleep
+import numpy as np
+
+from particle import Particle
+
 
 class PSO:
+    """
+    This class performs Particle Swarm Optimization applied to the problem of document clustering.
+    """
     def __init__(self, data, file_manager):
         """
-        Initialize Particle Swarm Optimization using the provided data
-        :param data: TF-IDF matrix of document vectors
+        Initialize Particle Swarm Optimization using the provided data.
+        :param data: TF-IDF matrix of document vectors.
         """
         print("Initializing PSO...")
         self.data = data
@@ -18,6 +21,17 @@ class PSO:
         self.file_manager = file_manager
 
     def clustering(self, iterations=30, num_particles=10, num_clusters=5, distance_metric='cosine', inertia=1, cognitive=2, social=2):
+        """
+        Perform iterations of the clustering algorithm.
+        :param iterations: number of iterations.
+        :param num_particles: number of particles.
+        :param num_clusters: number of clusters.
+        :param distance_metric: distance metric to use.
+        :param inertia: inertia value.
+        :param cognitive: cognitive factor.
+        :param social: social factor.
+        :return: document-cluster assignment of the best particle in the swarm.
+        """
         if distance_metric != 'euclidean' and distance_metric != 'cosine':
             print("Unknown distance metric '{0}', defaulting to Cosine similarity".format(distance_metric))
 
@@ -52,7 +66,6 @@ class PSO:
                 # each particle moves according the its velocity and inertia (acceleration???)
                 # and updates those values accordingly
                 particle.move(inertia, cognitive, social, global_best_pos)
-                # print("Particle: {0}, current fitness: {1}".format(i, particle_fitness))
 
 
             print("Iteration: {0}, best solution: {1}".format(self.num_iter, global_best_fitness))
@@ -69,6 +82,11 @@ class PSO:
 
 
     def get_bbc_stats(self, global_best_particle):
+        """
+        Prints results for use with the BBC News dataset.
+        :param global_best_particle: particle with best document-cluster assignment.
+        :return: file with results from the particle.
+        """
         output_str = ""
         for key in global_best_particle.assigned:
             print("Cluster {0}".format(key))
@@ -100,19 +118,40 @@ class PSO:
         return output_str, global_best_particle.fitness
 
     def __initialize_particles(self, num_clusters, num_particles):
-        # each particle randomly chooses k different document vectors
-        # from the document collection as the initial cluster centroid vectors
+        """
+        Initialize the particles that will form the swarm.
+        :param num_clusters: number of clusters.
+        :param num_particles: nuumber of particles.
+        :return: particles created.
+        """
+
         for i in range(num_particles):
             particle = self.__createParticle(self.data, num_clusters)
             self.particles.append(particle)
 
     def __createParticle(self, doc_vectors, num_clusters):
+        """
+        Create a single particle.
+        :param doc_vectors: document vectors.
+        :param num_clusters: number of clusters.
+        :return: a single created particle.
+        """
         return Particle(doc_vectors, num_clusters)
 
     def __stop_condition_met(self, iterations):
+        """
+        Checks if the stop condition for the algorithm has been met.
+        :param iterations: number of iterations.
+        :return: true if it is met; false otherwise.
+        """
         return self.num_iter == iterations
 
     def get_spam_stats(self, global_best_particle):
+        """
+        Prints results for use with the Enron Spam dataset.
+        :param global_best_particle: particle with best document-cluster assignment.
+        :return: file with results from the particle.
+        """
         output_str = ""
         for key in global_best_particle.assigned:
             print("Cluster {0}".format(key))

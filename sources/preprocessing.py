@@ -1,13 +1,11 @@
-import csv
 import os
+import random
 from os.path import join
 
 import nltk
-import numpy
 from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
-from sklearn.feature_extraction.text import TfidfVectorizer, TfidfTransformer
-import random
+from sklearn.feature_extraction.text import TfidfVectorizer
 
 
 class FileManager:
@@ -20,12 +18,8 @@ class FileManager:
             dir_path: directory in which files are stored
         """
         self.files = self.__get_all_from_root(dir_path, '.txt')
-        self.texts = []
 
         self.stemmer = PorterStemmer()
-
-        # discard "Summary.txt" files
-        self.files = [file for file in self.files if "summary" not in file.lower()]
 
 
     def __get_all_from_root(self, folder_path, extension=""):
