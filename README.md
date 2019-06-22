@@ -1,5 +1,7 @@
 # PSO-Clustering
 
+* You can find the paper presented for this project in the Github repo root.
+
 ## Core
 
 * Clean data: 
